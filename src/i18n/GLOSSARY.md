@@ -198,6 +198,79 @@ CSS classes, keys and URLs.
 | camera controls | 相机控制 |
 | skip tour | 跳过引导 |
 
+批次①（外壳）补充基线 — 后续批次必须沿用：
+
+| English | zh |
+|---|---|
+| Mill Overview | 磨坊概览 |
+| Production floor | 生产车间 |
+| Logistics planning | 物流规划 |
+| Simulated SCADA / SCADA SIMULATED | SCADA 模拟 |
+| AI Partner | AI 伙伴 |
+| AI reflection | AI 反思 |
+| Bilateral Autonomy System (BAS) | 双边自治系统（BAS） |
+| Workplace & Autonomy | 工作与自治 |
+| Safety & Emergency | 安全与应急 |
+| Inspector | 检查器 |
+| Datalinks | 数据链接 |
+| first-person view | 第一人称视角 |
+| Main Navigation | 主导航 |
+| Start operating | 开始运行 |
+| Shift pace | 班次节奏 |
+| run window | 运行时段 |
+| morning / afternoon / night (shift) | 清晨 / 下午 / 夜间 |
+| throughput | 产量 |
+| daily target | 日目标 |
+| machine | 设备 |
+| Machine Status | 设备状态 |
+| critical | 危急 |
+| feed rate | 喂料速率 |
+| RPM | 转速 |
+| vibration | 振动 |
+| input buffer / output buffer | 进料缓冲 / 出料缓冲 |
+| repair | 维修 |
+| Restart Unit | 重启设备 |
+| focus machine | 聚焦设备 |
+| service unit | 维护单位 |
+| dispatch (a crew) | 派遣 |
+| spare parts | 备件 |
+| filters / bearings / belts / sensors / motors | 滤芯 / 轴承 / 皮带 / 传感器 / 电机 |
+| preventive / corrective / emergency | 预防性 / 纠正性 / 紧急 |
+| material traceability / trace | 物料追溯 / 追溯 |
+| manifest | 运单 |
+| receiving | 接收 |
+| source lot | 原料批 |
+| batch genealogy / genealogy | 批次谱系 / 谱系 |
+| quality hold / hold | 质量扣留 / 扣留 |
+| released | 已放行 |
+| recall | 召回 |
+| retest | 复检 |
+| written off as waste | 报废核销 |
+| upstream provenance | 上游来源 |
+| investigation | 调查 |
+| weather clear / cloudy / rain / storm | 晴 / 多云 / 雨 / 风暴 |
+| Site Mode | 厂区模式 |
+| staffed | 有人值守 |
+| autonomous logistics | 自主物流 |
+| near miss | 未遂事件 |
+| safety stops / safety score / days safe | 安全停机 / 安全评分 / 安全天数 |
+| dock | 装卸区 |
+| unloading | 卸货 |
+| line idle / changeover | 产线空闲 / 换单 |
+| cooperative | 合作社 |
+| customer / order | 客户 / 订单 |
+| wheat grain / corn grain / flour / bran / middlings / semolina | 小麦粒 / 玉米粒 / 面粉 / 麸皮 / 次粉 / 粗粒粉 |
+| control room | 控制室 |
+| simulation / simulated | 模拟 |
+| graphics quality low / medium / high / ultra | 低 / 中 / 高 / 超高 |
+| Reset Simulation | 重置模拟 |
+| PA (public address) | 广播 |
+| PA mode Focused / Characterful | 简洁 / 生动 |
+| reduce motion / follow system | 减弱动态效果 / 跟随系统 |
+| replay / diagnostic replay | 回放 / 诊断回放 |
+| philosophy tooltips | 理念提示 |
+| loading screen quotes | 加载界面引言 |
+
 zh 风格规则（与计划 Global Constraints 一致）：
 1. `{name}` 占位符原样保留；2. 函数消息签名不变；3. 全角标点、
 半角占位符与单位；4. 中英之间加半角空格；5. 数字半角。
