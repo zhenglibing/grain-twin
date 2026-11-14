@@ -672,6 +672,63 @@ CSS classes, keys and URLs.
 | nesting box / perch / gentle collection | 产蛋箱 / 栖架 / 轻柔拾蛋 |
 | grain（泛称，教学件）/ milled material | 谷物 / 研磨后的物料 |
 
+批次④（车间 widgets B，Task 5 Participation + PressureChapter + Replay + Negotiation + Companion + CampaignArchive）补充基线 — 后续批次必须沿用：
+
+| English | zh |
+|---|---|
+| decision ownership | 决策归属 |
+| facilitator（设备传递/分别回合语境）/ facilitated separate turns / facilitator handover | 促成人 / 促成的分别回合 / 促成交接（主持人 留给 chair） |
+| solo role-play / participant turn / role turn / turn check | 单人角色扮演 / 参与者回合 / 角色回合 / 回合检查 |
+| interaction mode / mandate check | 交互模式 / 授权检查 |
+| synthetic rehearsal（共用设备） | 虚拟预演（synthetic=虚拟 沿用 Task 2） |
+| season adoption route / adoption degree | 加工季采纳路线 / 采纳程度 |
+| individual fairness receipts / fairness: {role} | 个人公平回执 / 公平：{role} |
+| member distribution / wages reserved / compensation reserved | 成员分配 / 已预留工资 / 已预留补偿 |
+| optional duty / volunteered / declined / no decision（勤务状态） | 可选勤务 / 已志愿 / 已拒绝 / 未决策 |
+| guided bilateral demonstration / automatic fictional demonstration | 引导式双边演示 / 自动虚构演示 |
+| ten-minute guide / skip guide | 十分钟指南 / 跳过指南 |
+| evidence present / available to explore（指南步骤状态） | 证据已具备 / 可前往探索 |
+| public cooperative receipt | 公开合作社回执 |
+| autonomous cooperative season / take over | 自主合作社加工季 / 接管（autonomous 形容词=自主 沿用钉词） |
+| pressure chapter / a working agreement under pressure | 压力章节 / 压力之下的工作协议 |
+| offer（周四协商的条款报价）/ revised offers / revised terms / fresh offer | 报价 / 修订后的报价 / 修订条款 / 新报价 |
+| acknowledged / awaiting current answers（顾问边界） | 已确认 / 待答当前问题 |
+| open（objection 陈述行前缀） | 未决：{statement}（open=未决 沿用钉词） |
+| protected inspection（five-minute inspection） | 受保护检查（质量启动五分钟检查） |
+| restate the terms / restate protected terms | 重申条款 / 重申受保护条款（沿用 Task 2） |
+| account for what was kept / settle remaining obligations | 交代保留的内容 / 结清剩余义务（settle=结清 沿用 Task 3） |
+| deliver the agreement / earn a fresh agreement | 履行协议 / 挣得新协议 |
+| governance rule / member majority | 治理规则 / 成员多数 |
+| closing charter / charter axes: work-choice autonomy（directed/individual/team）、governance（consultative/team-consent/member-vote）、AI authority（advice/bounded） | 收尾章程 / 指派、个人、团队；咨询式、团队同意、成员表决；仅建议、有界执行（值沿用 Task 2 钉词） |
+| matched plant replay / actual run | 配对工厂回放（matched=配对 沿用 Task 4）/ 实际运行 |
+| replay checkpoint / rewind / capture（plant） | 回放检查点 / 倒回 / 捕获 |
+| horizon / unequal horizons | 时间跨度 / 时间跨度不等 |
+| plant accounts, pounds sterling | 工厂账目（英镑） |
+| conservation / genealogy（回放对账）/ material error | 守恒 / 谱系 / 物料误差 |
+| dispatch manifest | 发运运单（manifest=运单 沿用基线） |
+| redacted（report / review） | 脱敏 |
+| guided replay / replay learning review | 引导式回放 / 回放学习回顾 |
+| refusal respected / not recorded as respected | 受到尊重 / 未记录为受到尊重 |
+| frame-driven vehicle trajectories | 帧驱动的车辆轨迹 |
+| Thursday negotiation / negotiation sequence | 周四协商 / 协商顺序 |
+| adviser proposal / adviser holds execution | 顾问提案 / 顾问建议暂缓执行 |
+| reused consent / adviser correction | 被复用的同意 / 顾问更正 |
+| physical work / repayment（negotiation stage） | 实际工作 / 偿还（repayment=偿还 沿用 Task 3） |
+| reversible practice proposal / rollback | 可逆的实践提案 / 回滚 |
+| planning draft / planning-only | 规划草案 / 仅规划 |
+| stop on | 停止条件 |
+| not offered（word* 展示词） | 未提供（wordOpen/wordResolved 等沿用钉词） |
+| working agreement companion | 工作协议伙伴 |
+| frozen conditional departure bound | 冻结的条件离场界限（条件离场界限 沿用 Task 3/4 词根） |
+| future authority / bounded agreement（companion） | 未来的授权 / 有界协议 |
+| retained compensation paid / retained recovery | 已付保留补偿 / 保留补休 |
+| teaching output | 教学产出 |
+| completed workplace campaigns | 已完成的加工季 |
+| archive review / retained campaign reviews | 归档回顾 / 保留的加工季回顾 |
+| leave season / seasons left early / left early at shift {n} of 3 | 离开加工季 / 提前离开的加工季 / 在第 {n}/3 个班次提前离开 |
+| follow-on credit stopped | 计入已停止（follow-on 沿用 Task 2 后续计入语境） |
+| evidence reason：quality threshold not met / record no longer matches the plant / cancelled or off the books | 未通过其质量阈值 / 记录不再与工厂相符 / 已被取消或不在订单簿上 |
+
 批次③终审接受项与已知计量假象（check-zh-progress 读数口径）：
 
 - 接受项：实验室 partial-carry（个别串作 实验室，全称 质检实验室，defensible）；报警阈值 soft-orphan（已入表，暂无渲染串沿用，钉后续批次）；千克 a11y（PlayableShift truckLoadValueText 无障碍朗读串拼 千克，与可见 kg 并存，defensible）。
