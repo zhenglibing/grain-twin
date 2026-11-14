@@ -598,6 +598,39 @@ CSS classes, keys and URLs.
 | AI mind | AI 心智 |
 | grant（consent，expired） | 授权 |
 
+批次④（车间仿真组，Task 3 bilateralWorkplace + workplaceCampaign）补充基线 — 后续批次必须沿用：
+
+| English | zh |
+|---|---|
+| advisory mind | AI 心智（同 AI mind，WorkplaceLab 钉词） |
+| arrangement（改善安排） | 安排 |
+| canonical arrangement | 预设安排 |
+| steady plan / steady pacing / steady fallback | 稳定方案 / 稳定节奏 / 回退到稳定方案 |
+| resequence | 重新排序 |
+| rush through rest | 挤占休息赶工（rush=加急 沿用批次③） |
+| rest floor | 休息底线 |
+| waive（rest / boundary） | 豁免 |
+| close vs resolve（objection） | 了结 vs 解决（只有提出人能了结；resolve=解决 沿用钉词） |
+| override（blind override） | 越权 |
+| facilitated terms | 促成的条款 |
+| whole-line pacing | 全线节奏 |
+| released stock / held stock | 已放行库存 / 扣留库存 |
+| conditional departure | 条件离场量 |
+| earmark | 专用预留 |
+| projection | 推演（区别于 forecast 预测） |
+| replaceable ballot | 可更改的表决 |
+| authored（responses / role-play） | 预先编写 |
+| episode / planning episode | 剧情（WorkplaceLab 已用）/ 规划剧情 |
+| withdrawal（人退出）/ withdraw（同意/顶岗撤回） | 退出 / 撤回 |
+| repayment check | 偿还检查（理解检查组：拒绝/隐私/偿还） |
+| qualification access | 资质准入 |
+| settle / settled（义务与钱款） | 结清 / 已结清 |
+| retained-record limit | 保留记录上限 |
+| teaching campaign | 教学加工季 |
+| disputed sample | 争议样品 |
+| mission evidence: current / stale / quality-failed / missing | 当前 / 已过期 / 质量未通过 / 缺失 |
+| pressure card | 压力卡（WorkplaceLab 已用，此处入表） |
+
 批次③终审接受项与已知计量假象（check-zh-progress 读数口径）：
 
 - 接受项：实验室 partial-carry（个别串作 实验室，全称 质检实验室，defensible）；报警阈值 soft-orphan（已入表，暂无渲染串沿用，钉后续批次）；千克 a11y（PlayableShift truckLoadValueText 无障碍朗读串拼 千克，与可见 kg 并存，defensible）。
