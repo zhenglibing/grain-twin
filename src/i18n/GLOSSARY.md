@@ -455,6 +455,15 @@ CSS classes, keys and URLs.
 | member review | 成员评审 |
 | cooperative workplace (step) | 工作场所协作（步骤） |
 
+批次③（生产数据组）补充基线 — 后续批次必须沿用：
+
+| English | zh |
+|---|---|
+| production target | 产量目标 |
+| process efficiency | 工艺效率 |
+| quality interlock | 质量联锁 |
+| game hour | 游戏小时 |
+
 zh 风格规则（与计划 Global Constraints 一致）：
 1. `{name}` 占位符原样保留；2. 函数消息签名不变；3. 全角标点、
 半角占位符与单位；4. 中英之间加半角空格；5. 数字半角；6. 引号用 “”（GB/T 15834），不用「」。
