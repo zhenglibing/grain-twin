@@ -5,7 +5,7 @@ export const useSCADAMessages = defineMessages({
     defaultControlSource: 'Autonomous control layer',
   },
   zh: {
-    defaultControlSource: 'Autonomous control layer',
+    defaultControlSource: '自主控制层',
   },
   'pt-BR': {
     // Matches SCADAPanel's defaultControlIdentity so every acknowledgement

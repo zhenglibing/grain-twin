@@ -11,8 +11,8 @@ export const alarmManagerMessages = defineMessages({
     thresholdCondition: '{type} threshold {threshold} {unit}',
   },
   zh: {
-    sourceQualityBad: 'Source quality is BAD',
-    thresholdCondition: '{type} threshold {threshold} {unit}',
+    sourceQualityBad: '源质量为 BAD',
+    thresholdCondition: '{type} 阈值 {threshold} {unit}',
   },
   'pt-BR': {
     sourceQualityBad: 'A qualidade da fonte é BAD',

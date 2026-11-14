@@ -335,6 +335,39 @@ CSS classes, keys and URLs.
 | dispatch status: away / loading / held / ready / departed | 已离开装卸区 / 装载中 / 被扣留 / 就绪 / 已离场 |
 | fault type communication | 通信故障 |
 
+批次②（SCADA 组件组：设定值/点位库/报警管理）补充基线 — 后续批次必须沿用：
+
+| English | zh |
+|---|---|
+| operator setpoint | 操作员设定值 |
+| reading / no reading yet | 读数 / 暂无读数 |
+| alarm threshold | 报警阈值 |
+| moisture | 水分 |
+| feeder | 喂料器 |
+| roll speed / speed setpoint (RPM) | 磨辊速度 / 转速设定值 |
+| bearing / motor current | 轴承 / 电机电流 |
+| sieve condition | 筛网状态 |
+| bag count / bag weight | 装袋数 / 单袋重量 |
+| air pressure | 气压 |
+| ambient temperature / humidity | 环境温度 / 环境湿度 |
+| outside temperature | 室外温度 |
+| compressed air pressure | 压缩空气压力 |
+| total power | 总功率 |
+| dust collector / DP (differential pressure) | 除尘器 / 压差 |
+| cooling water temperature / flow | 冷却水温度 / 冷却水流量 |
+| nitrogen pressure | 氮气压力 |
+| flow (rate) | 流量 |
+| level (utility vessel, spoken) | 液位 |
+| shipping truck / receiving truck | 发运卡车 / 接收卡车 |
+| ground speed | 行驶速度 |
+| articulation / steering | 铰接角度 / 转向 |
+| motion phase | 运动阶段 |
+| transfer interlock | 转运联锁 |
+| stop reason (vehicle) | 停车原因 |
+| inventory | 库存 |
+| material in process | 在制物料 |
+| material balance error | 物料账误差 |
+
 zh 风格规则（与计划 Global Constraints 一致）：
 1. `{name}` 占位符原样保留；2. 函数消息签名不变；3. 全角标点、
 半角占位符与单位；4. 中英之间加半角空格；5. 数字半角；6. 引号用 “”（GB/T 15834），不用「」。
