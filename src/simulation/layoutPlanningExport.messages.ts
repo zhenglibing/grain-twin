@@ -9,6 +9,13 @@ const PT_PROVENANCE: Record<string, string> = {
   unresolved: 'não resolvido',
 };
 
+const ZH_DOCK: Record<string, string> = { shipping: '发运', receiving: '接收' };
+const ZH_PROVENANCE: Record<string, string> = {
+  rendered: '已渲染',
+  modeled: '已建模',
+  unresolved: '未解析',
+};
+
 type FlowParams = {
   key: string;
   load: string;
@@ -39,20 +46,20 @@ export const layoutPlanExportMessages = defineMessages({
   },
   zh: {
     flowTitle: (p: FlowParams) =>
-      `${p.key}: ${p.load} kg in transit; ${p.rate} kg/min rated; ${p.provenance} path, ${p.seconds} s`,
-    machineTitle: '{id} at +{height} m; {input} kg in / {output} kg out',
+      `${p.key}：在途 ${p.load} kg；额定 ${p.rate} kg/min；${ZH_PROVENANCE[p.provenance] ?? p.provenance}路径，${p.seconds} s`,
+    machineTitle: '{id} 位于 +{height} m；输入 {input} kg / 输出 {output} kg',
     loopTitle: (p: LoopParams) =>
-      `${p.dock} forklift loop, full ${p.width} m clearance corridor checked`,
-    shippingStaging: '50 pallet spaces',
-    receivingStaging: 'Return pallets',
-    ariaLabel: '{title} dimensioned mill logistics plan',
-    svgTitle: '{title}: mill logistics and captured material queues',
-    factoryWidth: '80 m factory width',
-    factoryDepth: '100 m factory depth',
-    legendPaths: 'Solid: rendered pipes. Dashed: modeled paths.',
-    legendColours: 'Amber/cyan: forklift loops. Green: protected access.',
-    queueSnapshot: 'Queue snapshot at material clock {clock} s. Coordinates in metres.',
-    legendMachines: 'S: silo. M: mill. SF: sifter (+{heights} m). P: packer. %: buffer fill.',
+      `${ZH_DOCK[p.dock] ?? p.dock}叉车环线，已校验完整 ${p.width} m 净空走廊`,
+    shippingStaging: '50 个托盘位',
+    receivingStaging: '回空托盘',
+    ariaLabel: '{title} 带尺寸标注的磨坊物流规划图',
+    svgTitle: '{title}：磨坊物流与采集的物料队列',
+    factoryWidth: '厂房宽度 80 m',
+    factoryDepth: '厂房进深 100 m',
+    legendPaths: '实线：已渲染管道。虚线：建模路径。',
+    legendColours: '琥珀色/青色：叉车环线。绿色：受保护通道。',
+    queueSnapshot: '物料时钟 {clock} s 时的队列快照。坐标单位为米。',
+    legendMachines: 'S：筒仓。M：磨辊机。SF：平筛（+{heights} m）。P：包装线。%：缓冲占用。',
   },
   'pt-BR': {
     flowTitle: (p: FlowParams) =>

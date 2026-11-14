@@ -368,6 +368,44 @@ CSS classes, keys and URLs.
 | material in process | 在制物料 |
 | material balance error | 物料账误差 |
 
+批次②（布局规划组）补充基线 — 后续批次必须沿用：
+
+| English | zh |
+|---|---|
+| layout planning | 布局规划 |
+| layout | 布局 |
+| current layout / proposed layout | 当前方案 / 提议方案 |
+| proposal | 方案 |
+| capture (current layout) | 采集 |
+| active seconds | 作业秒数 |
+| material seconds | 物料秒数 |
+| before apply / after apply / current run | 应用前 / 应用后 / 当前运行 |
+| operating controls | 运行控制参数 |
+| observed operating results / observed comparison | 观测运行结果 / 观测对比 |
+| authored layout | 原始布局 |
+| material clock / production clock | 物料时钟 / 生产时钟 |
+| staging / staging handling | 暂存区 / 暂存区搬运 |
+| pallet space / return pallets | 托盘位 / 回空托盘 |
+| shipping / receiving (dock label，id 本身不译) | 发运 / 接收 |
+| clearance (vehicle) / clearance conflict / clearance check | 净空 / 净空冲突 / 净空检查 |
+| swept (-path) check | 扫掠检查 |
+| clearance corridor / vehicle corridor | 净空走廊 / 车辆走廊 |
+| pedestrian access / protected access | 人行通道 / 受保护通道 |
+| operating floor | 作业地面 |
+| apron (dock) | 装卸场坪 |
+| turning envelope | 转弯包络 |
+| pose / pickup / dropoff / approach | 位姿 / 取货 / 放货 / 接近 |
+| travel waypoint | 行驶航点 |
+| forklift loop | 叉车环线 |
+| slow zone / slow-zone delay | 慢速区 / 慢速区延误 |
+| weighted cost | 加权成本 |
+| trips/hr / visits/hr / m/hr | 趟/时 / 次/时 / 米/时 |
+| queue / buffer use | 队列 / 缓冲占用 |
+| intake / pneumatic / finished (transport legs) | 进料 / 气力输送 / 成品 |
+| rendered / modeled / unresolved (path provenance) | 已渲染 / 已建模 / 未解析 |
+| site safety hold | 厂区安全扣留 |
+| evacuation certification | 疏散认证 |
+
 zh 风格规则（与计划 Global Constraints 一致）：
 1. `{name}` 占位符原样保留；2. 函数消息签名不变；3. 全角标点、
 半角占位符与单位；4. 中英之间加半角空格；5. 数字半角；6. 引号用 “”（GB/T 15834），不用「」。
