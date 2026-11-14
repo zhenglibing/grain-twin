@@ -27,6 +27,7 @@
     "review:stage-ab": "node scripts/stage-blind-ab.mjs",
     "typecheck": "tsc --noEmit -p tsconfig.typecheck.json",
     "lint": "eslint src scripts e2e",
+    "i18n:zh-progress": "node scripts/check-zh-progress.mjs",
     "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,css}\" \"scripts/**/*.{mjs,cjs,js}\" \"*.{js,cjs,mjs,ts,json}\" public/sw.js",
     "format:check": "prettier --check \"src/**/*.{ts,tsx,js,jsx,css}\" \"scripts/**/*.{mjs,cjs,js}\" \"*.{js,cjs,mjs,ts,json}\" public/sw.js",
     "test:e2e": "playwright test",
