@@ -31,7 +31,13 @@ export function LanguageSwitcher({ compact = false }: { compact?: boolean }) {
               : 'border-slate-600 text-slate-300 hover:border-slate-400 hover:text-white'
           }`}
         >
-          {compact ? (option === 'en' ? 'EN' : option === 'zh' ? '中文' : 'PT-BR') : LOCALE_LABELS[option]}
+          {compact
+            ? option === 'en'
+              ? 'EN'
+              : option === 'zh'
+                ? '中文'
+                : 'PT-BR'
+            : LOCALE_LABELS[option]}
         </button>
       ))}
     </div>

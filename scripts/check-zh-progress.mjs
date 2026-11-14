@@ -77,7 +77,9 @@ for (const file of listSourceFiles('src')) {
 rows.sort((a, b) => a.done / a.total - b.done / b.total || b.total - a.total);
 for (const row of rows) {
   const pct = ((row.done / row.total) * 100).toFixed(1).padStart(5);
-  console.log(`${pct}%  ${String(row.done).padStart(4)}/${String(row.total).padEnd(4)}  ${row.file}`);
+  console.log(
+    `${pct}%  ${String(row.done).padStart(4)}/${String(row.total).padEnd(4)}  ${row.file}`
+  );
 }
 const percent = total === 0 ? 100 : (done / total) * 100;
 console.log(`\nzh progress: ${done}/${total} (${percent.toFixed(2)}%)`);
