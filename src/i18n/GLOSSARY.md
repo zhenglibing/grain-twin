@@ -544,6 +544,60 @@ CSS classes, keys and URLs.
 | predictive maintenance | 预测性维护 |
 | autonomy（名词，系统名）/ autonomous（形容词性修饰） | 自治（磨坊自治、双边自治系统）/ 自主（自主物流、自主控制层、自主执行） |
 
+批次④（车间/工作场所组，Task 2 WorkplaceLab）补充基线 — 后续批次必须沿用：
+
+| English | zh |
+|---|---|
+| workplace laboratory / workplace sections | 车间实验室 / 车间分区 |
+| Living Cooperative（车间场景名） | 活力合作社 |
+| workshop（模式）/ manual workshop | 工作坊 / 手动工作坊 |
+| pilot / pilot preparation / pilot charter / pilot draft | 试点 / 试点准备 / 试点章程 / 试点草案 |
+| playable shift / teaching pace | 可玩班次 / 教学节奏 |
+| workplace 分区标签：Handoff / Shift / Practices / Agreement & Voices / Review / Experiment | 交接 / 班次 / 实践 / 协议/声音 / 回顾 / 实验 |
+| experiment phase: idle / deliberating / active / review | 空闲 / 审议中 / 进行中 / 回顾中 |
+| objection kind: rest / burden / privacy / authority | 休息 / 负担 / 隐私 / 职权 |
+| objection status: open / resolved | 未决 / 已解决（未结 留给承诺/工单） |
+| surplus destination: members / reserve / community | 成员 / 留存 / 社区 |
+| pressure decision: keep-target / renegotiate / inspect / skip-inspection / protect-refusal / penalize-refusal | 维持目标 / 重新协商 / 检查 / 跳过检查 / 保护拒绝 / 惩罚拒绝 |
+| workplace task: Packing / Pallet checks / Quality release / Sampling / Maintenance planning / Coordination | 包装 / 托盘检查 / 质量放行 / 取样 / 维护计划 / 协调 |
+| BAS practice: open information / qualified work choice / protected rest / voice and remedy / team budget / shared surplus / member governance | 信息公开 / 合格工作选择 / 受保护休息 / 发言与补救 / 团队预算 / 盈余共享 / 成员治理 |
+| cover / optional cover | 顶岗 / 可选顶岗 |
+| recovery / delivered recovery / outstanding recovery | 补休 / 已交付补休 / 未完成的补休（应补休息 沿用批次③） |
+| extra duty / extra work | 额外勤务 / 额外工作 |
+| authored objection / objection author / raiser | 署名异议 / 异议提出人 / 提出人 |
+| challenge（动词，质疑提案）/ challengeable | 质疑 / 可质疑（挑战状态名词 挑战 沿用批次③） |
+| proposal（车间治理语境） | 提案（布局规划 proposal=方案 另词） |
+| remedy / repair | 补救 / 修复 |
+| understanding check / policy vote / policy yes / policy no | 理解检查 / 政策表决 / 政策赞成 / 政策反对 |
+| preference sharing / shared preference | 偏好共享 / 已共享偏好 |
+| work choice / individual work choice / team work choice | 工作选择 / 个人工作选择 / 团队工作选择 |
+| worker decisions / directed assignments | 工人决策 / 指派任务 |
+| shared governance / consultative / team consent / member vote | 共享治理 / 咨询式 / 团队同意 / 成员表决 |
+| AI authority / advice only / bounded execution / bounded trials | AI 决策权 / 仅建议 / 有界执行 / 有界试验 |
+| modular practices / adoption profile | 模块化实践 / 采纳方案 |
+| earned pay / wages / compensation / budget / improvement (spend) | 已挣报酬 / 工资 / 补偿 / 预算 / 改善 |
+| volunteer (qualified) | 志愿者 |
+| plant capacity multiplier / active plant capacity multiplier | 工厂产能乘数 / 在运工厂产能乘数 |
+| installment | 分期 |
+| qualified dispatch credit | 合格发运计入 |
+| causal receipt / execution receipt / relationship receipt | 因果回执 / 执行回执 / 关系回执 |
+| relationship record / relationship moments / relationship evidence | 关系记录 / 关系时刻 / 关系证据 |
+| learning review | 学习回顾 |
+| member voter / chair candidate / chair ballot / not elected | 成员投票人 / 主持人候选人 / 主持人表决 / 未当选 |
+| operating surplus / surplus destination | 运营盈余 / 盈余去向 |
+| distribute / retain / allocate（盈余） | 均分 / 留存 / 拨付 |
+| arm / counterfactual（预测对比） | 试验组 / 反事实 |
+| permitted / prohibited | 允许 / 禁止 |
+| scenario seed / experiment seed / same-seed comparison | 场景种子 / 实验种子 / 同种子对比 |
+| rehearsal / modeled (minutes) | 预演 / 模拟 |
+| synthetic（role / scenario） | 虚拟（角色/场景；simulated=模拟 另词） |
+| local scenario | 本地场景 |
+| charter（车间试点/章程） | 章程 |
+| live plant（control） | 真实工厂（控制） |
+| agent runtime | 智能体运行时 |
+| AI mind | AI 心智 |
+| grant（consent，expired） | 授权 |
+
 批次③终审接受项与已知计量假象（check-zh-progress 读数口径）：
 
 - 接受项：实验室 partial-carry（个别串作 实验室，全称 质检实验室，defensible）；报警阈值 soft-orphan（已入表，暂无渲染串沿用，钉后续批次）；千克 a11y（PlayableShift truckLoadValueText 无障碍朗读串拼 千克，与可见 kg 并存，defensible）。
