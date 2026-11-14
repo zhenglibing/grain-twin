@@ -56,7 +56,7 @@ export const layoutPlanExportMessages = defineMessages({
     svgTitle: '{title}：磨坊物流与采集的物料队列',
     factoryWidth: '厂房宽度 80 m',
     factoryDepth: '厂房进深 100 m',
-    legendPaths: '实线：已渲染管道。虚线：建模路径。',
+    legendPaths: '实线：已渲染管道。虚线：已建模路径。',
     legendColours: '琥珀色/青色：叉车环线。绿色：受保护通道。',
     queueSnapshot: '物料时钟 {clock} s 时的队列快照。坐标单位为米。',
     legendMachines: 'S：筒仓。M：磨辊机。SF：平筛（+{heights} m）。P：包装线。%：缓冲占用。',

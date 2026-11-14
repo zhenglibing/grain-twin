@@ -10,12 +10,12 @@ import ts from 'typescript';
 const failUnder = (() => {
   const flag = process.argv.find((a) => a.startsWith('--fail-under='));
   if (!flag) return null;
-  const n = Number(flag.slice('--fail-under='.length));
-  if (!Number.isFinite(n)) {
-    console.error(`Invalid --fail-under value: ${flag.slice('--fail-under='.length)}`);
+  const raw = flag.slice('--fail-under='.length);
+  if (raw === '' || !Number.isFinite(Number(raw))) {
+    console.error(`Invalid --fail-under value: ${raw}`);
     process.exit(2);
   }
-  return n;
+  return Number(raw);
 })();
 
 function listSourceFiles(dir, acc = []) {

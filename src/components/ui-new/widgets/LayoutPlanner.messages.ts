@@ -248,7 +248,7 @@ export const layoutPlannerMessages = defineMessages({
     beforeSealed: '应用布局时“应用前”即被封存；“应用后”测量随后的运行。',
     runBaseline: '先运行当前磨坊采集基线，再应用方案。',
     observedNote:
-      '作业秒数是准入的中心节拍时间；物料秒数随生产时钟。撤销会保留已完成的“应用后”窗口。重新加载和回放会清除这些对比。',
+      '作业秒数是计入中心节拍的时间；物料秒数随生产时钟。撤销会保留已完成的“应用后”窗口。重新加载和回放会清除这些对比。',
     beforeApply: '应用前',
     afterApply: '应用后',
     currentRun: '当前运行',

@@ -152,6 +152,7 @@ CSS classes, keys and URLs.
 | overview | 概览 |
 | production | 生产 |
 | autonomy | 自治 |
+| central tick | 中心节拍 |
 | Chronicle | 磨坊纪事 |
 | safety | 安全 |
 | SCADA (dock short label) | SCADA 系统 |
@@ -167,6 +168,7 @@ CSS classes, keys and URLs.
 | target | 目标 |
 | running | 运行中 |
 | idle | 空闲 |
+| intake (plant) | 接收（运输腿 intake=进料） |
 | maintenance | 维护 |
 | Perform Maintenance | 执行维护 |
 | wear | 磨损 |
@@ -386,7 +388,7 @@ CSS classes, keys and URLs.
 | material clock / production clock | 物料时钟 / 生产时钟 |
 | staging / staging handling | 暂存区 / 暂存区搬运 |
 | pallet space / return pallets | 托盘位 / 回空托盘 |
-| shipping / receiving (dock label，id 本身不译) | 发运 / 接收 |
+| shipping (dock label，id 本身不译) | 发运 |
 | clearance (vehicle) / clearance conflict / clearance check | 净空 / 净空冲突 / 净空检查 |
 | swept (-path) check | 扫掠检查 |
 | clearance corridor / vehicle corridor | 净空走廊 / 车辆走廊 |
