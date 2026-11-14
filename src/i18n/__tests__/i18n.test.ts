@@ -109,6 +109,10 @@ describe('numbers', () => {
     expect(formatFixed(Number.NaN, 1, 'pt-BR')).toBe('NaN');
     expect(formatGrouped(8640, undefined, 'en')).toBe('8,640');
     expect(formatGrouped(8640, undefined, 'pt-BR')).toBe('8.640');
+    expect(formatFixed(6000, 0, 'zh')).toBe('6,000');
+    expect(formatFixed(2.5, 1, 'zh')).toBe('2.5');
+    expect(formatFixed(Number.NaN, 1, 'zh')).toBe('NaN');
+    expect(formatGrouped(8640, undefined, 'zh')).toBe('8,640');
   });
 });
 
@@ -122,5 +126,6 @@ describe('casing', () => {
   it('keeps CSS capitalize for English only', () => {
     expect(capitalizeIn('en')).toBe('capitalize');
     expect(capitalizeIn('pt-BR')).toBe('');
+    expect(capitalizeIn('zh')).toBe('');
   });
 });
