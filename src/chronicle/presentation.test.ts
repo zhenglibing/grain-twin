@@ -49,6 +49,16 @@ describe('saved Chronicle presentation', () => {
     setLocale('en');
     expect(localizedNotice(old)).toBe(old);
   });
+  it('keeps canonical English records under zh until the zh presentation lands', () => {
+    const old = receipt(
+      'history',
+      HISTORY_NOTES[0].title,
+      HISTORY_NOTES[0].brief,
+      HISTORY_NOTES[0].id
+    );
+    setLocale('zh');
+    expect(localizedNotice(old)).toBe(old);
+  });
   it('preserves unknown, wrong-kind, wrong-related-id and edited records exactly', () => {
     setLocale('pt-BR');
     const records = [

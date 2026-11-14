@@ -85,7 +85,9 @@ const staticRules: Array<[NoticeKind, Key, Key]> = [
 
 /** Unknown, custom and ambiguous records retain their exact original copy. */
 export function localizedNotice(notice: ChronicleNotice): ChronicleNotice {
-  if (getLocale() === 'en') return notice;
+  // pt-BR is the only locale with translated presentation tables so far; en is
+  // canonical and zh falls back to it until the zh tables land.
+  if (getLocale() !== 'pt-BR') return notice;
   const candidates: Array<{ title: string; body: string }> = [];
   const add = (title: string, body: string, localizedTitle: string, localizedBody: string) => {
     if (notice.title === title && notice.body === body)
@@ -396,7 +398,7 @@ export function localizedNotice(notice: ChronicleNotice): ChronicleNotice {
 }
 
 export function localizedInitiative(entry: Initiative): Initiative {
-  if (getLocale() === 'en') return entry;
+  if (getLocale() !== 'pt-BR') return entry;
   const translated = (
     summary: Key,
     reason: Key,
