@@ -154,6 +154,7 @@ CSS classes, keys and URLs.
 | autonomy | 自治 |
 | Chronicle | 磨坊纪事 |
 | safety | 安全 |
+| SCADA (dock short label) | SCADA 系统 |
 | settings | 设置 |
 | language | 语言 |
 | silo | 筒仓 |

@@ -3,11 +3,11 @@ import { LOCALES, LOCALE_LABELS, defineMessages, useLocale, useT, setLocale } fr
 
 const messages = defineMessages({
   en: { language: 'Language' },
-  zh: { language: 'Language' },
+  zh: { language: '语言' },
   'pt-BR': { language: 'Idioma' },
 });
 
-/** Two-button language choice; each label is written in its own language. */
+/** Three-button language choice; each label is written in its own language. */
 export function LanguageSwitcher({ compact = false }: { compact?: boolean }) {
   const locale = useLocale();
   const t = useT(messages);

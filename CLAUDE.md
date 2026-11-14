@@ -422,13 +422,13 @@ Rules that keep it honest:
    Datalinks history and search follow live language changes too. Working if a
    locale switch changes visible copy without rewriting IDs, outcomes or receipts.
 
-## Interface Language (English and Brazilian Portuguese)
+## Interface Language (English, Brazilian Portuguese, Simplified Chinese)
 
 Every user-facing string goes through `src/i18n`. New copy is never hard-coded.
 
 - Put a component's copy in a co-located `<File>.messages.ts` built with
-  `defineMessages({ en: {...}, 'pt-BR': {...} })`. pt-BR must define every
-  English key, or `tsc` fails.
+  `defineMessages({ en: {...}, 'pt-BR': {...}, zh: {...} })`. pt-BR and zh
+  must define every English key, or `tsc` fails.
 - React: `const t = useT(catalog)`. Stores, simulation text, alerts, PA and
   achievements: `translate(catalog, key, params)` (resolved when created).
 - No module-level copy: a constant array of labels freezes the first language.
@@ -438,8 +438,11 @@ Every user-facing string goes through `src/i18n`. New copy is never hard-coded.
 - Vocabulary and the never-translate list (SCADA tag ids, machine
   designations, proper names, lyrics, painted signage, agent protocol, logs)
   live in `src/i18n/GLOSSARY.md`.
-- Language comes from `?lang=pt-BR`, then the saved `millos-locale` choice,
+- Language comes from `?lang=zh/pt-BR`, then the saved `millos-locale` choice,
   then the browser. Tests run in English.
+- zh falls back to English for any key not yet translated (progress:
+  `npm run i18n:zh-progress`); terminology contract lives in
+  `src/i18n/GLOSSARY.md`.
 
 ## Code Style Rules
 
