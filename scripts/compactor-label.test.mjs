@@ -453,7 +453,9 @@ test('keeps the source label/font contract and fixed-face ownership', () => {
   expect(fixtureSource).toContain('ramRef.current.position.y =');
   const textSource = read('src/components/shared/SceneText.tsx');
   expect(textSource).toContain('fonts/Inter-Regular.ttf');
-  expect(textSource).toContain('font={font ?? DEFAULT_3D_FONT}');
+  expect(textSource).toContain(
+    "font={font ?? (getLocale() === 'zh' ? DEFAULT_3D_FONT_ZH : DEFAULT_3D_FONT)}"
+  );
   expect(textSource).toContain("surface = 'unlit'");
   const drei = read('node_modules/@react-three/drei/core/Text.js');
   expect(drei).toMatch(/anchorX\s*=\s*'center'/);
