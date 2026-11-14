@@ -170,7 +170,7 @@ export const machineInspectorMessages = defineMessages({
     machineRestartedMessage: '{name} 已成功重启。',
     machineRestartedWornTitle: '已重启，仍有磨损',
     machineRestartedWornMessage:
-      '{name} 已重启，但磨损仍为 {wear}%（自 {threshold}% 起警告）。重启不会降低磨损：请使用「执行维护」。',
+      '{name} 已重启，但磨损仍为 {wear}%（自 {threshold}% 起警告）。重启不会降低磨损：请使用“执行维护”。',
 
     trendLabel: '以 {unit} 记录的喂料速率趋势',
     trendWaiting: '等待历史库采集足够数据以绘制曲线。',

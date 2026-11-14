@@ -148,7 +148,7 @@ export const settingsPanelMessages = defineMessages({
     paFocused: '简洁',
     paCharacterful: '生动',
     paOff: '关闭',
-    paModeHelp: '「简洁」让广播言简意赅，「生动」让广播更有话说。安全消息无论如何都会播报。',
+    paModeHelp: '“简洁”让广播言简意赅，“生动”让广播更有话说。安全消息无论如何都会播报。',
     paCaptions: '广播字幕',
     paTranscriptSummary: '广播记录（{count}）',
     searchPaTranscript: '搜索广播记录',
@@ -203,7 +203,7 @@ export const settingsPanelMessages = defineMessages({
     reduceMotionSystem: '跟随系统',
     reduceMotionOn: '开启',
     reduceMotionHelp:
-      '「跟随系统」使用你的设备设置。「开启」会让人物和装饰性动画静止，并停用相机与面板动画；厂区设备保持运转，因为其运动反映其状态。',
+      '“跟随系统”使用你的设备设置。“开启”会让人物和装饰性动画静止，并停用相机与面板动画；厂区设备保持运转，因为其运动反映其状态。',
 
     diagnosticReplay: '诊断回放',
     diagnosticReplayHelp:
@@ -218,7 +218,7 @@ export const settingsPanelMessages = defineMessages({
     resetToTen: '重置到上午 10 点',
     resetSimulation: '重置模拟',
     resetDayMessage:
-      '将时钟按当前节奏拨回上午 10 点。天气、运行时段和应急状态会重置。客户订单及其期限保持自己的时钟，因此逾期订单仍然逾期；产量累计、设备状态和成就继续保留。要开始全新班次，请使用「重置模拟」。',
+      '将时钟按当前节奏拨回上午 10 点。天气、运行时段和应急状态会重置。客户订单及其期限保持自己的时钟，因此逾期订单仍然逾期；产量累计、设备状态和成就继续保留。要开始全新班次，请使用“重置模拟”。',
     resetEverything: '全部重置',
     resetFullMessage:
       '抹掉所有内容——保存的进度、图形设置、你保存的 AI 偏好——并从头重新加载。声音和语言设置会保留。此操作无法撤销。',
