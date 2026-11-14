@@ -5,7 +5,7 @@ export const communityLifeMessages = defineMessages({
     siteSafetyStop: 'Site safety stop',
   },
   zh: {
-    siteSafetyStop: 'Site safety stop',
+    siteSafetyStop: '厂区安全停机',
   },
   'pt-BR': {
     siteSafetyStop: 'Parada de segurança da unidade',

@@ -7,9 +7,9 @@ export const strategicOverlay3DMessages = defineMessages({
     thinking: 'Strategic model thinking...',
   },
   zh: {
-    noPriorities: 'No Strategic Priorities Set',
-    heading: 'STRATEGIC PRIORITY',
-    thinking: 'Strategic model thinking...',
+    noPriorities: '未设置战略优先级',
+    heading: '战略优先级',
+    thinking: '战略模型思考中……',
   },
   'pt-BR': {
     noPriorities: 'Nenhuma prioridade estratégica definida',

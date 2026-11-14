@@ -10,11 +10,11 @@ export const decisionIconsMessages = defineMessages({
     statusUnknown: 'Status unknown',
   },
   zh: {
-    statusCompleted: 'Completed',
-    statusInProgress: 'In progress',
-    statusPending: 'Pending',
-    statusSuperseded: 'Superseded',
-    statusUnknown: 'Status unknown',
+    statusCompleted: '已完成',
+    statusInProgress: '进行中',
+    statusPending: '待定',
+    statusSuperseded: '已取代',
+    statusUnknown: '状态未知',
   },
   'pt-BR': {
     statusCompleted: 'Concluída',

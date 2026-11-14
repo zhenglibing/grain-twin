@@ -14,10 +14,10 @@ export const utilityAssetsMessages = defineMessages({
     liquefiedPetroleumGas: 'Liquefied petroleum gas',
   },
   zh: {
-    lowSulphurFuelOil: 'Low sulphur fuel oil',
-    foodGradeProcessOil: 'Food-grade process oil',
-    standbyGeneratorDiesel: 'Standby generator diesel',
-    liquefiedPetroleumGas: 'Liquefied petroleum gas',
+    lowSulphurFuelOil: '低硫燃料油',
+    foodGradeProcessOil: '食品级工艺用油',
+    standbyGeneratorDiesel: '备用发电机柴油',
+    liquefiedPetroleumGas: '液化石油气',
   },
   'pt-BR': {
     lowSulphurFuelOil: 'Óleo combustível com baixo teor de enxofre',

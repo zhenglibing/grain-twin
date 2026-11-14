@@ -7,9 +7,9 @@ export const unlockNotificationMessages = defineMessages({
     later: 'Later',
   },
   zh: {
-    unlocked: 'New Knowledge Unlocked',
-    readNow: 'Read Now',
-    later: 'Later',
+    unlocked: '新知识已解锁',
+    readNow: '立即阅读',
+    later: '稍后',
   },
   'pt-BR': {
     unlocked: 'Novo conhecimento desbloqueado',

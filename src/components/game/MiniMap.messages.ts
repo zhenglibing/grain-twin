@@ -10,12 +10,12 @@ export const miniMapMessages = defineMessages({
     forklifts: 'Forklifts',
   },
   zh: {
-    title: 'Fleet Map',
-    close: 'Close mini map',
-    zonePacking: 'Packing',
-    zoneSifters: 'Sifters',
-    zoneMills: 'Mills',
-    forklifts: 'Forklifts',
+    title: '车队地图',
+    close: '关闭小地图',
+    zonePacking: '包装',
+    zoneSifters: '平筛',
+    zoneMills: '磨辊机',
+    forklifts: '叉车',
   },
   'pt-BR': {
     title: 'Mapa da frota',

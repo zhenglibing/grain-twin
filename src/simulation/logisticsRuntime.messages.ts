@@ -5,7 +5,7 @@ export const logisticsRuntimeMessages = defineMessages({
     fleetNotReady: 'Wait for both forklifts to finish loading into the scene.',
   },
   zh: {
-    fleetNotReady: 'Wait for both forklifts to finish loading into the scene.',
+    fleetNotReady: '请等待两台叉车完成加载、进入场景。',
   },
   'pt-BR': {
     fleetNotReady: 'Aguarde até que as duas empilhadeiras terminem de carregar na cena.',

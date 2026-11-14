@@ -8,10 +8,10 @@ export const knowledgeEntryCardMessages = defineMessages({
     relatedTopics: 'Related Topics',
   },
   zh: {
-    backToList: 'Back to list',
-    inBrief: 'In Brief',
-    whereToSeeIt: 'Where to see it',
-    relatedTopics: 'Related Topics',
+    backToList: '返回列表',
+    inBrief: '简述',
+    whereToSeeIt: '在哪里可以看到',
+    relatedTopics: '相关主题',
   },
   'pt-BR': {
     backToList: 'Voltar à lista',

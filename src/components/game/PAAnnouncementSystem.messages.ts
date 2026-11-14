@@ -8,10 +8,10 @@ export const paAnnouncementSystemMessages = defineMessages({
     queued: ' (+{count} queued)',
   },
   zh: {
-    dismiss: 'Dismiss announcement',
-    tag: 'PA',
-    system: 'PA System',
-    queued: ' (+{count} queued)',
+    dismiss: '关闭广播',
+    tag: '广播',
+    system: '广播系统',
+    queued: '（+{count} 条待播）',
   },
   'pt-BR': {
     dismiss: 'Dispensar aviso',

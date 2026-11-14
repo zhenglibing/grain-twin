@@ -6,8 +6,8 @@ export const learningNoteMessages = defineMessages({
     seeItIn: 'See it in {places}. Open Datalinks for the full explanation.',
   },
   zh: {
-    whyItMatters: 'Why it matters: {title}',
-    seeItIn: 'See it in {places}. Open Datalinks for the full explanation.',
+    whyItMatters: '为什么重要：{title}',
+    seeItIn: '可在 {places} 看到。打开数据链接查看完整说明。',
   },
   'pt-BR': {
     whyItMatters: 'Por que isso importa: {title}',

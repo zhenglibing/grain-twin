@@ -7,9 +7,9 @@ export const conveyorSystemMessages = defineMessages({
     semolina: 'Semolina',
   },
   zh: {
-    releasedStock: 'Released stock',
-    flour: 'Flour',
-    semolina: 'Semolina',
+    releasedStock: '已放行库存',
+    flour: '面粉',
+    semolina: '粗粒粉',
   },
   'pt-BR': {
     releasedStock: 'Estoque liberado',

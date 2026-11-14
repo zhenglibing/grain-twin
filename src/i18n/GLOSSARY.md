@@ -889,6 +889,46 @@ CSS classes, keys and URLs.
 | overall objective score / trade-off | 目标总分 / 权衡（让权衡可见 沿用 Task 7） |
 | AI insight / AI confidence / priority {number} | AI 洞察 / AI 置信度 / 优先级 {number} |
 
+批次④（Task 10 短尾扫尾：game/* + achievements + breakdownStore + HolographicDisplays + BuildCacheDiagnostics + MillOSMusicPlayer + knowledge/* + utils/* + App/store/About/ErrorBoundary + 小组件）补充基线 — 后续批次必须沿用：
+
+| English | zh |
+|---|---|
+| PA system / PA tag / (+{count} queued) | 广播系统 / 广播 / （+{count} 条待播）（PA=广播 沿用批次①） |
+| fleet map / mini-map | 车队地图 / 小地图（GPS 小地图 沿用 Task 9） |
+| checkweigher / reject gate | 检重秤 / 剔除闸 |
+| extraction load | 提取负荷（辊隙 沿用 Task 4） |
+| geofence | 电子围栏 |
+| dust extraction | 除尘（除尘器 沿用批次②） |
+| solar loading | 太阳得热 |
+| daylight control / night profile | 昼光控制 / 夜间模式 |
+| housekeeping (cycle) | 现场清理 |
+| dock truck status: incoming / loading / unloading / departing / clear | 到达中 / 装载中 / 卸货中 / 离开中 / 空闲（批次③ dock status 同根；unloading=卸货 沿用批次①） |
+| on approach / bay clearing / awaiting truck | 正在驶近 / 装卸区清空中 / 等待卡车 |
+| bags/min | 袋/分（bags/h=袋/时 沿用批次①） |
+| holographic zone titles: ZONE 1-4 | 区域 1：仓储 / 区域 2：制粉 / 区域 3：筛理 / 区域 4：包装（沿用 ZoneLabels） |
+| {label} VERIFIED (egress) | {label} 已验证（疏散验证 沿用批次③） |
+| achievements / achievement unlocked | 成就 / 成就已解锁（成就 沿用 OverviewPanel） |
+| service window (achievement) | 维护窗口 |
+| breakdown findings: bearing wear / belt slippage / gear misalignment / chain tension / motor winding / control board / power supply / thermal threshold / cooling strain / friction heat / ventilation / imbalance / foundation settling / shaft alignment | 轴承磨损 / 皮带打滑 / 齿轮错位 / 传动链张紧 / 电机绕组 / 控制板 / 电源不稳定 / 温度阈值 / 冷却系统高负荷 / 摩擦热 / 通风受阻 / 不平衡 / 基础沉降 / 轴对中（备件名 滤芯/轴承/皮带/传感器/电机 沿用批次①；工单阶段 沿用批次②） |
+| build (diagnostics) / cache / waiting build | 版本 / 缓存 / 等待中的版本（Service Worker 半角保留） |
+| music player chrome: playlist / lyrics / shuffle / now playing / soundtrack / play order | 播放列表 / 歌词 / 随机播放 / 正在播放 / 原声带 / 播放顺序（歌名/歌词/专辑名永不翻译） |
+| mill field guide / field notes / entry / NEW (badge) | 磨坊实地指南 / 实地笔记 / 词条 / 新（Datalinks=数据链接 沿用批次①） |
+| in brief / related topics / learn more / read more / read now | 简述 / 相关主题 / 了解更多 / 阅读更多 / 立即阅读 |
+| AI Reflection（批次①已钉） | AI 反思 |
+| physical shift / autosave / scene continuation / last good save | 物理班次 / 自动保存 / 场景续接 / 上次有效保存（重置模拟 菜单路径 设置 > 模拟 > 重置模拟） |
+| on-device AI / stand-down reasons (emergency / drill / control / replay) | 端侧 AI / 紧急停机激活期间 / 疏散验证演练期间 / 控制层未模拟期间 / 回放期间（端侧 沿用 Task 7；left raised=保持已触发 沿用 Task 9） |
+| lighting periods: day / dawn / dusk / night | 白天（自然光）/ 黎明过渡 / 黄昏过渡 / 夜间（全人工照明） |
+| HVAC periods: afternoon peak cooling / morning ramp-up / evening cool-down / night maintenance | 午后制冷高峰 / 早晨负荷爬升 / 傍晚负荷回落 / 夜间维护（暖通空调 沿用 Task 8；时段拼接分隔符用全角 ｜） |
+| utility vessel contents: low sulphur fuel oil / food-grade process oil / standby generator diesel / LPG | 低硫燃料油 / 食品级工艺用油 / 备用发电机柴油 / 液化石油气（罐名涂装 FUEL OIL 01 等不译） |
+| alarm types: BAD QUALITY / RATE OF CHANGE / returned to normal | 质量差 / 变化率 / 已恢复正常（信号质量代码 BAD/STALE 等半角保留） |
+| bool alarm on / off; at or below / at or above | 开 / 关；低于或等于 / 高于或等于 |
+| site safety stop (community life) | 厂区安全停机（厂区安全扣留 沿用批次②；设施紧急停机 沿用批次③） |
+| camera preset names: Overview / Silos / Milling / Sifting / Packing / Shipping / Receiving | 概览 / 筒仓 / 制粉 / 筛理 / 包装 / 发运 / 接收（相机预设 沿用 Task 9；CAMERA_PRESETS 英文名为查找键，不译） |
+| strategic priority (3D overlay) | 战略优先级（战略覆盖层 沿用 Task 9；战略 词根沿用 Task 7） |
+| digital twin (about dialog) | 数字孪生（统一数字孪生 沿用 Task 7） |
+| skip to main content / skip to navigation | 跳到主内容 / 跳到导航（键名 W/A/S/D/Q/E/V/1-7/空格/问号键 半角保留） |
+| optional feature / retry feature / reload application | 可选功能 / 重试功能 / 重新加载应用 |
+
 批次③终审接受项与已知计量假象（check-zh-progress 读数口径）：
 
 - 接受项：实验室 partial-carry（个别串作 实验室，全称 质检实验室，defensible）；报警阈值 soft-orphan（已入表，暂无渲染串沿用，钉后续批次）；千克 a11y（PlayableShift truckLoadValueText 无障碍朗读串拼 千克，与可见 kg 并存，defensible）。
