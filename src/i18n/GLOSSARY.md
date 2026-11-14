@@ -632,10 +632,50 @@ CSS classes, keys and URLs.
 | mission evidence: current / stale / quality-failed / missing | 当前 / 已过期 / 质量未通过 / 缺失 |
 | pressure card | 压力卡（WorkplaceLab 已用，此处入表） |
 
+批次④（车间 widgets A，Task 4 ImprovementPanel + PackingEvidence + ProcessInspectionCard）补充基线 — 后续批次必须沿用：
+
+| English | zh |
+|---|---|
+| handoff experiment / handoff shift | 交接实验 / 交接班次 |
+| handoff mode / handoff governance / handoff remedies / handoff learning review | 交接模式 / 交接治理 / 交接补救 / 交接学习回顾 |
+| packing floor | 包装区 |
+| plant clock（hold） | 工厂时钟（暂停） |
+| funded / funding | 注资 |
+| member review | 成员评审 |
+| review verdict: adopt / amend / stop | 采纳 / 调整 / 停止 |
+| challenge kind: forecast / cost / qualification | 预测 / 成本 / 资质 |
+| challenge author / challenge subject | 质疑提出人 / 质疑主题 |
+| proposal id（workplaceImprovement）: briefing / buffer | 简报 / 缓冲 |
+| ballot status: pending / approved / declined | 待定 / 已批准 / 已拒绝 |
+| pacing hold / paid briefing / briefing minutes | 节奏暂停 / 带薪简报 / 简报分钟 |
+| capacity bonus | 产能加成 |
+| conditional bound / departure bound / scenario bounds | 条件界限 / 离场界限 / 场景界限 |
+| collection（来粮动作）/ collection receipt | 来粮 / 来粮回执 |
+| matched packing / matched input | 配对包装 / 配对输入 |
+| isolated copies | 隔离副本 |
+| flow engine | 物料流引擎 |
+| pressure episode / ordinary handoff | 压力剧情 / 常规交接 |
+| rehearsal response author | 预演回应提出人 |
+| plant-grounded | 基于工厂的 |
+| eligible dispatch | 符合条件的发运 |
+| material clock / material session / input receipt | 物料时钟 / 物料会话 / 输入回执 |
+| workplace minutes / plant seconds | 车间分钟 / 工厂秒 |
+| quality boundary | 质量界限 |
+| packing prediction / quality prediction | 包装预测 / 质量预测 |
+| conduct debrief / public conduct receipts | 行为复盘 / 公开行为回执 |
+| 打卡教学件（ProcessInspectionCard）: paired rollers / roller gap / particle size | 成对磨辊 / 辊隙 / 粒度 |
+| sieve deck / sifter outlets | 筛格 / 平筛出料口 |
+| buffer hopper / metering gate / weighing hopper | 缓冲料斗 / 计量闸门 / 称量斗 |
+| filling station / filling spout / spout | 装袋工位 / 装袋出料嘴 / 出料嘴 |
+| mill outlet / packer outlet / silo outlet / discharge | 磨辊机出料口 / 包装线出料口 / 筒仓出料口 / 卸料 |
+| grain level | 谷物料位（level 料位 沿用批次①） |
+| nesting box / perch / gentle collection | 产蛋箱 / 栖架 / 轻柔拾蛋 |
+| grain（泛称，教学件）/ milled material | 谷物 / 研磨后的物料 |
+
 批次③终审接受项与已知计量假象（check-zh-progress 读数口径）：
 
 - 接受项：实验室 partial-carry（个别串作 实验室，全称 质检实验室，defensible）；报警阈值 soft-orphan（已入表，暂无渲染串沿用，钉后续批次）；千克 a11y（PlayableShift truckLoadValueText 无障碍朗读串拼 千克，与可见 kg 并存，defensible）。
-- 计量假象：`i18n.test.ts` 两个 `@ts-expect-error` 残缺 fixture 目录是编译期测试本体，其键永久计入“未翻译”；`websocketUrl`（SCADA）等 zh===en 为合法同文键。ZoneLabels 补完后，全局“未翻译”仅剩 fixture 残缺键与 zh===en 合法同文键。
+- 计量假象：`i18n.test.ts` 两个 `@ts-expect-error` 残缺 fixture 目录是编译期测试本体，其键永久计入“未翻译”；`websocketUrl`（SCADA）等 zh===en 为合法同文键。ZoneLabels 补完后，全局“未翻译”仅剩 fixture 残缺键与 zh===en 合法同文键。同文键新增（批次④ Task 4，与 websocketUrl 同类，pt-BR 亦同文）：`WorkplaceImprovementPanel.kgValue`（'{kg} kg'）与 `WorkplacePackingEvidence.kg`（'{value} kg'）——纯数值格式串，单位按钉词保持半角 kg，读数 96/97、94/95 视为达标。
 
 zh 风格规则（与计划 Global Constraints 一致）：
 1. `{name}` 占位符原样保留；2. 函数消息签名不变；3. 全角标点、

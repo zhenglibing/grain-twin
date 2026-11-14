@@ -44,6 +44,43 @@ const PT_BALLOT: Record<string, string> = {
 
 const pt = (table: Record<string, string>, id: string) => table[id] ?? id;
 
+// zh mirrors of the pt maps above (WorkplaceLab enum anchors). Chinese needs
+// no article, so the challenge object form equals the kind form.
+const ZH_OBJECTION_KIND: Record<string, string> = {
+  rest: '休息',
+  burden: '负担',
+  privacy: '隐私',
+  authority: '职权',
+};
+const ZH_CHALLENGE_KIND: Record<string, string> = {
+  forecast: '预测',
+  cost: '成本',
+  qualification: '资质',
+};
+const ZH_CHALLENGE_OBJECT: Record<string, string> = ZH_CHALLENGE_KIND;
+const ZH_VERDICT: Record<string, string> = {
+  adopt: '采纳',
+  amend: '调整',
+  stop: '停止',
+};
+const ZH_EVIDENCE: Record<string, string> = {
+  current: '当前',
+  stale: '已过期',
+  'quality-failed': '质量未通过',
+  missing: '缺失',
+};
+const ZH_PROPOSAL: Record<string, string> = {
+  briefing: '简报',
+  buffer: '缓冲',
+};
+const ZH_BALLOT: Record<string, string> = {
+  pending: '待定',
+  approved: '已批准',
+  declined: '已拒绝',
+};
+
+const zh = (table: Record<string, string>, id: string) => table[id] ?? id;
+
 interface ObjectionParams {
   role: string;
   statement: string;
@@ -221,132 +258,127 @@ export const workplaceImprovementPanelMessages = defineMessages({
       `Shift ${p.cycle}: ${p.proposal}, ${p.verdict}; dispatched ${p.kg} kg, wages ${p.wages}, purchase ${p.spend}, closing cash ${p.cash}.`,
   },
   zh: {
-    regionLabel: 'Handoff experiment',
-    introHeading: 'The handoff experiment',
-    introIdea: 'Try a member’s idea on the packing floor, then decide what stays.',
-    introProtected: 'One 90-minute trial. Pay, qualified work and refusal stay protected.',
-    modeLabel: 'Handoff mode',
-    modeGame: 'Game',
-    modeWorkshop: 'Workshop',
-    modePilot: 'Pilot preparation',
-    governanceLabel: 'Handoff governance',
-    profileToeDip: 'Coordinator-led',
-    profileTeam: 'Team agreement',
-    profileCooperative: 'Member governance',
-    openExperiment: 'Open the handoff experiment',
+    regionLabel: '交接实验',
+    introHeading: '交接实验',
+    introIdea: '在包装区尝试一名成员的想法，然后决定保留什么。',
+    introProtected: '一次 90 分钟的试验。报酬、合格工作与拒绝权保持受保护。',
+    modeLabel: '交接模式',
+    modeGame: '游戏',
+    modeWorkshop: '工作坊',
+    modePilot: '试点准备',
+    governanceLabel: '交接治理',
+    profileToeDip: '协调主导',
+    profileTeam: '团队协议',
+    profileCooperative: '成员治理',
+    openExperiment: '打开交接实验',
     openHoldNote:
-      'Opening it holds the plant clock while the team decides, so the adviser forecast stays true. You can cancel it until the trial is funded.',
-    holdHeading: 'Plant clock held for this decision',
-    cancelExperiment: 'Cancel the handoff experiment',
+      '打开后，工厂时钟会在团队决策期间保持暂停，使顾问预测保持成立。在试验注资之前，你可以取消它。',
+    holdHeading: '工厂时钟已为本决策暂停',
+    cancelExperiment: '取消交接实验',
     cancelNote:
-      'Nothing is funded yet, so cancelling returns to the review you started from, with its pay, receipts and customer work unchanged, and the plant resumes at the pace above.',
+      '尚未注资，因此取消会回到你出发时的那份回顾，其报酬、回执与客户工作保持不变，工厂按上方的节奏恢复。',
     endToReviewNote:
-      'This later shift keeps earlier trial pay, so it cannot be cancelled. Ending it moves to its member review; finalising that review releases the plant.',
-    finaliseToReleaseNote: 'Finalising the member review below releases the plant.',
-    seasonOpened: 'Season opened. Use Shift and Agreement / Voices for current decisions.',
-    pilotPlanningOnly:
-      'Pilot preparation remains planning-only. Use Game or Workshop for a local experiment.',
-    shiftHeading: 'The handoff experiment, shift {cycle}',
+      '这个较晚的班次保留了先前试验的报酬，因此不能取消。结束它会进入其成员评审；完成该评审即释放工厂。',
+    finaliseToReleaseNote: '完成下方的成员评审即释放工厂。',
+    seasonOpened: '加工季已开启。请使用“班次”与“协议/声音”处理当前决策。',
+    pilotPlanningOnly: '试点准备仍仅限规划。请使用游戏或工作坊进行本地实验。',
+    shiftHeading: '交接实验，班次 {cycle}',
     rolePlayNote:
-      'Synthetic role-play. Everyone can challenge or stop an arrangement. No private reason, extra duty or lost pay is required.',
-    remediesLabel: 'Handoff remedies',
-    remediesHeading: 'Whose concern needs a remedy?',
+      '虚拟角色扮演。每个人都可以质疑或停止一项安排。无需私人理由、额外勤务或报酬损失。',
+    remediesLabel: '交接补救',
+    remediesHeading: '谁的顾虑需要补救？',
     remediesNote:
-      'Review each concern with its raiser. Opening a record changes no role, decision or permission. Only that raiser can confirm resolution.',
-    adviser: 'Adviser',
-    objectionLine: (p: ObjectionParams) => `${p.role}: ${p.statement} (${p.kind}, open)`,
-    reviewRemedy: (p: RemedyParams) => `Review remedy: ${p.role} (${p.kind})`,
-    whichIdea: 'Which idea should the team try?',
-    selected: 'Selected for this trial.',
+      '与提出人一起复核每条顾虑。打开记录不会改变任何角色、决策或权限。只有该提出人能确认解决。',
+    adviser: '顾问',
+    objectionLine: (p: ObjectionParams) =>
+      `${p.role}：${p.statement}（${zh(ZH_OBJECTION_KIND, p.kind)}，未决）`,
+    reviewRemedy: (p: RemedyParams) => `复核补救：${p.role}（${zh(ZH_OBJECTION_KIND, p.kind)}）`,
+    whichIdea: '团队应该尝试哪个想法？',
+    selected: '已选定用于本次试验。',
     costLine: (p: CostLineParams) =>
-      `${p.cost} credits for a new arrangement; ${
-        p.briefingMinutes ? `${p.briefingMinutes} paid minutes of pacing hold; ` : ''
-      }${p.capacity}× modeled pace. An adopted arrangement has no repeat purchase.`,
-    reserveLine:
-      'Reserve 108 credits for wages first. This shift’s purchase: {cost} credits. Cash before reservations: {cash}.',
-    hearAdviserHint:
-      'Hear the adviser response to capture the current plant facts. Missing evidence will cause an explicit abstention.',
-    workshopNoForecast: 'Facilitated workshop: no physical packing or departure forecast.',
-    noCapacityBonus: 'Governance grants no capacity bonus.',
-    challengeAuthor: 'Challenge author',
-    beginTurn: 'Begin a participant turn',
-    challengeSubject: 'Challenge subject',
-    challengeKind: (p: KindParams) => p.kind,
-    challengeProposal: 'Challenge this proposal',
-    hearAdviser: 'Hear the adviser response',
+      `${p.cost} 点数用于一项新安排；${
+        p.briefingMinutes ? `${p.briefingMinutes} 分钟带薪的节奏暂停；` : ''
+      }${p.capacity}× 模拟节奏。已采纳的安排无需重复采购。`,
+    reserveLine: '先为工资预留 108 点数。本班次采购：{cost} 点数。预留前现金：{cash}。',
+    hearAdviserHint: '请听取顾问回应，以采集当前的工厂事实。缺失证据会导致明确的弃权。',
+    workshopNoForecast: '促成式工作坊：没有物理包装，也没有离场预测。',
+    noCapacityBonus: '治理不授予任何产能加成。',
+    challengeAuthor: '质疑提出人',
+    beginTurn: '开始一名参与者的回合',
+    challengeSubject: '质疑主题',
+    challengeKind: (p: KindParams) => zh(ZH_CHALLENGE_KIND, p.kind),
+    challengeProposal: '质疑这份提案',
+    hearAdviser: '听取顾问回应',
     challengeItem: (p: ChallengeItemParams) =>
-      `${p.role} challenged ${p.kind}; ${
-        p.acknowledged
-          ? 'response recorded, individual objection rights retained'
-          : 'response pending'
-      }.`,
+      `${p.role}对${zh(ZH_CHALLENGE_OBJECT, p.kind)}提出质疑；${
+        p.acknowledged ? '回应已记录，个人异议权保留' : '回应待定'
+      }。`,
     adviserResponse:
-      'Adviser: “These are uncertain operational assumptions. Spending stays bounded, work stays qualified, and any role can return the line to steady pacing. I cannot waive a boundary or close someone else’s objection.”',
-    roleDecisionsHeading: 'Fresh role decisions',
+      '顾问：“这些是不确定的运行假设。支出保持有界，工作保持合格，任何角色都可以让产线回到稳定节奏。我不能豁免边界，也不能了结他人的异议。”',
+    roleDecisionsHeading: '新的角色决定',
     roleDecisionsNote:
-      'A policy ballot grants no optional-duty consent. Team agreement requires all approvals; member governance requires three; coordinator-led work hears every role before the coordinator decides.',
-    policyBallot: (p: BallotParams) => `Policy ballot: ${p.status}.`,
-    ordinaryPayUnchanged: ' Ordinary pay is unchanged.',
-    confirmUnderstanding: 'Confirm handoff understanding: {role}',
-    approveHandoff: 'Approve handoff: {role}',
-    declineHandoff: 'Decline handoff: {role}',
-    checkingAgreement: 'Checking current agreement…',
-    recordWorkshop: 'Record handoff workshop agreement',
-    approveAndRun: 'Approve and run handoff trial',
-    arrangementStopped: 'Arrangement stopped: steady 0.78× pacing for the remaining agreed shift.',
-    arrangementExpires: 'Arrangement expires at minute 90. {detail}',
-    briefingInProgress: 'Paid briefing in progress; line pacing held.',
-    watchLineDispatch: 'Watch the line and customer dispatch.',
-    stoppingRole: 'Stopping role',
-    stopArrangement: 'Stop arrangement and keep steady work',
-    endShiftNow: 'End handoff shift now',
-    advanceRehearsal: 'Advance handoff rehearsal by 5 minutes',
-    watchPackingHandoff: 'Watch the packing handoff',
-    actualDispatch: 'This shift’s actual dispatch: ',
+      '政策表决不授予可选勤务的同意。团队协议需要全部批准；成员治理需要三票；协调主导的工作会先听取每个角色，再由协调决定。',
+    policyBallot: (p: BallotParams) => `政策表决：${zh(ZH_BALLOT, p.status)}。`,
+    ordinaryPayUnchanged: ' 常规报酬保持不变。',
+    confirmUnderstanding: '确认交接理解：{role}',
+    approveHandoff: '批准交接：{role}',
+    declineHandoff: '拒绝交接：{role}',
+    checkingAgreement: '正在核对当前协议……',
+    recordWorkshop: '记录交接工作坊协议',
+    approveAndRun: '批准并运行交接试验',
+    arrangementStopped: '安排已停止：在剩余的约定班次内保持 0.78× 稳定节奏。',
+    arrangementExpires: '安排在第 90 分钟到期。{detail}',
+    briefingInProgress: '带薪简报进行中；产线节奏保持暂停。',
+    watchLineDispatch: '关注产线与客户发运。',
+    stoppingRole: '执行停止的角色',
+    stopArrangement: '停止安排并保持稳定工作',
+    endShiftNow: '立即结束交接班次',
+    advanceRehearsal: '交接预演推进 5 分钟',
+    watchPackingHandoff: '观看包装交接',
+    actualDispatch: '本班次实际发运：',
     kgValue: '{kg} kg',
-    workshopNoShipment: ' (workshop has no plant shipment)',
-    commitmentRemaining: 'Full customer commitment remaining: ',
-    commitmentValue: (p: EvidenceParams) => `${p.kg} kg; ${p.evidence} evidence`,
-    paidThisShift: 'Paid this shift: ',
-    paidValue: '{wages} credits; purchase {spend}; closing cash {cash}',
-    retainedPay: 'Retained earned pay: ',
-    retainedPayValue: '{wages} credits; compensation {compensation}',
-    carryHeading: 'What should carry into the next shift?',
-    learningLabel: 'Handoff learning review',
-    learningHeading: 'What did this handoff teach us?',
+    workshopNoShipment: '（工作坊没有工厂发运）',
+    commitmentRemaining: '剩余全额客户承诺：',
+    commitmentValue: (p: EvidenceParams) =>
+      `${p.kg} kg；证据${p.evidence ? zh(ZH_EVIDENCE, p.evidence) : ''}`,
+    paidThisShift: '本班次已支付：',
+    paidValue: '{wages} 点数；采购 {spend}；期末现金 {cash}',
+    retainedPay: '已挣报酬保留：',
+    retainedPayValue: '{wages} 点数；补偿 {compensation}',
+    carryHeading: '什么应该带入下一个班次？',
+    learningLabel: '交接学习回顾',
+    learningHeading: '这次交接教会了我们什么？',
     comparisonNote:
-      'The optional comparison below uses current paused plant inputs. It does not replay this finished shift or record a review ballot. Fresh terms still need fresh role decisions.',
-    hearForecastReview: 'Hear the adviser review its forecast',
-    adviserQuoteOpen: 'Adviser: “',
-    abstainedReview:
-      'I had insufficient evidence to forecast. This outcome does not turn missing facts into a prior prediction.',
+      '下方的可选对比使用当前暂停的工厂输入。它不会重放这个已完成的班次，也不会记录评审表决。新条款仍需要新的角色决定。',
+    hearForecastReview: '听取顾问复核其预测',
+    adviserQuoteOpen: '顾问：“',
+    abstainedReview: '我的证据不足以做出预测。这个结果不会把缺失的事实变成事前预测。',
     forecastReview: (p: ForecastReviewParams) =>
-      `I assumed fixed machinery, quality and ${p.speed}× clock pace. Actual dispatch ${p.kg} kg ${
-        p.within ? 'fell within' : 'exceeded'
-      } my conditional bound. Changed inputs or collection timing require a new explanation, never a retroactively edited forecast.`,
-    teachingForecastReview:
-      'That retained teaching forecast was illustrative. New game trials capture plant-grounded facts.',
-    adviserQuoteClose: 'Customer work, earned pay and individual remedies remain intact.”',
-    reviewDecision: '{role} review decision',
-    chooseReviewDecision: 'Choose a review decision',
-    verdictAdopt: 'Adopt, retain the purchase with fresh agreement',
-    verdictAmend: 'Amend, try the alternative next shift',
-    verdictStop: 'Stop, return to ordinary pacing',
-    finaliseReview: 'Finalise handoff review',
+      `我假设设备、质量与 ${p.speed}× 时钟节奏固定。实际发运 ${p.kg} kg ${
+        p.within ? '落在我的条件界限之内' : '超出我的条件界限'
+      }。变更的输入或采集时机需要新的解释，绝不是回溯修改的预测。`,
+    teachingForecastReview: '那份保留的教学预测是示意性的。新的游戏试验会采集基于工厂的事实。',
+    adviserQuoteClose: '客户工作、已挣报酬与个人补救保持完好。”',
+    reviewDecision: '{role}评审决定',
+    chooseReviewDecision: '选择一项评审决定',
+    verdictAdopt: '采纳，以新的协议保留采购',
+    verdictAmend: '调整，下个班次尝试另一份提案',
+    verdictStop: '停止，回到常规节奏',
+    finaliseReview: '完成交接评审',
     reviewRecorded: (p: VerdictParams) =>
-      `Review recorded: ${p.verdict}. Every ending preserves the learning and earned obligations.`,
+      `已记录评审：${zh(ZH_VERDICT, p.verdict)}。每种结局都保留学习与已挣义务。`,
     completeGame:
-      'This handoff experiment is complete. The plant runs normally again at the shift pace below; change it there if you like. Another handoff shift is optional.',
-    completeWorkshop: 'This handoff experiment is complete. Another handoff shift is optional.',
-    openNextShift: 'Open next handoff shift',
-    closeExperiment: 'Close the handoff experiment',
+      '本交接实验已完成。工厂重新按下方显示的班次节奏正常运行；如需更改，请在那里调整。另一个交接班次是可选的。',
+    completeWorkshop: '本交接实验已完成。另一个交接班次是可选的。',
+    openNextShift: '开启下一个交接班次',
+    closeExperiment: '关闭交接实验',
     closeNote:
-      'Closing ends the experiment without opening another shift. Pay was paid and nothing is owed, so the laboratory returns to idle for a fresh exercise or season. A season it began from, if any, is kept with your seasons; the shift receipts of this experiment are not kept after closing.',
-    earlierDecisions: 'Earlier decisions and retained receipts',
+      '关闭会结束实验，不再开启另一个班次。报酬已付清，无任何拖欠，实验室回到空闲，等待新的练习或加工季。它起初所属的加工季（如有）仍保留在你的加工季中；本实验的班次回执在关闭后不再保留。',
+    earlierDecisions: '先前的决定与保留的回执',
     originNote:
-      'Origin closing cash: {cash} credits. Earlier earned pay and any campaign review remain retained; old consent supplies no current permission.',
+      '起点期末现金：{cash} 点数。先前的已挣报酬与任何加工季回顾都保持保留；旧同意不提供当前授权。',
     historyLine: (p: HistoryParams) =>
-      `Shift ${p.cycle}: ${p.proposal}, ${p.verdict}; dispatched ${p.kg} kg, wages ${p.wages}, purchase ${p.spend}, closing cash ${p.cash}.`,
+      `班次 ${p.cycle}：${zh(ZH_PROPOSAL, p.proposal)}，${zh(ZH_VERDICT, p.verdict)}；发运 ${p.kg} kg，工资 ${p.wages}，采购 ${p.spend}，期末现金 ${p.cash}。`,
   },
   'pt-BR': {
     regionLabel: 'Experimento de passagem de turno',
