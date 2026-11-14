@@ -392,7 +392,7 @@ CSS classes, keys and URLs.
 | clearance corridor / vehicle corridor | 净空走廊 / 车辆走廊 |
 | pedestrian access / protected access | 人行通道 / 受保护通道 |
 | operating floor | 作业地面 |
-| apron (dock) | 装卸场坪 |
+| apron (dock) | 场坪 |
 | turning envelope | 转弯包络 |
 | pose / pickup / dropoff / approach | 位姿 / 取货 / 放货 / 接近 |
 | travel waypoint | 行驶航点 |

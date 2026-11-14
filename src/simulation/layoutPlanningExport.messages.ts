@@ -52,7 +52,7 @@ export const layoutPlanExportMessages = defineMessages({
       `${ZH_DOCK[p.dock] ?? p.dock}叉车环线，已校验完整 ${p.width} m 净空走廊`,
     shippingStaging: '50 个托盘位',
     receivingStaging: '回空托盘',
-    ariaLabel: '{title} 带尺寸标注的磨坊物流规划图',
+    ariaLabel: '{title}：带尺寸标注的磨坊物流规划图',
     svgTitle: '{title}：磨坊物流与采集的物料队列',
     factoryWidth: '厂房宽度 80 m',
     factoryDepth: '厂房进深 100 m',
