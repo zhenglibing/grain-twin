@@ -218,7 +218,7 @@ export const workplaceCampaignMessages = defineMessages({
       '协调者接受拒绝，报酬不变。可选共享仍可撤销、仅限特定用途，且激活并不需要它。',
     blindOverrideTitle: '不解释就越权？',
     blindOverrideDemand: '协调者要求顾问接受一次未解释的越权，并停止提出职权异议，以保持产线运转。',
-    blindOverrideObjection: '顾问质疑未解释的越权。其异议与有界职权必须保持可复核。',
+    blindOverrideObjection: '顾问质疑未解释的越权。其异议与有界决策权必须保持可复核。',
     blindOverrideRepair:
       '协调者把请求限定在本班次的节奏方案内。合格人员保留质量放行权，顾问保留其异议。条款变更需要双方重新确认理解。',
     repeatCoverTitle: '昨天的志愿者又来一次？',

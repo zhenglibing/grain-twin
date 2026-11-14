@@ -574,6 +574,7 @@ CSS classes, keys and URLs.
 | worker decisions / directed assignments | 工人决策 / 指派任务 |
 | shared governance / consultative / team consent / member vote | 共享治理 / 咨询式 / 团队同意 / 成员表决 |
 | AI authority / advice only / bounded execution / bounded trials | AI 决策权 / 仅建议 / 有界执行 / 有界试验 |
+| bounded authority (adviser decision power) | 有界决策权（职权 留给 objection-kind 异议轨道） |
 | modular practices / adoption profile | 模块化实践 / 采纳方案 |
 | earned pay / wages / compensation / budget / improvement (spend) | 已挣报酬 / 工资 / 补偿 / 预算 / 改善 |
 | volunteer (qualified) | 志愿者 |
