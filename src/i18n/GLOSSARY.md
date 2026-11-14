@@ -974,6 +974,51 @@ CSS classes, keys and URLs.
 | The chronicle begins / is complete | 磨坊纪事开始 / 磨坊纪事完结 |
 | 模板拼接注意：{label} 等占位符承接其他表的 zh 标签时，模板内不加空格（终态为中文标签）；retained 的 {label} 为承包商行号（拉丁专名，永不翻译），模板两侧留半角空格 | — |
 
+批次⑤（磨坊纪事事件卡组，Task 2 eventDeck + longNight + ChronicleEventHost）补充基线 — 后续批次必须沿用：
+
+| English | zh |
+|---|---|
+| weighbridge / first come, first served | 地磅 / 先到先得 |
+| travelling millwrights / millwrights’ guild / workshop（行会讲习） | 巡回的磨坊机匠 / 磨坊机匠行会 / 讲习 |
+| roll fluting / reflute / the flutes have dulled | 磨辊拉丝 / 重新拉丝 / 拉丝钝了 |
+| break rolls / break release | 皮磨磨辊 / 剥刮率 |
+| proving test / the loaves stood tall | 醒发测试 / 面包烤得挺拔饱满 |
+| falling-number test / falling number | 降落数值检验 / 降落数值 |
+| sprouted in the ear / sprouted grain | 穗上发芽 / 穗发芽谷物 |
+| sound (stored) grain | 完好的库存谷物 |
+| bridges (in the bins) / the sifters blind | 架桥结拱 / 平筛糊网 |
+| moisture meter / storage moisture / mobile dryer | 水分仪 / 储存水分 / 移动烘干机 |
+| wet-year penalty lifts | 湿年的罚值解除（罚值 沿用批次④） |
+| paper-sack supplier / bales | 纸袋供应商 / 袋捆 |
+| rush freight / rush freight surcharge | 加急货运 / 加急运费（rush=加急 沿用批次③） |
+| lot notification / rapid test / formal hold procedure | 批次通报 / 快检 / 正式扣留程序（质量扣留 沿用批次①） |
+| caught (spray) drift | 沾了飘移的药雾 |
+| haulier / relief lorry / the bypass | 承运方 / 替班卡车 / 绕城公路 |
+| collection slot / booking order | 提货时段 / 预订顺序 |
+| durum | 杜兰麦 |
+| specks / sieve analysis / sifter covers / closer mesh | 斑点 / 筛析 / 平筛筛网 / 更密的目数 |
+| pest walk / pest-control firm / proof (a store) | 虫害巡查 / 虫害防治公司 / 封堵 |
+| food-safety inspector / sign off / actions（检查整改） | 食品安全检查员 / 签字结案 / 整改项 |
+| deep clean / cleaning schedule | 深度清洁 / 清洁计划表 |
+| hill farms / valley farms | 山上农场 / 谷地农场 |
+| members’ meeting / motion / table the motion / the chair | 成员大会 / 动议 / 搁置动议 / 主持人（主持人 沿用批次④） |
+| reinvestment share | 再投资份额（再投资 沿用 Task 1） |
+| demand response / shed load / grid operator | 需求响应 / 削减负荷 / 电网运营商 |
+| off-peak tariff / load-shift timer / distribution network | 谷时电价 / 负荷转移定时器 / 配电网络（峰时/谷时 沿用批次④） |
+| modernisation grant / energy and yield return | 现代化补助金 / 能耗与产量申报表 |
+| test milling / laboratory mill / variety trials | 试磨 / 实验磨 / 品种试验 |
+| village harvest committee / work party / culvert / millstream | 村庄收割委员会 / 帮工队 / 涵洞 / 磨坊水道（涵洞、磨坊水道 沿用既有钉词） |
+| agricultural college | 农学院 |
+| growers / growers’ cooperative | 种植户 / 种植户合作社 |
+| cooperative fund / the saving can stay in the fund | 合作社基金 / 留在基金里（基金 沿用 Task 1） |
+| warm（关系档位，{party} warm） | 关系亲善（{party}关系亲善） |
+| Think it over（事件卡“再想”按钮） | 从长计议 |
+| Goes in the record（书签 aria） | 将载入纪事 |
+| Forced maintenance: pay in full | 强制维护：全额支付 |
+| {plans} installed / or（longNight 战线准备来源拼接） | {plans}已建成 / 或 |
+| holds {front} / hold / fall（终夜战线按钮片段） | 守住{front} / 守住 / 失守（守住/失守 沿用 Task 1 钉词） |
+| Upkeep of {due} is due / decrepit plant | 应缴维护费 {due} / 年久失修的厂房 |
+
 批次③终审接受项与已知计量假象（check-zh-progress 读数口径）：
 
 - 接受项：实验室 partial-carry（个别串作 实验室，全称 质检实验室，defensible）；报警阈值 soft-orphan（已入表，暂无渲染串沿用，钉后续批次）；千克 a11y（PlayableShift truckLoadValueText 无障碍朗读串拼 千克，与可见 kg 并存，defensible）。
