@@ -1,5 +1,6 @@
 /** Read-time views of canonical English records. No reducer or saved object is changed. */
 import { createTranslator, formatFixed, getLocale } from '../i18n';
+import type { Locale } from '../i18n';
 import { EVENT_DECK, getEventDeck } from './eventDeck';
 import { HISTORY_NOTES, getHistoryNotes } from './history';
 import { ERAS, getEras, IMPROVEMENTS, getImprovements } from './plans';
@@ -57,6 +58,11 @@ function render(key: Key, fixed: Params, values: Params = {}): string {
   return createTranslator(messages, getLocale())(key, { ...fixed, ...localized });
 }
 
+/** Locales that render recognised saved records through their own presentation
+ *  table. English records are canonical and always returned untouched. */
+const PRESENTATION_LOCALES: readonly Locale[] = ['pt-BR', 'zh'];
+const translatesPresentation = (): boolean => PRESENTATION_LOCALES.includes(getLocale());
+
 const staticRules: Array<[NoticeKind, Key, Key]> = [
   ['ledger', 't0', 'b0'],
   ['ledger', 't1', 'b1'],
@@ -85,9 +91,9 @@ const staticRules: Array<[NoticeKind, Key, Key]> = [
 
 /** Unknown, custom and ambiguous records retain their exact original copy. */
 export function localizedNotice(notice: ChronicleNotice): ChronicleNotice {
-  // pt-BR is the only locale with translated presentation tables so far; en is
-  // canonical and zh falls back to it until the zh tables land.
-  if (getLocale() !== 'pt-BR') return notice;
+  // English is canonical and returned untouched; pt-BR and zh render
+  // recognised records through their own presentation tables.
+  if (!translatesPresentation()) return notice;
   const candidates: Array<{ title: string; body: string }> = [];
   const add = (title: string, body: string, localizedTitle: string, localizedBody: string) => {
     if (notice.title === title && notice.body === body)
@@ -347,7 +353,10 @@ export function localizedNotice(notice: ChronicleNotice): ChronicleNotice {
           if (parts.length && translated.every((part) => part !== null))
             candidates.push({
               title: render('newEra', { label: local.label }),
-              body: render('bonus', { label: translated.join(', ') }),
+              // zh lists the bonus items with the enumeration comma.
+              body: render('bonus', {
+                label: translated.join(getLocale() === 'zh' ? '、' : ', '),
+              }),
             });
           template('newEra', 'noBonus', { label: raw.label }, { label: local.label });
         }
@@ -398,7 +407,7 @@ export function localizedNotice(notice: ChronicleNotice): ChronicleNotice {
 }
 
 export function localizedInitiative(entry: Initiative): Initiative {
-  if (getLocale() !== 'pt-BR') return entry;
+  if (!translatesPresentation()) return entry;
   const translated = (
     summary: Key,
     reason: Key,

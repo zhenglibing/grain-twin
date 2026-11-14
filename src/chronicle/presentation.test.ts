@@ -3,7 +3,7 @@ import { setLocale } from '../i18n';
 import { localizedInitiative, localizedNotice } from './presentation';
 import { EVENT_DECK } from './eventDeck';
 import { FORECASTS } from './forecasts';
-import { HISTORY_NOTES } from './history';
+import { getHistoryNotes, HISTORY_NOTES } from './history';
 import { IMPROVEMENTS } from './plans';
 import { TRIALS } from './trials';
 import { LONG_NIGHT_EVENT_ID } from './longNight';
@@ -49,7 +49,47 @@ describe('saved Chronicle presentation', () => {
     setLocale('en');
     expect(localizedNotice(old)).toBe(old);
   });
-  it('keeps canonical English records under zh until the zh presentation lands', () => {
+  it('renders a recognised ledger record through the zh table with captured fund values', () => {
+    setLocale('zh');
+    const old = receipt(
+      'ledger',
+      'Lack of material',
+      'Upkeep of 2345 is due and the fund holds 17. Decrepit plant raises the chance of breakdown and fire.'
+    );
+    const saved = structuredClone(old);
+    const local = localizedNotice(old);
+    expect(local.title).toBe('物料短缺');
+    expect(local.body).toContain('2,345');
+    expect(local.body).toContain('17');
+    expect(local).not.toBe(old);
+    expect(old).toEqual(saved);
+  });
+  it('renders recognised static records in zh and keeps unknown and edited records verbatim', () => {
+    setLocale('zh');
+    const duct = receipt(
+      'event',
+      'Smouldering dust in the extraction ducting',
+      'The fail-safe has stopped production and the forklifts. Nobody is in danger; the duct must be suppressed and cleaned before restart.'
+    );
+    expect(localizedNotice(duct).title).toBe('除尘管道内粉尘阴燃');
+    const records = [
+      receipt('event', 'A custom event', 'Upkeep of 20 is due'),
+      receipt(
+        'event',
+        'Full maintenance restored',
+        'All plant is maintained again and upkeep is charged in full.'
+      ),
+      receipt(
+        'ledger',
+        'Full maintenance restored',
+        'All plant is maintained again and upkeep is charged in full.',
+        'custom'
+      ),
+      receipt('ledger', 'Full maintenance restored', 'Edited body'),
+    ];
+    for (const old of records) expect(localizedNotice(old)).toBe(old);
+  });
+  it('follows the localized history table for history records under zh', () => {
     const old = receipt(
       'history',
       HISTORY_NOTES[0].title,
@@ -57,6 +97,11 @@ describe('saved Chronicle presentation', () => {
       HISTORY_NOTES[0].id
     );
     setLocale('zh');
+    const local = localizedNotice(old);
+    const note = getHistoryNotes().find((entry) => entry.id === HISTORY_NOTES[0].id)!;
+    expect(local.title).toBe(note.title);
+    expect(local.body).toBe(note.brief);
+    setLocale('en');
     expect(localizedNotice(old)).toBe(old);
   });
   it('preserves unknown, wrong-kind, wrong-related-id and edited records exactly', () => {
@@ -199,6 +244,85 @@ describe('saved Chronicle presentation', () => {
     expect(local.body).toContain('1.234 de 45.000');
     expect(local.body).toContain('0,137');
     expect(local.body).toContain('2,5');
+  });
+  it('keeps captured crop, long-night and final-score outcomes under zh', () => {
+    setLocale('zh');
+    const crop = receipt(
+      'event',
+      'Crop year 12: wet harvest',
+      'Moisture about 17.3%, protein about 10.1%. Wheat recipes lose 8 quality points until the grain is treated.'
+    );
+    const night = receipt(
+      'forecast',
+      'The long night comes in 4 shifts',
+      'A storm and a grid emergency will arrive together. The mill can hold one front itself; the other holds with 5 preparation. The intake and grain stores 7 of 5; the roller floor 3 of 5.',
+      LONG_NIGHT_EVENT_ID
+    );
+    const final = receipt(
+      'era',
+      'The chronicle is complete',
+      `Score 47. You are as wise as ${RANKS[1].title}. The valley came to call it ${CHARACTERS.valley}.`
+    );
+    expect(localizedNotice(crop).body).toContain('17.3%');
+    expect(localizedNotice(crop).body).toContain('8 质量分');
+    expect(localizedNotice(night).body).toContain('7/5');
+    expect(localizedNotice(night).body).toContain('3/5');
+    expect(localizedNotice(final).body).toContain('47');
+    expect(localizedNotice(final).body).toContain('磨坊学徒');
+    for (const old of [crop, night, final]) {
+      const saved = structuredClone(old);
+      localizedNotice(old);
+      expect(old).toEqual(saved);
+    }
+  });
+  it('retains captured medal targets and grouped dispatch shortfalls under zh', () => {
+    setLocale('zh');
+    const victory = receipt(
+      'trial',
+      `${TRIALS[0].title}: bronze victory`,
+      'Completed in 4 of 9 shifts. Silver needed completion within 6.',
+      TRIALS[0].id
+    );
+    const victoryLocal = localizedNotice(victory);
+    expect(victoryLocal.title).toContain('铜牌胜利');
+    expect(victoryLocal.body).toContain('4/9');
+    expect(victoryLocal.body).toContain('6');
+    const dispatch = TRIALS.find((item) => item.goal.kind === 'dispatch')!;
+    const failed = receipt(
+      'trial',
+      `${dispatch.title}: trial failed`,
+      '1234 of 45,000 kg dispatched. Energy 0.137 per kg against 0.12. Average grade points 2.5 against 3.',
+      dispatch.id
+    );
+    const failedLocal = localizedNotice(failed);
+    expect(failedLocal.body).toContain('1,234/45,000');
+    expect(failedLocal.body).toContain('0.137');
+    expect(failedLocal.body).toContain('2.5');
+  });
+  it('joins the zh new-era bonus list with the Chinese enumeration comma', () => {
+    setLocale('zh');
+    const old = receipt(
+      'era',
+      'A new era: Cooperative mill',
+      'Bonus: reinvestment +5%, wear x0.9.'
+    );
+    const local = localizedNotice(old);
+    expect(local.title).toBe('新时代：Cooperative mill');
+    expect(local.body).toBe('奖励：再投资 +5%、磨损 x0.9。');
+  });
+  it('translates a recognised initiative under zh and keeps edited ones verbatim', () => {
+    setLocale('zh');
+    const old = initiative(
+      'suppression',
+      'Funded fire suppression',
+      'Production was stopped by a duct fire and the fund could cover suppression.',
+      'fire'
+    );
+    const saved = structuredClone(old);
+    expect(localizedInitiative(old).summary).toBe('出资扑救火灾');
+    expect(old).toEqual(saved);
+    const edited = { ...old, reason: 'A custom rationale' };
+    expect(localizedInitiative(edited)).toBe(edited);
   });
   it('translates initiatives only with a complete canonical summary, reason and target guard', () => {
     const plan = IMPROVEMENTS[0];

@@ -930,6 +930,50 @@ CSS classes, keys and URLs.
 | skip to main content / skip to navigation | 跳到主内容 / 跳到导航（键名 W/A/S/D/Q/E/V/1-7/空格/问号键 半角保留） |
 | optional feature / retry feature / reload application | 可选功能 / 重试功能 / 重新加载应用 |
 
+批次⑤（磨坊纪事展示适配器，Task 1 presentation.messages）补充基线 — 后续批次必须沿用：
+
+| English | zh |
+|---|---|
+| upkeep | 维护费 |
+| the fund（纪事共同基金） | 基金 |
+| conserving resources | 节约资源 |
+| lack of material | 物料短缺 |
+| know-how | 技术诀窍 |
+| extraction duct(ing) | 除尘管道 |
+| fail-safe | 故障保护 |
+| smouldering dust | 粉尘阴燃 |
+| suppression / suppress（管道火灾扑救） | 扑救 |
+| interlock（已释放） | 联锁（已解除） |
+| grain blended / conditioned（作物年处理） | 谷物已掺混 / 谷物已调理 |
+| quality penalty / quality points / grade points（试验口径） | 质量扣分 / 质量分 / 等级分 |
+| clean shift close | 合格结班 |
+| training mode | 训练模式 |
+| delegation（AI 委托等级 0-3） | 委托（委托：等级 0-3） |
+| initiative（AI 主动行动记录） | 主动行动 |
+| within its grant | 在其授权范围内 |
+| ruled by the AI partner | 由 AI 伙伴裁定 |
+| the moment passed | 时机已过 |
+| trial（沿用批次④ bounded trials 有界试验） | 试验 |
+| trial victory / trial failed | ……牌胜利（金/银/铜牌）/ 试验失败 |
+| the window closed | 时间窗已关闭 |
+| commissioning / rework | 调试 / 返工 |
+| retain (a contractor) | 留用 |
+| forecast struck / passed | 已应验 / 未应验 |
+| mitigate / mitigated（沿用批次③缓解） | 缓解 |
+| crop year | 作物年 |
+| era / a new era | 时代 / 新时代 |
+| bonus（时代奖励列表，顿号连接） | 奖励 |
+| reinvestment / wear / energy / production / quality（时代奖励项） | 再投资 / 磨损 / 能耗 / 生产 / 质量 |
+| the long night / front / preparation | 长夜 / 战线 / 准备度 |
+| (a front) held / fell | 守住了 / 失守 |
+| intake and grain stores / roller floor | 接收区与谷仓 / 磨辊层 |
+| operations card | 运行工作区的事件卡 |
+| Incidents raised by the chronicle | 磨坊纪事触发的事件 |
+| millstream | 磨坊水道 |
+| ranks: a sack-carrier / an apprentice miller / a journeyman miller / a master miller / a millwright of renown / a steward of the cooperative / a founder of the federation / the keeper of the millstream / the spirit of the millstream | 运袋工 / 磨坊学徒 / 出师磨工 / 磨坊师傅 / 享有盛名的磨坊机匠 / 合作社的管家 / 联合会的创立者 / 磨坊水道的守护者 / 磨坊水道之灵 |
+| The chronicle begins / is complete | 磨坊纪事开始 / 磨坊纪事完结 |
+| 模板拼接注意：{label} 等占位符承接其他表的 zh 标签时，模板内不加空格（终态为中文标签）；retained 的 {label} 为承包商行号（拉丁专名，永不翻译），模板两侧留半角空格 | — |
+
 批次③终审接受项与已知计量假象（check-zh-progress 读数口径）：
 
 - 接受项：实验室 partial-carry（个别串作 实验室，全称 质检实验室，defensible）；报警阈值 soft-orphan（已入表，暂无渲染串沿用，钉后续批次）；千克 a11y（PlayableShift truckLoadValueText 无障碍朗读串拼 千克，与可见 kg 并存，defensible）。
