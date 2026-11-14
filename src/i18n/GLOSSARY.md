@@ -729,6 +729,43 @@ CSS classes, keys and URLs.
 | follow-on credit stopped | 计入已停止（follow-on 沿用 Task 2 后续计入语境） |
 | evidence reason：quality threshold not met / record no longer matches the plant / cancelled or off the books | 未通过其质量阈值 / 记录不再与工厂相符 / 已被取消或不在订单簿上 |
 
+批次④（车间仿真 B，Task 6 workplaceImprovement + workplaceAdvice + workplaceFairness + workplaceStore）补充基线 — 后续批次必须沿用：
+
+| English | zh |
+|---|---|
+| quality review（合格评审语境） | 质量评审 |
+| conveyor | 输送机 |
+| resume pace / resume speed（9 至 3600x） | 恢复节奏 / 恢复速度 |
+| arrivals / dock movements（advice 假设） | 来车 / 装卸区移动 |
+| ordinary pacing / ordinary work / ordinary pay | 常规节奏 / 常规工作 / 常规报酬 |
+| worker proposal / carried cash / wage reserve / purchase | 工人提案 / 结转现金 / 工资预留 / 采购 |
+| staging arrangement / packing buffer / handoff sequence | 暂存安排 / 包装缓冲 / 交接顺序 |
+| defer / deferral（试验与交付延期） | 延期 |
+| smaller delivery | 更小的交付 |
+| qualifying dispatch / credited / still owed | 符合条件的发运 / 已计入 / 仍欠 |
+| teaching counter / customer receipt / prior forecast / causal effect | 教学计数 / 客户回执 / 事前预测 / 因果效应 |
+| matched comparison | 配对比较（matched=配对 沿用 Task 4） |
+| dispatch release（状态：open / held / unknown） | 发运放行（开放 / 扣留 / 未知） |
+| loaded / load capacity / collection timing（卡车） | 已装载 / 装载能力 / 来粮时间 |
+| shared limit / supply / quality dispositions | 共同限制 / 供给 / 质量处置 |
+| mandate / bounded mandate（fairness beats；mandate check 授权检查 沿用 Task 5） | 授权 / 有界授权（grant 亦译 授权，按上下文区分） |
+| protected no | 受保护的拒绝 |
+| defensible shared plan | 站得住脚的共同方案 |
+| disclosure（optional）/ scripted adviser dialogue / Thursday refusal | 披露 / 预先编写的顾问对话 / 周四的拒绝 |
+| bounded work / agreed work time | 有界工作 / 约定的工时 |
+| money reserves / model time / recovery debt | 钱款预留 / 模型时间 / 补休债务 |
+| safe reload / reload rehearsal | 安全重新加载 / 重新加载预演 |
+| turn ownership / identity security | 回合归属 / 身份安全 |
+| closing field / burden receipts / public role receipts | 收尾字段 / 负担回执 / 公开角色回执 |
+| elapsed / agreement horizon | 流逝时长 / 协议时间跨度（horizon=时间跨度 沿用 Task 5） |
+| balance fact（fairness caveat） | 物料账事实 |
+| facilitator setup / settlement / activation | 促成人设置 / 促成人结清 / 促成人激活 |
+| participant dispatch（store 指令分发语境） | 参与者指令分发 |
+| untouched scenario / open scenario | 未动过的场景 / 已开启的场景 |
+| quality-qualified（commitment / dispatch evidence） | 质量合格的（承诺 / 发运证据） |
+| fresh role decisions（nextConfirm 引用 ImprovementPanel 既有标签） | 新的角色决定（沿用 Task 4） |
+| evidenceEndedAfter / evidenceCompleted（evidenceHorizon 前缀） | 结束于 / 已完成 |
+
 批次③终审接受项与已知计量假象（check-zh-progress 读数口径）：
 
 - 接受项：实验室 partial-carry（个别串作 实验室，全称 质检实验室，defensible）；报警阈值 soft-orphan（已入表，暂无渲染串沿用，钉后续批次）；千克 a11y（PlayableShift truckLoadValueText 无障碍朗读串拼 千克，与可见 kg 并存，defensible）。
