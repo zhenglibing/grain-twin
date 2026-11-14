@@ -160,7 +160,7 @@ export const operationsCampaignMessages = defineMessages({
     execQualityHold: '成品被扣留在质量门。',
     execReadyToLoad: '已放行的成品在发运装卸区待命。',
     execLoading: '发运装载量 {loaded}/{capacity} kg。',
-    execReadyToDispatch: '外运装载已就绪，等待出发。',
+    execReadyToDispatch: '外运货物已就绪，等待出发。',
     execDispatched: '{kg} kg 已离开发运装卸区。',
     execAllFulfilled: '所有承诺均已完成。可接受下一个生产计划，或回顾已完成的时段。',
     execFulfilled: '承诺已完成。',

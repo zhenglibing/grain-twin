@@ -532,6 +532,23 @@ CSS classes, keys and URLs.
 | challenge status: active / completed / failed / abandoned | 进行中 / 已完成 / 未达成 / 已放弃 |
 | workplace roles: Packing / Quality / Maintenance / Coordinator | 包装 / 质量 / 维护 / 协调 |
 
+批次④（批次③终审交接）补充基线 — 后续批次必须沿用：
+
+| English | zh |
+|---|---|
+| incoming grain | 来粮 |
+| active assets | 在运设备 |
+| contamination alert | 污染警报（环境/质量事件；报警管理alarm 另词） |
+| outbound load | 外运货物（外运装载/外发货物 已统一为此形） |
+| execution stage（MobilePanel stage* chips）: planning / milling / quality hold / ready to load / loading / ready to dispatch / dispatched / fulfilled | 规划 / 加工 / 质量扣留 / 待装载 / 装载中 / 待发运 / 已发运 / 已完成（执行阶段 milling=加工，别于批次② fulfillment stage 的制粉） |
+| predictive maintenance | 预测性维护 |
+| autonomy（名词，系统名）/ autonomous（形容词性修饰） | 自治（磨坊自治、双边自治系统）/ 自主（自主物流、自主控制层、自主执行） |
+
+批次③终审接受项与已知计量假象（check-zh-progress 读数口径）：
+
+- 接受项：实验室 partial-carry（个别串作 实验室，全称 质检实验室，defensible）；报警阈值 soft-orphan（已入表，暂无渲染串沿用，钉后续批次）；千克 a11y（PlayableShift truckLoadValueText 无障碍朗读串拼 千克，与可见 kg 并存，defensible）。
+- 计量假象：`i18n.test.ts` 两个 `@ts-expect-error` 残缺 fixture 目录是编译期测试本体，其键永久计入“未翻译”；`websocketUrl`（SCADA）等 zh===en 为合法同文键。ZoneLabels 补完后，全局“未翻译”仅剩 fixture 残缺键与 zh===en 合法同文键。
+
 zh 风格规则（与计划 Global Constraints 一致）：
 1. `{name}` 占位符原样保留；2. 函数消息签名不变；3. 全角标点、
 半角占位符与单位；4. 中英之间加半角空格；5. 数字半角；6. 引号用 “”（GB/T 15834），不用「」。

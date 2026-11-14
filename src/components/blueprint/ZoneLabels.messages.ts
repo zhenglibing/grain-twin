@@ -10,8 +10,8 @@ export const zoneLabelsMessages = defineMessages({
   zh: {
     storage: '区域 1：仓储',
     milling: '区域 2：制粉',
-    sifting: 'ZONE 3: SIFTING',
-    packing: 'ZONE 4: PACKING',
+    sifting: '区域 3：筛理',
+    packing: '区域 4：包装',
   },
   'pt-BR': {
     storage: 'ZONA 1: ARMAZENAGEM',

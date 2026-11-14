@@ -16,7 +16,8 @@ export const forkliftSystemMessages = defineMessages({
     fleetLabel: '{tag}·{role}',
     operationLoading: '装载中',
     operationUnloading: '卸货中',
-    routeCornerAmbiguous: '{id} 停在已变更或歧义的路线拐点上。请先行驶到未变更路段，再暂停重试。',
+    routeCornerAmbiguous:
+      '{id} 停在已变更或歧义的路线拐点上。请先让叉车行驶至未变更路段，再暂停重试。',
   },
   'pt-BR': {
     roleShipping: 'EXPEDIÇÃO',

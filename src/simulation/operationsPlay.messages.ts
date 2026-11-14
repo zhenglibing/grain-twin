@@ -78,7 +78,7 @@ export const operationsPlayMessages = defineMessages({
     blockNoFeedstock: '开始前请先接收活动配方的原料。',
     blockQualityHold: '开始前请先解除现有的质量扣留。',
 
-    challengePowerRecovery: '电压骤降恢复',
+    challengePowerRecovery: '电压骤降后恢复',
     challengePackagingRecovery: '恢复包装产量',
     challengeNetworkRecovery: '恢复控制可用性',
     challengeFallback: '恢复挑战',

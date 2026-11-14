@@ -18,7 +18,7 @@ export const onboardingGuideMessages = defineMessages({
     eyebrow: '新手引导 {step}/{count}',
     close: '在本次会话中关闭新手引导',
     cameraControls: '相机控制',
-    cameraHelp: '拖动可环绕视角，滚轮或捏合可缩放。使用 W A S D 移动，按 Q 或 E 调整高度。',
+    cameraHelp: '拖动旋转视角，滚轮或捏合可缩放。使用 W A S D 移动，按 Q 或 E 调整高度。',
     back: '上一步',
     skip: '跳过引导',
     next: '下一步',

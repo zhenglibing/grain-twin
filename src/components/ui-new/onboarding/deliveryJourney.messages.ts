@@ -101,7 +101,7 @@ export const deliveryJourneyMessages = defineMessages({
     loadingTitle: '正在装载发运卡车',
     readyToDepartTitle: '准备离场',
     loadingDetail: '跟着托盘，从包装线一路到停靠的卡车。',
-    readyToDepartDetail: '外发货物已就绪。看着它驶出发运装卸区。',
+    readyToDepartDetail: '外运货物已就绪。看着它驶出发运装卸区。',
     departedTitle: '卡车已离场',
     departedDetail: '{lastKg} kg 已驶出发运装卸区。{customer} 已收到 {shippedKg}/{requiredKg} kg。',
     grain: (p: { material: string }) => ZH_GRAIN[p.material] ?? p.material.replace('_', ' '),

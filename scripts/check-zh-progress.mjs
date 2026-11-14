@@ -1,7 +1,8 @@
 /**
  * zh translation progress: a key counts as translated when its zh property
  * source text differs from the en property's. Seeded placeholders (zh === en)
- * count as untranslated. --fail-under=P fails (exit 1) below P percent.
+ * count as untranslated. --fail-under=P fails (exit 1) below P percent; an
+ * invalid or blank --fail-under value is rejected up front with exit 2.
  */
 import fs from 'node:fs';
 import path from 'node:path';
@@ -11,7 +12,7 @@ const failUnder = (() => {
   const flag = process.argv.find((a) => a.startsWith('--fail-under='));
   if (!flag) return null;
   const raw = flag.slice('--fail-under='.length);
-  if (raw === '' || !Number.isFinite(Number(raw))) {
+  if (raw.trim() === '' || !Number.isFinite(Number(raw))) {
     console.error(`Invalid --fail-under value: ${raw}`);
     process.exit(2);
   }

@@ -23,7 +23,7 @@ const PT_SHIFT: Record<string, string> = { morning: 'Manhã', afternoon: 'Tarde'
 const ZH_CAUSE: Record<string, string> = {
   quality: '质量失败',
   unsafe: '未解决的事件',
-  late: '交付迟延',
+  late: '迟交',
   risks: '结转至下一班次的风险',
   margin: '成本高于收入',
   kg: '承诺期内发运量过少',

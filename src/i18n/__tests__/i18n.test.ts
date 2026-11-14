@@ -20,8 +20,8 @@ const catalog = defineMessages({
     bags: (p: { count: number }) => (p.count === 1 ? '1 bag' : `${p.count} bags`),
   },
   zh: {
-    due: 'Due in {hours}h {minutes}m',
-    bags: (p: { count: number }) => (p.count === 1 ? '1 bag' : `${p.count} bags`),
+    due: '{hours} 小时 {minutes} 分钟后到期',
+    bags: (p: { count: number }) => (p.count === 1 ? '1 袋' : `${p.count} 袋`),
   },
   'pt-BR': {
     due: 'Prazo em {hours}h {minutes}min',

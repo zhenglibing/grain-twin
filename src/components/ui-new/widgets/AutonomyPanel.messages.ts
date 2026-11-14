@@ -58,7 +58,7 @@ export const autonomyPanelMessages = defineMessages({
     plantStateSubtitle: '过程、物流、安全与诊断，一屏尽览。',
     readinessIndex: '就绪指数',
     metricsLabel: '自治指标',
-    activeAssets: '运行设施',
+    activeAssets: '在运设备',
     activeAssetsDetail: (p: CountParams) => `${p.count} 台需要诊断关注`,
     throughput: '产量',
     throughputDetail: '袋/模拟小时',
