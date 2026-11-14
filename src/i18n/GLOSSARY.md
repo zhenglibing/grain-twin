@@ -585,7 +585,7 @@ CSS classes, keys and URLs.
 | learning review | 学习回顾 |
 | member voter / chair candidate / chair ballot / not elected | 成员投票人 / 主持人候选人 / 主持人表决 / 未当选 |
 | operating surplus / surplus destination | 运营盈余 / 盈余去向 |
-| distribute / retain / allocate（盈余） | 均分 / 留存 / 拨付 |
+| distribute / retain / allocate（盈余） | 均分 / 留存 / 拨给 |
 | arm / counterfactual（预测对比） | 试验组 / 反事实 |
 | permitted / prohibited | 允许 / 禁止 |
 | scenario seed / experiment seed / same-seed comparison | 场景种子 / 实验种子 / 同种子对比 |

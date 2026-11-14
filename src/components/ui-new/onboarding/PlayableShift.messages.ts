@@ -298,7 +298,7 @@ export const playableShiftMessages = defineMessages({
     lastChallenge: '上一个挑战：{status}。发运运单与质量检查仍作为结果记录保留。',
     challengeStatus: (p: { status: string }) => pick(ZH_CHALLENGE_STATUS, p.status),
     agreementProfile: '工作协议方案',
-    profileToeDip: '浅尝：受保护的练习组合',
+    profileToeDip: '浅尝：受保护的实践组合',
     profileTeam: '团队：共享工作与同意',
     profileCooperative: '合作社：成员治理',
     startCampaign: '启动关联合作社加工季',
