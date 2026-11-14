@@ -1,10 +1,14 @@
 import { defineMessages } from '../i18n';
 
 /* Source material ids ('wheat_grain', 'corn_grain') render as words in
-   English; pt-BR maps the known values and falls back to the English words. */
+   English; pt-BR and zh map the known values and fall back to the English words. */
 const PT_MATERIAL: Record<string, string> = {
   wheat_grain: 'grão de trigo',
   corn_grain: 'grão de milho',
+};
+const ZH_MATERIAL: Record<string, string> = {
+  wheat_grain: '小麦粒',
+  corn_grain: '玉米粒',
 };
 
 export const operationsPlayMessages = defineMessages({
@@ -67,62 +71,55 @@ export const operationsPlayMessages = defineMessages({
       'The response is queued. Resume the shift to process it before restoring the controller.',
   },
   zh: {
-    blockActiveChallenge: 'Finish or abandon the active challenge first.',
-    blockNoCommitment: 'Accept a production programme with an open commitment first.',
-    blockOpenIncidents: 'Recover existing incidents before adding another challenge.',
-    blockPlanning: 'Wait for the selected route to refresh its inventory and quality readings.',
-    blockNoFeedstock: 'Receive the active recipe feedstock before starting.',
-    blockQualityHold: 'Resolve the existing quality hold before starting.',
+    blockActiveChallenge: '请先完成或放弃当前挑战。',
+    blockNoCommitment: '请先接受一个含未结承诺的生产计划。',
+    blockOpenIncidents: '请先从既有事件中恢复，再添加其他挑战。',
+    blockPlanning: '请等待所选路线刷新库存与质量读数。',
+    blockNoFeedstock: '开始前请先接收活动配方的原料。',
+    blockQualityHold: '开始前请先解除现有的质量扣留。',
 
-    challengePowerRecovery: 'Recover from a power sag',
-    challengePackagingRecovery: 'Restore packaging throughput',
-    challengeNetworkRecovery: 'Recover control availability',
-    challengeFallback: 'Recovery challenge',
+    challengePowerRecovery: '电压骤降恢复',
+    challengePackagingRecovery: '恢复包装产量',
+    challengeNetworkRecovery: '恢复控制可用性',
+    challengeFallback: '恢复挑战',
 
-    acknowledgeLabel: 'Acknowledge incident',
-    acknowledgeConsequence:
-      '{title}: acknowledgement records ownership; its production and safety effects remain active.',
-    mitigateLabel: 'Apply incident mitigation',
-    mitigateConsequence:
-      'Halves the incident’s throughput and quality penalties. Existing equipment failures and quality holds still require their own recovery.',
-    resumeLabel: 'Resume shift for controller response',
+    acknowledgeLabel: '确认事件',
+    acknowledgeConsequence: '{title}：确认即记录责任归属；其生产与安全影响仍保持生效。',
+    mitigateLabel: '实施事件缓解',
+    mitigateConsequence: '将事件的产量与质量惩罚减半。既有设备故障与质量扣留仍需各自恢复。',
+    resumeLabel: '恢复班次以处理控制器响应',
     resumeConsequence:
-      'Resumes the whole shift at standard pace. Production and customer deadlines advance; the shift stays running until you pause it.',
-    resolveLabel: 'Restore challenge controller',
+      '以标准节奏恢复整个班次。生产与客户期限继续推进；班次将持续运行，直到你暂停它。',
+    resolveLabel: '恢复挑战控制器',
     resolveConsequenceActive:
-      'Restores this effect-only controller scenario to normal. Complete the challenge by dispatching its target mass through the real quality and shipping gates.',
+      '将该仅施加效果的控制器场景恢复正常。将目标量通过真实的质量门与发运门发出，即完成挑战。',
     resolveConsequenceEnded:
-      'Restores the abandoned or expired scenario controller to normal. Its recorded challenge result remains unchanged; a fresh challenge can then be started.',
-    repairLabel: 'Repair the stopped machine in Overview',
-    programmeLabel: 'Accept next production programme',
+      '将已放弃或已过期的场景控制器恢复正常。已记录的挑战结果保持不变；随后可开始新的挑战。',
+    repairLabel: '在概览中维修停机设备',
+    programmeLabel: '接受下一个生产计划',
     programmeConsequence:
-      'Creates three customer commitments, {dayKg} kg in all ({nightKg} kg on the night shift): a one-truck rush that pays {premium}% more but is due within {window} and costs double the usual late penalty, a {standardKg} kg order and a two-truck bulk order. The rush customer changes with each programme. Existing stock remains available; no goods or revenue are created.',
-    qualityLabel: 'Review the quality hold in Overview',
-    qualityConsequence:
-      'Inspect source traceability and tests in the QC lab. Held batches cannot satisfy a customer commitment.',
-    receivingLabel: 'Check incoming grain in SCADA',
-    sourceMaterial: (p: { value: string }) => p.value.replaceAll('_', ' '),
-    receivingConsequence:
-      'The {material} route is empty. Receiving and releasing the matching source lot permits milling to resume.',
-    dispatchLabel: 'Check shipping in SCADA',
+      '创建三个客户承诺，共 {dayKg} kg（夜班 {nightKg} kg）：一个单卡车加急单，多付 {premium}%，但期限仅 {window}，且迟交罚金为常规的两倍；一个 {standardKg} kg 订单；以及一个双卡车散装订单。加急客户随每个计划更换。既有库存仍可使用；不会创建任何货物或收入。',
+    qualityLabel: '在概览中审查质量扣留',
+    qualityConsequence: '在质检实验室检查原料追溯与检测。被扣留批次无法用于履行客户承诺。',
+    receivingLabel: '在 SCADA 检查来粮',
+    sourceMaterial: (p: { value: string }) => ZH_MATERIAL[p.value] ?? p.value.replaceAll('_', ' '),
+    receivingConsequence: '{material}路线为空。接收并放行对应的原料批后才能恢复制粉。',
+    dispatchLabel: '在 SCADA 检查发运',
     dispatchConsequence:
-      'Only material recorded on a departed shipping manifest credits the commitment. Loading and released stock alone earn no revenue.',
-    residualLabel: 'Check remaining incident effects in SCADA',
-    productionLabel: 'Check the production line in SCADA',
+      '只有记录在已离场发运运单上的物料才计入承诺；仅靠装载和已放行库存不会产生收入。',
+    residualLabel: '在 SCADA 检查事件残余影响',
+    productionLabel: '在 SCADA 检查产线',
     residualConsequence:
-      '{title} retains residual effects. Recover the affected equipment or hold in its owning workspace; acknowledgement alone cannot restore it.',
+      '{title}仍存在残余影响。请恢复受影响设备或在其所属工作区处理扣留；仅靠确认无法恢复。',
     productionConsequence:
-      'Follow feedstock through mills, sifters and packers. The scheduler sets recipe throughput; quality release precedes shipment.',
+      '跟随原料经过磨辊机、平筛与包装线。排程器设定配方产量；质量放行先于发运。',
 
-    instructionInspect: 'Inspect the incident in the operations workspace.',
-    instructionAcknowledge: 'Acknowledge the incident, then apply mitigation.',
-    instructionMitigate: "Apply mitigation to reduce the controller's penalties.",
-    instructionRestored:
-      'Controller restored. Dispatch fresh, quality-released goods through the shipping bay.',
-    instructionRestore:
-      'Restore the challenge controller, then dispatch fresh, quality-released goods.',
-    instructionQueued:
-      'The response is queued. Resume the shift to process it before restoring the controller.',
+    instructionInspect: '在运行工作区检查该事件。',
+    instructionAcknowledge: '确认事件，然后实施缓解。',
+    instructionMitigate: '实施缓解以减轻控制器的惩罚。',
+    instructionRestored: '控制器已恢复。请通过发运装卸区发运新产出、已质量放行的货物。',
+    instructionRestore: '恢复挑战控制器，然后发运新产出、已质量放行的货物。',
+    instructionQueued: '响应已排队。请先恢复班次运行处理该响应，再恢复控制器。',
   },
   'pt-BR': {
     blockActiveChallenge: 'Primeiro conclua ou abandone o desafio ativo.',

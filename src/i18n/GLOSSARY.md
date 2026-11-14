@@ -408,6 +408,53 @@ CSS classes, keys and URLs.
 | site safety hold | 厂区安全扣留 |
 | evacuation certification | 疏散认证 |
 
+批次③（生产流程组）补充基线 — 后续批次必须沿用：
+
+| English | zh |
+|---|---|
+| shift review | 班次回顾 |
+| pace (control) | 节奏（标准节奏 / 自定义节奏） |
+| shift close / at close | 结班 |
+| tour | 导览 |
+| production / delivery programme | 生产计划 / 交付计划 |
+| commitment (customer) | 承诺 |
+| active (order / commitment / incident / constraint) | 活动（活动订单 / 活动承诺 / 活动事件 / 活动约束） |
+| open (commitment / work order) | 未结 |
+| rush (order / customer) | 加急（加急单 / 加急客户） |
+| bulk order | 散装订单 |
+| deadline / due | 期限 / 到期 |
+| late penalty | 迟交罚金 |
+| delivery / delivered on time / late | 交付 / 按时交付 / 迟交 |
+| carry over (risk) into the next shift | 结转（至下一班次） |
+| grade / cap the grade at | 等级 / 等级封顶为 |
+| net contribution | 净贡献 |
+| quality failure | 质量失败 |
+| high-severity controls | 高严重度控制 |
+| recovery challenge | 恢复挑战 |
+| scheduler | 排程器 |
+| incident / dispatch / challenge controller | 事件控制器 / 发运控制器 / 挑战控制器 |
+| control layer | 控制层 |
+| production execution | 生产执行 |
+| mitigation (apply mitigation) | 缓解（实施缓解） |
+| residual effects | 残余影响 |
+| simulated minutes | 模拟分钟 |
+| storage capacity | 仓储容量 |
+| recipe feed / feedstock | 配方进料 / 原料 |
+| shipping bay | 发运装卸区 |
+| shipping manifest | 发运运单 |
+| QC lab | 质检实验室 |
+| trip point | 跳闸值 |
+| power sag | 电压骤降 |
+| strong white bread flour / fine corn semolina / community all-purpose flour | 高筋面包粉 / 细玉米粗粒粉 / 社区多用途面粉 |
+| scheduled grain | 计划谷物 |
+| operations workspace | 运行工作区 |
+| layout planner | 布局规划器 |
+| adviser | 顾问 |
+| forecast | 预测 |
+| handoff experiment | 交接实验 |
+| member review | 成员评审 |
+| cooperative workplace (step) | 工作场所协作（步骤） |
+
 zh 风格规则（与计划 Global Constraints 一致）：
 1. `{name}` 占位符原样保留；2. 函数消息签名不变；3. 全角标点、
 半角占位符与单位；4. 中英之间加半角空格；5. 数字半角；6. 引号用 “”（GB/T 15834），不用「」。
