@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["src/i18n/__tests__/i18n.test.ts"],
+  "exclude": [],
+  "compilerOptions": {
+    "allowJs": false,
+    "noEmit": true
+  }
+}
