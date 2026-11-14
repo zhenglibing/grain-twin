@@ -500,6 +500,38 @@ CSS classes, keys and URLs.
 | simulated hour | 模拟小时 |
 | safety zones: Central Area / North Loading / South Loading / West Corridor / East Corridor / Packing Zone | 中心区 / 北装载区 / 南装载区 / 西走廊 / 东走廊 / 包装区 |
 
+批次③（新手引导组）补充基线 — 后续批次必须沿用：
+
+| English | zh |
+|---|---|
+| shift debrief（与 shift review 同指；结班消息引用同一术语） | 班次回顾 |
+| guided delivery | 引导式交付（批次① GameInterface 已用，此处入表） |
+| follow the grain | 跟随谷物 |
+| working agreement | 工作协议 |
+| handoff working agreement / handoff review | 交接工作协议 / 交接评审 |
+| linked working agreement / linked cooperative campaign | 关联工作协议 / 关联合作社加工季 |
+| full customer commitment | 全额客户承诺 |
+| agreed deferral | 约定延期 |
+| owed recovery / extra duty | 应补休息 / 额外勤务 |
+| credits (illustrative workplace currency) | 点数 |
+| leave this season | 离开本加工季 |
+| receipt (delivery / shipping) | 回执 |
+| loads (truck trip count) | 车 |
+| inspect / inspection (guided delivery) | 检查 |
+| AI agent | AI 代理 |
+| orbit camera | 环绕相机 |
+| first-person mode | 第一人称模式 |
+| D-pad / W A S D / Q / E / ESC / V / P（键名） | 保持半角原文 |
+| provisional grade | 暂定等级 |
+| scheduled recipe | 计划配方 |
+| controlled restart（MachineInspector 已用，此处补表） | 受控重启 |
+| dispatch service (repair, MachineInspector 已用) | 派发维修 |
+| QC（泛称） | 质检 |
+| delivery status: blocked / met / shortfall / pending | 受阻 / 达成 / 未达目标 / 待定 |
+| agreement status: honoured / incomplete / pending | 已履行 / 未完成 / 待定 |
+| challenge status: active / completed / failed / abandoned | 进行中 / 已完成 / 未达成 / 已放弃 |
+| workplace roles: Packing / Quality / Maintenance / Coordinator | 包装 / 质量 / 维护 / 协调 |
+
 zh 风格规则（与计划 Global Constraints 一致）：
 1. `{name}` 占位符原样保留；2. 函数消息签名不变；3. 全角标点、
 半角占位符与单位；4. 中英之间加半角空格；5. 数字半角；6. 引号用 “”（GB/T 15834），不用「」。

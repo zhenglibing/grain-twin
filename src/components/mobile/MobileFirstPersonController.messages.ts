@@ -8,10 +8,10 @@ export const mobileFirstPersonControllerMessages = defineMessages({
     startExploring: 'Start exploring',
   },
   zh: {
-    title: 'First-Person Controls',
-    dpadWalk: 'D-pad: walk',
-    dragLook: 'Drag: look around',
-    startExploring: 'Start exploring',
+    title: '第一人称控制',
+    dpadWalk: 'D-pad：行走',
+    dragLook: '拖动：环视',
+    startExploring: '开始探索',
   },
   'pt-BR': {
     title: 'Controles em primeira pessoa',
