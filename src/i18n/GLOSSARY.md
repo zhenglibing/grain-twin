@@ -275,6 +275,66 @@ CSS classes, keys and URLs.
 | philosophy tooltips | 理念提示 |
 | loading screen quotes | 加载界面引言 |
 
+批次②（SCADA 工作区）补充基线 — 后续批次必须沿用：
+
+| English | zh |
+|---|---|
+| SCADA workspace | SCADA 工作区 |
+| SCADA runtime | SCADA 运行时 |
+| Simulation Lab (tab name) | 故障注入 |
+| telemetry | 遥测 |
+| enable / disable | 启用 / 停用 |
+| connection type | 连接类型 |
+| poll interval | 轮询间隔 |
+| pub/sub | 发布/订阅 |
+| backend proxy | 后端代理 |
+| base URL / topic prefix | 基础 URL / 主题前缀 |
+| autonomous control layer | 自主控制层 |
+| control identity | 控制身份 |
+| process (tab) / process tags | 过程 / 过程点位 |
+| raw grain | 原粮 |
+| in process | 在制 |
+| finished goods | 成品 |
+| live material ledger | 实时物料台账 |
+| opening inventory | 期初库存 |
+| utility (plant) / tank farm | 公用工程 / 罐区 |
+| asset (plant object) | 设施 |
+| safety interlock | 安全联锁 |
+| sifting | 筛理 |
+| roll reduction | 磨辊研磨 |
+| setpoint | 设定值 |
+| recipe route / quality gate | 配方路线 / 质量门 |
+| dispatchable | 可发运 |
+| truck load | 卡车装载 |
+| execution state / top constraint | 执行状态 / 首要约束 |
+| campaign (operations) | 加工季 |
+| incident | 事件 |
+| work order / open work order | 工单 / 未结工单 |
+| provenance (maintenance / quality) | 来源（维护来源 / 质量来源） |
+| alarm states: Unacknowledged / Returned, awaiting ACK / Acknowledged / Cleared | 未确认 / 返回待确认 / 已确认 / 已清除 |
+| out of service (OOS) | 停用（OOS） |
+| restore to service | 恢复投用 |
+| disposition (reason) | 处置（原因） |
+| alarm flood / flood threshold | 报警风暴 / 风暴阈值 |
+| alarm priority CRITICAL / HIGH / MEDIUM / LOW | 危急 / 高 / 中 / 低 |
+| SCADA mode: simulation / live / hybrid / disconnected | 模拟 / 实时 / 混合 / 已断开 |
+| incident phase: raised / acknowledged / mitigated / resolved | 已触发 / 已确认 / 已缓解 / 已解决 |
+| alarm transition | 报警状态转换 |
+| acknowledge all | 全部确认 |
+| trend annotation / trend duration / gap (table) | 趋势标注 / 趋势时长 / 空缺 |
+| interpolated | 插值 |
+| event history | 事件历史 |
+| operations logbook | 运行日志 |
+| live (view) / return to live | 实时 / 回到实时 |
+| unassigned | 未指派 |
+| signal quality good / bad / stale / uncertain (spoken aria; codes GOOD/BAD/STALE/UNCERTAIN stay) | 良好 / 较差 / 过期 / 不确定 |
+| asset level critical / low / normal (spoken aria) | 危急 / 偏低 / 正常 |
+| work order phase: diagnosed / awaiting parts / repairing / verification / ready to restart / restart requested / returned to service | 已诊断 / 等待备件 / 维修中 / 验证中 / 待重启 / 已请求重启 / 已恢复运行 |
+| quality action: hold / test / retest / release / recall | 扣留 / 检测 / 复检 / 放行 / 召回 |
+| fulfillment stage: planning / milling / quality hold / ready to load / loading / ready to dispatch / dispatched / fulfilled | 规划 / 制粉 / 质量扣留 / 待装载 / 装载中 / 待发运 / 已发运 / 已完成 |
+| dispatch status: away / loading / held / ready / departed | 已离开装卸区 / 装载中 / 被扣留 / 就绪 / 已离场 |
+| fault type communication | 通信故障 |
+
 zh 风格规则（与计划 Global Constraints 一致）：
 1. `{name}` 占位符原样保留；2. 函数消息签名不变；3. 全角标点、
 半角占位符与单位；4. 中英之间加半角空格；5. 数字半角；6. 引号用 “”（GB/T 15834），不用「」。
