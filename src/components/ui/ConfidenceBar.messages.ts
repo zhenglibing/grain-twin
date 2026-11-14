@@ -5,7 +5,7 @@ export const confidenceBarMessages = defineMessages({
     aiConfidence: 'AI confidence',
   },
   zh: {
-    aiConfidence: 'AI confidence',
+    aiConfidence: 'AI 置信度',
   },
   'pt-BR': {
     aiConfidence: 'Confiança da IA',

@@ -17,6 +17,20 @@ const PT_SEVERITIES: Record<WeatherSeverity, string> = {
   high: 'alta',
 };
 
+const ZH_WARNINGS: Record<WeatherType, string> = {
+  storm: '风暴警报',
+  rain: '降雨警报',
+  wind: '大风警报',
+  snow: '降雪警报',
+  clear: '天气警报',
+};
+
+const ZH_SEVERITIES: Record<WeatherSeverity, string> = {
+  low: '低',
+  medium: '中',
+  high: '高',
+};
+
 /** English shows the raw enum values, as before; pt-BR names them. */
 export const weatherEffectsOverlayMessages = defineMessages({
   en: {
@@ -24,8 +38,9 @@ export const weatherEffectsOverlayMessages = defineMessages({
     severity: (p: { severity: WeatherSeverity }) => `Severity: ${p.severity}`,
   },
   zh: {
-    warning: (p: { type: WeatherType }) => `${p.type} Warning`,
-    severity: (p: { severity: WeatherSeverity }) => `Severity: ${p.severity}`,
+    warning: (p: { type: WeatherType }) => ZH_WARNINGS[p.type] ?? `${p.type} 警报`,
+    severity: (p: { severity: WeatherSeverity }) =>
+      `严重程度：${ZH_SEVERITIES[p.severity] ?? p.severity}`,
   },
   'pt-BR': {
     warning: (p: { type: WeatherType }) => PT_WARNINGS[p.type] ?? `Alerta: ${p.type}`,

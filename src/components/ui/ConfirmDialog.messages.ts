@@ -7,9 +7,9 @@ export const confirmDialogMessages = defineMessages({
     close: 'Close dialog',
   },
   zh: {
-    confirm: 'Confirm',
-    cancel: 'Cancel',
-    close: 'Close dialog',
+    confirm: '确认',
+    cancel: '取消',
+    close: '关闭对话框',
   },
   'pt-BR': {
     confirm: 'Confirmar',

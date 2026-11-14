@@ -846,6 +846,49 @@ CSS classes, keys and URLs.
 | energy modifiers / penalty | 能耗修正项 / 罚值（+10%（3） 括号全角） |
 | simulation factor / scenario carbon / simulation cost | 模拟系数 / 场景碳排放 / 模拟成本（kg CO₂/kWh 半角） |
 
+批次④（Task 9 ui 杂项 + 键盘 + 移动端）补充基线 — 后续批次必须沿用：
+
+| English | zh |
+|---|---|
+| keyboard shortcuts | 键盘快捷键 |
+| camera movement / camera presets / reset camera view / rotate camera | 相机移动 / 相机预设 / 重置相机视角 / 旋转相机 |
+| orbit view / showcase orbit | 环绕视角 / 展示环绕（环绕相机 沿用批次③） |
+| blueprint mode | 蓝图模式（墙体透视） |
+| strafe left / strafe right | 向左平移 / 向右平移 |
+| sprint | 疾跑（FirstPersonController 沿用；加速移动 / 疾跑 为完整提示） |
+| safety zones (overlay toggle) | 安全区域（批次③ safety zones 区域名另指具体分区） |
+| heat map (toggle) | 热力图（安全分析 事件热力图 沿用） |
+| multi-objective dashboard | 多目标仪表盘（Task 7 多目标 + 能源仪表盘 词根） |
+| cost estimation overlay | 费用估算覆盖层（Task 7 API 费用跟踪器 的开关指向同一面板） |
+| GPS mini-map | GPS 小地图 |
+| forklift emergency stop / release | 叉车紧急停机 / 解除 |
+| line rate | 产线速率 |
+| decision status: pending / in_progress / completed / superseded | 待定 / 进行中 / 已完成 / 已取代 |
+| decision evidence source: simulation / scada / control / schedule / prediction | 模拟 / SCADA / 控制 / 排程 / 预测 |
+| decision evidence quality: good / uncertain / stale / bad | 良好 / 不确定 / 过期 / 较差（批次② spoken aria 同词） |
+| decision measurements: throughput / efficiency / uptime / quality / totalBagsProduced | 产量 / 效率 / 运行率 / 质量 / 生产总袋数（运行率 沿用 OverviewPanel） |
+| affected machine / affected systems / affected equipment | 受影响设备 / 受影响系统 / 受影响设施（设备=machine、设施=asset 沿用批次②） |
+| evidence snapshot / observation / measured outcome | 证据快照 / 观测项 / 实测结果 |
+| BYOK API usage | BYOK API 用量 |
+| USD amounts（覆盖层计费文案） | USD {amount}（行文作 美元上限） |
+| input / output tokens | 输入 token / 输出 token（token 半角保留） |
+| on-device inference / on-device AI record | 端侧推理 / 端侧 AI 记录 |
+| no route / belongs with {expected}（Jev 队列路由） | 无路由 / 应归入 {expected}（队列名英文保留，冻结评分项） |
+| left raised / held at a safety boundary | 保持已触发 / 因安全边界停手（incident phase raised=已触发 沿用批次②） |
+| weather warning: storm / rain / wind / snow / clear | 风暴警报 / 降雨警报 / 大风警报 / 降雪警报 / 天气警报（alert=警报，alarm=报警 分立） |
+| severity: low / medium / high | 严重程度：低 / 中 / 高 |
+| replay mode / playback timeline / playback speed | 回放模式 / 回放时间线 / 回放速度 |
+| speed zones (ZoneCustomizationPanel) | 慢速区（批次③ speed zone 同词） |
+| utility vessels | 公用工程储罐 |
+| execution route / route {source} to {product} | 执行路线 / {source} 至 {product} |
+| operations campaign (MobilePanel) | 运行加工季（operations=运行 沿用批次③；campaign=加工季 沿用批次②） |
+| autonomous readiness | 自主就绪度（autonomous 形容词=自主；就绪指数 沿用批次③） |
+| open incidents / outbound (chip) / active assets | 未结事件 / 外运 / 在运设备（批次④钉词） |
+| rotate to landscape | 旋转到横屏 |
+| walk mode / look mode（DPad/移动控制） | 行走模式 / 环视模式（环视 沿用 FirstPersonController） |
+| overall objective score / trade-off | 目标总分 / 权衡（让权衡可见 沿用 Task 7） |
+| AI insight / AI confidence / priority {number} | AI 洞察 / AI 置信度 / 优先级 {number} |
+
 批次③终审接受项与已知计量假象（check-zh-progress 读数口径）：
 
 - 接受项：实验室 partial-carry（个别串作 实验室，全称 质检实验室，defensible）；报警阈值 soft-orphan（已入表，暂无渲染串沿用，钉后续批次）；千克 a11y（PlayableShift truckLoadValueText 无障碍朗读串拼 千克，与可见 kg 并存，defensible）。
