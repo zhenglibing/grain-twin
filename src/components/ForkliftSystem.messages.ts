@@ -11,13 +11,12 @@ export const forkliftSystemMessages = defineMessages({
       '{id} occupies a changed or ambiguous route corner. Run to an unchanged leg, then pause and try again.',
   },
   zh: {
-    roleShipping: 'SHIPPING',
-    roleReceiving: 'RECEIVING',
-    fleetLabel: '{tag} · {role}',
-    operationLoading: 'LOADING',
-    operationUnloading: 'UNLOADING',
-    routeCornerAmbiguous:
-      '{id} occupies a changed or ambiguous route corner. Run to an unchanged leg, then pause and try again.',
+    roleShipping: '发运',
+    roleReceiving: '接收',
+    fleetLabel: '{tag}·{role}',
+    operationLoading: '装载中',
+    operationUnloading: '卸货中',
+    routeCornerAmbiguous: '{id} 停在已变更或歧义的路线拐点上。请先行驶到未变更路段，再暂停重试。',
   },
   'pt-BR': {
     roleShipping: 'EXPEDIÇÃO',

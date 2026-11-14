@@ -464,6 +464,42 @@ CSS classes, keys and URLs.
 | quality interlock | 质量联锁 |
 | game hour | 游戏小时 |
 
+批次③（Autonomy + Safety 组）补充基线 — 后续批次必须沿用：
+
+| English | zh |
+|---|---|
+| e-stop / emergency stop | 紧急停机 |
+| evacuation drill / fire drill | 疏散演练 |
+| egress verification | 疏散验证 |
+| egress verification drill | 疏散验证演练 |
+| service egress | 疏散出口 |
+| interlock（泛称；安全/转运/质量联锁见上） | 联锁 |
+| crisis interlock / drill interlock | 危机联锁 / 演练联锁 |
+| interlock active | 联锁生效中 |
+| facility emergency stop / facility emergency interlock | 设施紧急停机 / 设施紧急联锁 |
+| duct fire | 管道火灾 |
+| to ground (forklifts) | 停运（叉车） |
+| emergency response | 应急响应 |
+| Safety panel / Safety workspace | 安全面板 / 安全工作区 |
+| safety metrics / safety analytics / safety stats | 安全指标 / 安全分析 / 安全统计 |
+| safety event stage: active / acknowledged / cleared | 活动中 / 已确认 / 已清除 |
+| readiness index | 就绪指数 |
+| closed-loop coordination | 闭环协同 |
+| vehicle orchestration | 车辆编排 |
+| route conflict | 路线冲突 |
+| reservation (vehicle) | 预留 |
+| route corner / route leg | 路线拐点 / 路段 |
+| dock status: arriving / loading / departing / clear | 到达中 / 装载中 / 离开中 / 空闲 |
+| look-ahead (distance) | 前瞻（前瞻距离） |
+| vehicle detection | 车辆检测 |
+| forklift spacing | 叉车间距 |
+| speed zone (rate) | 慢速区（速率；沿用布局组 slow zone） |
+| heat map / hotspot | 热力图 / 热点 |
+| last hour / this session | 最近一小时 / 本次会话 |
+| clean record | 无事故记录 |
+| simulated hour | 模拟小时 |
+| safety zones: Central Area / North Loading / South Loading / West Corridor / East Corridor / Packing Zone | 中心区 / 北装载区 / 南装载区 / 西走廊 / 东走廊 / 包装区 |
+
 zh 风格规则（与计划 Global Constraints 一致）：
 1. `{name}` 占位符原样保留；2. 函数消息签名不变；3. 全角标点、
 半角占位符与单位；4. 中英之间加半角空格；5. 数字半角；6. 引号用 “”（GB/T 15834），不用「」。
