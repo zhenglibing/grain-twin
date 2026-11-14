@@ -141,3 +141,65 @@ customers (Riverside Bakers' Cooperative); soundtrack song titles and lyrics;
 painted in-world signage; console, logger and developer-only error strings;
 agent-protocol command names, schemas and machine-readable fields; test IDs,
 CSS classes, keys and URLs.
+
+## zh（简体中文）术语基线
+
+来自介绍文章的用户验证译法。翻译批次必须逐条对齐；遇到表中没有的词，
+先按工业自动化习惯拟定并补进本表再使用。
+
+| English | zh |
+|---|---|
+| overview | 概览 |
+| production | 生产 |
+| autonomy | 自治 |
+| Chronicle | 磨坊纪事 |
+| safety | 安全 |
+| settings | 设置 |
+| language | 语言 |
+| silo | 筒仓 |
+| roller mill | 磨辊机 |
+| plansifter | 平筛 |
+| packer / packing line | 包装线 |
+| forklift | 叉车 |
+| truck | 卡车 |
+| bags/h | 袋/时 |
+| target | 目标 |
+| running | 运行中 |
+| idle | 空闲 |
+| maintenance | 维护 |
+| Perform Maintenance | 执行维护 |
+| wear | 磨损 |
+| motor load | 电机负载 |
+| temperature | 温度 |
+| warning | 警告 |
+| breakdown | 故障停机 |
+| shift | 班次 |
+| alarm | 报警 |
+| acknowledge (ACK) | 确认 |
+| shelved | 搁置 |
+| suppressed | 抑制 |
+| tag | 点位 |
+| trend | 趋势 |
+| historian | 历史库 |
+| batch | 批次 |
+| lineage | 谱系 |
+| quality release | 质量放行 |
+| dispatch | 发运 |
+| material balance | 物料账 |
+| waypoint | 航点 |
+| fault injection | 故障注入 |
+| sensor fail | 传感器失效 |
+| spike | 尖峰 |
+| drift | 漂移 |
+| stuck value | 卡值 |
+| noise | 噪声 |
+| level (silo) | 料位 |
+| getting started | 新手引导 |
+| camera controls | 相机控制 |
+| skip tour | 跳过引导 |
+
+zh 风格规则（与计划 Global Constraints 一致）：
+1. `{name}` 占位符原样保留；2. 函数消息签名不变；3. 全角标点、
+半角占位符与单位；4. 中英之间加半角空格；5. 数字半角。
+永不翻译清单沿用上文（点位号、设备编号、专有名词、歌词、涂装文字、
+agent 协议、日志），zh 侧同样遵守。
