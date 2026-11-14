@@ -42,10 +42,20 @@ describe('locale detection', () => {
     expect(normalizeLocale('')).toBeNull();
   });
 
+  it('treats every zh tag as zh', () => {
+    expect(normalizeLocale('zh')).toBe('zh');
+    expect(normalizeLocale('zh-CN')).toBe('zh');
+    expect(normalizeLocale('zh_tw')).toBe('zh');
+    expect(normalizeLocale('zh-Hans-CN')).toBe('zh');
+    expect(normalizeLocale('zh-SG')).toBe('zh');
+  });
+
   it('prefers a shared ?lang= link, then a saved choice, then English for jsdom', () => {
     expect(detectLocale()).toBe('en');
     window.localStorage.setItem(LOCALE_STORAGE_KEY, 'pt-BR');
     expect(detectLocale()).toBe('pt-BR');
+    window.localStorage.setItem(LOCALE_STORAGE_KEY, 'zh');
+    expect(detectLocale()).toBe('zh');
     window.history.replaceState(null, '', '/?quality=low&lang=en');
     expect(detectLocale()).toBe('en');
     window.localStorage.setItem(LOCALE_STORAGE_KEY, 'fr');

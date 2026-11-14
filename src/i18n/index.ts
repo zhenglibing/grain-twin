@@ -1,7 +1,7 @@
 import { create } from 'zustand';
 
 /**
- * MillOS interface language: English and Brazilian Portuguese.
+ * MillOS interface language: English, Brazilian Portuguese and Simplified Chinese.
  *
  * Each component owns its copy in a co-located `*.messages.ts` module built
  * with defineMessages(), so translations stay beside the text they replace and
@@ -18,7 +18,7 @@ import { create } from 'zustand';
  * byte-identical to the original copy.
  */
 
-export const LOCALES = ['en', 'pt-BR'] as const;
+export const LOCALES = ['en', 'pt-BR', 'zh'] as const;
 export type Locale = (typeof LOCALES)[number];
 export const DEFAULT_LOCALE: Locale = 'en';
 /** Excluded from Reset Simulation's millos-* sweep: language is a person, not a shift. */
@@ -27,15 +27,17 @@ export const LOCALE_STORAGE_KEY = 'millos-locale';
 export const LOCALE_LABELS: Record<Locale, string> = {
   en: 'English',
   'pt-BR': 'Português (Brasil)',
+  zh: '简体中文',
 };
 
 export const isLocale = (value: unknown): value is Locale =>
   typeof value === 'string' && (LOCALES as readonly string[]).includes(value);
 
-/** Accepts 'pt', 'pt-BR', 'pt_br', 'PT-PT'... as Portuguese; anything else is English. */
+/** Accepts 'pt', 'pt-BR', 'pt_br', 'PT-PT' as Portuguese and 'zh', 'zh-CN', 'zh_TW', 'zh-Hans-CN' as zh; anything else is English. */
 export function normalizeLocale(value: string | null | undefined): Locale | null {
   if (!value) return null;
   const lower = value.trim().toLowerCase().replace('_', '-');
+  if (lower === 'zh' || lower.startsWith('zh-')) return 'zh';
   if (lower === 'pt' || lower.startsWith('pt-')) return 'pt-BR';
   if (lower === 'en' || lower.startsWith('en-')) return 'en';
   return null;
@@ -60,8 +62,8 @@ function writeSavedLocale(locale: Locale): void {
 
 /**
  * `?lang=` (a shared link) wins, then a saved choice, then the browser's own
- * language list. Only Portuguese is ever inferred; every other language, and
- * every environment without a window, is English.
+ * language list. Only Portuguese and Chinese are ever inferred; every other
+ * language, and every environment without a window, is English.
  */
 export function detectLocale(): Locale {
   if (typeof window === 'undefined') return DEFAULT_LOCALE;
