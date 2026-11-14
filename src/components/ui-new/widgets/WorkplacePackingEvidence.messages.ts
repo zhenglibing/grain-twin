@@ -185,7 +185,7 @@ export const workplacePackingEvidenceMessages = defineMessages({
       '先对比想法，并保留任何分歧。这个可选预测只保留在这次公开对比中；它不记录任何角色表决或授权。',
     rehearsingPacking: '正在预演包装……',
     runRehearsal: '运行配对包装预演',
-    matchedInput: '配对输入：{fingerprint}。固定的设备与处置；不模拟来粮、磨损或维护。',
+    matchedInput: '配对输入：{fingerprint}。固定的设备与处置；不模拟提货、磨损或维护。',
     checkFreshness: '检查预演时效',
     staleComparison: '输入已变化。这份对比已过期；使用前请重新采集。',
     resultsLabel: '配对包装结果',
@@ -203,7 +203,7 @@ export const workplacePackingEvidenceMessages = defineMessages({
     noPackingObserved: '未观察到额外包装',
     minutesValue: '{value} 分钟',
     briefingRetains:
-      '简报保留其五分钟带薪的节奏暂停。请把样本时间与上方的 90 分钟总量对比；更早的首个样本不提供来粮回执。',
+      '简报保留其五分钟带薪的节奏暂停。请把样本时间与上方的 90 分钟总量对比；更早的首个样本不提供提货回执。',
     timingQuestion: '如果最终总量一致，在改变交接之前，你们会一起调查哪个时间差异？',
     timingUnavailable: '这份对比没有可用的时间数据。请先解决上方缺失的事实或模型警告，再解读它。',
     releaseSummary: '节奏能替代一次放行吗？',
@@ -224,13 +224,13 @@ export const workplacePackingEvidenceMessages = defineMessages({
     alreadyHeld: '在采集到的事实中，放行已被扣留。本预演不授予任何新许可。',
     alreadyZero: '原始的离场界限本已为零。这份对比不能把那个原始零值单独归因于质量。',
     independentEvidence:
-      '在实际离场之前，质量与协调需要哪些独立证据？更多包装补不上缺失的放行或来粮回执。',
+      '在实际离场之前，质量与协调需要哪些独立证据？更多包装补不上缺失的放行或提货回执。',
     resetQuality: '重置质量预测',
     reviewLabel: '包装预测回顾',
     rehearsalShowed: '预演显示了什么？',
     ourPrediction: '我们的预测：{prediction}。',
     moreStock:
-      '更多包装库存并不能确立一次卡车离场。来粮、合格放行与实际发运的回执仍需要各自的证据。',
+      '更多包装库存并不能确立一次卡车离场。提货、合格放行与实际发运的回执仍需要各自的证据。',
     anotherPrediction: '准备另一个预测',
     // HandoffConduct
     conductLabel: '交接行为复盘',

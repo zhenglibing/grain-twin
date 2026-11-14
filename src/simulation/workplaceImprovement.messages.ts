@@ -106,10 +106,10 @@ export const workplaceImprovementMessages = defineMessages({
     bufferTitle: '维护提议一个小型包装缓冲',
     bufferDetail:
       '为一个可复用的暂存安排注资。更高的模拟产线产能需要更多前期投入；质量放行与设备安全保持不变。',
-    lateTruckTitle: '来粮卡车迟到了',
-    lateTruckPremise: '假设来粮会失去这个 90 分钟窗口的前 45 分钟。',
+    lateTruckTitle: '提货卡车迟到了',
+    lateTruckPremise: '假设提货会失去这个 90 分钟窗口的前 45 分钟。',
     lateTruckRecommendation:
-      '如果无法确认来粮，建议延期。已包装的库存可以等待；额外工作无法让卡车到来。',
+      '如果无法确认提货，建议延期。已包装的库存可以等待；额外工作无法让卡车到来。',
     qualityHoldTitle: '质量请求产线等待',
     qualityHoldPremise: '假设成品库存被扣留，等待一次合格的质量评审。',
     qualityHoldRecommendation: '建议进行质量评审或延期。期限不授予放行职权。',
@@ -125,15 +125,15 @@ export const workplaceImprovementMessages = defineMessages({
       '在本次预演中拒绝了额外勤务。常规报酬与休息保持受保护。没有记录任何真实的角色表决或同意。',
     outcomeDefer: '预演试验已延期。没有进行任何采购。客户承诺仍未结；一次对话不能重新协商订单。',
     outcomeQualityHold:
-      '只要这一假设的扣留仍然存在，条件离场量就是 0 kg。需要合格评审或新的来粮窗口；这个选择不能放行真实的批次。',
+      '只要这一假设的扣留仍然存在，条件离场量就是 0 kg。需要合格评审或新的提货窗口；这个选择不能放行真实的批次。',
     outcomeTightCash:
       '在这个场景中，扣除 108 点数的工资预留后还剩 8 点数。常规节奏花费 0；新的带薪简报花费 8；新的缓冲花费 32，无力负担。实际现金保持不变。',
     outcomeSmallerKnown:
-      '最多商讨从已知已放行库存中交付 {kg} kg，并以来粮与质量为前提。其余仍为欠付。不假定任何交付或客户接受。',
+      '最多商讨从已知已放行库存中交付 {kg} kg，并以提货与质量为前提。其余仍为欠付。不假定任何交付或客户接受。',
     outcomeSmallerUnknown:
       '在已放行库存与剩余承诺已知之后，再商讨更小的交付。客户仍必须接受任何变更；不会产生任何计入。',
     outcomeOrdinary:
-      '在这个场景中，来粮还剩 45 分钟。包装可以在合格的常规工作内继续；离场仍未验证，休息得到保留。',
+      '在这个场景中，提货还剩 45 分钟。包装可以在合格的常规工作内继续；离场仍未验证，休息得到保留。',
     obligationRecovery: '在继续之前先交付应补的补休。',
     obligationObjections: '每条异议必须由其原提出人解决。',
     obligationSettle: '先结清预留报酬与可选工作。',
@@ -157,7 +157,7 @@ export const workplaceImprovementMessages = defineMessages({
     evidenceWorkshop: '工作坊没有记录工厂发运。其教学产出不能确立客户交付。',
     evidenceAbstained: '顾问弃权：{reason}本结果不补足缺失的事前预测。',
     evidenceBound:
-      '冻结的条件离场界限：按最初的 90 分钟假设为 0 至 {kg} kg。包装潜力与实际来粮保持分开。',
+      '冻结的条件离场界限：按最初的 90 分钟假设为 0 至 {kg} kg。包装潜力与实际提货保持分开。',
     evidenceNoForecast: '本班次没有保留基于工厂的离场预测。',
     questionRemedy:
       '让 {count} 位未解决异议的提出人各自说明什么能解决他们的顾虑。哪项补救仍需由他们确认？',
@@ -166,13 +166,13 @@ export const workplaceImprovementMessages = defineMessages({
     questionTrial:
       '在结束或停止之前，每个角色观察到了什么？在保持报酬与拒绝权受保护的同时，你们接下来会测试哪一个假设？',
     questionDelivery:
-      '包装或来粮在哪里等待了？在不借用其他角色休息的情况下，你们会对比哪一项交接变更？',
+      '包装或提货在哪里等待了？在不借用其他角色休息的情况下，你们会对比哪一项交接变更？',
     questionComparison:
       '让每个角色预测另一种安排会改变什么。哪种观察会让你们改变想法？你们在哪些方面仍有分歧？',
     limitationEarly:
       '这次缩短的试验不能被当作完成了 90 分钟的结果。一次试验不能确立该安排的因果效应。',
     limitationComplete:
-      '一次试验不能确立该安排的因果效应。配对比较保持共享输入固定；真实的来粮仍需要自己的回执。',
+      '一次试验不能确立该安排的因果效应。配对比较保持共享输入固定；真实的提货仍需要自己的回执。',
   },
   'pt-BR': {
     briefingTitle: 'O Ensaque propõe um briefing remunerado de passagem de turno',

@@ -127,9 +127,9 @@ export const workplaceAdviceMessages = defineMessages({
     truckHeld: '被扣留',
     truckReady: '就绪',
     truckDeparted: '已离场',
-    collectionUnavailable: '无可用的已捕获来粮事实。',
+    collectionUnavailable: '无可用的已捕获提货事实。',
     coordinatorQuestion:
-      '与质量一起核对物料兼容性、空闲产能与来粮时间。就绪的装载仍需要一张实际的离场回执。',
+      '与质量一起核对物料兼容性、空闲产能与提货时间。就绪的装载仍需要一张实际的离场回执。',
     predictionHigher: '缓冲范围完全高于常规工作',
     predictionOverlap: '包装范围之间没有清晰分隔',
     predictionLower: '缓冲范围完全低于常规工作',

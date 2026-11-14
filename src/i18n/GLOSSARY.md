@@ -650,7 +650,7 @@ CSS classes, keys and URLs.
 | pacing hold / paid briefing / briefing minutes | 节奏暂停 / 带薪简报 / 简报分钟 |
 | capacity bonus | 产能加成 |
 | conditional bound / departure bound / scenario bounds | 条件界限 / 离场界限 / 场景界限 |
-| collection（来粮动作）/ collection receipt | 来粮 / 来粮回执 |
+| collection / collection receipt | 提货 / 提货回执（来粮=incoming grain 另词，见 incoming grain 行） |
 | matched packing / matched input | 配对包装 / 配对输入 |
 | isolated copies | 隔离副本 |
 | flow engine | 物料流引擎 |
@@ -746,7 +746,7 @@ CSS classes, keys and URLs.
 | teaching counter / customer receipt / prior forecast / causal effect | 教学计数 / 客户回执 / 事前预测 / 因果效应 |
 | matched comparison | 配对比较（matched=配对 沿用 Task 4） |
 | dispatch release（状态：open / held / unknown） | 发运放行（开放 / 扣留 / 未知） |
-| loaded / load capacity / collection timing（卡车） | 已装载 / 装载能力 / 来粮时间 |
+| loaded / load capacity / collection timing（卡车） | 已装载 / 装载能力 / 提货时间 |
 | shared limit / supply / quality dispositions | 共同限制 / 供给 / 质量处置 |
 | mandate / bounded mandate（fairness beats；mandate check 授权检查 沿用 Task 5） | 授权 / 有界授权（grant 亦译 授权，按上下文区分） |
 | protected no | 受保护的拒绝 |
@@ -765,6 +765,7 @@ CSS classes, keys and URLs.
 | quality-qualified（commitment / dispatch evidence） | 质量合格的（承诺 / 发运证据） |
 | fresh role decisions（nextConfirm 引用 ImprovementPanel 既有标签） | 新的角色决定（沿用 Task 4） |
 | evidenceEndedAfter / evidenceCompleted（evidenceHorizon 前缀） | 结束于 / 已完成 |
+| fictional | 虚构（synthetic=虚拟、simulated=模拟 另词） |
 
 批次④（知识库/AI 组，Task 7 knowledgeStore + AISettingsModal + AICommandCenter + AgentCockpit）补充基线 — 后续批次必须沿用：
 
