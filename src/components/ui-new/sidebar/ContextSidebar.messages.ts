@@ -8,6 +8,14 @@ export const PT_MACHINE_TYPES: Record<string, string> = {
   CONTROL_ROOM: 'sala de controle',
 };
 
+export const ZH_MACHINE_TYPES: Record<string, string> = {
+  SILO: '筒仓',
+  ROLLER_MILL: '磨辊机',
+  PLANSIFTER: '平筛',
+  PACKER: '包装线',
+  CONTROL_ROOM: '控制室',
+};
+
 export const contextSidebarMessages = defineMessages({
   en: {
     inspector: 'Inspector',
@@ -35,29 +43,30 @@ export const contextSidebarMessages = defineMessages({
     loadingPanel: 'Loading panel content...',
   },
   zh: {
-    inspector: 'Inspector',
-    scada: 'Simulated SCADA',
-    aiPartner: 'AI Partner',
-    systemSettings: 'System Settings',
-    safety: 'Safety & Emergency',
-    management: 'Workplace & Autonomy',
-    chronicle: 'Mill Chronicle',
-    production: 'Production',
-    overview: 'Mill Overview',
+    inspector: '检查器',
+    scada: 'SCADA 模拟',
+    aiPartner: 'AI 伙伴',
+    systemSettings: '系统设置',
+    safety: '安全与应急',
+    management: '工作与自治',
+    chronicle: '磨坊纪事',
+    production: '生产',
+    overview: '磨坊概览',
     // The machine type enum, shown as words (capitalised by CSS).
-    machineType: (p: { type: string }) => p.type.toLowerCase().replaceAll('_', ' '),
-    panelLabel: '{title} sidebar panel',
-    closePanel: 'Close sidebar panel',
-    selectVersion: 'Select MillOS version',
-    releaseCurrent: '{label} (current)',
-    releaseHistorical: '{label} (historical)',
-    goToVersion: 'Go to MillOS version {version}',
-    go: 'Go',
-    aboutLabel: 'About MillOS',
-    about: 'About',
-    sourceLabel: 'View source code on GitHub',
-    source: 'Source',
-    loadingPanel: 'Loading panel content...',
+    machineType: (p: { type: string }) =>
+      ZH_MACHINE_TYPES[p.type] ?? p.type.toLowerCase().replaceAll('_', ' '),
+    panelLabel: '{title}侧边栏面板',
+    closePanel: '关闭侧边栏',
+    selectVersion: '选择 MillOS 版本',
+    releaseCurrent: '{label}（当前）',
+    releaseHistorical: '{label}（历史）',
+    goToVersion: '前往 MillOS 版本 {version}',
+    go: '前往',
+    aboutLabel: '关于 MillOS',
+    about: '关于',
+    sourceLabel: '在 GitHub 上查看源代码',
+    source: '源代码',
+    loadingPanel: '正在加载面板内容……',
   },
   'pt-BR': {
     inspector: 'Inspetor',
