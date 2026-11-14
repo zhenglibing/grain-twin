@@ -197,6 +197,9 @@ CSS classes, keys and URLs.
 | getting started | 新手引导 |
 | camera controls | 相机控制 |
 | skip tour | 跳过引导 |
+| zone (label) | 区域 |
+| storage (zone) | 仓储 |
+| milling (zone) | 制粉 |
 
 批次①（外壳）补充基线 — 后续批次必须沿用：
 

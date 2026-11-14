@@ -3,6 +3,7 @@ import { forwardRef, useCallback } from 'react';
 import type { ComponentProps, ComponentRef } from 'react';
 import * as THREE from 'three';
 import { POLYGON_OFFSET } from '../../constants/renderLayers';
+import { getLocale } from '../../i18n';
 
 /**
  * Drop-in replacement for drei's <Text> that defaults to a SELF-HOSTED font.
@@ -24,6 +25,8 @@ import { POLYGON_OFFSET } from '../../constants/renderLayers';
  * Inter (the original .otf was CFF and triggered exactly this hang).
  */
 const DEFAULT_3D_FONT = `${import.meta.env.BASE_URL}fonts/Inter-Regular.ttf`;
+/** zh needs CJK glyphs; Inter has none and troika does not fall back per glyph. */
+const DEFAULT_3D_FONT_ZH = `${import.meta.env.BASE_URL}fonts/NotoSansSC-Regular.ttf`;
 
 type GlyphsGeometry = THREE.BufferGeometry & {
   isInstancedBufferGeometry?: boolean;
@@ -207,7 +210,7 @@ export const SceneText = forwardRef<ComponentRef<typeof Text>, SceneTextProps>(f
       {...props}
       material={material ?? SCENE_TEXT_MATERIALS[surface]}
       depthOffset={props.depthOffset ?? sceneTextDepthOffset(surface)}
-      font={font ?? DEFAULT_3D_FONT}
+      font={font ?? (getLocale() === 'zh' ? DEFAULT_3D_FONT_ZH : DEFAULT_3D_FONT)}
     />
   );
 });
