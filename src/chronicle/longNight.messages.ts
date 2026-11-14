@@ -12,6 +12,17 @@ const catalog = defineMessages({
     m7: ' or ',
     m8: '{party} warm',
   },
+  zh: {
+    m0: 'The intake and grain stores',
+    m1: 'the intake and grain stores',
+    m2: 'them',
+    m3: 'The roller floor',
+    m4: 'the roller floor',
+    m5: 'it',
+    m6: '{plans} installed',
+    m7: ' or ',
+    m8: '{party} warm',
+  },
   'pt-BR': {
     m0: 'O recebimento e os armazéns de grãos',
     m1: 'o recebimento e os armazéns de grãos',

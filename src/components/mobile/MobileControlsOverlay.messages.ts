@@ -5,6 +5,10 @@ export const mobileControlsOverlayMessages = defineMessages({
     sprint: 'Sprint',
     walkMode: 'Walk mode',
   },
+  zh: {
+    sprint: 'Sprint',
+    walkMode: 'Walk mode',
+  },
   'pt-BR': {
     sprint: 'Correr',
     walkMode: 'Modo de caminhada',

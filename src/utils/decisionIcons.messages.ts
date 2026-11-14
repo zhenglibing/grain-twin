@@ -9,6 +9,13 @@ export const decisionIconsMessages = defineMessages({
     statusSuperseded: 'Superseded',
     statusUnknown: 'Status unknown',
   },
+  zh: {
+    statusCompleted: 'Completed',
+    statusInProgress: 'In progress',
+    statusPending: 'Pending',
+    statusSuperseded: 'Superseded',
+    statusUnknown: 'Status unknown',
+  },
   'pt-BR': {
     statusCompleted: 'Concluída',
     statusInProgress: 'Em andamento',

@@ -14,6 +14,19 @@ export const fpsInstructionsMessages = defineMessages({
     returnToOverview: 'Return to overview',
     pressEsc: 'Press ESC anytime to return to orbit camera',
   },
+  zh: {
+    heading: 'First-Person Mode',
+    captureFailed: 'Mouse capture unavailable. Click to retry or press V to leave.',
+    clickToEnter: 'Click anywhere to enter first-person exploration mode',
+    moveAround: 'Move around',
+    moveDownUp: 'Move down / up',
+    mouse: 'Mouse',
+    lookAround: 'Look around',
+    sprint: 'Sprint',
+    exitFirstPerson: 'Exit first-person',
+    returnToOverview: 'Return to overview',
+    pressEsc: 'Press ESC anytime to return to orbit camera',
+  },
   'pt-BR': {
     heading: 'Modo em primeira pessoa',
     captureFailed:

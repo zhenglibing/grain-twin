@@ -6,6 +6,11 @@ export const conveyorSystemMessages = defineMessages({
     flour: 'Flour',
     semolina: 'Semolina',
   },
+  zh: {
+    releasedStock: 'Released stock',
+    flour: 'Flour',
+    semolina: 'Semolina',
+  },
   'pt-BR': {
     releasedStock: 'Estoque liberado',
     flour: 'Farinha',

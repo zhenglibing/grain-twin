@@ -101,6 +101,104 @@ export const operationsCampaignMessages = defineMessages({
         p.others > 0 ? `, with ${p.othersText} more open` : ''
       }. Open Mill Overview, Maintenance to dispatch service, verify the repair and restart it.`,
   },
+  zh: {
+    // Recipes
+    recipeStrongWhite: 'Strong white bread flour',
+    recipeFineSemolina: 'Fine corn semolina',
+    recipeCommunityFlour: 'Community all-purpose flour',
+
+    // Incidents
+    bearingOverheatTitle: 'Roller mill bearing overheat',
+    bearingOverheatDescription: 'R.M. 101 bearing temperature is rising toward the trip point.',
+    dustFilterPressureTitle: 'Dust filter differential pressure',
+    dustFilterPressureDescription: 'Extraction resistance is increasing around the sifting floor.',
+    powerSagTitle: 'Site power sag',
+    powerSagDescription: 'Incoming voltage is unstable and motor protection is limiting load.',
+    delayedTruckTitle: 'Delayed dispatch truck',
+    delayedTruckDescription:
+      'The scheduled collection is delayed, increasing finished goods pressure.',
+    supplierContaminationTitle: 'Supplier contamination alert',
+    supplierContaminationDescription:
+      'A source lot notification requires an immediate hold and traceability review.',
+    packagingShortageTitle: 'Packaging material shortage',
+    packagingShortageDescription: 'Packer consumables are below the active order requirement.',
+    severeRainTitle: 'Severe rain and drainage loading',
+    severeRainDescription: 'Yard drainage and the stream are rising, slowing vehicle movements.',
+    controlNetworkDegradedTitle: 'Control network degraded',
+    controlNetworkDegradedDescription:
+      'Redundant control links have fallen below the required availability threshold.',
+
+    // Logbook sources
+    sourceRecoveryChallenge: 'Recovery challenge',
+    sourceOrderScheduler: 'Order scheduler',
+    sourceAutonomousExecution: 'Autonomous execution',
+    sourceIncidentController: 'Incident controller',
+    sourceDispatchController: 'Dispatch controller',
+    sourceProductionExecution: 'Production execution',
+    sourceControlLayer: 'Control layer',
+    sourceScada: 'SCADA',
+
+    // Logbook messages
+    logChallengeStarted: 'Started the recovery challenge: {label}.',
+    logChallengeAbandoned: 'Challenge abandoned; its incident controls remain active.',
+    logProgrammeAccepted:
+      'Accepted programme {number}: rush {customer} {rushKg} kg, {totalKg} kg in all. Existing material and genealogy remain unchanged.',
+    logProgrammeInitialized: 'Production programme initialized from equipment and inventory state.',
+    logOrderActivated: '{customer}: {recipe} is now the active commitment.',
+    logIncidentAcknowledged: '{title} acknowledged.',
+    logSetpointWritten: '{tag} set to {reading}.',
+    logIncidentMitigated: '{title} mitigated; residual effect halved.',
+    logIncidentResolved: '{title} resolved and controls returned to normal.',
+    logManifestAllocated:
+      '{manifest} allocated {kg} kg of evidenced dispatch across active commitments.',
+
+    // Execution stage messages
+    execPlanning: 'Production route planned.',
+    execPackedResting:
+      'The rest of this order is already packed; the line rests until shipping collects it.',
+    execPackedPrestaging:
+      'The rest of this order is packed and waits for its truck, so the line has started the next commitment for {customer}.',
+    execProcessing: 'Processing {material} for the active recipe.',
+    materialWheatGrain: 'wheat grain',
+    materialCornGrain: 'corn grain',
+    materialScheduledGrain: 'scheduled grain',
+    execQualityHold: 'Finished goods are held at the quality gate.',
+    execReadyToLoad: 'Released finished goods are ready at the shipping bay.',
+    execLoading: 'Shipping load is {loaded} of {capacity} kg.',
+    execReadyToDispatch: 'The outbound load is ready for departure.',
+    execDispatched: '{kg} kg left the shipping bay.',
+    execAllFulfilled:
+      'All commitments fulfilled. Accept the next production programme or review the completed period.',
+    execFulfilled: 'Commitment fulfilled.',
+
+    // Constraints
+    constraintStorageLabel: 'Storage capacity',
+    constraintStorageDetail: '{percent}% of material capacity is occupied.',
+    constraintFeedLabel: 'Recipe feed unavailable',
+    constraintFeedDetail: (p: { material: string }) =>
+      `${sentenceStart(p.material)} inventory is empty.`,
+    constraintOverdueLabel: 'Commitment overdue',
+    constraintDueSoonLabel: 'Commitment due soon',
+    constraintOverdueDetail: (p: { customer: string; minutes: string; count: number }) =>
+      `${p.customer} is ${p.minutes} simulated minutes overdue.`,
+    constraintDueSoonDetail: (p: { customer: string; minutes: string; count: number }) =>
+      `${p.minutes} simulated minutes remain for ${p.customer}.`,
+    constraintDispatchLabel: 'Dispatch isolated',
+    constraintDispatchDetail:
+      'An active incident requires the shipping quality gate to remain closed.',
+    constraintMaintenanceLabel: 'Machine stopped for repair',
+    constraintMaintenanceDetail: (p: { count: number; countText: string }) =>
+      `${p.countText} work order${p.count === 1 ? '' : 's'} open. Open Mill Overview, Maintenance to dispatch service, verify the repair and restart.`,
+    constraintMachineDownDetail: (p: {
+      machine: string;
+      workOrderId: string;
+      others: number;
+      othersText: string;
+    }) =>
+      `${p.machine} is stopped on work order ${p.workOrderId}${
+        p.others > 0 ? `, with ${p.othersText} more open` : ''
+      }. Open Mill Overview, Maintenance to dispatch service, verify the repair and restart it.`,
+  },
   'pt-BR': {
     recipeStrongWhite: 'Farinha de trigo forte para pão',
     recipeFineSemolina: 'Semolina fina de milho',

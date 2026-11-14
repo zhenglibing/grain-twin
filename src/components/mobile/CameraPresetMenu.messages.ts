@@ -7,6 +7,12 @@ export const cameraPresetMenuMessages = defineMessages({
     viewsGroup: 'Camera views',
     header: 'Camera View',
   },
+  zh: {
+    closeMenu: 'Close camera menu',
+    openMenu: 'Open camera menu',
+    viewsGroup: 'Camera views',
+    header: 'Camera View',
+  },
   'pt-BR': {
     closeMenu: 'Fechar menu da câmera',
     openMenu: 'Abrir menu da câmera',

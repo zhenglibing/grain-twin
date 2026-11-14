@@ -12,6 +12,17 @@ export const deferredOperationalUIMessages = defineMessages({
     loaded: 'Loaded',
     empty: 'Empty',
   },
+  zh: {
+    forkliftRegion: 'Forklift {id}',
+    forkliftHeading: 'Forklift',
+    closeForklift: 'Close forklift details',
+    idLabel: 'ID',
+    controlLabel: 'Control',
+    autonomous: 'Autonomous',
+    cargoLabel: 'Cargo',
+    loaded: 'Loaded',
+    empty: 'Empty',
+  },
   'pt-BR': {
     forkliftRegion: 'Empilhadeira {id}',
     forkliftHeading: 'Empilhadeira',

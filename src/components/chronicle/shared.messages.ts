@@ -8,6 +8,13 @@ export const messages = defineMessages({
     m3: 'shift',
     m4: 'shifts',
   },
+  zh: {
+    m0: 'fund',
+    m1: 'know-how',
+    m2: '{desk} desk',
+    m3: 'shift',
+    m4: 'shifts',
+  },
   'pt-BR': {
     m0: 'fundo',
     m1: 'conhecimento prático',

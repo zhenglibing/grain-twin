@@ -6,6 +6,11 @@ export const knowledgeTooltipMessages = defineMessages({
     learnMoreAbout: 'Learn more about {title}',
     readMore: 'Read more',
   },
+  zh: {
+    learnMore: 'Learn more',
+    learnMoreAbout: 'Learn more about {title}',
+    readMore: 'Read more',
+  },
   'pt-BR': {
     learnMore: 'Saiba mais',
     learnMoreAbout: 'Saiba mais sobre {title}',

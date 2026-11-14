@@ -220,6 +220,134 @@ export const workplaceImprovementPanelMessages = defineMessages({
     historyLine: (p: HistoryParams) =>
       `Shift ${p.cycle}: ${p.proposal}, ${p.verdict}; dispatched ${p.kg} kg, wages ${p.wages}, purchase ${p.spend}, closing cash ${p.cash}.`,
   },
+  zh: {
+    regionLabel: 'Handoff experiment',
+    introHeading: 'The handoff experiment',
+    introIdea: 'Try a member’s idea on the packing floor, then decide what stays.',
+    introProtected: 'One 90-minute trial. Pay, qualified work and refusal stay protected.',
+    modeLabel: 'Handoff mode',
+    modeGame: 'Game',
+    modeWorkshop: 'Workshop',
+    modePilot: 'Pilot preparation',
+    governanceLabel: 'Handoff governance',
+    profileToeDip: 'Coordinator-led',
+    profileTeam: 'Team agreement',
+    profileCooperative: 'Member governance',
+    openExperiment: 'Open the handoff experiment',
+    openHoldNote:
+      'Opening it holds the plant clock while the team decides, so the adviser forecast stays true. You can cancel it until the trial is funded.',
+    holdHeading: 'Plant clock held for this decision',
+    cancelExperiment: 'Cancel the handoff experiment',
+    cancelNote:
+      'Nothing is funded yet, so cancelling returns to the review you started from, with its pay, receipts and customer work unchanged, and the plant resumes at the pace above.',
+    endToReviewNote:
+      'This later shift keeps earlier trial pay, so it cannot be cancelled. Ending it moves to its member review; finalising that review releases the plant.',
+    finaliseToReleaseNote: 'Finalising the member review below releases the plant.',
+    seasonOpened: 'Season opened. Use Shift and Agreement / Voices for current decisions.',
+    pilotPlanningOnly:
+      'Pilot preparation remains planning-only. Use Game or Workshop for a local experiment.',
+    shiftHeading: 'The handoff experiment, shift {cycle}',
+    rolePlayNote:
+      'Synthetic role-play. Everyone can challenge or stop an arrangement. No private reason, extra duty or lost pay is required.',
+    remediesLabel: 'Handoff remedies',
+    remediesHeading: 'Whose concern needs a remedy?',
+    remediesNote:
+      'Review each concern with its raiser. Opening a record changes no role, decision or permission. Only that raiser can confirm resolution.',
+    adviser: 'Adviser',
+    objectionLine: (p: ObjectionParams) => `${p.role}: ${p.statement} (${p.kind}, open)`,
+    reviewRemedy: (p: RemedyParams) => `Review remedy: ${p.role} (${p.kind})`,
+    whichIdea: 'Which idea should the team try?',
+    selected: 'Selected for this trial.',
+    costLine: (p: CostLineParams) =>
+      `${p.cost} credits for a new arrangement; ${
+        p.briefingMinutes ? `${p.briefingMinutes} paid minutes of pacing hold; ` : ''
+      }${p.capacity}× modeled pace. An adopted arrangement has no repeat purchase.`,
+    reserveLine:
+      'Reserve 108 credits for wages first. This shift’s purchase: {cost} credits. Cash before reservations: {cash}.',
+    hearAdviserHint:
+      'Hear the adviser response to capture the current plant facts. Missing evidence will cause an explicit abstention.',
+    workshopNoForecast: 'Facilitated workshop: no physical packing or departure forecast.',
+    noCapacityBonus: 'Governance grants no capacity bonus.',
+    challengeAuthor: 'Challenge author',
+    beginTurn: 'Begin a participant turn',
+    challengeSubject: 'Challenge subject',
+    challengeKind: (p: KindParams) => p.kind,
+    challengeProposal: 'Challenge this proposal',
+    hearAdviser: 'Hear the adviser response',
+    challengeItem: (p: ChallengeItemParams) =>
+      `${p.role} challenged ${p.kind}; ${
+        p.acknowledged
+          ? 'response recorded, individual objection rights retained'
+          : 'response pending'
+      }.`,
+    adviserResponse:
+      'Adviser: “These are uncertain operational assumptions. Spending stays bounded, work stays qualified, and any role can return the line to steady pacing. I cannot waive a boundary or close someone else’s objection.”',
+    roleDecisionsHeading: 'Fresh role decisions',
+    roleDecisionsNote:
+      'A policy ballot grants no optional-duty consent. Team agreement requires all approvals; member governance requires three; coordinator-led work hears every role before the coordinator decides.',
+    policyBallot: (p: BallotParams) => `Policy ballot: ${p.status}.`,
+    ordinaryPayUnchanged: ' Ordinary pay is unchanged.',
+    confirmUnderstanding: 'Confirm handoff understanding: {role}',
+    approveHandoff: 'Approve handoff: {role}',
+    declineHandoff: 'Decline handoff: {role}',
+    checkingAgreement: 'Checking current agreement…',
+    recordWorkshop: 'Record handoff workshop agreement',
+    approveAndRun: 'Approve and run handoff trial',
+    arrangementStopped: 'Arrangement stopped: steady 0.78× pacing for the remaining agreed shift.',
+    arrangementExpires: 'Arrangement expires at minute 90. {detail}',
+    briefingInProgress: 'Paid briefing in progress; line pacing held.',
+    watchLineDispatch: 'Watch the line and customer dispatch.',
+    stoppingRole: 'Stopping role',
+    stopArrangement: 'Stop arrangement and keep steady work',
+    endShiftNow: 'End handoff shift now',
+    advanceRehearsal: 'Advance handoff rehearsal by 5 minutes',
+    watchPackingHandoff: 'Watch the packing handoff',
+    actualDispatch: 'This shift’s actual dispatch: ',
+    kgValue: '{kg} kg',
+    workshopNoShipment: ' (workshop has no plant shipment)',
+    commitmentRemaining: 'Full customer commitment remaining: ',
+    commitmentValue: (p: EvidenceParams) => `${p.kg} kg; ${p.evidence} evidence`,
+    paidThisShift: 'Paid this shift: ',
+    paidValue: '{wages} credits; purchase {spend}; closing cash {cash}',
+    retainedPay: 'Retained earned pay: ',
+    retainedPayValue: '{wages} credits; compensation {compensation}',
+    carryHeading: 'What should carry into the next shift?',
+    learningLabel: 'Handoff learning review',
+    learningHeading: 'What did this handoff teach us?',
+    comparisonNote:
+      'The optional comparison below uses current paused plant inputs. It does not replay this finished shift or record a review ballot. Fresh terms still need fresh role decisions.',
+    hearForecastReview: 'Hear the adviser review its forecast',
+    adviserQuoteOpen: 'Adviser: “',
+    abstainedReview:
+      'I had insufficient evidence to forecast. This outcome does not turn missing facts into a prior prediction.',
+    forecastReview: (p: ForecastReviewParams) =>
+      `I assumed fixed machinery, quality and ${p.speed}× clock pace. Actual dispatch ${p.kg} kg ${
+        p.within ? 'fell within' : 'exceeded'
+      } my conditional bound. Changed inputs or collection timing require a new explanation, never a retroactively edited forecast.`,
+    teachingForecastReview:
+      'That retained teaching forecast was illustrative. New game trials capture plant-grounded facts.',
+    adviserQuoteClose: 'Customer work, earned pay and individual remedies remain intact.”',
+    reviewDecision: '{role} review decision',
+    chooseReviewDecision: 'Choose a review decision',
+    verdictAdopt: 'Adopt, retain the purchase with fresh agreement',
+    verdictAmend: 'Amend, try the alternative next shift',
+    verdictStop: 'Stop, return to ordinary pacing',
+    finaliseReview: 'Finalise handoff review',
+    reviewRecorded: (p: VerdictParams) =>
+      `Review recorded: ${p.verdict}. Every ending preserves the learning and earned obligations.`,
+    completeGame:
+      'This handoff experiment is complete. The plant runs normally again at the shift pace below; change it there if you like. Another handoff shift is optional.',
+    completeWorkshop: 'This handoff experiment is complete. Another handoff shift is optional.',
+    openNextShift: 'Open next handoff shift',
+    closeExperiment: 'Close the handoff experiment',
+    closeNote:
+      'Closing ends the experiment without opening another shift. Pay was paid and nothing is owed, so the laboratory returns to idle for a fresh exercise or season. A season it began from, if any, is kept with your seasons; the shift receipts of this experiment are not kept after closing.',
+    earlierDecisions: 'Earlier decisions and retained receipts',
+    originNote:
+      'Origin closing cash: {cash} credits. Earlier earned pay and any campaign review remain retained; old consent supplies no current permission.',
+    historyLine: (p: HistoryParams) =>
+      `Shift ${p.cycle}: ${p.proposal}, ${p.verdict}; dispatched ${p.kg} kg, wages ${p.wages}, purchase ${p.spend}, closing cash ${p.cash}.`,
+  },
   'pt-BR': {
     regionLabel: 'Experimento de passagem de turno',
     introHeading: 'O experimento de passagem de turno',

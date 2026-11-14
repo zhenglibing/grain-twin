@@ -7,6 +7,12 @@ export const materialFlowStoreMessages = defineMessages({
     inheritedDisposition: 'Inherited source-lot disposition',
     fullyDispatched: 'Fully dispatched',
   },
+  zh: {
+    openingInventory: 'Opening inventory',
+    scheduledFarmIntake: 'Scheduled farm intake',
+    inheritedDisposition: 'Inherited source-lot disposition',
+    fullyDispatched: 'Fully dispatched',
+  },
   'pt-BR': {
     openingInventory: 'Estoque inicial',
     scheduledFarmIntake: 'Recebimento programado da fazenda',

@@ -39,6 +39,44 @@ export const buildCacheDiagnosticsMessages = defineMessages({
     statusRefreshing: 'Refreshing build and cache status.',
     statusWaiting: 'A newer build is waiting.',
   },
+  zh: {
+    heading: 'Build and cache',
+    applicationBuild: 'Application build',
+    workerBuild: 'Worker build',
+    cacheEntries: 'Cache entries',
+    connection: 'Connection',
+    reading: 'Reading',
+    notControlling: 'Not controlling',
+    offline: 'Offline',
+    online: 'Online',
+
+    noteUnsupported:
+      'Service workers are unavailable in this browser. Network loading remains active.',
+    noteInactive:
+      'The service worker is inactive in this session. This is expected during normal local development.',
+    noteMismatch:
+      'The page and worker builds differ. Activate the waiting build, or reload after the update completes.',
+    noteReady: 'A newer build is ready to activate.',
+    cacheGroups: 'Cache groups ({count})',
+
+    refreshStatus: 'Refresh status',
+    checkForUpdate: 'Check for update',
+    clearThisCache: 'Clear this cache',
+    activateUpdate: 'Activate update',
+
+    statusReading: 'Reading build and cache status.',
+    statusCurrent: 'Build and cache status is current.',
+    statusChecking: 'Looking for a newer build.',
+    statusUpToDate: 'Up to date.',
+    statusNoWorker: 'No service worker registered.',
+    statusClearing: 'Clearing cached assets.',
+    statusCleared: 'Cache cleared.',
+    statusClearFailed: 'Could not clear the cache.',
+    statusActivating: 'Activating the waiting build.',
+    statusActivateFailed: 'The waiting build could not be activated.',
+    statusRefreshing: 'Refreshing build and cache status.',
+    statusWaiting: 'A newer build is waiting.',
+  },
   'pt-BR': {
     heading: 'Versão e cache',
     applicationBuild: 'Versão do aplicativo',

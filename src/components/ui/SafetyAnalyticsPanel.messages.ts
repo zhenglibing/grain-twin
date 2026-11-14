@@ -32,6 +32,37 @@ export const safetyAnalyticsPanelMessages = defineMessages({
 
     downloadReport: 'Download Safety Report',
   },
+  zh: {
+    title: 'Safety Analytics',
+    lastHour: 'Last Hour',
+    thisSession: 'This Session',
+    incidents: 'incidents',
+
+    heatMap: 'Incident Heat Map',
+    hotspotsRecorded: '{count} hotspots recorded',
+    showHeatMap: 'Show incident heat map',
+    on: 'ON',
+    off: 'OFF',
+    confirmClearLabel: 'Confirm clearing incident heat map (irreversible)',
+    clearLabel: 'Clear incident heat map',
+    confirmClearTitle: 'Click again to permanently clear all hotspot data',
+    clearTitle: 'Permanently clear all recorded hotspots',
+    confirm: 'Confirm?',
+    clear: 'Clear',
+
+    forkliftEfficiency: 'Forklift Efficiency',
+    confirmResetLabel: 'Confirm resetting forklift efficiency metrics (irreversible)',
+    resetLabel: 'Reset forklift efficiency metrics',
+    confirmResetTitle: 'Click again to permanently reset all forklift metrics',
+    resetTitle: 'Permanently reset all forklift efficiency metrics',
+    reset: 'Reset',
+    waitingForData: 'Waiting for data',
+    forkliftName: (p: { id: string }) => p.id.replace('forklift-', 'Forklift '),
+    moving: 'Moving: {seconds}s',
+    stopped: 'Stopped: {seconds}s',
+
+    downloadReport: 'Download Safety Report',
+  },
   'pt-BR': {
     title: 'Análises de segurança',
     lastHour: 'Última hora',

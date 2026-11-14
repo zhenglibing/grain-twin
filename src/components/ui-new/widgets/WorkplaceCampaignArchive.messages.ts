@@ -77,6 +77,45 @@ export const workplaceCampaignArchiveMessages = defineMessages({
       'No other open order can take its place yet. The next shift links one if the mill has one open by then; until then, further dispatch earns the cooperative nothing.',
     followOnLastShift: 'This is the season’s last shift, so nothing replaces it.',
   },
+  zh: {
+    reviewSummary: (p: ReviewSummaryParams) =>
+      `${p.profile}, seed ${p.seed}: delivery ${p.delivery}, agreement ${p.agreement}`,
+    dispatched: 'Dispatched {delivered} / {target} kg. Full commitment remaining: {remaining} kg.',
+    accounts:
+      'Illustrative credits: closing cash {cash}; wages paid {wages}; compensation paid {compensation}.',
+    memberLine:
+      '{role}: extra duty {extra} min; rest {rest} min; recovery delivered {recovery} min; recovery owed {owed} min.',
+    download: 'Download this redacted review',
+    regionLabel: 'Completed workplace campaigns',
+    freshHeading: 'Keep the review, try another charter',
+    freshIntro:
+      'Archive these three shifts before opening a fresh exercise. Earned pay, delivered recovery and shortfalls stay in the review. New terms need new role understanding, ballots and individual consent.',
+    freshCredits:
+      'Each exercise opens with 400 illustrative credits. Mill inventory, customer commitments and physical production continue unchanged.',
+    archiveButton: 'Archive review and open a fresh exercise',
+    blockedReplay: 'Finish or forget the matched replay first.',
+    blockedObligations: 'Deliver owed recovery and settle open objections and reserved pay first.',
+    retainedReviews: 'Retained campaign reviews ({count})',
+    retainedNote:
+      'The last six reviews stay on this browser, with private preferences redacted. Download any review you want to keep longer. A historical review cannot restart an agreement.',
+    leaveButton: 'Leave this season',
+    leaveKept:
+      'Leaving keeps what was earned: {kg} kg delivered to {customer}, {pay} credits in pay and cover, and {recovery} minutes of recovery delivered. It is kept as a season left early, not a completed one, and customer and next-programme choices open again.',
+    leaveWaitActive: 'Leaving waits until this shift is stopped or ends, so its pay settles first.',
+    leaveWaitObligations: 'Leaving waits until nothing is owed. {reasons}',
+    leftFeedback:
+      'Season left early at shift {shift} of 3. Its pay, recovery and receipts are kept under Seasons left early.',
+    leftSeasons: 'Seasons left early ({count})',
+    leftNote:
+      'Each was left before its final review. It keeps the pay, recovery and receipts it earned and does not count as a completed season.',
+    leftSummary: 'Left early at shift {shift} of 3, seed {seed}',
+    followOnStopped: (p: { customer: string; evidence: string }) =>
+      `Credit from ${p.customer} has stopped: ${EN_EVIDENCE[p.evidence] ?? EN_EVIDENCE.missing}.`,
+    followOnReplacement: 'The next shift credits dispatch to {customer} in its place.',
+    followOnNoReplacement:
+      'No other open order can take its place yet. The next shift links one if the mill has one open by then; until then, further dispatch earns the cooperative nothing.',
+    followOnLastShift: 'This is the season’s last shift, so nothing replaces it.',
+  },
   'pt-BR': {
     reviewSummary: (p: ReviewSummaryParams) =>
       `${PT_PROFILE[p.profile] ?? p.profile}, semente ${p.seed}: entrega ${

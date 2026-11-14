@@ -13,6 +13,18 @@ export const onboardingGuideMessages = defineMessages({
     next: 'Next',
     start: 'Start operating',
   },
+  zh: {
+    regionLabel: 'Getting started, step {step} of {count}',
+    eyebrow: 'Getting started {step}/{count}',
+    close: 'Close getting started for this session',
+    cameraControls: 'Camera controls',
+    cameraHelp:
+      'Drag to orbit; scroll or pinch to zoom. Use W A S D to move and Q or E to change height.',
+    back: 'Back',
+    skip: 'Skip tour',
+    next: 'Next',
+    start: 'Start operating',
+  },
   'pt-BR': {
     regionLabel: 'Primeiros passos, etapa {step} de {count}',
     eyebrow: 'Primeiros passos {step}/{count}',

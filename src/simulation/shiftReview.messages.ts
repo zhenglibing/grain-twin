@@ -119,6 +119,69 @@ export const shiftReviewMessages = defineMessages({
     outcomeOpen: '{customer}: {shipped} of {required} kg so far, due in {duration}.',
     outcomeQualityFailure: '{kg} kg failed quality.',
   },
+  zh: {
+    noCommitment: 'No customer commitments this shift.',
+    noCommitmentIncident:
+      'No customer commitments this shift, but an unresolved incident held it back.',
+    openIncidentReason: (p: OpenIncidentParams) =>
+      `Still open at close, ${EN_OPEN_PHASE[p.phase] ?? EN_OPEN_PHASE.raised}: ${p.title}. ${p.detail}`,
+    openIncidentTitleReason: 'Still open at close: {title}.',
+    dispatchReason: '{kg} kg dispatched; net contribution {margin} after recorded costs.',
+    riskReason: (p: { count: number; countText: string }) =>
+      p.count === 1
+        ? `${p.countText} material or deadline risk carried into the next shift.`
+        : `${p.countText} material or deadline risks carried into the next shift.`,
+    qualityFailureReason:
+      '{kg} kg failed the commitment quality threshold; quality failure caps the grade at F.',
+    unsafeReason: 'Unresolved high-severity controls cap the grade at D: {titles}.',
+    shiftName: (p: { shift: string }) => p.shift.charAt(0).toUpperCase() + p.shift.slice(1),
+    durationHours: '{hours}h {minutes}m',
+    durationMinutes: '{minutes}m',
+    headlineGood: '{kg} kg shipped with a nonnegative contribution and carry-over risk in hand.',
+    headlineHeldBack: (p: { kg: string; cause: string }) =>
+      `${p.kg} kg shipped; ${EN_CAUSE[p.cause] ?? EN_CAUSE.risks} held the grade back.`,
+    gradeLabel: 'Grade {grade}',
+    gapQuality: '{next} needs every load to meet the recipe quality target.',
+    gapUnsafe: '{next} needs {titles} resolved before the shift closes.',
+    gapLate: (p: LateGapParams) =>
+      p.allowed === 0
+        ? `${p.next} needs every delivery on time; ${p.countText} arrived late.`
+        : `${p.next} allows at most ${p.allowedText} late ${p.allowed === 1 ? 'delivery' : 'deliveries'}; ${p.countText} arrived late.`,
+    gapMixedIssues: (p: MixedIssueGapParams) =>
+      `${p.next} allows ${p.allowedText} ${p.allowed === 1 ? 'issue' : 'issues'} across open risks and late deliveries; this shift had ${p.riskText} open ${p.risks === 1 ? 'risk' : 'risks'} (${p.labels}) and ${p.lateText} late ${p.late === 1 ? 'delivery' : 'deliveries'}.`,
+    gapRisks: (p: {
+      next: string;
+      allowed: number;
+      allowedText: string;
+      count: number;
+      countText: string;
+      labels: string;
+    }) =>
+      p.allowed === 0
+        ? `${p.next} needs no open risks when the shift closes; you carried ${p.countText}: ${p.labels}.`
+        : `${p.next} needs at most ${p.allowedText} open risk${p.allowed === 1 ? '' : 's'} when the shift closes; you carried ${p.countText}: ${p.labels}.`,
+    gapMargin: '{next} needs a nonnegative net contribution; costs exceeded revenue by {amount}.',
+    gapKg: '{next} needs {target} kg for {duration} on commitments; you were {short} kg short.',
+    gapNoDispatch: '{next} needs at least one delivery against a commitment.',
+    tryNoCommitment:
+      'Try next: accept the next delivery programme in Overview, so the shift has a customer to serve.',
+    tryQuality:
+      'Try next: hold loading until QC releases the batch, and check the recipe quality target in Overview before a truck leaves.',
+    tryUnsafe:
+      'Try next: acknowledge and mitigate {titles} in Overview as soon as it is raised, then resolve it before the shift closes.',
+    tryLate:
+      'Try next: serve the earliest-due customer first; the line starts the next order while a truck loads, so keep the recipe feed stocked.',
+    tryRisk: 'Try next: clear "{risk}" before the shift closes.',
+    tryMargin:
+      'Try next: keep an order running; an idle line, open work orders and a docked truck held at the bay still cost money.',
+    tryKg:
+      'Try next: keep the recipe feed stocked and a shipping truck loading, so finished goods leave while the order is open.',
+    outcomeOnTime: '{customer}: {shipped} of {required} kg, delivered on time.',
+    outcomeLate: '{customer}: {shipped} of {required} kg, delivered {duration} late.',
+    outcomeOverdue: '{customer}: {shipped} of {required} kg so far, {duration} overdue.',
+    outcomeOpen: '{customer}: {shipped} of {required} kg so far, due in {duration}.',
+    outcomeQualityFailure: '{kg} kg failed quality.',
+  },
   'pt-BR': {
     noCommitment: 'Nenhum compromisso com clientes neste turno.',
     noCommitmentIncident:

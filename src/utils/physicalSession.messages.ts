@@ -28,6 +28,32 @@ export const physicalSessionMessages = defineMessages({
     autosavePausedMessage:
       'Part of the scene stopped running, so autosave is paused. The shift continues and the last good save is kept. Reload the page to resume saving.',
   },
+  zh: {
+    saveNeedsAttention: 'Shift save needs attention',
+    resetHint: '{reason} Settings > Simulation > Reset Simulation starts a fresh shift.',
+    storageUnavailable:
+      'Browser storage is unavailable. This shift is paused and cannot be saved in this browser.',
+    restoreFailed:
+      'The saved physical shift could not be restored. Its record is retained. The clock is paused and this tab will not overwrite it.',
+    otherTabTitle: 'Autosave off in this tab',
+    otherTabMessage:
+      'The saved shift changed outside this tab. This tab keeps running but will not overwrite that record; reload to use it.',
+    autosaveSkippedTitle: 'Autosave skipped',
+    autosaveSkippedQuota:
+      'Autosave skipped: browser storage is full. The shift continues and the last good save is kept.',
+    autosaveSkippedMessage: 'Autosave skipped; the shift continues and the last good save is kept.',
+    autosaveStoppedTitle: 'Autosave stopped',
+    autosaveTooLarge:
+      "This shift's record has outgrown the browser save, so autosave cannot write it. The shift continues, but a reload returns to the last good save.",
+    continuationFailed:
+      'Scene continuation could not be restored. The saved record is retained and the clock is paused.',
+    sceneWaitingTitle: 'Saved shift is waiting',
+    sceneWaitingMessage:
+      'Part of the scene did not load, so the saved shift cannot resume. The clock stays paused and the saved record is kept. Reload the page to try again; Settings > Simulation > Reset Simulation starts a fresh shift.',
+    autosavePausedTitle: 'Autosave paused',
+    autosavePausedMessage:
+      'Part of the scene stopped running, so autosave is paused. The shift continues and the last good save is kept. Reload the page to resume saving.',
+  },
   'pt-BR': {
     saveNeedsAttention: 'O salvamento do turno precisa de atenção',
     resetHint: '{reason} Configurações > Simulação > Reiniciar simulação inicia um turno novo.',

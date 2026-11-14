@@ -104,6 +104,100 @@ export const workplaceParticipationMessages = defineMessages({
     takeOver: 'Take over cooperative season',
     takeOverCompact: 'Cooperative season running: take over',
   },
+  zh: {
+    // Logic values shown as labels. English returns the value itself.
+    sectionLabel: (p: { section: string }) => p.section,
+    objectionKind: (p: { kind: string }) => p.kind,
+
+    // Decision ownership
+    regionLabel: 'Decision ownership',
+    ownershipPrefix: 'Decision ownership:',
+    soloRolePlay: 'solo role-play',
+    roleTurn: '{role} turn',
+    facilitatorHandover: 'facilitator handover',
+    adviser: 'Adviser',
+    rehearsalNotice:
+      'Shared-device synthetic rehearsal. Separate turns limit local role actions. They provide no identity authentication or proof of freedom from coercion. Real worker sessions need separate authentication and agreed safeguards.',
+    interactionMode: 'Interaction mode',
+    optionSolo: 'Solo role-play',
+    optionSeparate: 'Facilitated separate turns',
+    turnOnly:
+      'Only {role} may record this turn’s role decisions. Changed terms end the turn. End this turn before facilitator activation or settlement.',
+    mandateChecksLegend: 'Current mandate checks',
+    mandateChecksStatus:
+      'Mandate checks: {done} of {total} match the current agreement. Confirming understanding remains a separate choice.',
+    turnCheckLabel: 'Turn check: {id}',
+    selectAnswer: 'Select an answer',
+    matchesTerms: 'Matches the current terms. ',
+    needsAnotherLook: 'Needs another look. ',
+    endTurn: 'End participant turn',
+    handOver: 'Hand over to fictional role',
+    beginTurn: 'Begin participant turn',
+    handOverNote:
+      'Hand the device over before beginning. The facilitator may prepare terms and explain facts, and cannot record role decisions.',
+
+    // Season entry
+    seasonSummary: 'Play a three-shift cooperative season',
+    seasonIntro:
+      'Friday: agree an urgent delivery. Monday: inspect under pressure. Thursday: renegotiate repeated burden. Cash, pay and workload carry forward; each shift needs fresh consent.',
+    seasonRoute: 'Season adoption route',
+    adoptionNote:
+      'Keep this degree of adoption throughout; escalation is optional in a future exercise.',
+    startSeason: 'Start season with current customer commitment',
+    seasonRequires:
+      'Requires an open, qualified customer commitment. Real dispatch earns delivery; a defensible shortfall is a valid ending.',
+
+    // Fairness receipts
+    fairnessSummary: 'Individual fairness receipts',
+    fairnessIntro:
+      'Illustrative credits and modeled minutes. Earned pay includes member distributions; extra-duty compensation is separate. Current reservations are earmarked funds, awaiting work.',
+    fairnessLabel: 'Fairness: {role}',
+    qualifiedTasks: 'Qualified tasks: {tasks}. Current task: {task}.',
+    // Task names are logic values (bilateralWorkplace); English shows them as-is.
+    taskLabel: (p: { task: string }) => p.task,
+    dutyLine:
+      'Current optional duty: {duty}. {extra} extra minutes across {shifts} shifts; {earlier} earlier minutes.',
+    dutyNoDecision: 'no decision',
+    dutyVolunteered: 'volunteered',
+    dutyDeclined: 'declined',
+    payLine:
+      'Earned pay and member distributions: {earned}. Compensation paid: {paid}. Wages reserved: {wages}. Compensation reserved: {reserved}.',
+    restLine:
+      'Rest delivered: {rest} min. Recovery delivered: {recovery} min. Recovery owed: {owed} min.',
+    openObjections: (p: CountParams) => `${p.formatted} retained open objections.`,
+
+    // Guided demonstration
+    demoLabel: 'Guided bilateral demonstration',
+    closeGuide: 'Close ten-minute guide',
+    openGuide: 'Open ten-minute guide',
+    guideIntro:
+      'About ten minutes of discussion, with plant time controlled separately. Evidence marks observed choices; a skipped optional choice stays available. The guide never makes decisions for you.',
+    evidencePresent: 'Evidence present',
+    availableToExplore: 'Available to explore',
+    goTo: 'Go to {section}',
+    downloadReceipt: 'Download public cooperative receipt',
+    saveReload: 'Save and safely reload workplace',
+
+    // Automatic demonstration
+    autoLabel: 'Automatic fictional demonstration',
+    autoRunning:
+      'Automatic solo demonstration: fictional roles choose, refuse and revoke sharing. Real simulated plant departures earn delivery.',
+    autoIdle:
+      'The cooperative season runs autonomously by default. Take over whenever you want. Separate participant turns always stay manual.',
+    autoManual:
+      'You can let fictional solo roles demonstrate the season, or keep making the choices yourself.',
+    skipGuide: 'Skip guide and run fictional demo',
+    pauseDemo: 'Pause automatic demo',
+    keepManual: 'Keep decisions manual',
+
+    // Autoplay status
+    demoRunningLabel: 'Fictional demo running',
+    autonomousSeason: 'Autonomous cooperative season',
+    autonomousSeasonDetail:
+      "Fictional cooperative roles are making this season's decisions while the plant runs. Take over to make them yourself in the Bilateral Autonomy System (BAS) panel; the shift keeps running.",
+    takeOver: 'Take over cooperative season',
+    takeOverCompact: 'Cooperative season running: take over',
+  },
   'pt-BR': {
     sectionLabel: (p: { section: string }) =>
       pick(

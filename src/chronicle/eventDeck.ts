@@ -20,6 +20,7 @@ import type { ChronicleEventDefinition, ChronicleEventEffect } from './types';
 const eventPresentationMessages = defineMessages({
   en: { ...eventDeckMessages.en, ...stewardDeckMessages.en },
   'pt-BR': { ...eventDeckMessages['pt-BR'], ...stewardDeckMessages['pt-BR'] },
+  zh: { ...eventDeckMessages['zh'], ...stewardDeckMessages['zh'] },
 });
 
 const BASE_DECK: ChronicleEventDefinition[] = [

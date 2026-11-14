@@ -59,6 +59,63 @@ export const sharedMessages = defineMessages({
     forkliftStop:
       'Forklift emergency stop. Every forklift is holding position; the mill keeps running.',
   },
+  zh: {
+    processPathVerified: 'Process path verified, receiving through packing. All interlocks ready.',
+    siloInventoryReconciled:
+      'Silo inventory reconciled. Mass balance within tolerance — nothing unaccounted for.',
+    rollerGapStable:
+      'Roller gap control is stable. Extraction load is tracking the current recipe.',
+    plansifterPressureNominal:
+      'Plansifter differential pressure is nominal across all active sections.',
+    packingLineVerified: 'Packing line verified. Checkweigher and reject gate standing by.',
+    dockSequencingCleared: 'Dock sequencing has cleared a path for the next delivery.',
+    forkliftRoutesDeconflicted: 'Forklift routes deconflicted. Trucks and conveyors accounted for.',
+    geofencesMatch: 'Mobile equipment geofences match the active production zones.',
+    dustExtractionStable: 'Dust extraction stable. Differential pressure inside the control band.',
+    waterwayHealthy: 'Waterway telemetry is healthy. The stream is doing what streams do.',
+    weatherFeedChecked:
+      'Weather feed checked. Lighting and vehicle limits match the conditions outside.',
+    millIsCalm: 'The mill is calm. This is a measured condition, not optimism.',
+    vibrationTrendReviewed:
+      'Vibration trend reviewed on the busiest asset. Nothing outside its envelope.',
+    constraintAnalysisUpdated: 'Constraint analysis updated. The bottleneck is marked in SCADA.',
+    cycleTimeVarianceCorrected:
+      'Short cycle-time variance detected and corrected. The line controller handled it.',
+    housekeepingComplete: 'Housekeeping cycle complete. Lanes clear, sensors unobstructed.',
+    daylightControlActive: 'Daylight control active. Exterior lights following the sun.',
+    solarLoadingApplied:
+      'Solar loading forecast applied. Ventilation and cooling setpoints adjusted.',
+    nightProfileActive:
+      'Night profile active. Perimeter lighting and low-visibility vehicle limits are engaged.',
+    lightingTrackingSky:
+      'Facility lighting is tracking the sky. The celestial clock and the electrical one agree.',
+    machineWarning:
+      'Warning at {machine}. Needs a diagnostic review before the next control change.',
+    machineCritical: 'Critical alarm at {machine}. Process held safe until this is resolved.',
+    machineRecovered: '{machine} recovery complete. Interlocks clear, production resumed.',
+    milestone25: 'Daily target 25% packed. The line has found its rhythm.',
+    milestone50: 'Halfway to the daily target. Packing is holding pace.',
+    milestone75: 'Daily target 75% packed. The finish line is in sight.',
+    milestone90: 'Daily target 90% packed. Just the last bags to fill.',
+    milestone100: 'Daily target achieved. The batch record is filed in SCADA. Well done, mill.',
+    safetyInterlockLogged: 'Safety interlock event logged. The affected zone is held safe.',
+    nearMissTriggered:
+      'Near-miss logic triggered. Mobile equipment stopped while route telemetry is reviewed.',
+    vehicleProximity:
+      'Vehicle proximity event. Conflicting routes are locked until the control system clears them.',
+    drillStarted:
+      'Egress verification drill started. Equipment is in a safe stop while service exits are checked.',
+    drillSensorsUnderTest: 'Service egress sensors under test. Isolation interlocks holding.',
+    drillComplete:
+      'Egress verification complete. All service exits confirmed clear; production resuming.',
+    drillEndedEarly: 'Egress verification drill ended early. Production restored.',
+    emergencyStopActivated: 'Emergency stop activated. Everything is stationary.',
+    facilityStopEngaged:
+      'Facility emergency stop engaged. Restart held until the cause is found and interlocks clear.',
+    vehiclesSecure: 'All vehicles secure. Route reservations locked until the all-clear.',
+    forkliftStop:
+      'Forklift emergency stop. Every forklift is holding position; the mill keeps running.',
+  },
   'pt-BR': {
     processPathVerified:
       'Rota do processo verificada, do recebimento ao ensaque. Todos os intertravamentos prontos.',

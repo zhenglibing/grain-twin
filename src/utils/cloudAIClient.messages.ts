@@ -37,6 +37,41 @@ export const cloudAIClientMessages = defineMessages({
     timedOut: 'Provider request timed out. Check charges before retrying.',
     unreachable: 'Cannot reach the provider. Check your network or browser privacy settings.',
   },
+  zh: {
+    directKeysLocalOnly:
+      'Direct provider keys are available only on localhost. Use OpenRouter on the public site.',
+    usageMissing: 'Provider omitted usage data; check charges in your provider account.',
+    keyRejected: 'API key or model access was rejected. Check your provider account.',
+    creditLimit: 'Provider credit or spending limit reached.',
+    rateLimit: 'Provider rate limit reached. Try again later.',
+    requestFailed: 'Provider request failed (HTTP {status}).',
+    haikuIncomplete: 'Haiku did not complete a text response. Try again.',
+    lunaIncomplete: 'Luna did not complete a text response. Try again.',
+    solIncomplete: 'Sol did not complete a text response. Try again.',
+    geminiIncomplete: 'Gemini did not complete a text response. Try again.',
+    openRouterIncomplete: 'OpenRouter did not complete a text response. Try again.',
+    enterKey: 'Enter an API key.',
+    connectKey: 'Connect an API key for the selected model.',
+    cancelledAfterChange: 'Request cancelled after configuration changed.',
+    billingUnverified:
+      'OpenRouter billing is unverified. Check charges and reconnect a limited key.',
+    invalidOpenRouterKey: 'Enter a valid OpenRouter API key.',
+    capRequired: 'Set a session cost cap before connecting OpenRouter.',
+    cannotVerifyLimit:
+      'Cannot verify the OpenRouter key limit. Check your network or browser privacy settings.',
+    limitHttpError: 'OpenRouter could not verify the key limit (HTTP {status}).',
+    noVerifiableLimit: 'OpenRouter returned no verifiable key limit.',
+    limitedKeyRequired:
+      'Use a lifetime spend-limited OpenRouter inference key with BYOK usage included in its limit.',
+    emptyRequest: 'The request is empty.',
+    contextTooLarge: 'The plant context is too large.',
+    invalidResponse: 'Provider returned an invalid response.',
+    unverifiableCharge:
+      'OpenRouter did not report a verifiable USD charge. Paid inference stopped.',
+    noText: 'Provider returned no text. Try again.',
+    timedOut: 'Provider request timed out. Check charges before retrying.',
+    unreachable: 'Cannot reach the provider. Check your network or browser privacy settings.',
+  },
   'pt-BR': {
     directKeysLocalOnly:
       'Chaves diretas de provedor só funcionam em localhost. No site público, use o OpenRouter.',

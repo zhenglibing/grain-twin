@@ -7,6 +7,11 @@ export const achievementTrackerMessages = defineMessages({
     unlockedMessage: '{name} - {description}',
     unlockedCelebration: 'Achievement unlocked: {name}',
   },
+  zh: {
+    unlockedTitle: 'Achievement Unlocked',
+    unlockedMessage: '{name} - {description}',
+    unlockedCelebration: 'Achievement unlocked: {name}',
+  },
   'pt-BR': {
     unlockedTitle: 'Conquista desbloqueada',
     unlockedMessage: '{name} - {description}',

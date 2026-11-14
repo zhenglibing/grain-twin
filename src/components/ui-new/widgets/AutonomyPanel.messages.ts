@@ -43,6 +43,36 @@ export const autonomyPanelMessages = defineMessages({
     scadaHint:
       'Open Simulated SCADA for the full alarm trail, tag quality, trends, and control history.',
   },
+  zh: {
+    plantStateTitle: 'Autonomous plant state',
+    plantStateSubtitle: 'Process, logistics, safety, and diagnostics in one picture.',
+    readinessIndex: 'readiness index',
+    metricsLabel: 'Autonomy metrics',
+    activeAssets: 'Active assets',
+    activeAssetsDetail: (p: CountParams) =>
+      `${p.count} ${p.count === 1 ? 'needs' : 'need'} diagnostic attention`,
+    throughput: 'Throughput',
+    throughputDetail: 'bags per simulated hour',
+    target: 'Target',
+    targetDetail: 'completed against the active batch plan',
+    safetyStops: 'Safety stops',
+    safetyStopsDetail: (p: CountParams) =>
+      `${p.count} route ${p.count === 1 ? 'conflict' : 'conflicts'} recorded`,
+    coordinationHeading: 'Closed-loop coordination',
+    processControl: 'Process control',
+    processAgree: 'Machine states and targets agree.',
+    processHeld: (p: CountParams) =>
+      `${p.count} ${p.count === 1 ? 'alarm is' : 'alarms are'} holding the plan back.`,
+    vehicleOrchestration: 'Vehicle orchestration',
+    forkliftsGrounded: 'The safety layer has grounded the forklifts.',
+    forkliftsShare: 'Forklifts, docks, and crossings share reservations.',
+    receivingSequence: 'Receiving sequence',
+    receivingDockState: (p: DockStateParams) => `Receiving dock state: ${p.status}.`,
+    shippingSequence: 'Shipping sequence',
+    shippingDockState: (p: DockStateParams) => `Shipping dock state: ${p.status}.`,
+    scadaHint:
+      'Open Simulated SCADA for the full alarm trail, tag quality, trends, and control history.',
+  },
   'pt-BR': {
     plantStateTitle: 'Estado da planta autônoma',
     plantStateSubtitle: 'Processo, logística, segurança e diagnóstico em uma só visão.',

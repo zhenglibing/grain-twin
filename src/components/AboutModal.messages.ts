@@ -15,6 +15,20 @@ export const aboutModalMessages = defineMessages({
     generatedModels: 'Scene, village and farm models generated for MillOS with Tripo3D',
     version: 'Version {version}',
   },
+  zh: {
+    title: 'About MillOS',
+    close: 'Close about dialog',
+    description:
+      'A digital twin of a grain mill — AI-managed, 3D-rendered, and opinionated about how humans and machines should work together.',
+    music: 'Music',
+    musicBy: 'Music by',
+    soundtrackBy: 'Original MillOS soundtrack by Nell Watson, created with',
+    modelCredits: '3D Model Credits',
+    forklift: 'Forklift:',
+    forkliftBy: 'by Mantas Stankaitis via',
+    generatedModels: 'Scene, village and farm models generated for MillOS with Tripo3D',
+    version: 'Version {version}',
+  },
   'pt-BR': {
     title: 'Sobre o MillOS',
     close: 'Fechar a janela Sobre',

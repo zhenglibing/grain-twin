@@ -6,7 +6,7 @@ import { create } from 'zustand';
  * Each component owns its copy in a co-located `*.messages.ts` module built
  * with defineMessages(), so translations stay beside the text they replace and
  * no shared dictionary collects merge conflicts. The type of defineMessages()
- * requires every English key in pt-BR, so a missing translation fails tsc.
+ * requires every English key in pt-BR and zh, so a missing translation fails tsc.
  *
  * English is the source language and its rendered text is unchanged from the
  * hard-coded copy it replaced. Numbers interpolated into copy go through
@@ -130,9 +130,10 @@ type Translation<E extends MessageTable> = { [K in keyof E]: E[K] extends string
 export interface MessageCatalog<E extends MessageTable> {
   en: E;
   'pt-BR': Translation<E>;
+  zh: Translation<E>;
 }
 
-/** Declare a component's copy. pt-BR must define every English key. */
+/** Declare a component's copy. pt-BR and zh must define every English key. */
 export function defineMessages<E extends MessageTable>(
   catalog: MessageCatalog<E>
 ): MessageCatalog<E> {

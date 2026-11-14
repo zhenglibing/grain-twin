@@ -16,6 +16,21 @@ export const gameInterfaceMessages = defineMessages({
     loadingLogisticsPlanning: 'Loading logistics planning…',
     aiReflection: 'AI reflection',
   },
+  zh: {
+    introGrainTitle: 'Follow the grain',
+    introGrainContent:
+      'The tour holds the shift clock while you look around. Grain enters the silos, passes through milling and sifting, and leaves as packed flour. Follow the route to understand how each stage supports the next.',
+    introFlourTitle: "Protect the day's flour",
+    introFlourContent:
+      "Every bag at the packers began as grain in the silos. Keep packing on pace for today's target. Start operating begins the guided delivery at standard pace, preserving any pace you already chose. Shift pace lets you pause or speed it up. Press ? for controls.",
+    introLookTitle: 'Look first, touch second',
+    introLookContent:
+      'Select any machine for its status, buffers, and maintenance record. When a stage starves or backs up, select its machine to see what it is waiting for.',
+    productionFloor: 'Production floor',
+    logisticsPlanning: 'Logistics planning',
+    loadingLogisticsPlanning: 'Loading logistics planning…',
+    aiReflection: 'AI reflection',
+  },
   'pt-BR': {
     introGrainTitle: 'Siga o grão',
     introGrainContent:

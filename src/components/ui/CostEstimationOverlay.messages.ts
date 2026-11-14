@@ -28,6 +28,27 @@ export const costEstimationOverlayMessages = defineMessages({
     pricingNote:
       "{model}: direct-provider estimate ${input}/1M in, ${output}/1M out; OpenRouter reports account and any upstream BYOK costs. This tab's cap is an estimate, not a provider billing limit.",
   },
+  zh: {
+    title: 'BYOK API Usage',
+    connected: 'Connected',
+    disconnected: 'Disconnected',
+    aiMode: (p: { mode: string }) => p.mode,
+    usd: '${amount}',
+    durationHours: '{hours}h {minutes}m',
+    durationMinutes: '{minutes}m',
+    sessionCostLabel: 'Paid calls including key tests ({duration})',
+    requests: 'Requests',
+    lastCall: 'Last Call',
+    inputTokens: 'Input Tokens',
+    outputTokens: 'Output Tokens',
+    noCap: 'No session cap',
+    cap: 'Cap ${amount}',
+    inFlight: ' · ${amount} in flight or uncertain',
+    onDevice: 'On-device inference has no API charge.',
+    chatgptNote: 'ChatGPT plan usage is separate from BYOK API billing and this dollar cap.',
+    pricingNote:
+      "{model}: direct-provider estimate ${input}/1M in, ${output}/1M out; OpenRouter reports account and any upstream BYOK costs. This tab's cap is an estimate, not a provider billing limit.",
+  },
   'pt-BR': {
     title: 'Uso da API (BYOK)',
     connected: 'Conectado',

@@ -240,5 +240,5 @@ const portuguese: Record<string, Copy> = {
 /** English stays in history.ts; every call reads copy for the active locale. */
 export function historyMessages(row: HistoryNote) {
   const en = { title: row.title, brief: row.brief, article: row.article };
-  return defineMessages({ en, 'pt-BR': portuguese[row.id] ?? en });
+  return defineMessages({ en, 'pt-BR': portuguese[row.id] ?? en, zh: en });
 }

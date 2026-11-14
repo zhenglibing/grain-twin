@@ -31,6 +31,11 @@ export const cameraControllerMessages = defineMessages({
     presetName: (p: { name: string }) => p.name,
     presetDescription: (p: { description: string }) => p.description,
   },
+  zh: {
+    cameraView: 'Camera view',
+    presetName: (p: { name: string }) => p.name,
+    presetDescription: (p: { description: string }) => p.description,
+  },
   'pt-BR': {
     cameraView: 'Visão da câmera',
     presetName: (p: { name: string }) => PT_PRESET_NAMES[p.name] ?? p.name,

@@ -18,6 +18,23 @@ export const aiConfigStoreMessages = defineMessages({
     /** Session cost in US dollars; amount is pre-formatted with formatFixed. */
     sessionCost: (p: { amount: string }) => `$${p.amount}`,
   },
+  zh: {
+    pricingOnDevice: 'On-device',
+    pricingChatGPTPlan: 'ChatGPT plan',
+    localCompanionUnavailable: 'Local companion unavailable',
+    checkingWebGPU: 'Checking WebGPU compatibility...',
+    webgpuUnavailable:
+      'WebGPU is unavailable in this browser. Use a WebGPU-capable browser or a cloud BYOK model.',
+    initializingDownload: 'Initializing model download...',
+    localCoreOnline: 'Local neural core online',
+    modelLoadFailed: 'The model could not be loaded. Try again or use a cloud BYOK model.',
+    modelLostReloading: 'The GPU dropped the local model. Reloading it from this device.',
+    modelLostAgain:
+      'The GPU dropped the local model again. Load it again when the device has memory to spare.',
+    connectionFailed: 'Connection failed.',
+    /** Session cost in US dollars; amount is pre-formatted with formatFixed. */
+    sessionCost: (p: { amount: string }) => `$${p.amount}`,
+  },
   'pt-BR': {
     pricingOnDevice: 'No dispositivo',
     pricingChatGPTPlan: 'Plano ChatGPT',

@@ -63,6 +63,68 @@ export const workplaceFairnessMessages = defineMessages({
     questionMatched:
       'The closing charter and recorded plan sequence match. What varied in collection timing or public role receipts, and which observation would you check together next?',
   },
+  zh: {
+    objectionDetailPartial:
+      'Some earlier objection detail was not recorded; aggregate counts remain in campaign history.',
+    objectionDetailRetained: 'Public raiser-owned records retained.',
+    beatMandateTitle: 'Hear the current mandate (1 minute)',
+    beatMandateDetail:
+      'Read the bounded mandate and answer the role checks. Advice changes require fresh understanding.',
+    beatMandateEvidence:
+      'Understanding confirmed by {confirmed}/{total} worker roles for this mandate.',
+    beatRefusalTitle: 'Exercise a protected no (1 minute)',
+    beatRefusalDetail:
+      'Decline a policy or optional duty. Observe ordinary pay unchanged. Choose a defensible shared plan before operating.',
+    beatRefusalEvidence: 'A policy no or respected extra-duty refusal is recorded.',
+    beatDisclosureTitle: 'Keep disclosure optional (1 minute)',
+    beatDisclosureDetail:
+      'Leave sharing off, or share and revoke the fictional explanation. No private reason is required. Skipping disclosure is a valid choice.',
+    beatDisclosureEvidence: 'An optional sharing choice is recorded.',
+    beatChallengeTitle: 'Challenge and hear a correction (2 minutes)',
+    beatChallengeDetail:
+      'Challenge a forecast in Handoff, or protect Thursday refusal in the season. Scripted adviser dialogue is identified separately in the receipt.',
+    beatChallengeEvidence: 'A challenge and adviser response are recorded.',
+    beatWorkTitle: 'Run bounded work (2 minutes)',
+    beatWorkDetail:
+      'End turns, approve the current agreement, then advance agreed work time. Quality release and physical customer departures have separate receipts.',
+    beatWorkEvidence: 'Work time observed under an agreement.',
+    beatSettleTitle: 'Settle money and recovery (2 minutes)',
+    beatSettleDetail:
+      'Read every role receipt. Compensation is separate from earned pay and member distributions. Owed recovery remains visible until model time delivers it.',
+    beatSettleEvidence: 'Current money reserves are released; no recovery is owed.',
+    beatReloadTitle: 'Rehearse safe reload (1 minute)',
+    beatReloadDetail:
+      'Use Save and safely reload workplace. It expires future grants, settles earned money and retains recovery debt; an unfinished season shift then resumes only with fresh consent. It leaves the physical plant untouched.',
+    beatReloadEvidence: 'Safe reload expired future grants and retained earned obligations.',
+    receiptScope:
+      'Shared-device fictional role turns. The local runtime checks turn ownership; same-origin code and device possession are outside identity security.',
+    receiptEfficacy:
+      'No measured worker wellbeing, real-cooperative effectiveness or authenticated participant consent is claimed.',
+    caveatCheckpoint:
+      'These records do not share one retained checkpoint. Treat their starting conditions as unmatched.',
+    caveatBalance:
+      'A retained material or genealogy error is unavailable or exceeds 0.01 kg. Check that evidence before interpreting dispatch differences.',
+    caveatTargets:
+      'Agreed targets or deferrals differ. Compare the full customer commitment remaining, including work deferred to later.',
+    caveatClosingCharter:
+      'This closing field omits earlier shift charter settings. Review retained shift receipts before treating charter choices as fixed across a multi-shift run.',
+    caveatConfounded:
+      'Both the closing charter and shift-plan sequence changed. Their effects cannot be separated by this comparison.',
+    questionCheckpoint:
+      'Which checkpoint or balance fact must the group resolve before drawing a lesson?',
+    questionHorizons:
+      'What would each role expect from equally long trials? Agree the elapsed and agreement horizons before comparing dispatch, pay and recovery.',
+    questionTargets:
+      'Which customer work was deferred, and what remains owed? Decide together which commitment the next trial will hold fixed.',
+    questionConfounded:
+      'For the next trial, hold charter choices fixed across shifts and compare one plan change, or keep the plan sequence fixed and compare charter choices. Which observation would change each role’s view?',
+    questionPlans:
+      'With matching closing charters, which packing or collection observation would help explain the different plan results? Check each role’s burden receipts too.',
+    questionCharters:
+      'The recorded plan sequence matches. Compare the closing charters and each role’s public pay and recovery receipts alongside actual delivery. Which other run conditions still need checking?',
+    questionMatched:
+      'The closing charter and recorded plan sequence match. What varied in collection timing or public role receipts, and which observation would you check together next?',
+  },
   'pt-BR': {
     objectionDetailPartial:
       'Parte dos detalhes de objeções anteriores não foi registrada; as contagens agregadas continuam no histórico da campanha.',

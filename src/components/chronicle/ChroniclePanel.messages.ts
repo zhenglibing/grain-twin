@@ -10,6 +10,15 @@ export const messages = defineMessages({
     m5: 'Score',
     m6: 'Chronicle sections',
   },
+  zh: {
+    m0: 'Chronicle',
+    m1: 'Plans',
+    m2: 'Partners',
+    m3: 'Ledger',
+    m4: 'Notes',
+    m5: 'Score',
+    m6: 'Chronicle sections',
+  },
   'pt-BR': {
     m0: 'Crônica',
     m1: 'Planos',

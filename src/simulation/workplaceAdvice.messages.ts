@@ -79,6 +79,84 @@ export const workplaceAdviceMessages = defineMessages({
     questionDifference:
       'Which supply, machine or pacing assumption explains the difference, and what would we check before changing the working agreement?',
   },
+  zh: {
+    assumptionHorizon:
+      '{minutes} workplace minutes = {seconds} plant seconds at every resume pace.',
+    assumptionEngine:
+      'Real material engine at 0.5 and 0.25 physical-second steps; bounds reflect time resolution, not statistical confidence.',
+    assumptionFixed:
+      'Fixed machinery, recipe, quality interlock and source dispositions. No arrivals, maintenance, dock movements or shipping are simulated.',
+    assumptionPacing:
+      'Whole-line pacing only; buffer arrangement adds no physical storage capacity.',
+    assumptionDispatch:
+      'Dispatch lower bound is zero: no departure is simulated. Conditional upper requires release, a compatible truck and available load capacity within the horizon.',
+    missingOrder: 'Active order and recipe are unavailable.',
+    missingExecution: 'Order execution facts are stale or mismatched.',
+    missingSession: 'Mission and material session do not match.',
+    missingControls:
+      'Finite bounded production controls and a positive resume speed (9 to 3600x) are required.',
+    missingClock: 'Material clock is invalid.',
+    missingRelease: 'Direct quality release is unavailable.',
+    missingLoad: 'Direct dispatch load is unavailable.',
+    missingBuffers: 'Required machine buffers are missing.',
+    invalidMachines: 'Machine capacity or conversion facts are invalid.',
+    invalidConveyors: 'Conveyor facts are invalid.',
+    invalidGenealogy: 'Source genealogy is missing, unknown or unbalanced.',
+    conservationFailed: 'Engine genealogy conservation failed.',
+    rolePacking: 'Packing',
+    roleQuality: 'Quality',
+    roleMaintenance: 'Maintenance',
+    roleCoordinator: 'Coordinator',
+    viewPackingFloor: 'View packing floor',
+    viewQualityPoint: 'View quality observation point',
+    viewMillingLine: 'View milling line',
+    viewShippingDock: 'View shipping dock',
+    stockFact: 'At capture: {released} kg released; {held} kg held or recalled.',
+    stockUnavailable: 'Usable captured stock facts are unavailable.',
+    packingQuestion:
+      'Ask the coordinator which released bags could actually be collected. Packed stock alone proves no departure.',
+    releaseFact: 'Dispatch release at capture: {state}.',
+    releaseOpen: 'open',
+    releaseHeld: 'held',
+    releaseUnknown: 'unknown',
+    releaseUnavailable: 'Usable captured release facts are unavailable.',
+    qualityQuestionOpen:
+      'Which batch and source checks support release, and what new evidence would require a hold? A view cannot certify a batch.',
+    qualityQuestionHeld:
+      'Which qualified batch or source check is needed before release can be reconsidered? A team vote cannot clear a hold.',
+    machineFact: 'At capture: {processing}/{total} machines marked processing.',
+    machineUnavailable: 'Usable captured machine facts are unavailable.',
+    maintenanceQuestion:
+      'Ask Packing where material waits, then check upstream buffers and supply. Processing flags alone do not establish material flow.',
+    truckFact: 'Truck at capture: {status}; {loaded} kg loaded / {capacity} kg capacity.',
+    truckAway: 'away',
+    truckLoading: 'loading',
+    truckHeld: 'held',
+    truckReady: 'ready',
+    truckDeparted: 'departed',
+    collectionUnavailable: 'Usable captured collection facts are unavailable.',
+    coordinatorQuestion:
+      'Check material compatibility, free capacity and collection timing with Quality. A ready load still needs an actual departure receipt.',
+    predictionHigher: 'Buffer range entirely above ordinary work',
+    predictionOverlap: 'No clear separation between packing ranges',
+    predictionLower: 'Buffer range entirely below ordinary work',
+    predictionUnsure: 'We are unsure, keep the question open',
+    evidenceHigher: 'The buffer’s entire modeled packing range is above ordinary work.',
+    evidenceLower: 'The buffer’s entire modeled packing range is below ordinary work.',
+    evidenceOverlap:
+      'The modeled packing ranges overlap or meet within 0.01 kg. They do not establish a clear ordering.',
+    evidenceUnavailable:
+      'This rehearsal has insufficient matching evidence to compare the packing ranges.',
+    reflectionUnavailable: 'Keep the prediction open until both alternatives have usable evidence.',
+    reflectionUnsure: 'We left the prediction open. Use these ranges to discuss what to test next.',
+    reflectionSupport: 'These modeled packing ranges support our prediction.',
+    reflectionDiffer: 'These modeled packing ranges differ from our prediction.',
+    questionUnavailable: 'Which missing fact needs checking before another rehearsal?',
+    questionOverlap:
+      'Which shared limit could keep extra pacing from adding packed stock? Check supply, machines and quality dispositions together.',
+    questionDifference:
+      'Which supply, machine or pacing assumption explains the difference, and what would we check before changing the working agreement?',
+  },
   'pt-BR': {
     assumptionHorizon:
       '{minutes} minutos de trabalho = {seconds} segundos da planta em qualquer ritmo de retomada.',

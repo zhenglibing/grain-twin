@@ -11,6 +11,16 @@ const catalog = defineMessages({
     m6: 'Plans',
     m7: 'also starts planned installs, keeping 3 shifts of upkeep',
   },
+  zh: {
+    m0: 'Advise',
+    m1: 'recommendations only',
+    m2: 'Routine',
+    m3: 'answers routine events',
+    m4: 'Forecasts',
+    m5: 'also mitigates forecasts, suppresses fires and restores mitigated incidents, within 15% of the fund a shift',
+    m6: 'Plans',
+    m7: 'also starts planned installs, keeping 3 shifts of upkeep',
+  },
   'pt-BR': {
     m0: 'Recomendar',
     m1: 'somente recomendações',

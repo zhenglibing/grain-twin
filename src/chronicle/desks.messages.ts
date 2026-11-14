@@ -6,6 +6,11 @@ const catalog = defineMessages({
     m1: 'Trade',
     m2: 'Council',
   },
+  zh: {
+    m0: 'Works',
+    m1: 'Trade',
+    m2: 'Council',
+  },
   'pt-BR': {
     m0: 'Obras',
     m1: 'Comércio',

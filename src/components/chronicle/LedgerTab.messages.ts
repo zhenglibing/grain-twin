@@ -12,6 +12,17 @@ export const messages = defineMessages({
     m7: 'Plant contribution',
     m8: '{unit} by source',
   },
+  zh: {
+    m0: 'Balance',
+    m1: 'Co-op fund',
+    m2: 'Fund',
+    m3: 'Fund, last shift',
+    m4: 'Fund last shift',
+    m5: 'Know-how',
+    m6: 'Plant ledger',
+    m7: 'Plant contribution',
+    m8: '{unit} by source',
+  },
   'pt-BR': {
     m0: 'Saldo',
     m1: 'Fundo da cooperativa',

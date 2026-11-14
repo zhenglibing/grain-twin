@@ -15,6 +15,20 @@ export const emergencyStopButtonMessages = defineMessages({
     releaseButton: 'RELEASE E-STOP',
     stopButton: 'EMERGENCY STOP',
   },
+  zh: {
+    incidentDescription: 'Emergency stop activated - all forklifts halted',
+    drillTitle: 'End the active egress verification drill before using the emergency stop',
+    interlockTitle:
+      'Clear the facility emergency interlock from the Safety panel to release the forklifts',
+    drillLabel: 'Fire drill interlock active - emergency stop cannot be changed',
+    interlockLabel:
+      'Emergency interlock active - clear it from the Safety panel to release the forklifts',
+    stopLabel: 'Emergency stop - halt all forklifts',
+    drillButton: 'DRILL INTERLOCK ACTIVE',
+    interlockButton: 'INTERLOCK ACTIVE',
+    releaseButton: 'RELEASE E-STOP',
+    stopButton: 'EMERGENCY STOP',
+  },
   'pt-BR': {
     incidentDescription: 'Parada de emergência acionada - todas as empilhadeiras paradas',
     drillTitle:

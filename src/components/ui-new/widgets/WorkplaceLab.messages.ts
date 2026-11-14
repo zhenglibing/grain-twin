@@ -414,6 +414,342 @@ export const workplaceLabMessages = defineMessages({
     downloadJson: 'Download synthetic scenario JSON',
     localDownload: 'Local download only. This demo cannot authorise a real workplace pilot.',
   },
+  zh: {
+    // Section, mode and enum labels. English returns the logic value itself.
+    sectionLabel: (p: { section: string }) => p.section,
+    modeGame: 'Game',
+    modeWorkshop: 'Workshop',
+    modePilot: 'Pilot preparation',
+    phaseLabel: (p: { phase: string }) => p.phase,
+    objectionKind: (p: { kind: string }) => p.kind,
+    objectionStatus: (p: Status) => p.status,
+    deliveryStatus: (p: Status) => p.status,
+    agreementStatus: (p: Status) => p.status,
+    destinationLabel: (p: { destination: string }) => p.destination,
+    decisionLabel: (p: { decision: string }) => p.decision,
+    taskLabel: (p: { task: string }) => p.task,
+    practiceLabel: (p: { practice: string }) => p.practice,
+
+    // Feedback
+    recorded: 'Recorded in this local scenario.',
+    noChange: 'No change.',
+    previewStatus: 'Preview: {status}.',
+    executionStatus: 'Execution: {status}.',
+    noExecutionReceipt: 'No execution receipt.',
+    rehearsalAdvanced: 'Five modeled rehearsal minutes recorded. No plant movement or shipment.',
+    rehearsalNoAdvance: 'No modeled time could advance.',
+    exported: 'Synthetic scenario exported locally. No remote send.',
+    freshExercise: 'Review retained. Choose a charter for the fresh exercise.',
+
+    // Header
+    labTitle: 'Workplace laboratory',
+    introHandoff: 'Worker proposals, bounded trials and member review.',
+    introImprovement:
+      'The handoff experiment: member proposals, bounded trials and retained obligations.',
+    introCampaign:
+      'Living Cooperative: three shifts, shared obligations and challengeable decisions.',
+    introFriday: 'Friday order: meet the shipment while protecting rest and agreed work.',
+    syntheticNotice:
+      'Synthetic roles only. No real worker data or independently authenticated ballots.',
+    sectionsLabel: 'Workplace sections',
+    statusLine: '{mode}: {phase}, minute {minute} of {duration}. Revision {revision}.',
+    causalReceipt: 'Causal receipt: {receipt}',
+
+    // Understanding checks
+    understandingChecks: 'Understanding checks: {role}',
+    checkAria: '{role}: {prompt}',
+    selectAnswer: 'Select an answer',
+    matchesTerms: 'Matches the current terms. ',
+    needsAnotherLook: 'Needs another look. ',
+
+    // Shift
+    shiftIntro: 'Try a worker-led improvement, then decide what the next shift retains.',
+    openHandoff: 'Open handoff controls',
+    mode: 'Mode',
+    scenarioSeed: 'Scenario seed',
+    livingCooperative: 'Living Cooperative',
+    livingIntro:
+      'Three linked shifts: order pressure, a quality hold and retaliation pressure. Packing is your role. Each shift keeps its earned pay, recovery obligations and authored objections.',
+    adoptionProfile: 'Adoption profile',
+    profileToeDip: 'Coordinator-led: protected practice set',
+    profileTeam: 'Team agreement: shared work and consent',
+    profileCooperative: 'Member governance: cooperative and bounded execution',
+    startCampaign: 'Start Living Cooperative campaign',
+    campaignPaceNote:
+      'Local game only. Starting selects standard pace (1x), where the clock, production and vehicles run together. Profiles introduce practices incrementally; every profile retains basic protections.',
+    startGame: 'Start playable shift at teaching pace (1/2x)',
+    startWorkshop: 'Start manual workshop',
+    preparePilot: 'Prepare pilot charter',
+    gameNote:
+      'Opt in to local simulation control. This standalone teaching pace runs at half of standard pace (1/2x); a campaign runs at standard pace (1x).',
+    otherNote:
+      'No live plant control. Workshop inputs remain manual; pilot preparation permits charter design and export only.',
+    shiftHeading: 'Shift {number} of 3: {title}',
+    missionBriefing:
+      '{customer} has {kg} kg remaining on the customer commitment. Quality declines extra duty; Packing and Maintenance may volunteer separately. Earn a fresh working agreement.',
+    missionPrompt:
+      'Keep the {kg} kg delivery target, or negotiate an {installment} kg installment with {deferred} kg deferred. The full customer commitment remains.',
+    adviserRolePlay: 'Adviser role checks are authored role-play in this local scenario.',
+    shiftThreeNote:
+      'The adviser must correct its earlier recommendation and repair the pressure it created. Previous consent authorizes no new burden. Packing can refuse; each author can challenge and resolve their own objection.',
+    negotiateInstallment: 'Negotiate an {kg} kg installment',
+    negotiateInstallmentProtectPay: 'Negotiate an {kg} kg installment and protect pay',
+    keepCommitment: 'Keep the {kg} kg commitment',
+    recordedDecision: 'Recorded decision: {decision}.',
+    pending: 'pending',
+    inspectionComplete: 'Quality inspection complete.',
+    inspectionUntil: 'Quality hold in progress until minute {minute}.',
+    inspectionFrom:
+      'Quality can begin inspection from minute 25. Line pacing pauses; actual batch certification still gates shipping.',
+    reviewBeforeContinuing:
+      'Review the shift, deliver owed recovery and resolve every authored objection before continuing.',
+    pressureCard: 'Pressure card: {title}',
+    challengeBelongs: 'The challenge belongs to {role}.',
+    theAdviser: 'the adviser',
+    tryDemand: 'Try the demand (blocked and challenged)',
+    restateTerms: 'Restate protected terms',
+    pressureNote:
+      'Trying the demand pauses activation. Restating terms leaves any objection open until its raiser reviews it in Agreement / Voices. Both sides then renew understanding.',
+    reviewChallenge: 'Review the challenge and remedy',
+    missionCredit:
+      '{customer}: {credited} / {target} kg qualified dispatch credit. Agreed deferral: {deferred} kg. Remaining full customer commitment: {remaining} kg.',
+    fullDispatchedSuffix: ' Full customer commitment dispatched.',
+    chooseResponse: 'Choose the response',
+    targetLine:
+      'Target {target} kg. Active plant capacity multiplier {capacity}×. Changing a plan clears the role agreement.',
+    shiftThreeResponseNote:
+      'A declined offer can lead to protected pacing, funded handoffs or a different current qualified volunteer. Negotiate a smaller installment above if needed; unfinished customer work remains open. An objection holds execution until its raiser reviews the remedy.',
+    planTerms:
+      'Plant capacity multiplier {capacity}×; protected rest {rest} min; optional cover {cover} min; cover compensation {compensation} credits/min; recovery {recovery} min; budget {budget} credits.',
+    prohibitedReason: 'Prohibited: {reason}',
+    reservations:
+      'Wages reserved {reserve}; improvement {improvement}; maximum cover pay {maxPay} credits. Cash after these reservations {cash} credits.',
+    volunteers:
+      'Current consenting qualified volunteers: {list}. Cover lasts at most ten minutes, then pacing returns to 0.78×.',
+    volunteerEntry: '{role} ({minutes} min retained extra duty)',
+    none: 'none',
+    aiWhy: 'AI: why this response?',
+    operationalExplanation:
+      'Operational explanation: {explanation} The active plant capacity multiplier is {capacity}×. The shipment target is {target} kg.',
+    alternativesNote:
+      "Alternatives: compare the four responses above. Boundaries: protected rest, individual optional-cover consent, budget and open objections constrain execution. This explanation reports the model's decision conditions; it does not expose hidden reasoning.",
+    dispatchUncertain:
+      'Dispatch remains uncertain until quality-qualified manifests arrive. Supply and logistics can constrain the result. Either party can raise an authority objection; each raiser retains remedy review.',
+    challengeProposal: 'Challenge the proposal in Agreement / Voices',
+    advanceRehearsal: 'Advance rehearsal by 5 minutes',
+    endShift: 'End shift now and review',
+    creditsNote:
+      'Workplace credits are illustrative accounts, separate from the mill campaign finances.',
+
+    // Practices
+    alwaysActive:
+      'Always active: safe stops, protected rest, voluntary extra work, earned pay and author-controlled objections. Switching modules never removes these protections.',
+    chooseApproach: 'Choose a management approach',
+    approachNote:
+      'Change the allocation of decisions while keeping the current plan, money and workload. Revised terms require fresh agreement.',
+    applyApproach: 'Apply {title}',
+    threeAxes: 'Three independent axes',
+    workerDecisions: 'Worker decisions',
+    directedAssignments: 'Directed assignments',
+    individualChoice: 'Individual work choice',
+    teamChoice: 'Team work choice',
+    sharedGovernance: 'Shared governance',
+    consultative: 'Consultative',
+    teamConsent: 'Team consent',
+    memberVote: 'Member vote',
+    aiAuthority: 'AI authority',
+    adviceOnly: 'Advice only',
+    boundedExecution: 'Bounded execution',
+    modularPractices: 'Modular practices',
+
+    // Agreement / Voices
+    agreementIntro:
+      'Policy votes and optional-cover consent are separate decisions. A majority cannot volunteer another role for extra work. Role controls below are local scenario inputs.',
+    hearResponses: 'Hear simulated team responses',
+    manualWorkshopNote:
+      "Manual workshop: record each synthetic role's choices explicitly. No automatic votes.",
+    pilotDenies: 'Pilot preparation denies live control and role-input changes.',
+    adviserAgreement: 'Adviser working agreement',
+    adviserAgreementText:
+      "Preference sharing is optional and revocable. Extra duty requires each individual's consent. Refusal retains earned pay and owed recovery. Advice is challengeable; bounded execution stays within the approved agreement. Revised terms invalidate all understanding checks.",
+    adviser: 'Adviser',
+    adviserAck: 'Adviser acknowledgment: {status}.',
+    ackRecorded: 'recorded for these terms',
+    ackPending: 'pending three correct answers',
+    turnsOwn: 'Every role acts in its own turn. ',
+    simulatedOther: 'Simulated responses belong to the other synthetic roles. ',
+    answerPacking:
+      'Answer Packing and Adviser checks explicitly. Confirm Packing understanding, cast its policy vote and decide optional cover separately. The helper never fills these Packing decisions.',
+    votePending: 'policy vote pending',
+    policyYesStatus: 'policy yes',
+    policyNoStatus: 'policy no',
+    publicBoundary: 'Public boundary: {boundary}',
+    understanding: 'Understanding: {status}.',
+    confirmed: 'confirmed',
+    confirmUnderstanding: 'Confirm understanding: {role}',
+    policyYes: 'Policy yes: {role}',
+    policyNo: 'Policy no: {role}',
+    optionalCover: 'Optional cover: {status}.',
+    notAgreed: 'not agreed',
+    accepted: 'accepted',
+    declined: 'declined',
+    acceptCover: 'Accept cover: {role}',
+    declineCover: 'Decline cover: {role}',
+    sharingNote:
+      "Optional preference sharing is for this shift's planning only, expires after its limited scenario window, and can be revoked.",
+    sharedPreference: 'Shared preference: {preference}. Until minute {minute}.',
+    preferencePrivate: 'Preference private.',
+    revokeSharing: 'Revoke preference sharing',
+    shareForPlanning: 'Share preference for shift planning',
+    workChoice: 'Work choice: {role}',
+    memberTally:
+      'Delivered rest {rest} min; extra work {extra} min; earned pay {pay} credits; compensation paid {compensation} credits; delivered recovery {recovery} min; recovery owed {owed} min.',
+    withdrawCover: 'Withdraw optional cover: {role}',
+    authoredObjections: 'Authored objections',
+    returnToHandoff: 'Return to handoff controls',
+    objectionAuthor: 'Objection author',
+    aiMind: 'AI mind',
+    objectionSubject: 'Objection subject',
+    recordObjection: 'Record authored objection',
+    noObjections: 'No authored objections recorded.',
+    objectionRecord: 'Objection record: {role} ({kind})',
+    resolvingAuthor: 'Resolving author for {kind}',
+    selectOriginalAuthor: 'Select the original author',
+    authorConfirms: 'Author confirms resolution',
+    executionConditions: 'Execution conditions',
+    conditionsPermit: 'Recorded conditions permit this agreement.',
+    checkingAgreement: 'Checking agreement…',
+    recordWorkshopAgreement: 'Record workshop agreement',
+    approveAndRun: 'Approve and run agreement',
+    workshopRecordsNote: 'Records the local rehearsal only, with no live plant effects.',
+    executionRequires:
+      'Execution requires this explicit approval, the exact current revision and the installed agent runtime.',
+
+    // Review
+    actualOutcomes: 'Actual scenario outcomes',
+    deliveryLine: 'Delivery: {status}, {delivered} of {target} kg for {customer}.',
+    remainingCommitment: 'Remaining full customer commitment: {kg} kg.',
+    agreementLine: 'Working agreement: {status}. Combined outcome: {outcome}.',
+    complete: 'complete',
+    unfinished: 'unfinished',
+    agreedDeferral: 'Agreed deferral: {kg} kg.',
+    accountsLine:
+      'Illustrative workplace credits, separate from main mill revenue and pounds: closing cash {cash}; wages {wages}; compensation {compensation}; improvements {improvements}; allocations {allocations}.',
+    cumulativeEvidence: 'Cumulative campaign evidence',
+    totalsLine:
+      '{shifts} shifts reviewed; refusals respected {refusals}; promises kept {promises}; repairs {repairs}; objections resolved {resolved} of {raised}.',
+    memberTotals:
+      '{role}: extra {extra} min; rest {rest} min; earned pay {pay} credits; compensation paid {compensation} credits; recovery delivered {recovery} min; owed {owed} min.',
+    shiftHistory: 'Shift {number}: {title}, shipped {shipped}; decision {decision}.',
+    shippedDuringShift: '{kg} kg during this shift; customer commitment progress is shown above',
+    shippedOfTarget: '{kg} of {target} kg',
+    relationshipRecord: 'Relationship record across shifts',
+    relationshipIntro:
+      'Public requests, challenges, repairs and delivered recovery. Private explanations stay out of this record. These receipts describe conduct; they do not measure trust or wellbeing.',
+    relationshipShiftHeading: '{title} (shift {number})',
+    olderSave: 'This older save has no relationship receipts for this shift.',
+    noMoments: 'No relationship moments recorded yet.',
+    eventMinute: 'Minute {minute},',
+    retentionNote:
+      'Each shift retains relationship receipts from a bounded 120-event log. Older events can be discarded. The local JSON export includes retained receipts.',
+    learningReviewLabel: 'Cooperative learning review',
+    learnTogether: 'Learn from this shift together',
+    compareAnotherHandoff: 'Compare another handoff',
+    deliverRecovery: 'Deliver modeled recovery (5 minutes)',
+    outstandingRecovery:
+      'Outstanding recovery is delivered through the normal simulation clock before another shift can start.',
+    campaignCompleteMessage:
+      'Living Cooperative campaign complete: delivery met and working agreement honoured.',
+    campaignIncomplete:
+      'Campaign review: delivery or working agreement remains incomplete. Earned pay, recovery obligations and the shift history remain recorded.',
+    continueCampaign: 'Continue to next campaign shift',
+    startNextGame: 'Start next playable shift at teaching pace (1/2x)',
+    startNextWorkshop: 'Start next manual workshop',
+    prepareNextPilot: 'Prepare next pilot draft',
+    shippedOf: 'Shipped {shipped} of {target} kg.',
+    reviewOpens: 'Review opens after the shift finishes.',
+    resumeAfterReloadNote:
+      'A reload paused this shift at minute {minute} and expired every grant. It can carry on from there once everyone consents again; nothing runs before that.',
+    resumeShift: 'Resume the shift with fresh consent',
+    relationshipEvidence: 'Relationship evidence',
+    relationshipEvidenceLine:
+      'Refusals respected: {refusals}. Promises kept: {promises}. Open objections: {open}. Current agreement confirmations: {confirmed}/{total}.',
+    confirmationsExpire: 'Confirmations expire on review. No mood or trust score is inferred.',
+    compareBurdens: 'Compare burdens, without ranking people',
+    burdenLine:
+      '{role}: delivered rest {rest} min, extra {extra} min, earned {earned}, paid compensation {compensation} credits; delivered recovery {recovery} min; recovery owed {owed} min.',
+    memberGovernance: 'Member governance',
+    chairLine: 'AI minds have a voice in objections, never member ballots. Chair: {chair}.',
+    notElected: 'not elected',
+    memberVoter: 'Member voter',
+    chairCandidate: 'Chair candidate',
+    recordChairBallot: 'Record chair ballot',
+    noChairBallots: 'No chair ballots.',
+    surplusHeading: 'Positive operating surplus: {surplus} credits',
+    surplusDefinition:
+      'Revenue less operating costs, earned wages, paid compensation, improvement spend and distributions. Initial capital is excluded.',
+    surplusDestination: 'Surplus destination',
+    retainSurplus:
+      "Retain {amount} credits in closing cash for the next shift's wages and choices.",
+    distributeSurplus:
+      "Distribute {amount} credits equally: {perMember} per member. That cash leaves the next shift's budget.",
+    allocateSurplus:
+      "Allocate {amount} credits to the community. That cash leaves the next shift's budget.",
+    ballotsRequired: 'Three member ballots are required. Earned obligations must be settled first.',
+    surplusCharter:
+      'Shared surplus is part of the Coordinator-led and Member governance charters. Under this one, any surplus stays in the cooperative cash.',
+    noSurplusReason:
+      'No surplus this shift: revenue {revenue} did not cover material costs {cost}, wages {wages}, cover {cover} and purchases {purchases}.',
+    followOnCredit:
+      'Commitment order fulfilled. This season now works {customer}: {credited} kg of its dispatch credited to the cooperative.',
+    followOnPending:
+      'Commitment order fulfilled. Dispatch to {customer} is credited to the cooperative from the next shift.',
+    followOnNone:
+      'Commitment order fulfilled. No other customer order is open, so further dispatch earns the cooperative nothing. The next shift links one if the mill has one open by then.',
+    followOnNoneLastShift:
+      'Commitment order fulfilled. This is the season’s last shift, so further dispatch earns the cooperative nothing.',
+    recordSurplusBallot: 'Record member surplus ballot',
+    noSurplusBallots: 'No surplus ballots.',
+    executeAllocation: 'Execute agreed allocation',
+    allocationRecorded: 'Allocation recorded.',
+    recordedEvidence: 'Recorded evidence',
+    evidenceLine: 'Minute {minute}, {actor}: {detail}',
+
+    // Experiment
+    teachingForecasts: 'Teaching forecasts',
+    samePressure: 'Same pressure, different management',
+    compareCurrentPlan:
+      'Compare the current physical plan ({plan}) under three decision structures. The same seed, supply, rest and capacity assumptions apply. Governance grants no production bonus. Every approach retains refusal, privacy and raiser-owned objections.',
+    compareApproaches: 'Compare management approaches',
+    matchedForecast: 'Matched forecast: {kg} kg; net {credits} illustrative credits.',
+    charterSupports: 'This charter supports the selected plan.',
+    activationBlockedEnable: 'Activation blocked: enable {practices} first.',
+    activationBlockedBreach: 'Activation blocked: the plan breaches minimum protections.',
+    forecastsSeparate:
+      'These are illustrative forecasts, separate from actual customer dispatch and relationship receipts. Try an approach in Practices, then play the same pressure card.',
+    standaloneExercise:
+      'The teaching forecast uses the standalone 600 kg exercise, before episode holds or negotiations. Linked customer deliveries remain separate.',
+    sameSeed: 'Same-seed comparison',
+    experimentSeed: 'Experiment seed',
+    compareAllPlans: 'Compare all plans with this seed',
+    restartDiscussion: 'Restart discussion with this seed',
+    restartClears: 'Restarting clears the current discussion and agreement.',
+    illustrativeForecasts:
+      'Illustrative model forecasts, not evidence of real efficacy. All arms use the same seed, including the prohibited rush counterfactual.',
+    armLine:
+      ': forecast {kg} kg; net {credits} credits; extra {extra} min; rest {rest} min; {verdict}.',
+    permitted: 'permitted',
+    prohibited: 'prohibited',
+    pilotChecklist: 'Pilot preparation checklist',
+    checklistPurpose: 'Agree the purpose and participant boundaries.',
+    checklistConsent:
+      'Obtain genuine informed consent and authenticated member decisions outside this demo.',
+    checklistData: 'Agree access, retention, withdrawal and remedies before collecting data.',
+    checklistSafety: 'Review safety and legal obligations with accountable people.',
+    checklistSeparate: 'Keep the pilot separate from live plant control.',
+    downloadJson: 'Download synthetic scenario JSON',
+    localDownload: 'Local download only. This demo cannot authorise a real workplace pilot.',
+  },
   'pt-BR': {
     sectionLabel: (p: { section: string }) => pick(PT_SECTION, p.section),
     modeGame: 'Jogo',

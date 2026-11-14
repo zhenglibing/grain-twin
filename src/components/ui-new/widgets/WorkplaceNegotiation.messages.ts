@@ -65,6 +65,70 @@ export const workplaceNegotiationMessages = defineMessages({
     wordMet: 'met',
     wordShortfall: 'shortfall',
   },
+  zh: {
+    adviserHoldExecution:
+      'I recommend holding execution until each raiser reviews the remedy. I cannot close their objection.',
+    adviserIllegal:
+      'I cannot recommend this offer: it breaches protected rest. A unanimous vote cannot waive that boundary.',
+    adviserNeedsCorrection:
+      'My earlier offer reused consent. It needs an explicit correction before a fresh agreement.',
+    adviserCover:
+      'I recommend offering cover only to a currently consenting qualified volunteer. A policy yes grants no extra duty.',
+    adviserCurrentOffer:
+      'I recommend the current {title} offer for review. It keeps extra duty at zero and preserves protected rest.',
+    stageOffer: 'Offer',
+    stageOfferDetail: '{title}. Earlier willingness grants no new duty.',
+    stageChallenge: 'Challenge',
+    challengePrevented: 'Boundary protected before any challenge; no objection was resolved.',
+    challengeNotRaised: 'No challenge recorded. You can protect the boundary directly.',
+    challengeStatus: 'Challenge status: {status}. Packing retains remedy review.',
+    stageRevisedTerms: 'Revised terms',
+    correctionDone: 'The adviser corrected reused consent. This receipt grants no new permission.',
+    correctionPending:
+      'Adviser correction still pending. Past agreement cannot supply today’s choices.',
+    stageFreshDecisions: 'Fresh decisions',
+    freshDecisionsDetail: 'Understanding {understanding}; policy {policy}; optional cover {cover}.',
+    stagePhysicalWork: 'Physical work',
+    physicalWorkDetail:
+      'Dispatch {delivered} / {target} kg; {status}. Changed promises never create delivery.',
+    stageRepayment: 'Repayment',
+    repaymentDetail: '{paid} credits paid; recovery {delivered} min delivered, {owed} min owed.',
+    sectionLabel: 'Thursday negotiation',
+    heading: 'Your choices, this shift',
+    labelUnderstanding: 'Understanding',
+    labelPolicyVote: 'Policy vote',
+    labelOptionalCover: 'Optional cover',
+    termsOffered:
+      'Packing has carried {extra} min of extra duty. This offer permits at most {cover} min, with {rate} credits/min and {recovery} min recovery. These are terms offered, separate from actual payment and recovery.',
+    sequenceSummary: 'Offer, choices and receipts',
+    sequenceLabel: 'Negotiation sequence',
+    adviserProposal: 'Adviser proposal',
+    dispatchUncertain:
+      'Dispatch remains uncertain until quality-qualified manifests arrive. Supply, inspection and logistics can limit the result. You can challenge my authority in Agreement / Voices; I can raise the same boundary there.',
+    shiftFinance:
+      'This shift: wages paid {wages} credits; handoff spending {handoff} credits; compensation paid {compensation} credits. Closing cash {cash} credits. Full commitment remaining {remaining} kg.',
+    reviewExperiment:
+      "This charter's practices remain a valid experiment. Review the actual shortfall and obligations before deciding whether to extend them.",
+    proposalLabel: 'Reversible practice proposal',
+    proposalHeading: 'A small practice to try',
+    proposalScope: '{scope} Keep understanding, the policy vote and optional duty separate.',
+    planningOnly:
+      'Planning draft only. Local approvals are unfilled; this download grants no live authority.',
+    boundariesSummary: 'Boundaries, repayment and rollback',
+    stopOn: 'Stop on: {conditions}.',
+    download: 'Download planning-only practice proposal',
+    // Display words for the simulation's state values; logic keeps the raw values.
+    wordOpen: 'open',
+    wordResolved: 'resolved',
+    wordConfirmed: 'confirmed',
+    wordPending: 'pending',
+    wordYes: 'yes',
+    wordNo: 'no',
+    wordNotOffered: 'not offered',
+    wordBlocked: 'blocked',
+    wordMet: 'met',
+    wordShortfall: 'shortfall',
+  },
   'pt-BR': {
     adviserHoldExecution:
       'Recomendo suspender a execução até que cada pessoa que levantou uma objeção revise a reparação. Não posso encerrar a objeção dela.',

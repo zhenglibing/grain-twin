@@ -10,6 +10,15 @@ export const qcLabStoreMessages = defineMessages({
     recallReason: 'Material recalled under {alertId}',
     clearedReason: 'Investigation {alertId} cleared material',
   },
+  zh: {
+    auditNoteReleased: 'Grade {grade}: material released for dispatch.',
+    auditNoteHeld: 'Grade {grade}: material held for investigation.',
+    testReason: 'Test {id}: {grade}',
+    retestReason: 'Retest {id}: {grade}',
+    contaminationNoteDefault: 'Foreign material investigation opened',
+    recallReason: 'Material recalled under {alertId}',
+    clearedReason: 'Investigation {alertId} cleared material',
+  },
   'pt-BR': {
     auditNoteReleased: 'Classe {grade}: material liberado para expedição.',
     auditNoteHeld: 'Classe {grade}: material retido para investigação.',

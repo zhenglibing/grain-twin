@@ -37,6 +37,23 @@ export const layoutPlanExportMessages = defineMessages({
     queueSnapshot: 'Queue snapshot at material clock {clock} s. Coordinates in metres.',
     legendMachines: 'S: silo. M: mill. SF: sifter (+{heights} m). P: packer. %: buffer fill.',
   },
+  zh: {
+    flowTitle: (p: FlowParams) =>
+      `${p.key}: ${p.load} kg in transit; ${p.rate} kg/min rated; ${p.provenance} path, ${p.seconds} s`,
+    machineTitle: '{id} at +{height} m; {input} kg in / {output} kg out',
+    loopTitle: (p: LoopParams) =>
+      `${p.dock} forklift loop, full ${p.width} m clearance corridor checked`,
+    shippingStaging: '50 pallet spaces',
+    receivingStaging: 'Return pallets',
+    ariaLabel: '{title} dimensioned mill logistics plan',
+    svgTitle: '{title}: mill logistics and captured material queues',
+    factoryWidth: '80 m factory width',
+    factoryDepth: '100 m factory depth',
+    legendPaths: 'Solid: rendered pipes. Dashed: modeled paths.',
+    legendColours: 'Amber/cyan: forklift loops. Green: protected access.',
+    queueSnapshot: 'Queue snapshot at material clock {clock} s. Coordinates in metres.',
+    legendMachines: 'S: silo. M: mill. SF: sifter (+{heights} m). P: packer. %: buffer fill.',
+  },
   'pt-BR': {
     flowTitle: (p: FlowParams) =>
       `${p.key}: ${p.load} kg em trânsito; ${p.rate} kg/min nominais; trajeto ${PT_PROVENANCE[p.provenance] ?? p.provenance}, ${p.seconds} s`,

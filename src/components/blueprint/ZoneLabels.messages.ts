@@ -7,6 +7,12 @@ export const zoneLabelsMessages = defineMessages({
     sifting: 'ZONE 3: SIFTING',
     packing: 'ZONE 4: PACKING',
   },
+  zh: {
+    storage: 'ZONE 1: STORAGE',
+    milling: 'ZONE 2: MILLING',
+    sifting: 'ZONE 3: SIFTING',
+    packing: 'ZONE 4: PACKING',
+  },
   'pt-BR': {
     storage: 'ZONA 1: ARMAZENAGEM',
     milling: 'ZONA 2: MOAGEM',

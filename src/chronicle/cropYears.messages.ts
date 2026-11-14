@@ -8,6 +8,13 @@ const catalog = defineMessages({
     m3: 'Wet harvest',
     m4: 'Sprouted harvest',
   },
+  zh: {
+    m0: 'Ordinary harvest',
+    m1: 'Bountiful harvest',
+    m2: 'Hot, dry harvest',
+    m3: 'Wet harvest',
+    m4: 'Sprouted harvest',
+  },
   'pt-BR': {
     m0: 'Colheita normal',
     m1: 'Colheita abundante',

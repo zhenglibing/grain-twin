@@ -6,6 +6,10 @@ export const recoverableLazyMessages = defineMessages({
     loadTimeout: 'Optional feature load exceeded {ms}ms',
     loadFailed: 'Optional feature failed to load',
   },
+  zh: {
+    loadTimeout: 'Optional feature load exceeded {ms}ms',
+    loadFailed: 'Optional feature failed to load',
+  },
   'pt-BR': {
     loadTimeout: 'O carregamento do recurso opcional passou de {ms} ms',
     loadFailed: 'O recurso opcional não carregou',

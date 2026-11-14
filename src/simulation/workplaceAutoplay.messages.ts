@@ -16,6 +16,21 @@ export const workplaceAutoplayMessages = defineMessages({
     paused: 'Automatic decisions paused. Your choices take priority.',
     stoppedTitle: 'Automatic cooperative season stopped',
   },
+  zh: {
+    soloOnly:
+      'Automatic role decisions are available only in synthetic solo Game mode, outside replay.',
+    safetyBoundary: 'The safety or control-mode boundary holds the automatic demonstration.',
+    needsCampaign:
+      'Automatic season demonstration needs its own cooperative campaign. Existing handoff decisions remain manual.',
+    openObjection:
+      'An open objection remains with its original raiser. Automatic demonstration paused.',
+    seasonComplete:
+      'Automatic three-shift season complete. Read the individual receipts and rehearse safe reload.',
+    separateTurnsManual: 'Separate participant turns stay manual.',
+    running: 'Fictional solo role decisions are running. Pause whenever you want.',
+    paused: 'Automatic decisions paused. Your choices take priority.',
+    stoppedTitle: 'Automatic cooperative season stopped',
+  },
   'pt-BR': {
     soloOnly:
       'As decisões automáticas de função só estão disponíveis no modo Jogo com participação solo sintética, fora da reprodução.',

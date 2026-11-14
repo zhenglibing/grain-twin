@@ -23,6 +23,10 @@ export const weatherEffectsOverlayMessages = defineMessages({
     warning: (p: { type: WeatherType }) => `${p.type} Warning`,
     severity: (p: { severity: WeatherSeverity }) => `Severity: ${p.severity}`,
   },
+  zh: {
+    warning: (p: { type: WeatherType }) => `${p.type} Warning`,
+    severity: (p: { severity: WeatherSeverity }) => `Severity: ${p.severity}`,
+  },
   'pt-BR': {
     warning: (p: { type: WeatherType }) => PT_WARNINGS[p.type] ?? `Alerta: ${p.type}`,
     severity: (p: { severity: WeatherSeverity }) =>

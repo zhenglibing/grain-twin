@@ -66,6 +66,45 @@ export const unifiedGameTickMessages = defineMessages({
     wearWarningMessage:
       '{name} has reached its wear warning and is losing efficiency. Schedule maintenance before it breaks down: Mill Overview, Maintenance and repairs.',
   },
+  zh: {
+    supplierTraceabilityNote:
+      'Supplier notification requires traceability review before dispatch release.',
+    incidentAlert:
+      '{description} The operations workspace records the response and residual controls.',
+    shiftClosedTitle: (p: { shift: string; grade: string }) =>
+      `${capitalise(p.shift)} shift closed: grade ${p.grade}`,
+    shiftClosedUngradedTitle: (p: { shift: string }) =>
+      `${capitalise(p.shift)} shift closed: no customer commitments`,
+    shiftClosedUngradedIncidentTitle: (p: { shift: string }) =>
+      `${capitalise(p.shift)} shift closed: no customer commitments, an incident still open`,
+    shiftClosedMessage:
+      'Its review is in Overview, under Shift debrief: which orders were on time, what held the grade back and what to try next.',
+    dailyTargetReached: 'Daily target reached: {target} bags!',
+    dailyTargetMilestone: 'Daily target {threshold}% complete',
+    certificationExpired: 'Quality certification is expired.',
+    unresolvedContamination: 'A contamination alert remains unresolved.',
+    failedQualityTest: 'The latest laboratory result failed.',
+    incidentDispatchIsolation: 'An active operational incident requires dispatch isolation.',
+    qualityInterlockNotReleased: 'The quality interlock is not released.',
+    departedWithoutLoad: 'Truck departed without a released load.',
+    waitingForMaterial: (p: { material: string }) =>
+      `Waiting for released ${p.material} at the packers.`,
+    dispatchQualityHoldTitle: 'Dispatch Quality Hold',
+    shippingAwaitingProductTitle: 'Shipping Awaiting Product',
+    shippingAwaitingProgrammeTitle: 'Shipping Waiting for a Programme',
+    noCommitmentToShip:
+      'No customer commitment is open, so packed stock stays in the warehouse for the next programme. Accept the next programme to load this truck.',
+    clearBeforeRelease:
+      '{reason} Clear the condition before release. While the truck waits at the dock it costs £{rate} per game hour.',
+    waitingForProduct: 'Waiting for released product at the packers.',
+    shiftLabel: (p: { shift: string }) => capitalise(p.shift),
+    breakdownTitle: 'Machine Breakdown',
+    breakdownMessage: (p: BreakdownParams) =>
+      `${p.name} (${machineTypeWords(p.machineType)}) has broken down due to excessive wear. Open Mill Overview, Maintenance: work order ${p.workOrderId} needs service dispatched, the repair verified and a controlled restart. Each open work order costs £${p.rate} per game hour.`,
+    wearWarningTitle: 'Wear warning',
+    wearWarningMessage:
+      '{name} has reached its wear warning and is losing efficiency. Schedule maintenance before it breaks down: Mill Overview, Maintenance and repairs.',
+  },
   'pt-BR': {
     supplierTraceabilityNote:
       'A notificação do fornecedor exige revisão de rastreabilidade antes da liberação para expedição.',

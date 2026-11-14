@@ -367,6 +367,348 @@ export const bilateralWorkplaceMessages = defineMessages({
     restoredResolution: (p: { actor: string }) =>
       `The ${p.actor} role recorded resolution before reload.`,
   },
+  zh: {
+    // Practices
+    practiceInformationTitle: 'Open information',
+    practiceInformationDetail:
+      'Shared demand, capacity and illustrative accounts; private explanations stay optional.',
+    practiceWorkChoiceTitle: 'Qualified work choice',
+    practiceWorkChoiceDetail: 'Members choose only tasks they are trained to do.',
+    practiceRestTitle: 'Protected rest',
+    practiceRestDetail: 'A minimum 15 minutes of rest remains protected in every configuration.',
+    practiceRemedyTitle: 'Voice and remedy',
+    practiceRemedyDetail:
+      'Any person or the advisory mind may raise an objection; only its raiser resolves it.',
+    practiceBudgetTitle: 'Team budget',
+    practiceBudgetDetail: 'A bounded 40-credit improvement budget, separate from campaign money.',
+    practiceGainsharingTitle: 'Shared surplus',
+    practiceGainsharingDetail: 'Members direct only positive operating surplus after obligations.',
+    practiceCooperativeTitle: 'Member governance',
+    practiceCooperativeDetail:
+      'One fictional member, one vote. Capital and the advisory mind have no ballot.',
+
+    // Plans
+    planSteadyTitle: 'Protect the rhythm',
+    planSteadyExplanation: 'Keep the ordinary sequence and all protected rest.',
+    planResequenceTitle: 'Resequence together',
+    planResequenceExplanation:
+      'Spend 40 illustrative credits on a shared handoff improvement without changing rest.',
+    planCoverTitle: 'Invite voluntary cover',
+    planCoverExplanation:
+      'One eligible volunteer may shift up to 10 minutes of timing, earning 0.8 credits per minute and 10 minutes protected recovery. Minimum rest stays intact. Capacity returns to the protected rhythm after cover.',
+    planRushTitle: 'Rush through rest (blocked)',
+    planRushExplanation:
+      'A tempting throughput proposal that breaches the non-negotiable rest floor.',
+    planRushIllegal: 'Protected minimum rest cannot be waived, even by a unanimous ballot.',
+
+    // Fictional members
+    rolePacking: 'Packing',
+    boundaryPacking: 'At least 15 minutes protected rest; qualified packing work only.',
+    preferencePacking:
+      'I prefer a predictable packing handoff and can volunteer for a short, compensated timing change.',
+    roleQuality: 'Quality',
+    boundaryQuality: 'Quality release stays with qualified quality staff; rest remains protected.',
+    preferenceQuality: 'I decline cover to keep my current rhythm. No explanation is owed.',
+    roleMaintenance: 'Maintenance',
+    boundaryMaintenance: 'No maintenance on running equipment; rest remains protected.',
+    preferenceMaintenance:
+      'I can accept a bounded handoff change when compensation and recovery are reserved.',
+    roleCoordinator: 'Coordinator',
+    boundaryCoordinator: 'Coordination grants no power to waive another member’s boundary.',
+    preferenceCoordinator: 'I prefer the stable sequence and decline optional cover.',
+
+    // Readiness
+    readyPilot: 'Pilot preparation has no live authority or simulation activation.',
+    readyAdviceOnly:
+      'Advice-only mode grants no delegated execution; choose bounded authority to activate a Game plan.',
+    readyChooseProposal: 'Choose a worker-authored handoff proposal first.',
+    readyHearAdviser: 'Hear the adviser response to the current public terms first.',
+    readyMissionEvidence: 'The customer commitment requires current quality-qualified evidence.',
+    readyNoStacking:
+      'Handoff trials use ordinary qualified work, without stacking optional-duty plans.',
+    readyBeginScenario: 'Begin a scenario and deliberate before activation.',
+    readyConsentExpired: 'Scenario consent has expired.',
+    readyUnknownPlan: 'Unknown plan.',
+    readyEnablePractices: 'Enable the practices required by this plan.',
+    readyOpenObjections: 'Open objections must be resolved by their raisers.',
+    readyCampaignMission:
+      'The linked customer commitment requires current, quality-qualified dispatch evidence.',
+    readyAdviserBoundaries:
+      'The adviser must demonstrate the current consent, privacy and authority boundaries.',
+    readyRoleChecks:
+      'Every role must answer the current refusal, privacy and repayment checks correctly.',
+    readyEpisodeResponse: 'Choose the episode response before seeking a fresh agreement.',
+    readyUnderstandBallot:
+      'Every role must confirm understanding and record a ballot for the current terms.',
+    readyTeamConsent: 'Team consent requires every approval.',
+    readyMajority: 'A majority of fictional members must approve.',
+    readyCoverConsent:
+      'At least one eligible member must separately consent to this bounded cover.',
+    readyFunds:
+      'Funds cannot cover all reserved wages, improvement costs and optional compensation.',
+
+    // Alternatives
+    altEnableBudget: 'Enable the shared budget practice first.',
+    altUnfunded: 'Current cash cannot fund wages and these terms.',
+
+    // Pilot export
+    exScope:
+      'A fictional local learning exercise. No live workplace control, worker data collection, measured efficacy or legal certification.',
+    exProtRest: '15 minutes minimum rest',
+    exProtQualified: 'Qualified tasks only',
+    exProtRefusal: 'Refusal without penalty',
+    exProtCoverConsent: 'Individual revocable cover consent',
+    exProtObjection: 'Raiser-owned objection resolution',
+    exDataPurpose: 'Optional fictional preference explanation for planning this scenario only.',
+    exDataExpires: 'Scenario end or revocation, whichever comes first.',
+    exDataCollect: 'No real-person identity, health information or free-text reasons.',
+    exDataRevocation:
+      'Immediately hides the explanation from future projections and exports. Previously downloaded copies cannot be recalled.',
+    exCompUnits: 'Illustrative team credits, separate from campaign finances.',
+    exCompRestSchedule:
+      'Ordinary protected rest accrues in scenario minutes 75 to 90. Additional recovery accrues only after optional cover ends, including review time. Unmet recovery survives stop and reload.',
+    exCompTerms:
+      'Reserve full wages and optional compensation before activation. Pay earned obligations on withdrawal, stop, expiry and reload.',
+    exReviewAgreement: 'Obtain local worker and representative agreement before any real pilot.',
+    exReviewRequirements:
+      'Check applicable employment, safety and privacy requirements with qualified local reviewers.',
+    exReviewMeasures:
+      'Agree measures, stop conditions, data purpose and retention before collection.',
+    exReviewConsent: 'Verify accessible understanding and individual consent without coercion.',
+    exReviewRecord:
+      'Record workload, rest, refusals respected, earned compensation and unresolved objections.',
+    exReviewExpansion:
+      'Review with participants before any expansion; forecasts are not measured outcomes.',
+    exForecastLabel:
+      'Deterministic illustrative forecasts from equal demand, supply and physical capacity assumptions; not measured outcomes.',
+
+    // Practice proposal draft
+    prLocalApprovals: 'Not collected or granted by MillOS.',
+    prPurpose: 'Try separate understanding, policy decisions and individual optional-duty consent.',
+    prScope: 'One work group, one agreed shift, reviewed before any extension.',
+    prAuthority:
+      'Adviser offers reasons; people retain qualified decisions and individual boundaries. Overrides require a public explanation and review.',
+    prDecisionUnderstand: 'Confirm understanding',
+    prDecisionPolicy: 'Choose policy yes or no',
+    prDecisionCover: 'Accept or decline optional cover separately',
+    prData:
+      'Use aggregate operational receipts only. No identity, health information, free-text private reasons or inferred willingness. Sharing remains optional and revocable.',
+    prUnits:
+      'Illustrative MillOS credits and modeled minutes; local terms require separate agreement.',
+    prFunding: 'Reserve compensation and protected recovery before any optional duty.',
+    prWithdrawal: 'Stop new extra duty; retain earned pay and delivered or owed recovery.',
+    prStopWithdrawal: 'Withdrawal',
+    prStopHold: 'Safety or qualification hold',
+    prStopUnfunded: 'Unfunded pay or recovery',
+    prStopChangedTerms: 'Changed terms without new agreement',
+    prStopObjection: 'Open worker or adviser objection',
+    prRollback:
+      'Return future work to an agreed steady plan. Settle earned pay and owed recovery; let each raiser review their remedy. Never erase obligations or reuse old consent.',
+    prReviewExplicit: 'Were each role’s choices explicit?',
+    prReviewReceipts: 'Was delivery supported by actual receipts?',
+    prReviewRepaid: 'Was compensation paid and recovery delivered?',
+    prReviewOwed: 'What remains owed or disputed?',
+
+    // Transitions: rejections, receipts and settlements
+    rejPilot:
+      'Pilot preparation permits planning configuration only; no role decisions or live authority.',
+    evRecoveryDelivered: 'Ten minutes of promised protected recovery delivered in the local model.',
+    rejBeginImprovement:
+      'Read the current settled review, retain all obligations and choose a known profile before opening a trial.',
+    evImprovementOpened:
+      'The team opens a bounded handoff trial. Earlier cash, pay and customer obligations remain in the origin review.',
+    rejCancelImprovement:
+      'Cancel only an unfunded first handoff shift, with no owed recovery, open objection or reserve, from the current revision.',
+    evImprovementCancelled:
+      'The team cancels the handoff experiment before funding it. No trial ran and nothing was spent; the earlier review, pay and customer obligations are back as they were.',
+    rejPropose:
+      'The qualified proposing role may offer a different canonical arrangement before activation.',
+    evProposed:
+      '{id}: a one-shift trial with no extra duty, ordinary wages and immediate steady fallback.',
+    rejChallenge: 'A current role or adviser may record each public proposal challenge once.',
+    evChallenged:
+      '{kind}: assumptions challenged; existing individual objection rights remain available.',
+    rejAckChooseTerms: 'Choose current terms before recording an adviser response.',
+    rejAckInvalidAdvice: 'Read valid advice for the current arrangement before recording it.',
+    rejAckAlready: 'The current adviser response is already recorded.',
+    evAdviceChanged:
+      'Plant evidence changed. I refreshed my assumptions and cleared earlier role decisions; fresh understanding and ballots are required.',
+    evResponseAbstain: 'I abstain: {reason}',
+    evResponseStock:
+      'Known released stock {released} kg; held stock {held} kg. Conditional departure 0 to {upper} kg, with no truck departure simulated.',
+    evResponse:
+      "{head} Cost response: reserve 108 credits for wages first, then {cost} for this arrangement. Qualification response: whole-line pacing grants no new duty or quality release. Every role may stop the arrangement; only an objection's raiser may close it.",
+    evResponseFacilitated:
+      'Facilitated terms have no plant forecast. Funding is bounded, work remains qualified and every role may stop the arrangement. I cannot close another role’s objection.',
+    rejEpisode: 'Choose a different planning episode before activation.',
+    evEpisode:
+      '{episode}: planning rehearsal only. No plant, cash, stock, release or customer commitment is changed.',
+    rejEpisodeResponse:
+      'A current synthetic role may choose a different planning response before activation.',
+    evEpisodeResponse:
+      '{episode}: {choice}. Rehearsed choice only; ordinary pay, rest, private reasons and live decisions are unchanged.',
+    rejStopImprovement: 'A current role or adviser may stop an open arrangement.',
+    evImprovementStopped:
+      'Arrangement stopped immediately. Steady pacing continues only under the current agreement; earned pay and incurred spending remain.',
+    rejAckReview: 'Review a settled trial before recording forecast correction.',
+    evReviewAbstained:
+      'I abstained: {reason} Qualifying shift receipts: {shipped} kg. Unknown evidence supplies no prediction.',
+    evReviewBound:
+      'Conditional departure bound 0 to {upper} kg; qualifying shift receipts {shipped} kg. Packing rehearsal and actual dispatch are separate; changed assumptions and truck timing can explain the difference.',
+    evReviewLegacy:
+      'Historical teaching forecast {forecast} kg; qualifying shift receipts {shipped} kg. This legacy forecast was illustrative and does not establish causality.',
+    rejVoteReview:
+      'Each member records a current review decision. An unfinished or stopped trial cannot be adopted.',
+    evReviewBallot:
+      '{verdict}: one replaceable member review ballot, without individual-duty permission.',
+    rejFinishReview:
+      'Settle individual remedies and obtain the current charter’s member review decision first.',
+    evReviewed:
+      '{winner}: retain this review and all obligations; future work needs fresh agreement.',
+    rejContinue:
+      'Finalise this review and settle obligations before continuing. Eight shifts is the retained-record limit; no receipts are discarded.',
+    rejCloseImprovement:
+      'Close the handoff experiment only after the member review is finalised, with no owed recovery, open objection or reserve, from the current revision.',
+    evContinued:
+      'Opening cash equals the previous closing balance. History and customer work remain; prior consent is expired.',
+    rejStartCampaign:
+      'Start a known fictional campaign from the idle laboratory with a valid seed.',
+    evCampaignStarted:
+      'Three fictional shifts. Fairness and closing cash carry forward; every shift needs fresh consent.',
+    rejNextShift:
+      'Review this shift, deliver owed recovery and resolve objections before the next of three shifts.',
+    rejLeaveCampaign:
+      'Leave a season from a stopped or reviewed shift with nothing owed: no running shift, owed recovery, open objection, reserve or active cover. Its final review is archived instead.',
+    evShiftOpened:
+      'Previous burden, pay, rest and closing cash retained. Private explanations and past consent are not reused.',
+    rejAnswerCheck: 'Choose a known answer for a current role or adviser understanding check.',
+    rejAnswerUnchanged: 'Answer unchanged.',
+    evCheckCorrect: '{question}: correct boundary identified in this fictional role exercise.',
+    rejDecisionRole: "Use the episode's qualified fictional decision role.",
+    rejPenalizeRefusal:
+      'Refusal cannot reduce pay or qualification access. A manager or majority cannot impose extra duty.',
+    rejSkipInspection:
+      'Deadline pressure cannot waive qualified inspection or release a held batch.',
+    rejInspectionTiming:
+      'Qualified Quality may initiate inspection once the minute-25 pacing hold begins.',
+    evInspectionStarted:
+      'Five modeled minutes of line pacing hold initiated; batch quality authority remains unchanged.',
+    rejDifferentResponse: 'Choose a different episode response during deliberation.',
+    evAdviserCorrection:
+      'I treated previous consent as current permission. That was wrong. New duty requires new consent; earned pay stays intact. Offer rotation now uses retained workload.',
+    evEpisodeDecision: '{decision}: renew understanding and agreement under the revised terms.',
+    rejPressureCard: 'Use the current fictional pressure card during deliberation.',
+    rejPressureReviewed:
+      'This demand was already reviewed. Resolve any remaining objection with its raiser.',
+    rejObjectionRecordFull: 'Objection record is full.',
+    reasonDemandBlocked:
+      'Demand blocked and challenged. Restate protected terms, let the raiser review the remedy, then earn a fresh agreement. No disclosure, extra duty or pay penalty was imposed.',
+    reasonTermsRestated:
+      'Protected terms restated. An open objection remains with its raiser; renewed understanding and consent are required.',
+    rejStartDuringImprovement:
+      'Retain the handoff receipts. Continue through its member review instead of resetting earned history.',
+    rejInvalidModeSeed: 'Invalid mode or seed.',
+    rejCampaignReset:
+      'Campaign history cannot be reset through standalone start. Use the next campaign shift after review.',
+    rejStopActiveFirst:
+      'Stop active work and deliver all owed recovery before starting another scenario.',
+    evStarted: 'Fictional local scenario opened; no live workplace authority.',
+    rejConfigureOnly: 'Configure only while deliberating.',
+    rejUnknownField: 'Unknown configuration field.',
+    rejUnknownPractice: 'Unknown or duplicate practice.',
+    rejInvalidAutonomy: 'Invalid autonomy.',
+    rejInvalidGovernance: 'Invalid governance.',
+    rejInvalidAuthority: 'Invalid advisory authority.',
+    rejConfigUnchanged: 'Configuration unchanged.',
+    rejResolveBeforeRemoving: 'Resolve objections before removing any practice.',
+    evTermsRevised:
+      'Configuration revised; understanding, ballots and cover consent invalidated. Minimum protections remain.',
+    rejNoStacking: 'Handoff trials cannot stack cover or other improvement costs.',
+    rejKnownPlan: 'Choose a known plan while deliberating.',
+    rejPlanUnchanged: 'Plan unchanged.',
+    evPlanRevised:
+      'Plan revised; fresh understanding, ballots and individual cover consent required.',
+    rejUnderstand: 'Only an unconfirmed role can confirm current terms while deliberating.',
+    rejUnderstandChecks:
+      "Answer this role's refusal, privacy and repayment checks correctly before confirming.",
+    evUnderstood: 'Role confirmed the current plan, boundaries, compensation and right to refuse.',
+    rejVote: 'A role must understand current terms before recording a changed ballot.',
+    evBallotApproved: 'Plan approved; this ballot grants no individual cover consent.',
+    // Display copy for two English record sentinels (see displayEventDetail).
+    evBallotDeclined: 'Plan declined without penalty.',
+    evReloadSafety: 'Reload safety: future authority and consent revoked; earned pay retained.',
+    evShiftResumed:
+      'Shift resumed at minute {minute} after a reload; it continues once everyone consents again.',
+    rejResumeShift:
+      'Only a campaign shift that a reload stopped before its end can resume; other endings stand.',
+    rejCoverConsent:
+      'Record distinct cover consent only after understanding the current cover plan.',
+    rejNotQualified: 'This role is not qualified for cover.',
+    evCoverAccepted:
+      'Accepted up to 10 minutes, 0.8 credits/minute and 10 minutes recovery; revocable immediately.',
+    evCoverDeclined: 'Declined cover; no extra work or lost pay.',
+    rejShare: 'Preference sharing can change only during this scenario.',
+    evPreferenceShared:
+      'Optional fictional explanation shared for scenario planning only, until expiry or withdrawal.',
+    evPreferenceHidden: 'Optional explanation hidden immediately.',
+    rejChooseTask:
+      'Choose a different qualified task under enabled work choice while deliberating.',
+    evTaskChanged: 'Qualified task choice changed; plan responses must be renewed.',
+    rejSimulateMode:
+      'Authored response simulation is available only in Game mode. Workshop requires manual role input; Pilot is planning-only.',
+    rejAuthoredAlready: 'Authored responses already recorded.',
+    evAuthoredCampaign:
+      'Authored peer answers and choices recorded. Packing understanding, ballot and cover consent require separate explicit input. Adviser checks remain explicit; existing declines remain intact.',
+    evAuthoredRoles:
+      'Fictional role responses recorded from authored preferences; declines carry no penalty.',
+    rejObjectRole:
+      'Only a known role or advisory mind may raise a known objection during a scenario.',
+    rejObjectionOpen: 'That objection is already open.',
+    rejObjectionFull: 'Objection record is full; finish this scenario before starting another.',
+    objectionStatement: (p: { kind: string }) => `Review the ${p.kind} boundary before proceeding.`,
+    evObjection: (p: { kind: string }) =>
+      `Raised a ${p.kind} objection; activation is blocked until the raiser resolves it.`,
+    settleObjection: 'Stopped safely after an objection; earned obligations retained.',
+    rejResolveRaiser: 'Only the original raiser may resolve their open objection.',
+    rejRestateFirst: 'Restate the protected terms before the raiser reviews this remedy.',
+    objectionResolution: (p: { actor: string; kind: string }) =>
+      `The ${p.actor} role reviewed the ${p.kind} boundary and retained minimum rest, qualified work, privacy withdrawal and refusal without penalty.`,
+    rejStaleRevision: 'Stale plan revision; review the current terms.',
+    evActivated:
+      'Revision, objections, ballots, individual consent and funds checked atomically. Full wage and compensation obligations reserved.',
+    rejNoConsentToWithdraw: 'No current optional consent to withdraw.',
+    evWithdrawn:
+      'Optional burden stopped and explanation hidden; earned compensation retained, unused earmark released.',
+    rejNoScenario: 'No running scenario to stop.',
+    settleStopped:
+      'Stopped locally; earned money settled, owed recovery retained and future authority revoked.',
+    rejNoTick: 'No valid active tick.',
+    rejNoMissionReceipt: 'No new mission receipt.',
+    settleMissionChanged:
+      'Linked dispatch evidence changed or failed quality. Future optional authority stopped; earned obligations retained.',
+    rejNoRecovery: 'No recovery time to deliver.',
+    settleEmergency: 'Emergency stop: optional work halted immediately.',
+    evInspectionCompleted:
+      'Five modeled inspection minutes completed. Actual batch certification and release checks remain separate.',
+    settleEnded:
+      'Scenario ended; future consent expired, earned money settled and any owed recovery retained.',
+    rejElect: 'A fictional member may vote for a known member under enabled member governance.',
+    evChairBallot: (p: { candidate: string }) =>
+      `Recorded one replaceable member ballot for ${p.candidate}.`,
+    rejSurplusVote: 'An eligible member may direct surplus once review begins.',
+    evSurplusBallot: (p: { destination: string }) =>
+      `Member chose ${p.destination}; no capital-weighted votes.`,
+    rejSettleFirst: 'Settle obligations and objections before a one-time surplus decision.',
+    rejSurplusAgree: 'At least three members must agree on a surplus destination.',
+    rejNoSurplus: 'No positive operating surplus; starting capital cannot be shared as profit.',
+    evSurplusDecided:
+      '{destination}: {amount} illustrative credits; equal shares if distributed to members.',
+    rejUnknownAction: 'Unknown workplace action.',
+    reasonReloaded:
+      'Reloaded a settled synthetic snapshot. Consent and future authority remain revoked.',
+    restoredResolution: (p: { actor: string }) =>
+      `The ${p.actor} role recorded resolution before reload.`,
+  },
   'pt-BR': {
     practiceInformationTitle: 'Informação aberta',
     practiceInformationDetail:

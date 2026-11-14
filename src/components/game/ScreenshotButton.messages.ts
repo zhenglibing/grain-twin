@@ -10,6 +10,15 @@ export const screenshotButtonMessages = defineMessages({
     exportReport: 'Export Report',
     export: 'Export',
   },
+  zh: {
+    failedTitle: 'Screenshot Failed',
+    surfaceUnavailable: 'Rendering surface unavailable. Try again in a moment.',
+    captureFailed: 'Could not capture the scene. Try again in a moment.',
+    takeScreenshot: 'Take Screenshot',
+    screenshot: 'Screenshot',
+    exportReport: 'Export Report',
+    export: 'Export',
+  },
   'pt-BR': {
     failedTitle: 'Falha na captura de tela',
     surfaceUnavailable: 'Superfície de renderização indisponível. Tente novamente em instantes.',

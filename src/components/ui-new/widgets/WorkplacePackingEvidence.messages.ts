@@ -132,6 +132,135 @@ export const workplacePackingEvidenceMessages = defineMessages({
     receiptsSummary: 'Public conduct receipts',
     receipt: '{minute} min, {actor}: {detail}',
   },
+  zh: {
+    // HandoffEpisodes
+    handoffLabel: 'Handoff pressure rehearsals',
+    handoffHeading: 'Try an agreement under pressure',
+    handoffIntro:
+      'Optional planning episodes. Their assumptions leave live trucks, stock, quality, cash and customer commitments unchanged.',
+    pressureEpisode: 'Pressure episode',
+    ordinaryHandoff: 'Ordinary handoff',
+    responseAuthor: 'Rehearsal response author',
+    beginMemberTurn: 'Begin a member turn',
+    adviserNoResponse: 'Adviser, no member response',
+    actInPlant:
+      'To act in the plant, choose the real proposal below and make fresh role decisions. This rehearsal records no live permission.',
+    // FrozenPackingAdvice
+    evidenceLabel: 'Plant-grounded adviser evidence',
+    adviserAbstains: 'The adviser abstains from a forecast',
+    conditionalBounds: 'Conditional packing and departure bounds',
+    abstainReason: '{reason} Unknown evidence remains unknown.',
+    materialFlour: 'flour',
+    materialSemolina: 'semolina',
+    modeledPacking:
+      'Additional modeled packing: {low} to {high} kg of {material}. Conditional departure: 0 to {upper} kg.',
+    scenarioBounds:
+      'These are scenario bounds. No departure is simulated or guaranteed. Held stock supplies no eligible dispatch.',
+    factsSummary: 'Known facts, age and assumptions',
+    factsUnavailable:
+      'Numeric plant facts are unavailable for this forecast. Resolve the missing evidence above, then hear a fresh response before deciding.',
+    orderAndRecipe: 'Order and recipe: ',
+    orderRecipeValue: '{order}; {recipe}. Remaining {remaining}.',
+    unknown: 'unknown',
+    kg: '{value} kg',
+    materialClock: 'Captured material clock: ',
+    secondsValue: '{value} seconds.',
+    intendedPace: 'Intended pace: ',
+    paceValue: '{speed}x pace. 90 workplace minutes are {seconds} plant seconds at every pace.',
+    inspectTogether: 'Inspect evidence together',
+    frozenFacts:
+      'Facts are frozen at the adviser’s capture. These views inspect the current plant; changed facts need a fresh adviser response before another agreement. Looking records no understanding, ballot or permission.',
+    inputReceipt: 'Input receipt: {fingerprint}; material session {session}.',
+    // MatchedPackingRehearsal
+    qualityOverride: 'Higher pacing can replace the withheld release',
+    qualityHeld: 'Departure remains blocked at every pace',
+    qualityUnsure: 'We are unsure, compare the boundaries',
+    pauseFirst: 'Pause the plant before capturing matched packing inputs.',
+    inputsChangedDuring: 'Plant inputs changed during rehearsal. Pause and capture again.',
+    rehearsalFailed:
+      'The local packing rehearsal could not complete. No live plant state was changed.',
+    qualityFailed: 'The quality-boundary rehearsal could not complete. No live state changed.',
+    compareSummary: 'Compare matched packing alternatives',
+    isolatedCopies:
+      'Three isolated copies of one plant input, using the real flow engine. No live inventory, shipping receipt, pay, customer credit or consent is changed. Pressure episodes remain separate planning assumptions.',
+    packingPrediction: 'Our packing prediction (optional)',
+    discussFirst: 'Discuss before revealing the ranges',
+    compareIdeas:
+      'Compare ideas first and keep any disagreements. This optional prediction stays in this open comparison; it records no role ballot or permission.',
+    rehearsingPacking: 'Rehearsing packing…',
+    runRehearsal: 'Run matched packing rehearsal',
+    matchedInput:
+      'Matched input: {fingerprint}. Fixed machinery and dispositions; no collection, wear or maintenance simulation.',
+    checkFreshness: 'Check rehearsal freshness',
+    staleComparison: 'Inputs changed. This comparison is stale; capture again before using it.',
+    resultsLabel: 'Matched packing results',
+    arrangementSteady: 'Ordinary work',
+    arrangementBriefing: 'Paid briefing',
+    arrangementBuffer: 'Buffer pacing',
+    armAbstained: 'abstained, {reason}',
+    armRange: '{low} to {high} kg additionally packed; conditional departure 0 to {upper} kg.',
+    firstPackingSummary: 'When did packing first appear?',
+    firstPackingExplain:
+      'Each value marks the completed simulation tick that first recorded additional packed stock. These are workplace minutes from the same captured start. Discrete samples can differ with the physical step size.',
+    timingLabel: 'Packing time observations',
+    coarseSteps: '0.5-second steps: {value}.',
+    fineSteps: '0.25-second steps: {value}.',
+    noPackingObserved: 'no additional packing observed',
+    minutesValue: '{value} min',
+    briefingRetains:
+      'The briefing retains its five paid minutes of pacing hold. Compare the sample times with the 90-minute totals above; an earlier first sample supplies no collection receipt.',
+    timingQuestion:
+      'If the final totals match, which timing difference would you investigate together before changing the handoff?',
+    timingUnavailable:
+      'Timing is unavailable for this comparison. Resolve the missing facts or model warning above before interpreting it.',
+    releaseSummary: 'Can pacing replace a release?',
+    assumeWithheld:
+      'Assume dispatch release is withheld in isolated copies of these same inputs. The real flow engine still models packing; source and batch dispositions stay unchanged. This creates no live hold, release or departure.',
+    qualityPrediction: 'Our quality prediction (optional)',
+    discussQuality: 'Discuss with Quality and the coordinator',
+    resolveMissing:
+      'Resolve missing captured facts before this exercise. Unknown inputs cannot establish a zero-output result.',
+    rehearsingWithheld: 'Rehearsing withheld release…',
+    rehearseWithheld: 'Rehearse withheld dispatch release',
+    qualityResultsLabel: 'Quality boundary results',
+    differentQuestions: 'Packing and permission answer different questions',
+    recordedIdea: 'Recorded idea: {idea}.',
+    noneRecorded: 'none recorded for this run',
+    keepOpen: '{reason} Keep the question open.',
+    withheldArm:
+      '{arrangement} with withheld release: {low} to {high} kg additionally packed; conditional departure {lower} to {upper} kg.',
+    alreadyHeld:
+      'Release was already held in the captured facts. This rehearsal grants no new permission.',
+    alreadyZero:
+      'The original departure bounds were already zero. This comparison cannot attribute that original zero to quality alone.',
+    independentEvidence:
+      'Which independent evidence would Quality and the coordinator need before an actual departure? More packing supplies no missing release or collection receipt.',
+    resetQuality: 'Reset quality prediction',
+    reviewLabel: 'Packing prediction review',
+    rehearsalShowed: 'What did the rehearsal show?',
+    ourPrediction: 'Our prediction: {prediction}.',
+    moreStock:
+      'More packed stock does not establish a truck departure. Collection, qualified release and actual dispatch receipts still need their own evidence.',
+    anotherPrediction: 'Prepare another prediction',
+    // HandoffConduct
+    conductLabel: 'Handoff conduct debrief',
+    treatEachOther: 'How did we treat each other?',
+    challenges: (p: Count) =>
+      `${p.countText} public ${p.count === 1 ? 'challenge' : 'challenges'};`,
+    adviceUpdates: '{count} evidence-driven advice updates.',
+    declined: (p: Count) =>
+      p.count
+        ? `${p.countText} ${p.count === 1 ? 'role' : 'roles'} recorded a declined policy ballot without a pay penalty.`
+        : 'No declined policy ballot was recorded.',
+    declinedNoPermission:
+      'A declined policy ballot grants no extra-duty permission. Coordinated or majority ordinary work can proceed under the selected governance rule. Private explanations stay optional.',
+    roleLedger:
+      ': earned {pay} credits; rest {rest} min; extra duty {extra} min; compensation paid {compensation}; recovery delivered {recovery} min, owed {owed} min.',
+    objections: (p: Count) =>
+      `${p.countText} unresolved ${p.count === 1 ? 'objection' : 'objections'}. Each remedy belongs to its original raiser; a promise supplies no delivered recovery.`,
+    receiptsSummary: 'Public conduct receipts',
+    receipt: '{minute} min, {actor}: {detail}',
+  },
   'pt-BR': {
     handoffLabel: 'Ensaios de passagem de turno sob pressão',
     handoffHeading: 'Teste um acordo sob pressão',

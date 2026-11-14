@@ -40,6 +40,37 @@ export const aiEngineMessages = defineMessages({
     strategicRecorded: 'Strategic guidance recorded for the tactical controller.',
     chatgptRequestFailed: 'ChatGPT request failed.',
   },
+  zh: {
+    coordinationAction: 'Allocate autonomous service route to {machine}',
+    coordinationReasoning:
+      'The route planner detected equipment demand at {machineId} with {load} percent load.',
+    coordinationImpact: 'Keeps service traffic deterministic and clears shared aisles.',
+    maintenanceAction: 'Queue condition-based maintenance for {machine}',
+    maintenanceReasoning:
+      'Telemetry reports {temperature} C, {vibration} mm/s vibration, and {wear} percent wear.',
+    maintenanceImpact: 'Reduces breakdown risk while preserving the controlled production path.',
+    safetyAction: 'Engage interlocked safe state around {machine}',
+    safetyReasoning:
+      'The autonomous safety layer detected a limit or test condition requiring isolation.',
+    safetyImpact:
+      'Stops hazardous motion, closes affected routes, and preserves diagnostic evidence.',
+    predictionAction: 'Statistical anomaly detected on {machine}',
+    predictionReasoning:
+      'Trend analysis combines {temperature} C, {vibration} mm/s vibration, {load} percent load, and {wear} percent wear.',
+    predictionImpact: 'Provides lead time for an automatic derate or maintenance queue entry.',
+    optimizationAction: 'Balance process load through {machine}',
+    optimizationReasoning:
+      'The line is carrying {load} percent load at {efficiency} percent local efficiency.',
+    optimizationImpact:
+      'Lowers the line rate by 2% (never below 55%) to smooth material flow, limit recirculation and protect downstream capacity.',
+    completedAutomatic: 'Completed by autonomous control layer',
+    completedConfirmed: 'Completed after control confirmation',
+    strategicReasoningFallback: 'Strategic analysis complete.',
+    strategicAction: 'Strategic: {priority}',
+    strategicAdditionalPriorities: 'Additional priorities: {priorities}',
+    strategicRecorded: 'Strategic guidance recorded for the tactical controller.',
+    chatgptRequestFailed: 'ChatGPT request failed.',
+  },
   'pt-BR': {
     coordinationAction: 'Alocar rota de serviço autônoma para {machine}',
     coordinationReasoning:

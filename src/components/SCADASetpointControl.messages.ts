@@ -29,6 +29,27 @@ export const scadaSetpointMessages = defineMessages({
     refused: 'The write was refused; the setpoint is unchanged.',
     applying: 'Applying...',
   },
+  zh: {
+    legend: 'Operator setpoint',
+    inputLabel: 'New setpoint for {tag} ({unit})',
+    apply: 'Apply',
+    currentSetpoint: 'Setpoint now {reading}',
+    currentReading: '{tag} reads {reading}',
+    noReading: 'No reading yet',
+    helperFollows:
+      'Moves the simulated {tag} toward this value over a few seconds. It does not change throughput: the order plan sets the line rate.',
+    helperAlarmBand: 'The reading alarms below {low} or above {high} {unit}.',
+    helperNoFollower:
+      'Changes this simulated setpoint value only. It does not change throughput: the order plan sets the line rate.',
+    invalidNumber: 'Enter a number.',
+    outOfRange: 'Enter a value from {low} to {high} {unit}.',
+    disabledNotConnected: 'SCADA is not connected, so setpoints cannot be written.',
+    disabledMode: (p: { mode: string }) =>
+      `Setpoint writes are limited to the local simulation. This SCADA is in ${p.mode} mode.`,
+    applied: 'Setpoint {reading} applied.',
+    refused: 'The write was refused; the setpoint is unchanged.',
+    applying: 'Applying...',
+  },
   'pt-BR': {
     legend: 'Setpoint do operador',
     inputLabel: 'Novo setpoint para {tag} ({unit})',

@@ -9,6 +9,14 @@ export const messages = defineMessages({
     m4: 'Sign the charter',
     m5: ' (score +{bonus})',
   },
+  zh: {
+    m0: 'Beginner',
+    m1: 'Historical',
+    m2: 'Hard',
+    m3: 'Site charter',
+    m4: 'Sign the charter',
+    m5: ' (score +{bonus})',
+  },
   'pt-BR': {
     m0: 'Iniciante',
     m1: 'Histórico',

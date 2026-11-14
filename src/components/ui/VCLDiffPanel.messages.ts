@@ -14,6 +14,19 @@ export const vclDiffPanelMessages = defineMessages({
     waiting: 'Waiting for VCP change...',
     noVcpYet: 'No VCP yet',
   },
+  zh: {
+    clipboard: 'Previous:\n{previous}\n\nCurrent:\n{current}',
+    title: 'VCP Diff',
+    changeCount: (p: { count: number }) =>
+      `${formatFixed(p.count, 0, 'en')} ${p.count === 1 ? 'change' : 'changes'}`,
+    copied: 'Copied VCP diff to clipboard',
+    copyFailed: 'Failed to copy VCP diff to clipboard',
+    copy: 'Copy VCP diff to clipboard',
+    previous: 'Previous',
+    current: 'Current',
+    waiting: 'Waiting for VCP change...',
+    noVcpYet: 'No VCP yet',
+  },
   'pt-BR': {
     clipboard: 'Anterior:\n{previous}\n\nAtual:\n{current}',
     title: 'Diferenças do VCP',

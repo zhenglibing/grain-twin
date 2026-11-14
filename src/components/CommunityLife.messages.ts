@@ -4,6 +4,9 @@ export const communityLifeMessages = defineMessages({
   en: {
     siteSafetyStop: 'Site safety stop',
   },
+  zh: {
+    siteSafetyStop: 'Site safety stop',
+  },
   'pt-BR': {
     siteSafetyStop: 'Parada de segurança da unidade',
   },

@@ -142,6 +142,147 @@ export const aiSettingsModalMessages = defineMessages({
     testConnection: 'Test Connection',
     connectForSession: 'Connect for Session',
   },
+  zh: {
+    // Visualization toggles
+    toggleCascade: 'Cascade Visualization',
+    toggleStrategic: 'Strategic Overlay',
+    toggleTarget: 'Production Target',
+    toggleEnergy: 'Energy Dashboard',
+    toggleMultiObjective: 'Multi-Objective',
+    toggleCost: 'API Cost Tracker',
+    toggleVcl: 'VCL Context',
+    overlaysHeading: 'AI Visualization Overlays',
+    overlaysHint: 'Toggle overlays with keyboard shortcuts or buttons above',
+
+    // Local WebGPU panel
+    localCoreTitle: 'Local Neural Core',
+    online: 'Online',
+    modelInfo: 'Model: {model}',
+    backendInfo: 'Backend: WebGPU',
+    webgpuUnavailable:
+      'WebGPU is unavailable in this browser. Use a WebGPU-capable browser (recent Chrome, Edge, or Safari 17+) or select a cloud BYOK model.',
+    compilingShaders: 'Compiling shaders',
+    downloadingWeights: 'Downloading weights',
+    cancelDownload: 'Cancel download',
+    tryAgain: 'Try again',
+    loadModel: 'Load model',
+    downloadAndLoad: 'Download & load model',
+    unloadModel: 'Unload model (free GPU memory)',
+    deleting: 'Deleting...',
+    deleteModel: 'Delete downloaded model',
+    lightsOutLabel: 'Lights-out: the on-device AI handles incidents',
+    fastLaneLabel: 'Fast routing lane (+{size} GB GPU memory)',
+    cachedInBrowser: 'Cached in this browser',
+    cachedWithSize: 'Cached in this browser (~{size} used)',
+    notDownloaded: 'Not downloaded yet',
+    modelDownloadNote:
+      'The model ({model}, ~{size} GB) downloads automatically when you select this backend, once, from the Hugging Face CDN, and is cached in your browser. After that all inference runs on your GPU and your simulation data never leaves your device — no API key, no cost. Use “Delete downloaded model” any time to remove it and free the space.',
+
+    // ChatGPT panel
+    modelCatalogUnavailable: 'Model catalog unavailable.',
+    chatgptOperationFailed: 'ChatGPT operation failed.',
+    chatgptTitle: 'ChatGPT plan login',
+    chatgptIntroBefore: 'Available in the local MillOS companion. Run ',
+    chatgptIntroAfter:
+      ' and open its 127.0.0.1 address. Public-site ChatGPT plan access requires OpenAI approval. This plan route is separate from the dollar cap on BYOK calls.',
+    connectedAs: 'Connected as {account}',
+    chatgptAccountFallback: 'ChatGPT account',
+    chatgptAccountLabel: 'ChatGPT account',
+    planModelLabel: 'ChatGPT plan model',
+    selectPlanModel: 'Select a plan model',
+    signOutUnconfirmed:
+      'Signed out locally; remote revocation was not confirmed. Disconnect MillOS in ChatGPT Settings.',
+    signOutLocally: 'Sign out locally',
+    addAccount: 'Add another ChatGPT account',
+    reconnectAccount: 'Reconnect ChatGPT account',
+    continueWithChatGPT: 'Continue with ChatGPT',
+
+    // Key test / save results
+    keyVerifiedOpenRouter:
+      'OpenRouter key and spending limit verified. Model access is checked on first request.',
+    keyVerified: 'Key and model access verified for this session.',
+    connectionFailed: 'Connection failed.',
+    connectedForSession: 'Connected for this page session.',
+
+    // Dialog
+    title: 'AI Settings',
+    closeSettings: 'Close settings',
+    backendLabel: 'AI Backend',
+    chatgptPlan: 'ChatGPT plan',
+    recommended: 'Recommended',
+    localCompanion: 'Local companion',
+    localWebGPU: 'Local (WebGPU)',
+    onDeviceFree: 'On-device • free',
+    localModelLabel: 'Local',
+
+    // Cost cap
+    invalidCostCap: 'Invalid cost cap.',
+    costCapLabel: 'BYOK session cost cap (USD)',
+    costCapPlaceholder: 'Off',
+    apply: 'Apply',
+    costUsage: (p: { used: string; pending: string }) =>
+      `Used $${p.used}; in flight or uncertain $${p.pending}.`,
+    noCap: ' No cap set.',
+    capSet: (p: { cap: string }) => ` Cap: $${p.cap}.`,
+    costNote:
+      'OpenRouter needs a cap and a lifetime spend-limited inference key that includes BYOK usage. Its key check is free; direct-provider key tests on localhost are billable. This tab reserves an estimate before paid calls; charges can exceed it. OpenRouter reports its account charge and any upstream BYOK charge. Verify your provider bill.',
+
+    // Current status
+    currentMode: 'Current Mode:',
+    localOnly: 'Local Only',
+    modelOnly: '{model} Only',
+    hybridMode: 'Hybrid Mode',
+    heuristic: 'Heuristic',
+    connectedStatus: 'Connected • {model} • key held in memory',
+    localCoreOnline: 'Local neural core online • {model}',
+
+    // Cloud key flow
+    apiKeyLabel: '{provider} API Key',
+    placeholderUpdate: 'Enter new key to update...',
+    placeholderEnter: 'Enter your {provider} API key...',
+    replaceKey: 'Replace {provider} API key',
+    enterKey: 'Enter {provider} API key',
+    getKeyFrom: 'Get your API key from',
+    providerConsole: '{provider} Console',
+    openRouterKeyAdvice:
+      'Set a session cap above, then use a lifetime spend-limited OpenRouter inference key with BYOK usage included in its limit. MillOS checks that limit before every paid request.',
+    openRouterConsent:
+      'Send simulated plant telemetry to OpenRouter and its model provider. My account pays for strategic requests. The app cap is an estimate; my provider bill is authoritative.',
+    keyMemoryNote:
+      'Your key stays in this page’s memory and is sent directly to {provider} with plant telemetry. Reloading clears it. MillOS has no server-side key vault; page scripts and browser extensions can access a key while this page is open.',
+    keyCheckFree: 'The key check is free; strategic requests are billable.',
+    keyTestsBillable: 'Key tests and strategic requests are billable.',
+
+    // Operating mode
+    operatingMode: 'AI Operating Mode',
+    fastRules: 'Fast rules',
+    hybrid: 'Hybrid',
+    bestOfBoth: 'Best of both',
+    llmOnly: 'LLM only',
+    modeHeuristicDesc: 'Fast rule-based decisions. No API cost.',
+    modeLocalOnlyDesc:
+      'Strategic decisions from the local model only (every 45s); the fast rules layer is paused.',
+    modeModelOnlyDesc:
+      'Strategic decisions from {model} only (every 45s); the fast rules layer is paused.',
+    modeLocalHybridDesc: 'Tactical (heuristic 6s) + Strategic (local model 45s).',
+    modeModelHybridDesc: 'Tactical (heuristic 6s) + Strategic ({model} 45s).',
+
+    // LLM-only confirmation
+    considerHybrid: 'Consider Hybrid Mode?',
+    hybridExplanation:
+      ' combines fast heuristic decisions (every 6s) with strategic insights (every 45s), giving you the best of both worlds.',
+    llmOnlyExplanation:
+      'runs only the strategic LLM layer and pauses the fast rules layer, so the plant responds to changes more slowly.',
+    useHybrid: 'Use Hybrid',
+    useLocalOnly: 'Use Local Only',
+    useModelOnly: 'Use {model} Only',
+    cancel: 'Cancel',
+
+    // Footer actions
+    disconnectKey: 'Disconnect Key',
+    testConnection: 'Test Connection',
+    connectForSession: 'Connect for Session',
+  },
   'pt-BR': {
     toggleCascade: 'Visualização em cascata',
     toggleStrategic: 'Camada estratégica',

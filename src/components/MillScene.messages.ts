@@ -4,6 +4,9 @@ export const millSceneMessages = defineMessages({
   en: {
     egressVerified: '{label} VERIFIED',
   },
+  zh: {
+    egressVerified: '{label} VERIFIED',
+  },
   'pt-BR': {
     egressVerified: '{label} VERIFICADA',
   },

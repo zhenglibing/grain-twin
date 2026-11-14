@@ -63,6 +63,61 @@ export const safetyPanelMessages = defineMessages({
       'Everything stops — machines, forklifts, the lot. The alarm stays on until you clear the interlock from this panel.',
     confirmLabel: 'Trigger emergency stop',
   },
+  zh: {
+    loading: 'Loading...',
+    weatherClear: 'Clear',
+    weatherCloudy: 'Cloudy',
+    weatherRain: 'Rain',
+    weatherStorm: 'Storm',
+    tabControls: 'Controls',
+    tabAnalytics: 'Analytics',
+    tabConfig: 'Config',
+
+    featureSafetyMetrics: 'Safety metrics',
+    featureSafetyAnalytics: 'Safety analytics',
+    featureIncidentHistory: 'Incident history',
+    featureSafetyConfiguration: 'Safety configuration',
+    featureZoneCustomization: 'Zone customization',
+
+    emergencyResponse: 'Emergency Response',
+    simulatedSafetyEvent: 'Simulated safety event',
+    safetyInterlock: 'Safety interlock',
+    stage: (p: { value: string }) => p.value,
+    acknowledgementNote: 'Acknowledged in the Safety workspace',
+    acknowledgeEvent: 'Acknowledge event',
+    safetyStateRecovered: 'Safety state recovered',
+    cleared: 'Cleared',
+
+    drillGroupLabel: 'Emergency egress verification drill',
+    drillTitle: 'Egress verification drill',
+    allZonesVerified: 'All zones verified',
+    zonesVerified: '{verified}/{total} zones verified',
+    drillDescription:
+      'Halts production and grounds every forklift while the egress sensors verify themselves. Nothing moves until they agree.',
+    endDrill: 'END DRILL',
+    startDrill: 'START DRILL',
+    clearEmergencyBeforeDrill: 'Clear the active emergency before starting a drill',
+    releaseForkliftStop: 'RELEASE FORKLIFT STOP',
+
+    resolveCrisisFirst: 'Resolve the active crisis before clearing its interlock',
+    chronicleFireInterlock:
+      'A Mill Chronicle duct fire holds this interlock; answer it in the Chronicle',
+    endDrillFirst: 'End the active egress verification drill before using the emergency stop',
+    crisisInterlockActive: 'CRISIS INTERLOCK ACTIVE',
+    drillInterlockActive: 'DRILL INTERLOCK ACTIVE',
+    clearEmergency: 'CLEAR EMERGENCY',
+    triggerEmergencyStop: 'TRIGGER EMERGENCY STOP',
+
+    environment: 'Environment',
+    weatherConditionsLabel: 'Weather conditions',
+    weatherConditions: 'Weather Conditions',
+    setWeatherTo: 'Set weather to {label}',
+
+    confirmTitle: 'Trigger facility emergency stop?',
+    confirmMessage:
+      'Everything stops — machines, forklifts, the lot. The alarm stays on until you clear the interlock from this panel.',
+    confirmLabel: 'Trigger emergency stop',
+  },
   'pt-BR': {
     loading: 'Carregando...',
     weatherClear: 'Limpo',

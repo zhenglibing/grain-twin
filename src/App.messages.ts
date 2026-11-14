@@ -15,6 +15,20 @@ export const appMessages = defineMessages({
     mainLabel: '3D factory visualization',
     pageHeading: 'MillOS Industrial Factory Simulation',
   },
+  zh: {
+    startupStatus: 'Bringing operations online',
+    viewStoppedTitle: '3D view stopped',
+    viewStoppedBody: 'The 3D view hit an unexpected problem. Reloading usually restores it.',
+    reloadApplication: 'Reload Application',
+    skipToMain: 'Skip to main content',
+    skipToNavigation: 'Skip to navigation',
+    keyboardNoteLabel: '3D visualization keyboard controls',
+    keyboardNote:
+      'The 3D factory visualization is interactive. Use W, A, S, D or the arrow keys to move, Q and E to move down and up, and Shift to move faster. Press V to toggle first-person view mode. Press 1-7 to switch camera presets. Keyboard movement pauses while an interface control has focus. Press Space to toggle the forklift emergency stop, and the question mark key for the full list of shortcuts.',
+    operationsControls: 'Operations controls',
+    mainLabel: '3D factory visualization',
+    pageHeading: 'MillOS Industrial Factory Simulation',
+  },
   'pt-BR': {
     startupStatus: 'Iniciando as operações',
     viewStoppedTitle: 'A visualização 3D parou',

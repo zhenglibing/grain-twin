@@ -38,6 +38,42 @@ export const workplaceReplayStoreMessages = defineMessages({
     reportLimits:
       'Starting conditions match. Frame-driven vehicle motion can differ between runs. Compare elapsed and agreement time; no winner or trust score is inferred. Raw checkpoints and consent are never exported.',
   },
+  zh: {
+    pauseFirst: 'Pause the simulation before capturing or rewinding.',
+    safetyHold: 'Resolve the site safety hold first. Replay cannot clear emergency authority.',
+    localControlOnly:
+      'Replay is available only with local simulation control, never live or hybrid SCADA.',
+    labTestRunning: 'Finish the current laboratory test before capturing or rewinding.',
+    improvementActive:
+      'Retain the handoff trial and its reviews. Replay cannot rewind an improvement cycle.',
+    gameModeOnly: 'Choose Game mode for an operational replay.',
+    recoveryOwed: 'Deliver all earned recovery before rewinding. Repayment cannot be erased.',
+    seedRange: 'Choose a whole-number seed from 1 to {max}.',
+    untouchedStart: 'Capture an untouched starting discussion. Complete and record this run first.',
+    waitForScene: 'Wait for the complete local scene: {missing}.',
+    openOrderRequired:
+      'Select an open, quality-qualified customer order without a recovery challenge.',
+    captureFirst: 'Capture a paused starting situation first.',
+    knownCharter: 'Choose a known charter.',
+    sceneChanged: 'The scene changed. Reloading or remounting invalidates an in-memory checkpoint.',
+    materialSessionChanged:
+      'The material session changed. Start a new experiment from an untouched discussion.',
+    finishCurrentShift: 'Finish and record the current shift before starting another replay.',
+    restorationFailed:
+      'Restoration failed. The prior situation was restored; capture a fresh checkpoint.',
+    rollbackFailed:
+      'Restoration and rollback failed. The game remains paused; checkpoint disabled. Reload before another experiment. Reviewed receipts remain available.',
+    startRunFirst: 'Start a checkpoint run before recording.',
+    matchedEvidenceLocal:
+      'Matched evidence requires local simulation control. Live or hybrid control cannot be recorded as a replay.',
+    reviewBeforeRecording: 'Review the shift and deliver all earned recovery before recording.',
+    evidenceChanged:
+      'The linked order or material evidence changed. No matched run can be recorded.',
+    finishAgreement: 'Finish the agreement and repay recovery before ending the experiment.',
+    reportScope: 'Synthetic local game runs; actual ledger deltas, no real-worker efficacy claim.',
+    reportLimits:
+      'Starting conditions match. Frame-driven vehicle motion can differ between runs. Compare elapsed and agreement time; no winner or trust score is inferred. Raw checkpoints and consent are never exported.',
+  },
   'pt-BR': {
     pauseFirst: 'Pause a simulação antes de capturar ou voltar no tempo.',
     safetyHold:

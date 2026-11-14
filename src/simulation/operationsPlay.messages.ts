@@ -66,6 +66,64 @@ export const operationsPlayMessages = defineMessages({
     instructionQueued:
       'The response is queued. Resume the shift to process it before restoring the controller.',
   },
+  zh: {
+    blockActiveChallenge: 'Finish or abandon the active challenge first.',
+    blockNoCommitment: 'Accept a production programme with an open commitment first.',
+    blockOpenIncidents: 'Recover existing incidents before adding another challenge.',
+    blockPlanning: 'Wait for the selected route to refresh its inventory and quality readings.',
+    blockNoFeedstock: 'Receive the active recipe feedstock before starting.',
+    blockQualityHold: 'Resolve the existing quality hold before starting.',
+
+    challengePowerRecovery: 'Recover from a power sag',
+    challengePackagingRecovery: 'Restore packaging throughput',
+    challengeNetworkRecovery: 'Recover control availability',
+    challengeFallback: 'Recovery challenge',
+
+    acknowledgeLabel: 'Acknowledge incident',
+    acknowledgeConsequence:
+      '{title}: acknowledgement records ownership; its production and safety effects remain active.',
+    mitigateLabel: 'Apply incident mitigation',
+    mitigateConsequence:
+      'Halves the incident’s throughput and quality penalties. Existing equipment failures and quality holds still require their own recovery.',
+    resumeLabel: 'Resume shift for controller response',
+    resumeConsequence:
+      'Resumes the whole shift at standard pace. Production and customer deadlines advance; the shift stays running until you pause it.',
+    resolveLabel: 'Restore challenge controller',
+    resolveConsequenceActive:
+      'Restores this effect-only controller scenario to normal. Complete the challenge by dispatching its target mass through the real quality and shipping gates.',
+    resolveConsequenceEnded:
+      'Restores the abandoned or expired scenario controller to normal. Its recorded challenge result remains unchanged; a fresh challenge can then be started.',
+    repairLabel: 'Repair the stopped machine in Overview',
+    programmeLabel: 'Accept next production programme',
+    programmeConsequence:
+      'Creates three customer commitments, {dayKg} kg in all ({nightKg} kg on the night shift): a one-truck rush that pays {premium}% more but is due within {window} and costs double the usual late penalty, a {standardKg} kg order and a two-truck bulk order. The rush customer changes with each programme. Existing stock remains available; no goods or revenue are created.',
+    qualityLabel: 'Review the quality hold in Overview',
+    qualityConsequence:
+      'Inspect source traceability and tests in the QC lab. Held batches cannot satisfy a customer commitment.',
+    receivingLabel: 'Check incoming grain in SCADA',
+    sourceMaterial: (p: { value: string }) => p.value.replaceAll('_', ' '),
+    receivingConsequence:
+      'The {material} route is empty. Receiving and releasing the matching source lot permits milling to resume.',
+    dispatchLabel: 'Check shipping in SCADA',
+    dispatchConsequence:
+      'Only material recorded on a departed shipping manifest credits the commitment. Loading and released stock alone earn no revenue.',
+    residualLabel: 'Check remaining incident effects in SCADA',
+    productionLabel: 'Check the production line in SCADA',
+    residualConsequence:
+      '{title} retains residual effects. Recover the affected equipment or hold in its owning workspace; acknowledgement alone cannot restore it.',
+    productionConsequence:
+      'Follow feedstock through mills, sifters and packers. The scheduler sets recipe throughput; quality release precedes shipment.',
+
+    instructionInspect: 'Inspect the incident in the operations workspace.',
+    instructionAcknowledge: 'Acknowledge the incident, then apply mitigation.',
+    instructionMitigate: "Apply mitigation to reduce the controller's penalties.",
+    instructionRestored:
+      'Controller restored. Dispatch fresh, quality-released goods through the shipping bay.',
+    instructionRestore:
+      'Restore the challenge controller, then dispatch fresh, quality-released goods.',
+    instructionQueued:
+      'The response is queued. Resume the shift to process it before restoring the controller.',
+  },
   'pt-BR': {
     blockActiveChallenge: 'Primeiro conclua ou abandone o desafio ativo.',
     blockNoCommitment: 'Primeiro aceite um programa de produção com um compromisso em aberto.',

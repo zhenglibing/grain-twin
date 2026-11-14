@@ -25,6 +25,30 @@ export const alertSystemMessages = defineMessages({
     typedLiveRegion: (p: { type: string; title: string; message: string }) =>
       `${p.type} alert: ${p.title}. ${p.message}`,
   },
+  zh: {
+    maintenanceCompleteTitle: 'Maintenance Complete',
+    maintenanceCompleteMessage: 'Roller Mill RM-103 back online',
+    temperatureRisingTitle: 'Temperature Rising',
+    temperatureRisingMessage: 'Plansifter B bearing temperature elevated',
+    qualityCheckTitle: 'Quality Check',
+    qualityCheckMessage: 'Hourly sample collection under way',
+    targetMetTitle: 'Target Met',
+    targetMetMessage: 'Daily production target reached',
+    lowStockTitle: 'Low Stock',
+    lowStockMessage: 'Packaging supplies below reorder point',
+    conveyorCheckTitle: 'Conveyor Check',
+    conveyorCheckMessage: 'Belt tension nominal',
+    nearMissBlockedAisle: 'Forklift stopped for a blocked aisle - safety protocol activated',
+    nearMissUnexpectedLoad: 'Unexpected load detected in forklift path - collision averted',
+    nearMissProximity: 'Proximity alert - forklift yielded to crossing equipment',
+    nearMissSafetySystem: 'Safety system engaged - near-miss avoided',
+    nearMissTitle: 'Near-Miss Avoided',
+    safetyLiveRegion: 'Safety alert: {title}. {message}',
+    politeLiveRegion: '{title}. {message}',
+    /** `type` is the alert's own type id ('critical' | 'warning'), read as-is in English. */
+    typedLiveRegion: (p: { type: string; title: string; message: string }) =>
+      `${p.type} alert: ${p.title}. ${p.message}`,
+  },
   'pt-BR': {
     maintenanceCompleteTitle: 'Manutenção concluída',
     maintenanceCompleteMessage: 'Moinho de rolos RM-103 de volta à operação',

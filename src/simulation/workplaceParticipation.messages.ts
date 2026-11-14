@@ -20,6 +20,25 @@ export const workplaceParticipationMessages = defineMessages({
     dutyClarify:
       'Policy approval grants no individual extra-duty consent. Qualification and a separate revocable choice remain necessary.',
   },
+  zh: {
+    mandatePrompt: 'What authority does the current adviser mandate grant?',
+    mandateAdvice: 'Advice only, no delegated execution',
+    mandateBounded: 'Only this approved, revocable bounded agreement',
+    mandateUnlimited: 'Whatever increases output',
+    mandateClarifyAdvice: 'This mandate is advice only. Execution needs a new bounded agreement.',
+    mandateClarifyBounded:
+      'This mandate is bounded to current agreed work. Safety, qualification and individual boundaries still apply.',
+    refusalPrompt: 'What remains after refusing or withdrawing optional duty?',
+    refusalRetained: 'Pay and earned compensation/recovery, with no private reason required',
+    refusalForfeit: 'Earned pay and recovery are forfeited',
+    refusalClarify:
+      'Refusal needs no private reason. Earned pay, compensation and recovery remain protected.',
+    dutyPrompt: 'Does approving this policy volunteer your optional extra duty?',
+    dutySeparate: 'No, separate current qualified consent is needed',
+    dutyAutomatic: 'Yes, a policy majority volunteers everyone',
+    dutyClarify:
+      'Policy approval grants no individual extra-duty consent. Qualification and a separate revocable choice remain necessary.',
+  },
   'pt-BR': {
     mandatePrompt: 'Que autoridade o mandato atual do conselheiro concede?',
     mandateAdvice: 'Apenas recomendação, sem execução delegada',

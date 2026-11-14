@@ -15,6 +15,20 @@ export const emergencyOverlayMessages = defineMessages({
       'Everything is stopped by a duct fire. Answer its prompt in the Mill Chronicle to suppress or clean it.',
     liveRegion: '{title}. {guidance}',
   },
+  zh: {
+    drillTitle: 'Simulated fire drill',
+    forkliftStopTitle: 'Forklift emergency stop',
+    facilityStopTitle: 'Facility emergency stop',
+    drillGuidance:
+      'Drill in progress. Production and forklifts hold while each service egress verifies itself; it ends once every egress checks in, or from the Safety panel.',
+    forkliftStopGuidance:
+      'Every forklift is holding position; the mill keeps running. Press Space or release it from the Safety panel.',
+    facilityStopGuidance:
+      'Everything is stopped. Find the cause, fix it, then clear the interlock from the Safety panel.',
+    chronicleFireGuidance:
+      'Everything is stopped by a duct fire. Answer its prompt in the Mill Chronicle to suppress or clean it.',
+    liveRegion: '{title}. {guidance}',
+  },
   'pt-BR': {
     drillTitle: 'Simulado de incêndio',
     forkliftStopTitle: 'Parada de emergência das empilhadeiras',

@@ -98,6 +98,98 @@ export const workplacePressureChapterMessages = defineMessages({
     recoveryNote:
       'Owed recovery needs modeled clock time. Review preserves shortfalls, earned pay and prior shifts. Changing terms clears the current role agreement.',
   },
+  zh: {
+    // Logic values shown as labels. English returns the value itself.
+    sectionLabel: (p: { section: string }) => p.section,
+    objectionStatus: (p: Status) => p.status,
+    deliveryStatus: (p: Status) => p.status,
+    agreementStatus: (p: Status) => p.status,
+    evidenceStatus: (p: Status) => p.status,
+
+    // Next beat (deriveWorkplaceGuidance)
+    beatRestate: 'Restate the terms',
+    beatRemedy: 'The raiser reviews the remedy',
+    beatQualityReviews: 'Quality reviews the line',
+    beatCompleteInspection: 'Complete protected inspection',
+    beatAccount: 'Account for what was kept',
+    beatRecovery: 'Complete owed recovery',
+    beatNextShift: 'Prepare the next shift',
+    beatArchive: 'Close the campaign',
+    beatSettle: 'Settle remaining obligations',
+    nextRecovery: 'Resume the plant clock to deliver owed recovery. This shift stays closed.',
+    nextWorkshopRecovery: 'Deliver modeled recovery in Review. This shift stays closed.',
+    nextShift: 'Continue to the next campaign shift in Review. Each role chooses again.',
+    nextArchive:
+      'Archive the review in Review to open a fresh exercise. Campaign receipts are kept.',
+    nextSettle:
+      'Settle retained recovery, reserved pay and active cover in Review before archiving.',
+    beatDeliver: 'Deliver the agreement',
+    beatEarn: 'Earn a fresh agreement',
+    nextRestate: 'Use Restate protected terms in Shift. The challenge remains open afterwards.',
+    nextRemedy:
+      'In Agreement / Voices, select the resolving author. Only the raiser can confirm resolution.',
+    nextInspect:
+      'Use Quality initiates five-minute inspection in Shift. The line is held; deadline pressure grants no authority to skip the check.',
+    nextInspecting:
+      'Inspection is running until modeled minute {minute}. Resume the plant clock when ready to deliver the remaining inspection time. Actual batch certification remains separate.',
+    nextReviewing:
+      'Review paid compensation, delivered recovery and customer delivery separately. This shift cannot resume.',
+    nextRunning:
+      'Use the plant clock controls to run or pause real production. An objection during work stops this shift into review.',
+    nextRevised:
+      'Your no is recorded. Compare revised offers in Shift. Changing shared terms clears every role decision; each role then chooses afresh.',
+    nextReady:
+      'Current terms are ready. Use Approve and run agreement in Agreement / Voices only when you choose to proceed.',
+    nextCampaign:
+      'Choose the episode response and plan in Shift, then answer the current role checks and record understanding, ballots and any separate cover consent in Agreement / Voices.',
+    nextPlan:
+      'Choose the plan in Shift, then record understanding, ballots and any separate cover consent in Agreement / Voices.',
+
+    // Governance rule
+    ruleConsent: 'Every member must approve the shared plan.',
+    ruleVote: 'A member majority approves the plan; it cannot volunteer an individual.',
+    ruleConsult: 'The coordinator hears each role before assigning qualified work.',
+
+    // Chapter
+    regionLabel: 'Pressure chapter',
+    headingThursday: 'Thursday: a fresh offer',
+    headingPressure: 'A working agreement under pressure',
+    willingnessExpired:
+      'Yesterday’s willingness has expired. Retained workload informs a new offer; it grants no new consent.',
+    challengeLine: '{role} challenge: {status}. {receipt}',
+    adviser: 'Adviser',
+    protectedRecorded: 'Protected terms recorded.',
+    noProtectedReceipt: 'No retained protected-terms receipt.',
+    protectedWithoutChallenge:
+      'Protected terms recorded without a challenge. Prevention does not claim an objection was resolved.',
+    noPressureResponse:
+      'No retained pressure response. The pressure card is optional; a protected plan can proceed without trying the demand.',
+    repairBelongs:
+      'Repair belongs to review. Resolving the objection cannot restart this same shift.',
+    goToControls: 'Go to {destination} controls',
+    detailsSummary: 'Terms, retained burden and delivery',
+    stepRestate: 'Restate protected terms in Shift; restatement leaves the objection open.',
+    stepRemedy: 'Let each raiser review the remedy in Agreement / Voices.',
+    stepApprove:
+      'Answer current role checks, record understanding and ballots, then explicitly approve the plan in Agreement / Voices. Cover consent is separate.',
+    stepReview:
+      'Use Review to compare paid obligations, actual recovery and delivery. Promises and agreed deferrals remain distinct from delivery.',
+    extraDutyNote:
+      'Extra duty always requires fresh individual consent; a no-extra-duty plan remains valid.',
+    offerLine:
+      'Current offer: {plan}, revision {revision}. Adviser boundaries: {ack}. Role understanding {understood}/{members}; ballots recorded {ballots}/{members}. Separate cover consent: {cover}.',
+    acknowledged: 'acknowledged',
+    awaitingAnswers: 'awaiting current answers',
+    none: 'none',
+    openItem: 'Open: {statement}',
+    memberLine:
+      '{role}: retained extra duty {extra} min; compensation paid {paid} credits; recovery delivered {recovery} min; recovery owed {owed} min.',
+    deliveryLine:
+      'Delivery {status}: {delivered} / {target} kg. Agreement outcome: {agreement}. Wages paid: {wages} credits. Full customer commitment remaining: {remaining} kg.',
+    dispatchEvidence: ' Dispatch evidence: {evidence}.',
+    recoveryNote:
+      'Owed recovery needs modeled clock time. Review preserves shortfalls, earned pay and prior shifts. Changing terms clears the current role agreement.',
+  },
   'pt-BR': {
     sectionLabel: (p: { section: string }) =>
       pick(

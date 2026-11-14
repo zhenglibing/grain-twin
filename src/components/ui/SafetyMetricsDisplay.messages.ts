@@ -13,6 +13,18 @@ export const safetyMetricsDisplayMessages = defineMessages({
     conflicts: 'Conflicts',
     lastEvent: 'Last Event',
   },
+  zh: {
+    cleanRecord: 'Clean record',
+    justNow: 'just now',
+    secondsAgo: '{count}s ago',
+    minutesAgo: '{count}m ago',
+    hoursAgo: '{count}h ago',
+    title: 'Safety Stats',
+    liveStatus: 'Safety stops: {stops}, route conflicts: {conflicts}',
+    stops: 'Stops',
+    conflicts: 'Conflicts',
+    lastEvent: 'Last Event',
+  },
   'pt-BR': {
     cleanRecord: 'Sem ocorrências',
     justNow: 'agora mesmo',

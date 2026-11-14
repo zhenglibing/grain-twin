@@ -44,6 +44,48 @@ export const workplaceStoreMessages = defineMessages({
     dispatchEvidenceRequired:
       'Current quality-qualified dispatch evidence is required before funding a trial.',
   },
+  zh: {
+    useCurrentTurn:
+      'Hand over to this role and use its current turn. Facilitators cannot record participant decisions.',
+    challengeCannotSpeak:
+      'This authored challenge cannot speak for a participant. Hand over to the affected role to raise its own objection.',
+    answerChecksFirst:
+      'Answer the current mandate, refusal and optional-duty checks correctly before confirming understanding.',
+    simulatedResponsesDisabled:
+      'Separate turns require each role decision. Simulated responses are disabled.',
+    endTurnBeforeSetup: 'End the participant turn before facilitator setup or settlement.',
+    finishReplayBeforeObligations:
+      'Finish or forget the matched replay before continuing workplace obligations.',
+    chooseModeBeforeScenario:
+      'Choose the interaction mode only before opening an untouched scenario.',
+    chooseFictionalRole:
+      'End the previous turn and choose a fictional role in an open scenario, outside replay.',
+    knownAnswerRequired: 'Use a known answer in the current participant turn.',
+    answerUnchanged: 'Answer unchanged.',
+    roleDecisionsOnly: 'Participant dispatch accepts role decisions only.',
+    readBeforeReload: 'Read the current workplace outside replay before rehearsing reload.',
+    reloadRehearsed:
+      'Local reload rehearsal completed. Future authority expired; earned pay and recovery remain in review.',
+    endTurnBeforeArchive: 'End the participant turn before archiving.',
+    endTurnBeforeLeave: 'End the participant turn before leaving the season.',
+    reviewChanged: 'The review changed. Read its current outcome first.',
+    finishReplayFirst: 'Finish or forget the matched replay first.',
+    completeThreeShifts: 'Complete all three shifts before archiving a review.',
+    settleBeforeArchive:
+      'Deliver owed recovery and settle objections and reserved pay before archiving.',
+    reviewNotValidated: 'This review could not be validated for the archive.',
+    openCommitmentRequired:
+      'Choose an open, quality-qualified customer commitment with no active recovery challenge.',
+    safetyStopHolds:
+      'The safety stop holds this agreement. No new work during an emergency or drill.',
+    endTurnBeforeActivation: 'End the participant turn before facilitator activation.',
+    materialSessionChanged:
+      'The physical material session changed. Historical receipts cannot authorise a new agreement.',
+    freshAdviceRequired:
+      'Plant evidence or the intended pace changed. Hear a fresh adviser response, then confirm understanding and ballots again.',
+    dispatchEvidenceRequired:
+      'Current quality-qualified dispatch evidence is required before funding a trial.',
+  },
   'pt-BR': {
     useCurrentTurn:
       'Passe para esta função e use a vez atual dela. Os facilitadores não podem registrar decisões dos participantes.',

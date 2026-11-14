@@ -10,6 +10,15 @@ export const forkliftSystemMessages = defineMessages({
     routeCornerAmbiguous:
       '{id} occupies a changed or ambiguous route corner. Run to an unchanged leg, then pause and try again.',
   },
+  zh: {
+    roleShipping: 'SHIPPING',
+    roleReceiving: 'RECEIVING',
+    fleetLabel: '{tag} · {role}',
+    operationLoading: 'LOADING',
+    operationUnloading: 'UNLOADING',
+    routeCornerAmbiguous:
+      '{id} occupies a changed or ambiguous route corner. Run to an unchanged leg, then pause and try again.',
+  },
   'pt-BR': {
     roleShipping: 'EXPEDIÇÃO',
     roleReceiving: 'RECEBIMENTO',

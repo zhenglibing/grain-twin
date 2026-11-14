@@ -9,6 +9,14 @@ export const chatgptClientMessages = defineMessages({
       'ChatGPT plan usage is unavailable. Check your app access in ChatGPT Settings.',
     requestFailed: 'ChatGPT local companion request failed',
   },
+  zh: {
+    companionNotRunning: 'ChatGPT local companion is not running',
+    sessionExpired: 'ChatGPT session expired. Sign in again.',
+    usageLimitReached: 'ChatGPT plan usage limit reached. Manage usage in ChatGPT Settings.',
+    usageUnavailable:
+      'ChatGPT plan usage is unavailable. Check your app access in ChatGPT Settings.',
+    requestFailed: 'ChatGPT local companion request failed',
+  },
   'pt-BR': {
     companionNotRunning: 'O app auxiliar local para o ChatGPT não está em execução',
     sessionExpired: 'A sessão do ChatGPT expirou. Entre novamente.',

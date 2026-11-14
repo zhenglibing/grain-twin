@@ -12,6 +12,16 @@ export const aiNarrationStoreMessages = defineMessages({
     emergencyActive:
       'A fail-safe stop is active. Production and mobile equipment remain interlocked until the recovery state is verified.',
   },
+  zh: {
+    welcome:
+      'Welcome to MillOS {version}.\n\nThis is a staffed grain-mill digital twin with autonomous logistics. The factory floor, loading yard, garage, village, farm, stream, mountains, sky, and celestial cycle form one continuous world.\n\nI coordinate process state, logistics, safety interlocks, quality genealogy, maintenance, and SCADA evidence. Open Datalinks for concise explanations of how each subsystem fits together.',
+    library:
+      'Datalinks explains the mill as you explore: follow waiting grain, investigate a held batch, compare useful output with running costs, and see how a completed order supplies the bakery. Optional developer references sit in a separate section.',
+    extendedSession:
+      'The simulation has been running for an hour. This is a useful point to review alarm history, maintenance wear, genealogy balance, and graphics performance before increasing the time scale.',
+    emergencyActive:
+      'A fail-safe stop is active. Production and mobile equipment remain interlocked until the recovery state is verified.',
+  },
   'pt-BR': {
     welcome:
       'Boas-vindas ao MillOS {version}.\n\nEste é um gêmeo digital de um moinho de grãos operado por pessoas, com logística autônoma. O chão de fábrica, o pátio de carregamento, a garagem, a vila, a fazenda, o riacho, as montanhas, o céu e o ciclo celeste formam um único mundo contínuo.\n\nEu coordeno o estado do processo, a logística, os intertravamentos de segurança, a genealogia de qualidade, a manutenção e as evidências do SCADA. Abra o Datalinks para explicações concisas de como cada subsistema se encaixa.',

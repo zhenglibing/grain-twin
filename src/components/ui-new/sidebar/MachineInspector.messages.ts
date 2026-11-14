@@ -90,6 +90,74 @@ export const machineInspectorMessages = defineMessages({
     trendWaiting: 'Waiting for the historian to collect enough to draw a line.',
     trendCaption: 'Feed rate ({unit}), recorded samples',
   },
+  zh: {
+    criticalRestartGuidance:
+      'Critical fault. Restart is locked until maintenance or a repair clears it.',
+    repairGuidance:
+      'Active repair work order. Use Mill Overview to dispatch service, complete and verify the repair, then request a controlled restart.',
+    warningGuidance: "Something's off. Check the metrics and maintenance log.",
+
+    flowUnavailable: 'Flow unavailable',
+    storageInventory: 'Storage inventory',
+    waitingForMaterial: 'Waiting for material',
+    waitingForOutputSpace: 'Waiting for output space',
+    processingStopped: 'Processing stopped',
+    materialReady: 'Material ready',
+
+    // Status, maintenance type and part ids are store values shown as words.
+    status: (p: { status: string }) => p.status,
+    statusLabel: (p: { status: string }) => `Machine status: ${p.status}`,
+    maintenanceType: (p: { type: string }) => p.type,
+
+    feedRate: 'Feed rate',
+    rpm: 'RPM',
+    motorLoad: 'Motor load',
+    temperature: 'Temperature',
+    vibration: 'Vibration',
+    inspect: 'Inspect',
+    materialFlowEvidence: 'Material-flow evidence',
+    inputBuffer: 'Input buffer',
+    outputBuffer: 'Output buffer',
+
+    hideLogs: 'Hide Maintenance Logs',
+    viewLogs: 'View Maintenance Logs',
+    outOfParts: 'Out of spare parts — maintenance needs one to proceed.',
+    wearAndService: 'Wear and service',
+    wear: 'Wear',
+    wearThresholds:
+      'Warning at {warning}%, breakdown at {breakdown}%. Efficiency {efficiency}%. Maintenance lowers wear; a restart does not.',
+    maintenanceCost: (p: { part: string; count: string }) =>
+      `Uses 1 spare part: ${p.part} (${p.count} in stock).`,
+    maintenanceTitle: (p: { part: string }) =>
+      `Reduces machine wear (consumes 1 spare part: ${p.part})`,
+    maintenanceBelowMinimum:
+      'Not needed yet: wear {wear}% is below the {minimum}% service minimum, so the unit runs at full efficiency.',
+    performingMaintenance: 'Performing Maintenance...',
+    performMaintenance: 'Perform Maintenance',
+    restarting: 'Restarting...',
+    restartUnit: 'Restart Unit',
+    recentMaintenance: 'Recent Maintenance',
+    noMaintenance: 'No maintenance on record. Either it is new, or it has been very lucky.',
+    serviceUnit: 'Service unit: {unit}',
+    focusMachine: 'Focus machine',
+
+    noPartsTitle: 'No Spare Parts',
+    noPartsMessage:
+      'Cannot perform maintenance on {name}: parts inventory is empty. Wait for a parts delivery.',
+    maintenanceNotNeededTitle: 'Maintenance Not Needed',
+    maintenanceNotNeededMessage: '{name}: {message}',
+    machineRecoveredTitle: 'Machine Recovered',
+    machineRestartedTitle: 'Machine Restarted',
+    machineRecoveredMessage: '{name} has been restarted and metrics reset to healthy values.',
+    machineRestartedMessage: '{name} has been successfully restarted.',
+    machineRestartedWornTitle: 'Restarted, Still Worn',
+    machineRestartedWornMessage:
+      '{name} restarted, but wear is still {wear}% (it warns from {threshold}%). A restart does not reduce wear: use Perform Maintenance.',
+
+    trendLabel: 'Recorded feed rate trend in {unit}',
+    trendWaiting: 'Waiting for the historian to collect enough to draw a line.',
+    trendCaption: 'Feed rate ({unit}), recorded samples',
+  },
   'pt-BR': {
     criticalRestartGuidance:
       'Falha crítica. O reinício fica bloqueado até que uma manutenção ou um reparo resolva a falha.',

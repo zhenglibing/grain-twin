@@ -31,6 +31,16 @@ export const communityAgreementMessages = defineMessages({
     paidBriefing: 'Paid handoff briefing',
     agreed: 'Agreed: {task}',
   },
+  zh: {
+    role: (p: { value: string }) => p.value,
+    task: (p: { value: string }) => p.value,
+    awaitingAssignment: 'Awaiting a qualified assignment',
+    protectedRecovery: 'Protected recovery',
+    protectedRest: 'Protected rest',
+    voluntaryCover: 'Voluntary cover',
+    paidBriefing: 'Paid handoff briefing',
+    agreed: 'Agreed: {task}',
+  },
   'pt-BR': {
     role: (p: { value: string }) => pick(PT_ROLE, p.value),
     task: (p: { value: string }) => pick(PT_TASK, p.value),

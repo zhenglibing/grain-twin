@@ -7,6 +7,12 @@ export const aiNarrationMessages = defineMessages({
     continueReading: 'Continue reading...',
     dismiss: 'Dismiss',
   },
+  zh: {
+    title: 'AI Reflection',
+    close: 'Close',
+    continueReading: 'Continue reading...',
+    dismiss: 'Dismiss',
+  },
   'pt-BR': {
     title: 'Reflexão da IA',
     close: 'Fechar',

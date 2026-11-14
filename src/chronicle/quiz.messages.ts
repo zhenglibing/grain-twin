@@ -499,5 +499,5 @@ export function quizMessages(row: QuizQuestion) {
     option2: row.options[2],
     option3: row.options[3],
   };
-  return defineMessages({ en, 'pt-BR': portuguese[row.id] ?? en });
+  return defineMessages({ en, 'pt-BR': portuguese[row.id] ?? en, zh: en });
 }

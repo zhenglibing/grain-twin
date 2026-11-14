@@ -26,6 +26,28 @@ export const paceMessages = defineMessages({
     heldBy_layout: 'Paused for the layout planner. Run the mill from the planner to resume.',
     heldBy_scada: 'Paused: live SCADA control is active, so the simulation clock is held.',
   },
+  zh: {
+    pace0: 'Paused, inspect freely',
+    pace15: 'Slow, 1/2x',
+    pace30: 'Standard, 1x',
+    pace60: 'Fast, 2x',
+    pace120: 'Fastest, 4x',
+    paceCustom: 'Current custom pace',
+    paceTitle:
+      'The pace runs the whole plant faster or slower: clock, deadlines, production, trucks and forklifts together.',
+    heldBy_player: 'Paused. Choose a pace to resume.',
+    heldBy_shortcut: 'Paused with P. Press P again to resume.',
+    heldBy_tour: 'Paused for the tour. It resumes when the tour closes.',
+    heldBy_restore: 'Paused while your saved shift is restored.',
+    heldBy_restoreFailed:
+      'Paused: the saved shift could not be restored. Choose a pace to continue, or reset in Settings.',
+    heldBy_workplace:
+      'Paused for a cooperative workplace step. Finish it in the Bilateral Autonomy System (BAS) panel, or choose a pace.',
+    heldBy_handoff:
+      "Held while the team decides the handoff experiment, so the adviser's forecast stays true. A pace you choose now starts when it resumes. To resume, cancel the experiment or finish its member review in the Bilateral Autonomy System (BAS) panel.",
+    heldBy_layout: 'Paused for the layout planner. Run the mill from the planner to resume.',
+    heldBy_scada: 'Paused: live SCADA control is active, so the simulation clock is held.',
+  },
   'pt-BR': {
     pace0: 'Pausado, inspecione à vontade',
     pace15: 'Devagar, 1/2x',

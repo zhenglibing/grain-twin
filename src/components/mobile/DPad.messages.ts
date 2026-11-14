@@ -13,6 +13,18 @@ export const dPadMessages = defineMessages({
     switchToLook: 'Switch to look mode',
     switchToMove: 'Switch to move mode',
   },
+  zh: {
+    moveForward: 'Move forward',
+    moveBack: 'Move back',
+    strafeLeft: 'Strafe left',
+    strafeRight: 'Strafe right',
+    orbitUp: 'Orbit up',
+    orbitDown: 'Orbit down',
+    orbitLeft: 'Orbit left',
+    orbitRight: 'Orbit right',
+    switchToLook: 'Switch to look mode',
+    switchToMove: 'Switch to move mode',
+  },
   'pt-BR': {
     moveForward: 'Avançar',
     moveBack: 'Recuar',

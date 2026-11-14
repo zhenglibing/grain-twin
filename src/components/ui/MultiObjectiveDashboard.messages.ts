@@ -13,6 +13,18 @@ export const multiObjectiveDashboardMessages = defineMessages({
     balanced: 'All objectives balanced optimally.',
     tradeOff: 'Trade-off detected. Some objectives need attention.',
   },
+  zh: {
+    regionLabel: 'Multi-objective dashboard',
+    title: 'Multi-Objective',
+    overallScore: 'Overall objective score ',
+    labelProduction: 'Production',
+    labelQuality: 'Quality',
+    labelEnergy: 'Energy',
+    labelCarbon: 'Carbon',
+    target: 'Target: {target} {unit}',
+    balanced: 'All objectives balanced optimally.',
+    tradeOff: 'Trade-off detected. Some objectives need attention.',
+  },
   'pt-BR': {
     regionLabel: 'Painel multiobjetivo',
     title: 'Multiobjetivo',

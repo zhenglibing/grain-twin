@@ -19,6 +19,10 @@ const catalog = defineMessages({
     due: 'Due in {hours}h {minutes}m',
     bags: (p: { count: number }) => (p.count === 1 ? '1 bag' : `${p.count} bags`),
   },
+  zh: {
+    due: 'Due in {hours}h {minutes}m',
+    bags: (p: { count: number }) => (p.count === 1 ? '1 bag' : `${p.count} bags`),
+  },
   'pt-BR': {
     due: 'Prazo em {hours}h {minutes}min',
     bags: (p: { count: number }) => (p.count === 1 ? '1 saco' : `${p.count} sacos`),
@@ -83,7 +87,12 @@ describe('messages', () => {
 
   it('refuses a pt-BR table that misses an English key at compile time', () => {
     // @ts-expect-error pt-BR must define every English key
-    defineMessages({ en: { a: 'A', b: 'B' }, 'pt-BR': { a: 'A' } });
+    defineMessages({ en: { a: 'A', b: 'B' }, 'pt-BR': { a: 'A' }, zh: { a: 'A', b: 'B' } });
+  });
+
+  it('refuses a zh table that misses an English key at compile time', () => {
+    // @ts-expect-error zh must define every English key
+    defineMessages({ en: { a: 'A', b: 'B' }, 'pt-BR': { a: 'A', b: 'B' }, zh: { a: 'A' } });
   });
 
   it('leaves unknown placeholders visible instead of printing undefined', () => {

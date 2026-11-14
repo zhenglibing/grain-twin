@@ -19,6 +19,19 @@ export const webgpuClientMessages = defineMessages({
     sizeGb: '{size} GB',
     sizeMb: '{size} MB',
   },
+  zh: {
+    noAdapter: 'No WebGPU adapter available (GPU may be blocklisted or disabled).',
+    smallMemory:
+      'This GPU reports a small memory budget (maxBufferSize {buffer}MB, maxStorageBuffer {storage}MB). {model} needs about {vram} GB and may fail to load or stutter the 3D scene. A smaller model or a cloud BYOK model may work better.',
+    probeFailed: 'WebGPU adapter probe failed.',
+    modelNotLoaded: 'Model not loaded',
+    modelVerified: 'Local model verified',
+    responseReceived: 'Connected (response received)',
+    noResponse: 'No response',
+    unknownError: 'Unknown error',
+    sizeGb: '{size} GB',
+    sizeMb: '{size} MB',
+  },
   'pt-BR': {
     noAdapter: 'Nenhum adaptador WebGPU disponível (a GPU pode estar bloqueada ou desativada).',
     smallMemory:

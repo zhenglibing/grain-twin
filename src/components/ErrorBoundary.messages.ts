@@ -10,6 +10,15 @@ export const errorBoundaryMessages = defineMessages({
     retryFeature: 'Retry feature',
     closePanel: 'Close panel',
   },
+  zh: {
+    somethingWentWrong: 'Something went wrong',
+    reload: 'Reload',
+    featureUnavailableLabel: '{featureName} unavailable',
+    featureUnavailable: '{featureName} is temporarily unavailable',
+    featureLoadFailed: 'The optional feature could not be loaded.',
+    retryFeature: 'Retry feature',
+    closePanel: 'Close panel',
+  },
   'pt-BR': {
     somethingWentWrong: 'Algo deu errado',
     reload: 'Recarregar',

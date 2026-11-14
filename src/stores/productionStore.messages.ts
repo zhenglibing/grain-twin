@@ -34,6 +34,39 @@ export const productionStoreMessages = defineMessages({
     breakdownMessage:
       '{name} ({type}) has broken down due to excessive wear. Maintenance required.',
   },
+  zh: {
+    observationThroughput: 'Production throughput',
+    observationEfficiency: 'Process efficiency',
+    observationQuality: 'Product quality',
+    observationMachineStatus: '{machine} status',
+    observationMachineTemperature: '{machine} temperature',
+    observationMachineLoad: '{machine} load',
+    assumptionTelemetryCurrent: 'Simulator telemetry is current at the captured time.',
+    affectedSystemAutonomousControl: 'Autonomous production control',
+    affectedEquipmentProductionSystem: 'Production system',
+    alternativeMaintainAction: 'Maintain the current simulated operating state',
+    alternativeMaintainTradeoff:
+      'Avoids intervention while leaving the observed condition unchanged.',
+    rejectedWithNote: 'Rejected: {note}',
+    rejectedByControlLayer: 'Rejected by the control layer',
+    maintenanceMachineNotFound: 'Machine not found',
+    maintenanceRepairLockout:
+      'Repair lockout: complete and verify the work order, then request restart.',
+    maintenanceBelowMinimumWear:
+      'Wear is {wear}%, below the {minimum}% service minimum: the machine still runs at full efficiency.',
+    maintenanceCompleteTitle: 'Maintenance Complete',
+    maintenanceCompleteWearMessage:
+      '{name} maintained. Wear reduced by {reduced}%, now at {wear}%. Efficiency: {efficiency}%',
+    maintenanceCompleteRestoredMessage: '{name} restored to service. Efficiency: {efficiency}%',
+    maintenanceResultWearReduced: 'Wear reduced from {from}% to {to}%',
+    maintenanceResultRestored: 'Restored to service',
+    maintenanceRecordDate: 'Day {day}, {time}',
+    maintenanceRecordRoutineUnit: 'Line maintenance',
+    maintenanceRecordRestartNote: 'Repaired and restarted under the work order. {wear}.',
+    breakdownTitle: 'Machine Breakdown',
+    breakdownMessage:
+      '{name} ({type}) has broken down due to excessive wear. Maintenance required.',
+  },
   'pt-BR': {
     observationThroughput: 'Vazão de produção',
     observationEfficiency: 'Eficiência do processo',

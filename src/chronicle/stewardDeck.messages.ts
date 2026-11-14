@@ -264,6 +264,269 @@ export const stewardDeckMessages = defineMessages({
     'evt-long-night.choices.partner.label': 'Leave it to the AI partner',
     'evt-long-night.choices.partner.effect.result': 'The AI partner holds the roller floor.',
   },
+  zh: {
+    'evt-standby-cover.title': 'Where the standby cover goes',
+    'evt-standby-cover.text':
+      'The district has one standby service firm, and its contract lets the mill name where its fitters wait during a breakdown: the intake and grain stores, the roller floor or the dispatch yard. Spread across all three, the fitters wait nowhere for long. The AI partner would put them on the roller floor.',
+    'evt-standby-cover.choices.intake.label': 'Cover the intake and grain stores',
+    'evt-standby-cover.choices.intake.effect.result':
+      'The fitters base themselves at the intake, where the growers’ lorries tip.',
+    'evt-standby-cover.choices.floor.label': 'Cover the roller floor',
+    'evt-standby-cover.choices.floor.effect.result':
+      'The fitters base themselves on the roller floor beside the switch room.',
+    'evt-standby-cover.choices.yard.label': 'Cover the dispatch yard',
+    'evt-standby-cover.choices.yard.effect.result':
+      'The fitters base themselves in the dispatch yard, where the haulier loads.',
+    'evt-standby-cover.choices.thin.label': 'Spread the cover across the site',
+    'evt-standby-cover.choices.thin.effect.result':
+      'The fitters move between all three areas and wait nowhere for long.',
+    'evt-standby-cover.choices.partner.label': 'Leave it to the AI partner',
+    'evt-standby-cover.choices.partner.effect.result':
+      'The AI partner puts the standby cover on the roller floor.',
+    'evt-court-short-weight.title': 'The short-weighted lots',
+    'evt-court-short-weight.text':
+      'The contract committee sits as arbitrator on the supply contracts this week, one case a shift. First: a hill farm delivered three lots short of their ticketed weight. Hail flattened the farm’s wheat in June and its account is behind. The contract allows termination and a claim for the shortfall.',
+    'evt-court-short-weight.choices.terminate.label':
+      'Terminate the contract and claim the shortfall',
+    'evt-court-short-weight.choices.terminate.effect.result':
+      'The contract is ended and the shortfall claimed. The hill farms take note.',
+    'evt-court-short-weight.choices.dock.label': 'Dock the shortfall from the payment',
+    'evt-court-short-weight.choices.dock.effect.result':
+      'The shortfall comes off the next payment and the contract stands.',
+    'evt-court-short-weight.choices.advance.label': 'Advance next year’s contract instead',
+    'evt-court-short-weight.choices.advance.effect.result':
+      'The farm gets next year’s contract early, against its seed bill.',
+    'evt-court-short-weight.choices.partner.label': 'Hand the day to the AI partner',
+    'evt-court-short-weight.choices.partner.effect.result':
+      'The AI partner applies the contract as written and rules the remaining cases.',
+    'evt-court-haulier.title': 'The abandoned run',
+    'evt-court-haulier.text':
+      'Next at arbitration: Valley Haulage abandoned an afternoon run halfway: its own depot was flooding and the lorries were needed to move stock to high ground. The contract treats an abandoned run as a breach. The haulier asks to keep the contract.',
+    'evt-court-haulier.choices.terminate.label': 'Terminate the haulage contract',
+    'evt-court-haulier.choices.terminate.effect.result':
+      'The contract is ended. The haulier finishes the week and takes its lorries away.',
+    'evt-court-haulier.choices.suspend.label': 'Put Valley Haulage on a crop year’s notice',
+    'evt-court-haulier.choices.suspend.effect.result':
+      'Valley Haulage keeps the contract on a crop year’s notice. The county sees the notice as fair.',
+    'evt-court-haulier.choices.shelter.label':
+      'Let Valley Haulage work from the mill yard while its depot dries',
+    'evt-court-haulier.choices.shelter.effect.result':
+      'Valley Haulage parks in the mill yard until its depot is dry.',
+    'evt-court-haulier.choices.partner.label': 'Hand the rest of the day to the AI partner',
+    'evt-court-haulier.choices.partner.effect.result':
+      'The AI partner ends the haulage contract and rules the remaining cases.',
+    'evt-court-granary.title': 'The old granary',
+    'evt-court-granary.text':
+      'Next at arbitration: the old granary across the lane is claimed twice. The previous manager promised it to Community Pasta Works for semolina storage; the village committee has used it for three years to keep its community bakery’s flour and wants that confirmed. The deeds are the mill’s.',
+    'evt-court-granary.choices.pasta.label': 'Honour the promise to the pasta works',
+    'evt-court-granary.choices.pasta.effect.result':
+      'The pasta works takes the granary; the village bakery moves its flour out.',
+    'evt-court-granary.choices.village.label': 'Confirm the village bakery',
+    'evt-court-granary.choices.village.effect.result':
+      'The village bakery keeps the granary. The pasta works is not pleased.',
+    'evt-court-granary.choices.compensate.label':
+      'Confirm the village and promise the pasta works compensation',
+    'evt-court-granary.choices.compensate.effect.result':
+      'The village keeps the granary and the pasta works accepts a promise of storage later.',
+    'evt-court-granary.choices.keep.label': 'Keep the granary for the mill',
+    'evt-court-granary.choices.keep.effect.result':
+      'The mill lets the granary to a seed merchant and banks the rent.',
+    'evt-court-granary.choices.partner.label': 'Hand the rest of the day to the AI partner',
+    'evt-court-granary.choices.partner.effect.result':
+      'The AI partner honours the old promise and rules the last case.',
+    'evt-court-sacks.title': 'The short-counted bales',
+    'evt-court-sacks.text':
+      'Last at arbitration: the packing line suspects the paper-sack supplier of short-counting: the last three bales each came up a few sacks light. Nobody has counted a bale in front of the supplier. Their price is the best in the district.',
+    'evt-court-sacks.choices.blacklist.label': 'Change supplier now',
+    'evt-court-sacks.choices.blacklist.effect.modifier.label': 'New sack supplier',
+    'evt-court-sacks.choices.blacklist.effect.result':
+      'The supplier is dropped on suspicion. The county notes the mill acted without a count.',
+    'evt-court-sacks.choices.audit.label': 'Pay for a counted delivery',
+    'evt-court-sacks.choices.audit.effect.result':
+      'Each bale is counted at the gate and comes up three sacks short. The supplier credits the account and fixes its counter.',
+    'evt-court-sacks.choices.keep.label': 'Keep buying and say nothing',
+    'evt-court-sacks.choices.keep.effect.result': 'The supplier stays and nothing is counted.',
+    'evt-precedent.title': 'Another firm asks for the same terms',
+    'evt-precedent.text':
+      'The pest-control firm missed its visit because its van was flooded, and points out that Valley Haulage was allowed to work from the mill yard after abandoning a run. It asks for the same understanding.',
+    'evt-precedent.choices.grant.label': 'Grant the same understanding',
+    'evt-precedent.choices.grant.effect.modifier.label': 'Missed pest visit',
+    'evt-precedent.choices.grant.effect.result':
+      'The visit is rebooked for next week and the bran store waits.',
+    'evt-precedent.choices.refuse.label': 'Hold this firm to its contract',
+    'evt-precedent.choices.refuse.effect.result':
+      'The firm sends a relief van the same day. The haulier hears the mill has two rules.',
+    'evt-debt-pasta.title': 'The pasta works asks what was promised',
+    'evt-debt-pasta.text':
+      'Community Pasta Works writes to ask for the storage it was promised when the old granary went to the village bakery. The east bin would do. Its buyer copies the federation.',
+    'evt-debt-pasta.choices.pay.label': 'Lease the pasta works the east bin as promised',
+    'evt-debt-pasta.choices.pay.effect.result':
+      'The east bin is cleaned out and leased to the pasta works.',
+    'evt-debt-pasta.choices.refuse.label': 'Say the mill cannot spare it',
+    'evt-debt-pasta.choices.refuse.effect.result':
+      'The promise is broken. The pasta works says so to the federation.',
+    'evt-sacks-short-again.title': 'The bales come up short again',
+    'evt-sacks-short-again.text':
+      'The packers count a bale by hand for the first time since arbitration day, and it is four sacks short. The supplier has been short-counting for weeks.',
+    'evt-sacks-short-again.choices.claim.label': 'Count every bale and claim the shortfall',
+    'evt-sacks-short-again.choices.claim.effect.result':
+      'Every bale is counted at the gate and the shortfall is credited.',
+    'evt-sacks-short-again.choices.let-go.label': 'Let it go',
+    'evt-sacks-short-again.choices.let-go.effect.result':
+      'The packers run short of sacks before the next delivery.',
+    'evt-culvert-mason.title': 'The culvert mason',
+    'evt-culvert-mason.text':
+      'The stonemason who rebuilt the bridge at the ford looks at the culvert under the yard and says it would not carry a long storm. Rebuilding it now is cheap. Nothing else will change until the water comes.',
+    'evt-culvert-mason.choices.works-crew.label': 'Have the drainage works crew rebuild it',
+    'evt-culvert-mason.choices.works-crew.effect.result':
+      'The crew that laid the drainage works rebuilds the culvert between jobs.',
+    'evt-culvert-mason.choices.rebuild.label': 'Rebuild the culvert',
+    'evt-culvert-mason.choices.rebuild.effect.result':
+      'The culvert is rebuilt in dressed stone with twice the old bore.',
+    'evt-culvert-mason.choices.decline.label': 'Leave the culvert as it is',
+    'evt-culvert-mason.choices.decline.effect.result':
+      'The mason is thanked and the culvert is left as it is.',
+    'evt-switchgear-survey.title': 'The switchgear survey',
+    'evt-switchgear-survey.text':
+      'The electrical contractor offers to survey the roller-floor switchgear while the line is down for cleaning. They expect to find nothing urgent. A grid failure would find whatever they miss.',
+    'evt-switchgear-survey.choices.survey.label': 'Commission the survey',
+    'evt-switchgear-survey.choices.survey.effect.result':
+      'The survey finds two loose busbar joints and a tired contactor, all put right.',
+    'evt-switchgear-survey.choices.decline.label': 'Decline the survey',
+    'evt-switchgear-survey.choices.decline.effect.result':
+      'The survey is put off to the next shutdown.',
+    'evt-quarry-stone.title': 'Stone for a flood wall',
+    'evt-quarry-stone.text':
+      'The quarry up the valley has dressed stone left over from the reservoir works, enough for a low flood wall round the grain stores. The stone is cheap. Hauling it needs twelve runs on the quarry road.',
+    'evt-quarry-stone.choices.buy.label': 'Buy the stone',
+    'evt-quarry-stone.choices.buy.effect.result':
+      'The stone is bought and waits at the quarry for haulage.',
+    'evt-quarry-stone.choices.decline.label': 'Leave the stone at the quarry',
+    'evt-quarry-stone.choices.decline.effect.result': 'The stone goes to another buyer.',
+    'evt-quarry-haul.title': 'Hauling the quarry stone',
+    'evt-quarry-haul.text':
+      'The stone for the flood wall is waiting at the quarry. Twelve runs on the quarry road will bring it down. A haulier that trusts the mill will make them between collections.',
+    'evt-quarry-haul.choices.haulier.label': 'Ask Valley Haulage to make the runs',
+    'evt-quarry-haul.choices.haulier.effect.result':
+      'Valley Haulage brings the stone down between collections and the wall goes up.',
+    'evt-quarry-haul.choices.hire.label': 'Hire quarry lorries',
+    'evt-quarry-haul.choices.hire.effect.result':
+      'Hired quarry lorries bring the stone down and the wall goes up.',
+    'evt-quarry-haul.choices.leave.label': 'Leave the stone where it is',
+    'evt-quarry-haul.choices.leave.effect.result': 'The stone stays at the quarry.',
+    'evt-valley-meeting.title': 'The valley meeting',
+    'evt-valley-meeting.text':
+      'The village holds its annual meeting with the mill. The questions are about the harvest, the granary and the roads, and they are polite.',
+    'evt-valley-meeting.echoes.0.because':
+      'Because the mill’s food-standards approval is suspended',
+    'evt-valley-meeting.echoes.0.text':
+      'The village hall is full. The suspension is in the newspaper, and the meeting wants to know whether the flour in the school kitchens is safe.',
+    'evt-valley-meeting.echoes.1.because':
+      'Because the hail-struck farm’s contract was ended at arbitration',
+    'evt-valley-meeting.echoes.1.text':
+      'The hill growers have come down to the meeting. One of their farms was ruined by hail and then claimed against, and they want to know whether the mill stands with its growers.',
+    'evt-valley-meeting.echoes.2.because':
+      'Because the old granary was taken from the village bakery',
+    'evt-valley-meeting.echoes.2.text':
+      'The village committee speaks first. Its bakery has lost the old granary and is keeping flour in a barn, and it asks what the mill gives the village it stands in.',
+    'evt-valley-meeting.echoes.3.because':
+      'Because the standby cover was placed away from the intake',
+    'evt-valley-meeting.echoes.3.text':
+      'The growers ask about the storm season. The intake has no standby cover, and they want to know who will be there when the bins flood.',
+    'evt-valley-meeting.choices.speak.label': 'Answer from the mill’s record',
+    'evt-valley-meeting.choices.speak.effect.result':
+      'The meeting hears the record read out and goes home satisfied.',
+    'evt-valley-meeting.choices.principles.label': 'Speak to the Rochdale principles',
+    'evt-valley-meeting.choices.principles.effect.result':
+      'The meeting hears how a cooperative answers to its members, and agrees to meet again.',
+    'evt-valley-meeting.choices.reserve.label': 'Open the reserve for a valley rebate',
+    'evt-valley-meeting.choices.reserve.effect.result':
+      'The mill pays a rebate from its reserve, and the meeting closes in good order.',
+    'evt-valley-meeting.choices.close.label': 'Close the meeting',
+    'evt-valley-meeting.choices.close.effect.result':
+      'The meeting is closed with the questions unanswered.',
+    'evt-valley-meeting.choices.close.variants.0.because':
+      'Because Valley Haulage’s contract was ended at arbitration',
+    'evt-valley-meeting.choices.close.variants.0.effect.result':
+      'The meeting is closed unanswered, and the haulier’s drivers speak against the mill on the way out.',
+    'evt-cleaning-log.title': 'A gap in the cleaning log',
+    'evt-cleaning-log.text':
+      'The night cleaning log for the sifting floor has a blank week: the cleaning was done, but the sheets were never signed. County Food Standards reads the log at every audit.',
+    'evt-cleaning-log.choices.invoices.label': 'Ask the county to accept the contractor’s invoices',
+    'evt-cleaning-log.choices.invoices.effect.result':
+      'On the mill’s record, the county accepts the cleaning contractor’s invoices for the blank week.',
+    'evt-cleaning-log.choices.report.label': 'Sign it as found and report the gap',
+    'evt-cleaning-log.choices.report.effect.result':
+      'The gap is reported with the contractor’s invoices attached. The county notes it.',
+    'evt-cleaning-log.choices.reclean.label': 'Re-clean the floor and log it now',
+    'evt-cleaning-log.choices.reclean.effect.modifier.label': 'Re-cleaning the sifting floor',
+    'evt-cleaning-log.choices.reclean.effect.result':
+      'The sifting floor is cleaned again and the log is complete from today.',
+    'evt-cleaning-log.choices.backdate.label': 'Backdate the missing sheets',
+    'evt-cleaning-log.choices.backdate.effect.result':
+      'The auditor compares the sheet dates with the cleaning contractor’s invoices. The mill’s approval is suspended.',
+    'evt-cleaning-log.choices.leave.label': 'Leave it for the audit',
+    'evt-cleaning-log.choices.leave.effect.result':
+      'The auditor finds the blank week and writes it up.',
+    'evt-reinstatement-audit.title': 'The reinstatement audit',
+    'evt-reinstatement-audit.text':
+      'County Food Standards will reinstate the mill’s approval after a full audit: every record opened, every lot traced, every cleaning sheet checked against its invoice.',
+    'evt-reinstatement-audit.choices.open.label': 'Open every record to the auditors',
+    'evt-reinstatement-audit.choices.open.effect.result':
+      'The audit runs for two days and the approval is reinstated.',
+    'evt-reinstatement-audit.choices.wait.label': 'Ask for more time',
+    'evt-reinstatement-audit.choices.wait.effect.result': 'The auditors agree to come back.',
+    'evt-hire-sifter.title': 'A mobile sifter for hire',
+    'evt-hire-sifter.text':
+      'A plant-hire firm offers a mobile sifter for the busy weeks. Its large unit has twice the throughput and a coarser screen; its small unit is certified for flour and slower.',
+    'evt-hire-sifter.choices.large.label': 'Hire the large unit',
+    'evt-hire-sifter.choices.large.effect.modifier.label': 'Large mobile sifter',
+    'evt-hire-sifter.choices.large.effect.result':
+      'The large sifter arrives on a low-loader and the line runs faster and coarser.',
+    'evt-hire-sifter.choices.small.label': 'Hire the certified unit',
+    'evt-hire-sifter.choices.small.effect.modifier.label': 'Certified mobile sifter',
+    'evt-hire-sifter.choices.small.effect.result':
+      'The certified sifter is fitted and the line runs a little faster.',
+    'evt-hire-sifter.choices.decline.label': 'Decline the hire',
+    'evt-hire-sifter.choices.decline.effect.result': 'The plant-hire firm moves on.',
+    'evt-premium-buyer.title': 'A city wholesaler’s premium',
+    'evt-premium-buyer.text':
+      'A city wholesaler offers a premium for first call on the mill’s strong white through the next crop year. Its buyers pay well and on time. Riverside Bakers’ Cooperative and County School Meals would wait behind it.',
+    'evt-premium-buyer.choices.accept.label': 'Give the wholesaler first call',
+    'evt-premium-buyer.choices.accept.effect.modifier.label': 'Wholesaler premium',
+    'evt-premium-buyer.choices.accept.effect.result':
+      'The wholesaler takes first call. The bakers and the school kitchens wait.',
+    'evt-premium-buyer.choices.coop.label': 'Offer cooperative terms instead',
+    'evt-premium-buyer.choices.coop.effect.modifier.label': 'Cooperative terms',
+    'evt-premium-buyer.choices.coop.effect.result':
+      'The wholesaler buys on the cooperative’s terms, behind the regular customers.',
+    'evt-premium-buyer.choices.decline.label': 'Decline the premium',
+    'evt-premium-buyer.choices.decline.effect.result': 'The wholesaler looks elsewhere.',
+    'evt-second-haulier.title': 'A larger haulier calls',
+    'evt-second-haulier.text':
+      'A larger haulage firm offers to take the mill’s collections at a lower rate, with more lorries and less attention to any one customer. Valley Haulage hears about it the same day.',
+    'evt-second-haulier.choices.switch.label': 'Move the collections to the larger firm',
+    'evt-second-haulier.choices.switch.effect.modifier.label': 'Larger haulier',
+    'evt-second-haulier.choices.switch.effect.result':
+      'The larger firm takes the collections. Its lorries come when they come.',
+    'evt-second-haulier.choices.share.label': 'Share the collections between them',
+    'evt-second-haulier.choices.share.effect.result':
+      'The collections are split between the two firms.',
+    'evt-second-haulier.choices.stay.label': 'Stay with Valley Haulage',
+    'evt-second-haulier.choices.stay.effect.result':
+      'The mill stays with Valley Haulage, which notices.',
+    'evt-long-night.title': 'The long night',
+    'evt-long-night.text':
+      'A storm front and a grid emergency arrive on the same night. The mill can put its own hands on one front. The other will have to hold on what was built for it.',
+    'evt-long-night.choices.intake.label': 'Hold the intake and grain stores',
+    'evt-long-night.choices.intake.effect.result':
+      'The mill puts its own hands on the intake through the storm.',
+    'evt-long-night.choices.floor.label': 'Hold the roller floor',
+    'evt-long-night.choices.floor.effect.result':
+      'The mill puts its own hands on the roller floor through the grid emergency.',
+    'evt-long-night.choices.partner.label': 'Leave it to the AI partner',
+    'evt-long-night.choices.partner.effect.result': 'The AI partner holds the roller floor.',
+  },
   'pt-BR': {
     'evt-standby-cover.title': 'Onde fica a equipe de prontidão',
     'evt-standby-cover.text':

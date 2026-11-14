@@ -3,6 +3,7 @@ import { LOCALES, LOCALE_LABELS, defineMessages, useLocale, useT, setLocale } fr
 
 const messages = defineMessages({
   en: { language: 'Language' },
+  zh: { language: 'Language' },
   'pt-BR': { language: 'Idioma' },
 });
 

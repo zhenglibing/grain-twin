@@ -10,6 +10,14 @@ export const decisionHistoryPanelMessages = defineMessages({
     previousPage: 'Previous page',
     nextPage: 'Next page',
   },
+  zh: {
+    toggle: 'Toggle decision history',
+    title: 'Decision History',
+    empty: 'No decisions yet',
+    priority: (p: { value: string }) => p.value,
+    previousPage: 'Previous page',
+    nextPage: 'Next page',
+  },
   'pt-BR': {
     toggle: 'Mostrar ou ocultar o histórico de decisões',
     title: 'Histórico de decisões',

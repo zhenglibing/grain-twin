@@ -117,6 +117,99 @@ export const workplaceReplayMessages = defineMessages({
     // Resume
     resume: 'Resume agreed replay at standard pace (1x)',
   },
+  zh: {
+    // Logic values shown as labels. English returns the value itself.
+    sectionLabel: (p: { section: string }) => p.section,
+    profileLabel: (p: { profile: string }) => p.profile,
+    autonomyLabel: (p: Value) => p.value,
+    governanceLabel: (p: Value) => p.value,
+    aiAuthorityLabel: (p: Value) => p.value,
+
+    // Feedback
+    recordedLocally: 'Replay state recorded locally.',
+    noChange: 'No change.',
+    reportDownloaded: 'Redacted run report downloaded locally. Plant checkpoint stays in memory.',
+
+    // Replay
+    title: 'Matched plant replay',
+    intro:
+      'Pause the plant, capture the customer order and stock, choose a charter, agree fresh terms, play the actual plant, then retain the review and compare. Each charter starts from the same in-memory checkpoint. Rewinding replaces current local plant progress.',
+    pauseForCapture: 'Pause plant for capture',
+    capturePaused: 'Capture paused plant',
+    startGuided: 'Start guided plant replay',
+    captureRequires:
+      'Capture requires a paused, safe local plant and an idle or untouched minute-zero discussion. External SCADA control, safety holds and owed recovery block rewind. Checkpoints disappear on reload and cannot be exported.',
+    checkpointLine:
+      'Checkpoint: {customer}, {remaining} kg remaining; source stock {source} kg. Day {day}, hour {hour}; seed {seed}. Faults: {faults}.',
+    none: 'none',
+    replayCharter: 'Replay {profile} charter',
+    retainReview: 'Retain actual run review',
+    forget: 'Forget replay checkpoint and reports',
+    replayNote:
+      'Replays remain paused for agreement and pause automatically at review. After an early stop, explicitly resume the plant clock to deliver owed recovery before retaining the review. An eligible review is retained before a new charter rewinds. Consent, votes and understanding never carry over.',
+    noCheckpoint: 'No checkpoint yet. Capture a paused plant to compare actual runs.',
+    unequalHorizons:
+      'Unequal horizons: elapsed time, agreement time or shifts differ. Dispatch totals alone cannot establish a better charter.',
+    discussEvidence: 'Discuss the actual replay evidence',
+    learningReview: 'Replay learning review',
+    hearRoles:
+      'Hear Packing, Quality, Maintenance and Coordinator before choosing the next trial. Use the actual results and member receipts below; a shared starting point alone cannot establish a charter’s causal effect.',
+
+    // Runs
+    runLabel: '{profile} actual run',
+    charterLine:
+      'Closing charter: {autonomy} work choice; {governance} governance; {ai} AI authority. Practices: {practices}.',
+    shiftPlans: 'Shift plans: {plans}.',
+    shiftPlanItem: 'shift {number}, {title}',
+    dispatchHeading: 'Actual dispatch and horizon',
+    dispatchLine: (p: DispatchParams) =>
+      `${p.dispatched} kg dispatched; ${p.remaining} kg full commitment remaining. Agreed target ${p.target} kg; deferred ${p.deferred} kg. ${p.shifts} ${p.shiftCount === 1 ? 'shift' : 'shifts'}; ${p.elapsed} elapsed minutes; ${p.agreement} agreement minutes.`,
+    plantAccounts: 'Plant accounts, pounds sterling',
+    revenueLine: 'Revenue £{revenue}; costs £{costs}.',
+    workplaceCredits: 'Illustrative workplace credits',
+    creditsLine: 'Wages {wages}; compensation {compensation}; improvements {improvements}.',
+    conservationHeading: 'Conservation and genealogy',
+    conservationLine: (p: ConservationParams) =>
+      `Material error ${p.material} kg; genealogy error ${p.genealogy} kg; ${p.manifests} dispatch ${p.manifestCount === 1 ? 'manifest' : 'manifests'}.`,
+    conductLine:
+      'Refusals respected {refusals}; promises kept {promises}. Cumulative objections resolved {resolved} of {raised}. Current-shift open objections {open}.',
+    burdensSummary: 'Member burdens and public receipts',
+    memberLine:
+      '{role}: extra {extra} min; rest {rest} min; recovery delivered {recovery} min, owed {owed} min; earned {earned}, compensation {compensation} credits; refusal {refusal}.',
+    refusalRespected: 'respected',
+    refusalNotRecorded: 'not recorded as respected',
+    shiftNumber: 'Shift {number}',
+    noReceipts: 'No public receipts retained for this shift.',
+    eventLine: 'Minute {minute}, {actor}: {detail}',
+    downloadReport: 'Download redacted replay report',
+    closingNote:
+      'Starting conditions match; frame-driven vehicle trajectories can differ between runs. Compare elapsed and agreement time alongside dispatch. These records describe local simulation conduct. No winner, trust or wellbeing score is inferred.',
+
+    // Guide
+    guideLabel: 'Guided replay',
+    guideHeading: 'Guided replay: {section}',
+    guideShift:
+      'Start with protected rest, shared operating information and remedy. Keep the customer commitment or negotiate an installment: deferral leaves the full contract outstanding. Select a real plan below.',
+    guidePractices:
+      'Toe-dip starts with rest, information and remedy. Team adds shared decisions; cooperative adds member governance. Optional budget practice enables the shared handoff improvement. Use the actual practice controls below.',
+    guideAgreement:
+      'Each role answers its own understanding checks and casts its own vote. Optional cover needs separate revocable consent. Quality may refuse without explaining. Resolve objections through their original author, then explicitly approve the agreement below.',
+    guideReview:
+      'Check actual dispatch, protected rest, earned compensation and delivered recovery. Finish owed recovery before retaining this run. Return to Experiment to replay team or cooperative from the same checkpoint with fresh agreement.',
+    planLine:
+      '{title}: {pacing}% pacing; {budget} illustrative credits; {rest} min protected rest.',
+    planCover:
+      ' Up to {cover} min voluntary cover at {rate} credits/min and {recovery} min recovery, then protected pacing resumes.',
+    activeNote:
+      'The agreement is active. Use the plant clock controls to resume actual play; this guide never advances time or submits decisions.',
+    nextSection: 'Next guide section',
+    endGuide: 'End guide',
+    optionalNavigation:
+      'Optional navigation only. No votes, checks, consent or approval are supplied by the guide.',
+
+    // Resume
+    resume: 'Resume agreed replay at standard pace (1x)',
+  },
   'pt-BR': {
     sectionLabel: (p: { section: string }) =>
       pick(

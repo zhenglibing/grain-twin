@@ -13,6 +13,18 @@ export const strategicPriorityCardsMessages = defineMessages({
     dismissTradeoff: 'Dismiss trade-off',
     aiConfidence: 'AI Confidence',
   },
+  zh: {
+    localCoreAnalyzing: 'Local core analyzing...',
+    modelAnalyzing: '{model} analyzing...',
+    priority: 'Priority {number}',
+    dismissPriority: 'Dismiss priority',
+    focus: 'Focus: {machine}',
+    aiInsight: 'AI Insight',
+    dismissInsight: 'Dismiss insight',
+    tradeoff: 'Trade-off',
+    dismissTradeoff: 'Dismiss trade-off',
+    aiConfidence: 'AI Confidence',
+  },
   'pt-BR': {
     localCoreAnalyzing: 'Núcleo local analisando...',
     modelAnalyzing: '{model} analisando...',

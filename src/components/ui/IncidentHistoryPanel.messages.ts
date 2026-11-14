@@ -9,6 +9,14 @@ export const incidentHistoryPanelMessages = defineMessages({
     cancel: 'Cancel',
     clearHistory: 'Clear history',
   },
+  zh: {
+    incidentLog: 'Incident Log ({count})',
+    noIncidents: 'No incidents recorded',
+    showingLatest: 'Showing latest 20 of {total}',
+    confirmClear: 'Confirm clear?',
+    cancel: 'Cancel',
+    clearHistory: 'Clear history',
+  },
   'pt-BR': {
     incidentLog: 'Registro de ocorrências ({count})',
     noIncidents: 'Nenhuma ocorrência registrada',

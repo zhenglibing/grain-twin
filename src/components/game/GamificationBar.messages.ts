@@ -10,6 +10,15 @@ export const gamificationBarMessages = defineMessages({
     replayHistory: 'Replay history',
     miniMap: 'Mini-map',
   },
+  zh: {
+    closeQuickActions: 'Close Quick Actions',
+    achievements: 'Achievements',
+    achievementsUnlocked: (p: { count: number }) =>
+      `Achievements, ${formatFixed(p.count, 0, 'en')} unlocked`,
+    exitReplay: 'Exit replay',
+    replayHistory: 'Replay history',
+    miniMap: 'Mini-map',
+  },
   'pt-BR': {
     closeQuickActions: 'Fechar ações rápidas',
     achievements: 'Conquistas',
