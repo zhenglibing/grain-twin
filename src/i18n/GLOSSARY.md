@@ -766,6 +766,58 @@ CSS classes, keys and URLs.
 | fresh role decisions（nextConfirm 引用 ImprovementPanel 既有标签） | 新的角色决定（沿用 Task 4） |
 | evidenceEndedAfter / evidenceCompleted（evidenceHorizon 前缀） | 结束于 / 已完成 |
 
+批次④（知识库/AI 组，Task 7 knowledgeStore + AISettingsModal + AICommandCenter + AgentCockpit）补充基线 — 后续批次必须沿用：
+
+| English | zh |
+|---|---|
+| knowledge base（Datalinks 藏书；Datalinks=数据链接 沿用批次①） | 知识库（Task 1 预钉，此处落表） |
+| agent cockpit（组件；Task 1 预钉，此处落表） | 智能体座舱 |
+| autonomous operations library | 自主运行资料库 |
+| operating principles / world and process lineage / control systems / operational cases（知识库分类） | 运行原则 / 世界与过程谱系 / 控制系统 / 运行案例 |
+| loading-screen principle authors（MillOS control/visual/architecture/autonomy/SCADA/logistics principle） | MillOS 控制/视觉/架构/自治/SCADA/物流原则 |
+| unified digital twin / one continuous site | 统一数字孪生 / 连续统一的厂区 |
+| autonomous material flow / causal material flow | 自主物料流 / 因果物料流 |
+| SCADA alarm lifecycle / alarm state is evidence | SCADA 报警生命周期 / 报警状态即证据 |
+| predictive maintenance loop / predictive alert | 预测性维护循环 / 预测性警报（alert=警报，alarm=报警 分立） |
+| batch quality and recall / plant-wide dispatch check | 批次质量与召回 / 厂级发运检查 |
+| autonomous logistics choreography / legible yard motion | 自主物流编排 / 清晰可读的场院运动 |
+| environment and celestial cycle / coherent backdrop | 环境与天体循环 / 协调一致的背景 |
+| bottlenecks and buffers / limiting stage | 瓶颈与缓冲 / 制约工段 |
+| energy, waste and useful output / make the tradeoff visible | 能耗、浪费与有效产出 / 让权衡可见 |
+| the mill and its neighbours / a delivery has a destination | 磨坊与邻里 / 交付自有去向 |
+| depth and material policy / stable surfaces | 深度与材质策略 / 稳定的表面 |
+| autonomous evidence and replay / legible autonomy | 自主证据与回放 / 清晰可读的自治 |
+| genealogy balance | 谱系账（material balance=物料账 沿用批次①） |
+| grist（已在产线内的在磨物料） | 在磨物料 |
+| culvert / stream banks | 涵洞 / 溪流沿岸 |
+| village bakery / village residents / school-meals / pasta commitments | 乡村面包店 / 村庄居民 / 学生餐 / 意面承诺 |
+| cobblestone / albedo / decal / polygon offset | 鹅卵石 / 反照率 / 贴花 / 多边形偏移（首次出现附英文原词） |
+| see-in-action 指引（Overview workspace / SCADA Process workspace / SCADA utilities / Safety egress verification / Shipping yard） | 概览工作区 / SCADA 过程工作区 / SCADA 公用工程 / 安全疏散验证 / 发运堆场 |
+| AI Command Centre（面板显示名 AI 伙伴，见 Dock/ContextSidebar） | AI 伙伴面板 |
+| decision replay | 决策回放（Task 9 DecisionReplay 沿用） |
+| AI settings / AI backend / AI operating mode | AI 设置 / AI 后端 / AI 运行模式 |
+| BYOK (bring your own key) | 用户自备密钥（行文可简作 自备密钥；cost cap 标签作 自备密钥（BYOK）） |
+| local neural core | 本地神经核心 |
+| local companion（本地 ChatGPT 登录伴跑程序） | 本地伴侣程序 |
+| lights-out（端侧 AI 自处置模式） | 黑灯模式 |
+| fast routing lane | 快速路由通道 |
+| ChatGPT plan / plan model / ChatGPT account | ChatGPT 计划 / 计划模型 / ChatGPT 账户 |
+| strategic requests / strategic insights / tactical | 战略请求 / 战略洞察 / 战术 |
+| fast rules / fast rules layer | 快速规则 / 快速规则层 |
+| heuristic / hybrid / local only / LLM only（AI 模式） | 启发式 / 混合 / 仅本地 / 仅 LLM |
+| cost cap / session cost cap / spending limit / inference key / key vault | 费用上限 / 会话费用上限 / 消费限额 / 推理密钥 / 密钥保管库 |
+| AI visualization overlays: cascade / strategic overlay / production target / energy dashboard / multi-objective / API cost tracker / VCL context | 级联可视化 / 战略覆盖层 / 产量目标 / 能源仪表盘 / 多目标 / API 费用跟踪器 / VCL 上下文 |
+| AI Partner（AICommandCenter 标题，沿用批次① AI 伙伴） | AI 伙伴 |
+| decision type: coordination / optimization / prediction / maintenance / safety | 协调 / 优化 / 预测 / 维护 / 安全 |
+| decision response: accepted / modified / rejected / deferred / automatic | 已接受 / 已修改 / 已拒绝 / 已推迟 / 自动 |
+| agent cockpit 用词：revision / authority / scoped commands / grant | 修订版 / 决策权（AI 决策权 沿用 Task 2）/ 限定范围指令 / 授权（沿用 Task 2） |
+| situation brief / state observed / causal workspace | 态势简报 / 已观测状态 / 因果工作区 |
+| exception queue / operational exception | 异常队列 / 运行异常 |
+| preview effects and authority / approve exact preview and commit / commit preview | 预览影响与决策权 / 批准完全一致的预览并执行 / 执行预览 |
+| execution receipt（沿用 Task 2）/ receipt issued | 执行回执 / 回执已签发 |
+| resource cost class: trivial / bounded / intensive / local / interactive / long-running | 轻量 / 有界 / 密集 / 本地 / 交互式 / 长时 |
+| precondition / invariant / changed domain | 前置条件 / 不变量 / 已变更域 |
+
 批次③终审接受项与已知计量假象（check-zh-progress 读数口径）：
 
 - 接受项：实验室 partial-carry（个别串作 实验室，全称 质检实验室，defensible）；报警阈值 soft-orphan（已入表，暂无渲染串沿用，钉后续批次）；千克 a11y（PlayableShift truckLoadValueText 无障碍朗读串拼 千克，与可见 kg 并存，defensible）。
