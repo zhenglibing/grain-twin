@@ -1,5 +1,5 @@
 import { defineMessages, upperFirst } from '../i18n';
-import { PT_PHASE } from './ui/PredictiveMaintenancePanel.messages';
+import { PT_PHASE, ZH_PHASE } from './ui/PredictiveMaintenancePanel.messages';
 import {
   PT_DISPOSITION,
   PT_MATERIAL,
@@ -177,17 +177,8 @@ const ZH_SIGNAL_QUALITY: Record<string, string> = {
   uncertain: '不确定',
 };
 
-// PredictiveMaintenancePanel.messages has no ZH_PHASE export yet (its zh block
-// belongs to a later batch), so mirror PT_PHASE here for now.
-const ZH_PHASE: Record<string, string> = {
-  diagnosed: '已诊断',
-  awaiting_parts: '等待备件',
-  repairing: '维修中',
-  verification: '验证中',
-  ready_to_restart: '待重启',
-  restart_requested: '已请求重启',
-  returned_to_service: '已恢复运行',
-};
+// Work-order phases use the ZH_PHASE exported by PredictiveMaintenancePanel.messages
+// (the panel that owns the phase vocabulary); PT_PHASE comes from the same file.
 
 export const scadaPanelMessages = defineMessages({
   en: {

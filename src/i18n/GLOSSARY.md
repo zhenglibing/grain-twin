@@ -818,6 +818,34 @@ CSS classes, keys and URLs.
 | resource cost class: trivial / bounded / intensive / local / interactive / long-running | 轻量 / 有界 / 密集 / 本地 / 交互式 / 长时 |
 | precondition / invariant / changed domain | 前置条件 / 不变量 / 已变更域 |
 
+批次④（Task 8 AI 客户端 + VCL 调试 + 维护/能源面板）补充基线 — 后续批次必须沿用：
+
+| English | zh |
+|---|---|
+| Jev advisory / Jev incident routing / incident text | Jev 建议 / Jev 事件路由 / 事件文本（Jev 专名不译） |
+| decision model / suggested queue | 决策模型 / 建议队列 |
+| on-device model（沿用 Task 7 端侧用法） | 端侧模型 |
+| provider（AI 服务商）/ direct provider keys | 提供商 / 直连提供商密钥 |
+| usage data / charges / verifiable charge | 用量数据 / 扣费 / 可核实扣费 |
+| rate limit / rate limiting | 限流（已触发限流 / 正在限流） |
+| lifetime spend-limited inference key（Task 7 已用，此处落表） | 终身消费限额推理密钥（把自备密钥用量计入终身消费限额） |
+| VCL / VCP（线协议名；编码串与字形永不翻译） | 保持原文（VCL 编码出错 可译说明文字；token 半角保留） |
+| size reduction / tokens saved / emoji dictionary | 体积缩减 / 已节省 token / Emoji 字典 |
+| load levels（VCL 字形档位） | 负载档位 |
+| predictive alert（Task 7 已钉预测性警报，此处沿用） | 预测性警报 |
+| parts inventory / active faults | 备件库存 / 活动故障 |
+| scheduled maintenance / schedule（维护语境动词） | 计划维护 / 安排（排程器 留给生产排程） |
+| model confidence / estimated window | 模型置信度 / 预计时间窗 |
+| failure type: mechanical / electrical / overheating / vibration | 机械故障 / 电气故障 / 过热 / 振动故障 |
+| downtime / verify repair | 停机时长 / 验证维修 |
+| service minimum（磨损维护下限） | 维护下限 |
+| energy dashboard（Task 7 已钉能源仪表盘，此处沿用） | 能源仪表盘 |
+| peak / off-peak（电价时段） | 峰时 / 谷时 |
+| demand（电力需量）/ load factor / HVAC | 需量 / 负载率 / 暖通空调 |
+| emergency mode / base systems / facility base load | 紧急模式 / 基础系统 / 设施基础负荷 |
+| energy modifiers / penalty | 能耗修正项 / 罚值（+10%（3） 括号全角） |
+| simulation factor / scenario carbon / simulation cost | 模拟系数 / 场景碳排放 / 模拟成本（kg CO₂/kWh 半角） |
+
 批次③终审接受项与已知计量假象（check-zh-progress 读数口径）：
 
 - 接受项：实验室 partial-carry（个别串作 实验室，全称 质检实验室，defensible）；报警阈值 soft-orphan（已入表，暂无渲染串沿用，钉后续批次）；千克 a11y（PlayableShift truckLoadValueText 无障碍朗读串拼 千克，与可见 kg 并存，defensible）。
