@@ -1118,10 +1118,47 @@ CSS classes, keys and URLs.
 | closes the inspection（m21） | 结束检查 |
 | describe/record 分号拼接（describe.ts/record.ts join('; '、', ')） | 半角分号/逗号为拼接机制产物，与 pt-BR 同；不改动代码 |
 
+批次⑤（磨坊纪事工作区标签页，Task 6 九文件）补充基线 — 后续批次必须沿用：
+
+| English | zh |
+|---|---|
+| 工作区标签页：Chronicle / Plans / Partners / Ledger / Notes / Score；Chronicle sections（tablist aria） | 总览 / 方案 / 伙伴 / 台账 / 笔记 / 得分；磨坊纪事栏目（plan=方案、得分 沿 Task 1；台账 沿批次②物料台账） |
+| Chronicle status / Chronicle progress（进度条 aria） | 磨坊纪事状态 / 磨坊纪事进度 |
+| desk(s)（Castles II 式注意力点数池，works/trade/council） | 席位（{desk}席位，sr-only；Task 7 desks 标签须以 席位 收尾拼接） |
+| shift / shifts（shared.messages plural 单位，拼接 "{n} 个班次"） | 个班次 / 个班次（沿 Task 1 presentation） |
+| "X of Y" 计数模板（p53/p57/p58/p14、第 {index}/{total} 题） | X/Y 无空格斜杠；班次 X / Y（Overview m7/m8）两侧空格为 JSX 机制产物 |
+| in-house crew / contractor / retain (a firm) | 自有施工队 / 承包商 / 留用（留用、施工队 沿 Task 1 retainedBody） |
+| Installing / Installed / Planned（方案状态）/ Draw up the plan / Plan it first. / An install is under way | 安装中 / 已安装 / 已列入计划 / 拟定方案 / 请先拟定方案。/ 正在进行一项安装（longNight 的 {plans}已建成 另指准备度来源，两存不互斥） |
+| Cancel and refund / Reverse and refund / (reversed) | 取消并退款 / 撤销并退款 / （已撤销） |
+| Lineage notes / Notices / The record（决策记录区） | 传承笔记 / 通告 / 纪事 |
+| 恢复挑战（沿用 presentation t20）；Recovery challenge medals / Shift grades / Epilogue | 恢复挑战奖牌 / 班次等级分（等级分 沿 Task 1）/ 尾声 |
+| Begin a new chronicle / Abandon this chronicle / Yes, begin anew / Yes, abandon it / Keep it | 开启新的磨坊纪事 / 放弃本次磨坊纪事 / 好，重新开始 / 好，放弃吧 / 保留 |
+| Shift {shift}（试验起跑班次）/ gold / silver / bronze（奖牌名） | 第 {shift} 个班次 / 金牌 / 银牌 / 铜牌（……牌胜利 沿 Task 1） |
+| Gold within / Silver within（奖牌用时阈值 chip）/ Begins in / left（时长剩余后缀） | 金牌线 / 银牌线（全句版见 completedTarget“牌要求在 X 个班次内完成”）/ 距开始还有（前缀拼接）/ 可用（zh 无后置剩余语，以预算口径表达） |
+| Met / Not met（长夜准备来源 aria）/ Tonight / In {shifts} / lapses at the next close | 已满足 / 未满足 / 就在今夜 / {shifts}后 / 将于下次结班时失效（合格结班 沿 Task 1） |
+| Decide / Awaiting a decision | 决断 / 等待决断（决断 沿 Task 4 史料注记行文） |
+| Acknowledge / Apply mitigation / Restore controls / Restore controls: needs the mitigation to take effect | 确认 / 实施缓解 / 恢复控制 / 恢复控制：需待缓解生效（事件相位 已触发/已确认/已缓解/已解决 沿批次② SCADAPanel） |
+| Suspended（信誉位 r69/m49） | 已暂停（认证已暂停 与 Task 5 认证已恢复 对仗；Task 3 卡组句式 被暂停 为行文被动式，两存） |
+| '% in'（预测概率+期限 chip，m34） | %，（与 presentation forecastIssued"{n0}%，{n1} {unit}内"同读法；末位 内 为后缀不可得，语义由期限承担） |
+| earned /（时代门槛 know-how 行） | 已获 / |
+| Trials passed / Maintenance policy / Active effects / points | 通过的试验 / 维护策略 / 生效中的效果 / 点（沿 Task 5） |
+| Wheat recipes quality - / Blend with sound grain / Condition the grain | 小麦配方质量 - / 掺混完好谷物 / 调理谷物（完好、调理 沿 Task 1/2） |
+| Upkeep due / Duct fire / Production stopped / Suppression under way / Suppress and clean / Clean by hand, / min | 应缴维护费 / 管道火灾 / 生产已停止 / 扑救进行中 / 扑救并清理 / 人工清理，/ 分钟（均沿 Task 1/2 同词） |
+| Enable: costs -25%, forecasts -25%, score -2 | 启用：费用 -25%，预测概率 -25%，得分 -2（b14 同口径） |
+| Customers / Organisations / Approval suspended / Delegation to the AI partner / Delegation level | 客户 / 组织 / 认证已暂停 / 对 AI 伙伴的委托 / 委托等级 |
+| cool / neutral / warm（关系档位 chip，大小写两套） | 冷淡 / 中立 / 亲善（沿 Task 5 condition8-10 与 longNight {party}关系亲善） |
+| {name} relationship / {name} standing / Standing {standing} of 9 | {name}关系 / {name}信誉 / 信誉 {standing}/9（信誉 沿 Task 5） |
+| you / the AI partner / lapsed（纪事行动者）/ new（角标） | 你 / AI 伙伴 / 已失效 / 新 |
+| quiz 界面：Start the quiz / Another round / Next question / See the result / Question {index} / {total} / , best {best} / sacks / Unlock … more questions | 开始测验 / 再来一轮 / 下一题 / 查看结果 / 第 {index}/{total} 题 / ，最佳 {best} / 袋 / 再解锁 {n} 道题目即可开始 |
+| Balance / Co-op fund / Fund, last shift / Fund last shift / Plant ledger / Plant contribution / {unit} by source | 结余 / 合作社基金（沿 Task 2）/ 基金，上一班次 / 上一班次基金 / 磨坊台账 / 磨坊贡献 / {unit}来源明细 |
+| 宪章档位：Beginner / Historical / Hard；Site charter / Sign the charter / (score +{bonus}) | 新手 / 史实 / 困难；磨坊宪章 / 签署宪章 / （得分 +{bonus}）（宪章 沿 Task 4） |
+| '{forecast} -{relief}%' / '{crop} penalty down to {value}' / 'no {crop} penalty'（方案效果摘要） | {forecast} -{relief}% / {crop}罚值降至 {value} / 无{crop}罚值（罚值 沿批次④；{forecast}/{crop} 接 Task 7 标签） |
+| 拼接机制产物（不改代码）：JSX 侧空格与半角冒号——"人工清理， 20 分钟"、"45%， 3 个班次"、"距开始还有 3 个班次: 目标"、effectSummary 的 ", " 连接 | — |
+
 批次③终审接受项与已知计量假象（check-zh-progress 读数口径）：
 
 - 接受项：实验室 partial-carry（个别串作 实验室，全称 质检实验室，defensible）；报警阈值 soft-orphan（已入表，暂无渲染串沿用，钉后续批次）；千克 a11y（PlayableShift truckLoadValueText 无障碍朗读串拼 千克，与可见 kg 并存，defensible）。
-- 计量假象：`i18n.test.ts` 两个 `@ts-expect-error` 残缺 fixture 目录是编译期测试本体，其键永久计入“未翻译”；`websocketUrl`（SCADA）等 zh===en 为合法同文键。ZoneLabels 补完后，全局“未翻译”仅剩 fixture 残缺键与 zh===en 合法同文键。同文键新增（批次④ Task 4，与 websocketUrl 同类，pt-BR 亦同文）：`WorkplaceImprovementPanel.kgValue`（'{kg} kg'）与 `WorkplacePackingEvidence.kg`（'{value} kg'）——纯数值格式串，单位按钉词保持半角 kg，读数 96/97、94/95 视为达标。
+- 计量假象：`i18n.test.ts` 两个 `@ts-expect-error` 残缺 fixture 目录是编译期测试本体，其键永久计入“未翻译”；`websocketUrl`（SCADA）等 zh===en 为合法同文键。ZoneLabels 补完后，全局“未翻译”仅剩 fixture 残缺键与 zh===en 合法同文键。同文键新增（批次④ Task 4，与 websocketUrl 同类，pt-BR 亦同文）：`WorkplaceImprovementPanel.kgValue`（'{kg} kg'）与 `WorkplacePackingEvidence.kg`（'{value} kg'）——纯数值格式串，单位按钉词保持半角 kg，读数 96/97、94/95 视为达标。同文键新增（批次⑤ Task 6，与 kgValue 同类，pt-BR 亦同文）：`PlansTab.p17`（'{forecast} -{relief}%'）——纯符号格式串（占位符 + 半角减号与百分号），无可译文字，读数 29/30 视为达标。
 
 zh 风格规则（与计划 Global Constraints 一致）：
 1. `{name}` 占位符原样保留；2. 函数消息签名不变；3. 全角标点、

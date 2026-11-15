@@ -10,12 +10,12 @@ export const messages = defineMessages({
     m5: ' (score +{bonus})',
   },
   zh: {
-    m0: 'Beginner',
-    m1: 'Historical',
-    m2: 'Hard',
-    m3: 'Site charter',
-    m4: 'Sign the charter',
-    m5: ' (score +{bonus})',
+    m0: '新手',
+    m1: '史实',
+    m2: '困难',
+    m3: '磨坊宪章',
+    m4: '签署宪章',
+    m5: '（得分 +{bonus}）',
   },
   'pt-BR': {
     m0: 'Iniciante',
