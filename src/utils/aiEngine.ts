@@ -450,8 +450,9 @@ function recordDecisionOutcome(decision: AIDecision, success: boolean): void {
   typeStats.successRate = Math.round(rate * 100);
   if (
     success &&
-    // pt-BR words match the same engine decisions as the English ones (aiEngine.messages.ts).
-    /shutdown|safe state|derate|maintenance|desligamento|estado seguro|manutenção/i.test(
+    // pt-BR and zh words match the same engine decisions as the English ones
+    // (aiEngine.messages.ts).
+    /shutdown|safe state|derate|maintenance|desligamento|estado seguro|manutenção|安全状态|维护/i.test(
       `${decision.action} ${decision.impact}`
     )
   ) {
@@ -544,7 +545,7 @@ export function shouldTriggerAudioCue(decision: AIDecision): boolean {
   return (
     decision.priority === 'critical' ||
     (decision.priority === 'high' && decision.type === 'safety') ||
-    (decision.type === 'prediction' && /anomaly|anomalia/i.test(decision.action))
+    (decision.type === 'prediction' && /anomaly|anomalia|异常/i.test(decision.action))
   );
 }
 

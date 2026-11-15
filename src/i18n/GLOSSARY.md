@@ -1190,10 +1190,55 @@ CSS classes, keys and URLs.
 | record (The Chronicle) | 纪事（dock 短标签同） |
 | open exceptions vs open incidents | 未决的异常（objections）vs 未结事件（incidents）——分立勿混（exceptions=异常，见 AgentCockpit.noExceptions；未结事件 沿批次④钉词） |
 
+批次⑥（Task 3 十八目录收尾翻译）补充基线 — 后续批次必须沿用：
+
+| English | zh |
+|---|---|
+| Front / Back / West / East Service Egress（egress 标签 getter） | 前侧 / 后侧 / 西侧 / 东侧疏散出口（service egress 疏散出口、疏散验证 沿批次③；MillScene toUpperCase 对汉字恒等） |
+| facility emergency stop command / interlock cause | 设施紧急停机指令 / {machineId} 联锁 |
+| fail-safe stop（设备置于）/ fail-safe process stop | 故障保护停机 / 故障保护的过程停机（fail-safe 故障保护 沿批次⑤） |
+| crisis cause：fire / power_outage / supply_emergency / inspection / weather | 火灾状况 / 断电状况 / 供应紧急状况 / 检查状况 / 天气状况（ZH_CRISIS_CAUSE 镜像 PT 表，未知值回退原 id + 状况） |
+| automated egress verification closed | 自动疏散验证已结束 |
+| condition-based maintenance / derate（自动降载） | 基于状态的维护 / 降载 |
+| service route / service traffic（aiEngine coordination） | 服务路线 / 服务交通（不用 维护 字样——aiEngine 触发词 维护 只进 maintenance/prediction 文案，见下） |
+| recirculation（产线回流） | 回流 |
+| aiEngine zh 触发词（aiEngine.ts 两处正则与 pt-BR 词并列新增） | 维护（maintenance）/ 安全状态（safe state）/ 异常（anomaly）——只进 zh maintenance、safety、prediction 文案，不入 coordination/optimization |
+| windmill / sails（学习卡） | 风磨 / 风翼（批次⑤ history 钉词沿用） |
+| runner stone / bed stone | 动磨石 / 静磨石 |
+| windshaft / brake wheel / upright shaft | 风轴 / 制动轮 / 立轴 |
+| wallower | 立轴顶端的齿轮（wallower）（无通行译名，功能描述 + 括注原文） |
+| hopper / shoe / (central) eye（风磨喂料） | 料斗 / 进料槽 / 磨眼（料斗 沿批次④词根） |
+| meal（磨下物）/ collecting meal | 磨下物 / 收集磨下物（sifting 筛理 沿批次②） |
+| On-device（AI 定价行）/ ChatGPT plan | 端侧 / ChatGPT 计划（端侧、ChatGPT 计划 沿 Task 7 AISettingsModal） |
+| local companion unavailable | 本地伴侣程序不可用（本地伴侣程序 沿 Task 7） |
+| checking WebGPU compatibility / WebGPU adapter（适配器）/ probe / blocklisted | 正在检查 WebGPU 兼容性 / 适配器 / 探测 / 列入黑名单 |
+| reorder point / packaging supplies | 再订购点 / 包装用品 |
+| proximity alert / near-miss avoided | 接近警报 / 未遂事件已避免（未遂事件、alert=警报 沿批次①/④钉词） |
+| 现场信标（OperationalWorldSignals）：HOT BEARING / FILTER PRESSURE HIGH / SITE POWER DIP / SHIPPING TRUCK DELAY / GRAIN LOT HOLD / PACKAGING LOW / HIGH RIVER LEVEL / NETWORK DEGRADED | 轴承过热 / 过滤器压差高 / 厂区电压骤降（电压骤降 沿批次③）/ 发运卡车延误 / 谷物批次扣留 / 包装用品不足 / 河水水位高 / 网络性能下降（R.M. 101 编号保留） |
+| 信标相位：NEEDS ATTENTION / ACKNOWLEDGED / RESPONSE APPLIED / RESOLVED / OPEN RESPONSE | 需要关注 / 已确认 / 已实施响应 / 已解决 / 打开响应（已确认/已解决 沿批次② incident phase 钉词） |
+| action plan / immediate / short-term / preparation / step {n} | 行动计划 / 立即 / 短期 / 准备 / 第 {n} 步（准备度 另指批次⑤ long night front preparation） |
+| replay mode / skip back/forward {n} frames / frame {f} of {c} / exit replay | 回放模式 / 向后/向前跳 {n} 帧 / 第 {f}/{c} 帧 / 退出回放（回放 沿批次①；X/Y 斜杠无空格 沿批次⑤） |
+| incident replay timeline | 事件回放时间线（回放时间线 沿批次④ Task 9） |
+| achievements / progress / reset all achievements | 成就 / 进度 / 重置全部成就（成就、重置 沿批次④/①钉词） |
+| forklift details：ID / Control / Autonomous / Cargo / Loaded / Empty | 编号 / 控制 / 自主 / 载货 / 已装载 / 空载（已装载 沿批次④ Task 6；autonomous 形容词=自主 钉词） |
+| operational replay / Game mode | 运行回放 / 游戏模式（operations=运行 沿批次③；游戏模式 沿批次④ bilateralWorkplace） |
+| handoff trial and its reviews / improvement cycle | 交接实验及其评审 / 改善循环（交接实验、成员评审、改善 沿批次③/④钉词） |
+| earned recovery / repayment cannot be erased | 已挣得的补休 / 偿还无法抹除（补休、偿还 沿批次④钉词） |
+| untouched discussion（回放语境） | 未触碰的讨论（WorkplaceReplay 面板 未触碰状态的讨论 同源；未动过的场景 另指批次④ improvement 场景） |
+| qualified assignment / voluntary cover / paid handoff briefing / agreed: {task} | 合格的任务指派 / 自愿顶岗 / 带薪交接简报 / 已约定：{task}（可选顶岗、带薪简报、自愿顶岗 沿批次④词根） |
+| protected recovery | 受保护补休（受保护休息 沿批次④ BAS practice） |
+| foreign material / investigation opened | 异物 / 已启动调查（调查 沿批次①） |
+| scheduled farm intake / inherited source-lot disposition / fully dispatched | 计划农场来粮（来粮 沿批次④）/ 承自原料批的处置 / 已全部发运（原料批、处置 沿批次①/②钉词） |
+| quality genealogy / SCADA evidence / genealogy balance（叙述） | 质量谱系 / SCADA 证据 / 谱系账（谱系、谱系账 沿批次①/④钉词） |
+| time scale（模拟提速） | 时间倍率 |
+| staffed grain-mill digital twin / one continuous world | 有人值守的谷物磨坊数字孪生 / 连续统一的世界（有人值守、数字孪生、连续统一的厂区 沿批次①/④钉词） |
+| 叉车警报样本（AlertSystem dev 演示）：Maintenance Complete / Temperature Rising / Target Met / Low Stock / Conveyor Check / belt tension nominal | 维护完成（productionStore 同键同译）/ 温度升高 / 目标达成 / 库存不足 / 输送机检查 / 皮带张力正常 |
+| typed live region（critical/warning） | 危急警报 / 警告警报（zh 函数镜像 pt-BR 映射，en 原样读出） |
+
 批次③终审接受项与已知计量假象（check-zh-progress 读数口径）：
 
 - 接受项：实验室 partial-carry（个别串作 实验室，全称 质检实验室，defensible）；报警阈值 soft-orphan（已入表，暂无渲染串沿用，钉后续批次）；千克 a11y（PlayableShift truckLoadValueText 无障碍朗读串拼 千克，与可见 kg 并存，defensible）。
-- 计量假象：`i18n.test.ts` 两个 `@ts-expect-error` 残缺 fixture 目录是编译期测试本体，其键永久计入“未翻译”；`websocketUrl`（SCADA）等 zh===en 为合法同文键。ZoneLabels 补完后，全局“未翻译”仅剩 fixture 残缺键与 zh===en 合法同文键。同文键新增（批次④ Task 4，与 websocketUrl 同类，pt-BR 亦同文）：`WorkplaceImprovementPanel.kgValue`（'{kg} kg'）与 `WorkplacePackingEvidence.kg`（'{value} kg'）——纯数值格式串，单位按钉词保持半角 kg，读数 96/97、94/95 视为达标。同文键新增（批次⑤ Task 6，与 kgValue 同类，pt-BR 亦同文）：`PlansTab.p17`（'{forecast} -{relief}%'）——纯符号格式串（占位符 + 半角减号与百分号），无可译文字，读数 29/30 视为达标。同文键新增（批次⑤ Task 7，专有公司名，永不翻译清单，pt-BR 亦同文）：`epilogue.m14` 与 `stakeholders.m2`（'Valley Haulage'，与 Task 5 record.messages 行文同例）——读数 49/50、12/13 视为达标。
+- 计量假象：`i18n.test.ts` 两个 `@ts-expect-error` 残缺 fixture 目录是编译期测试本体，其键永久计入“未翻译”；`websocketUrl`（SCADA）等 zh===en 为合法同文键。ZoneLabels 补完后，全局“未翻译”仅剩 fixture 残缺键与 zh===en 合法同文键。同文键新增（批次④ Task 4，与 websocketUrl 同类，pt-BR 亦同文）：`WorkplaceImprovementPanel.kgValue`（'{kg} kg'）与 `WorkplacePackingEvidence.kg`（'{value} kg'）——纯数值格式串，单位按钉词保持半角 kg，读数 96/97、94/95 视为达标。同文键新增（批次⑤ Task 6，与 kgValue 同类，pt-BR 亦同文）：`PlansTab.p17`（'{forecast} -{relief}%'）——纯符号格式串（占位符 + 半角减号与百分号），无可译文字，读数 29/30 视为达标。同文键新增（批次⑤ Task 7，专有公司名，永不翻译清单，pt-BR 亦同文）：`epilogue.m14` 与 `stakeholders.m2`（'Valley Haulage'，与 Task 5 record.messages 行文同例）——读数 49/50、12/13 视为达标。同文键新增（批次⑥ Task 3，与 kgValue 同类，pt-BR 亦同文）：`webgpuClient.sizeGb` 与 `webgpuClient.sizeMb`（'{size} GB' / '{size} MB'）——纯数值格式串，zh 按仓库惯例（AISettingsModal 约 {size} GB）保留数字与单位间半角空格，与 en 同文，读数 8/10 视为达标。
 
 zh 风格规则（与计划 Global Constraints 一致）：
 1. `{name}` 占位符原样保留；2. 函数消息签名不变；3. 全角标点、
