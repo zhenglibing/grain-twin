@@ -126,7 +126,7 @@ export const workplaceCampaignArchiveMessages = defineMessages({
       '最近六份回顾保存在本浏览器中，私人偏好已脱敏。请下载任何你想更长久保留的回顾。历史回顾不能重启协议。',
     leaveButton: '离开本加工季',
     leaveKept:
-      '离开会保留已挣得的内容：向 {customer} 交付 {kg} kg，报酬与顶岗 {pay} 点数，以及已交付的 {recovery} 分钟补休。它会被记录为提前离开的加工季，而非已完成的加工季，客户与下一计划的选择会重新开放。',
+      '离开会保留已挣得的内容：向 {customer} 交付 {kg} kg，报酬与顶岗 {pay} 点数，以及已交付的 {recovery} 分钟补休。它会被记录为提前离开的加工季，而非已完成的加工季，客户与下一加工季的选择会重新开放。',
     leaveWaitActive: '离开需等待本班次停止或结束，以便先结清其报酬。',
     leaveWaitObligations: '离开需等待没有任何应付内容。{reasons}',
     leftFeedback:

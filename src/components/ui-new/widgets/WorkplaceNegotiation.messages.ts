@@ -69,7 +69,7 @@ export const workplaceNegotiationMessages = defineMessages({
     adviserHoldExecution: '我建议暂缓执行，直至每位提出人复核补救。我不能了结他们的异议。',
     adviserIllegal: '我无法推荐这份报价：它违反受保护休息。即使一致表决也不能豁免该边界。',
     adviserNeedsCorrection: '我先前的报价复用了同意。在达成新协议之前，需要一次明确的更正。',
-    adviserCover: '我建议只向当前同意的合格志愿者提供顶岗。政策赞成不授予额外勤务。',
+    adviserCover: '我建议只向当前同意的合格志愿者提供顶岗。政策中的“赞成”不授予额外勤务。',
     adviserCurrentOffer: '我建议复核当前的{title}报价。它将额外勤务保持为零，并保留受保护休息。',
     stageOffer: '报价',
     stageOfferDetail: '{title}。先前的意愿不授予新义务。',

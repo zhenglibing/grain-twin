@@ -40,7 +40,7 @@ export const paceMessages = defineMessages({
     heldBy_restore: '恢复已保存班次期间保持暂停。',
     heldBy_restoreFailed: '已暂停：无法恢复已保存的班次。请选择一个节奏继续，或在设置中重置。',
     heldBy_workplace:
-      '因工作场所协作步骤而暂停。请在双边自治系统（BAS）面板完成该步骤，或选择一个节奏。',
+      '因车间协作步骤而暂停。请在双边自治系统（BAS）面板完成该步骤，或选择一个节奏。',
     heldBy_handoff:
       '在团队决定交接实验期间保持暂停，以确保顾问的预测保持成立。你现在选择的节奏将在恢复后生效。要恢复运行，请取消实验，或在双边自治系统（BAS）面板完成其成员评审。',
     heldBy_layout: '因布局规划器而暂停。在规划器中运行磨坊即可恢复。',

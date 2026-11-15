@@ -198,7 +198,7 @@ export const layoutPlannerMessages = defineMessages({
     estimatedComparison: '估算对比',
     measure: '指标',
     current: '当前',
-    proposal: '提议',
+    proposal: '方案',
     vehicleTravel: '车辆行驶（米/时）',
     stagingHandling: '暂存区搬运（米/时）',
     slowZoneVisits: '慢速区通行（次/时）',

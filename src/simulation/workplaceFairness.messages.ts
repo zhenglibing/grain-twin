@@ -113,7 +113,7 @@ export const workplaceFairnessMessages = defineMessages({
     questionCharters:
       '记录的方案顺序一致。请把收尾章程与每个角色的公开报酬和补休回执同实际交付一起比较。还有哪些运行条件需要核验？',
     questionMatched:
-      '收尾章程与记录的方案顺序一致。提货时间或公开角色回执中什么发生了变化？接下来你们会一起核验哪种观察？',
+      '收尾章程与记录的方案顺序一致。提货时间或公开角色回执中发生了什么变化？接下来你们会一起核验哪种观察？',
   },
   'pt-BR': {
     objectionDetailPartial:

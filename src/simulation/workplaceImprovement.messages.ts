@@ -129,7 +129,7 @@ export const workplaceImprovementMessages = defineMessages({
     outcomeTightCash:
       '在这个场景中，扣除 108 点数的工资预留后还剩 8 点数。常规节奏花费 0；新的带薪简报花费 8；新的缓冲花费 32，无力负担。实际现金保持不变。',
     outcomeSmallerKnown:
-      '最多商讨从已知已放行库存中交付 {kg} kg，并以提货与质量为前提。其余仍为欠付。不假定任何交付或客户接受。',
+      '从已知已放行库存中最多商讨 {kg} kg 的交付，并以提货与质量为前提。其余仍为欠付。不假定任何交付或客户接受。',
     outcomeSmallerUnknown:
       '在已放行库存与剩余承诺已知之后，再商讨更小的交付。客户仍必须接受任何变更；不会产生任何计入。',
     outcomeOrdinary:

@@ -150,7 +150,7 @@ export const operationsCampaignMessages = defineMessages({
 
     // Execution stage messages
     execPlanning: '生产路线已规划。',
-    execPackedResting: '本订单其余部分已包装完毕，产线待机，等待发运取货。',
+    execPackedResting: '本订单其余部分已包装完毕，产线待机，等待发运提货。',
     execPackedPrestaging:
       '本订单其余部分已包装完毕、正在等待卡车，产线已开始 {customer} 的下一个承诺。',
     execProcessing: '正在为活动配方加工{material}。',

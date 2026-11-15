@@ -377,7 +377,7 @@ CSS classes, keys and URLs.
 | layout planning | 布局规划 |
 | layout | 布局 |
 | current layout / proposed layout | 当前方案 / 提议方案 |
-| proposal | 方案 |
+| proposal | 方案（本组限布局规划语境；车间治理 proposal=提案 见批次④钉词行） |
 | capture (current layout) | 采集 |
 | active seconds | 作业秒数 |
 | material seconds | 物料秒数 |
@@ -453,7 +453,7 @@ CSS classes, keys and URLs.
 | forecast | 预测 |
 | handoff experiment | 交接实验 |
 | member review | 成员评审 |
-| cooperative workplace (step) | 工作场所协作（步骤） |
+| cooperative workplace (step) | 车间协作（步骤）（原 工作场所 为 B3 旧例，批次⑥终审统一，见裁决补注行） |
 
 批次③（生产数据组）补充基线 — 后续批次必须沿用：
 
@@ -1234,6 +1234,13 @@ CSS classes, keys and URLs.
 | staffed grain-mill digital twin / one continuous world | 有人值守的谷物磨坊数字孪生 / 连续统一的世界（有人值守、数字孪生、连续统一的厂区 沿批次①/④钉词） |
 | 叉车警报样本（AlertSystem dev 演示）：Maintenance Complete / Temperature Rising / Target Met / Low Stock / Conveyor Check / belt tension nominal | 维护完成（productionStore 同键同译）/ 温度升高 / 目标达成 / 库存不足 / 输送机检查 / 皮带张力正常 |
 | typed live region（critical/warning） | 危急警报 / 警告警报（zh 函数镜像 pt-BR 映射，en 原样读出） |
+
+批次⑥（终审孤儿移交收尾）裁决补注 — 后续批次必须沿用：
+
+| English | zh |
+|---|---|
+| pickup (forklift pose) vs outbound pickup | 取货（叉车姿态）vs 提货（外发提货）——分立 |
+| workplace | 车间（pace.messages 工作场所 为 B3 旧例，已统一） |
 
 批次③终审接受项与已知计量假象（check-zh-progress 读数口径）：
 

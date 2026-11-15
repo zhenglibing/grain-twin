@@ -89,7 +89,7 @@ export const deliveryJourneyMessages = defineMessages({
     qualityHoldDetail: '{qualityTarget} {reason}请在概览中查看质检控制项，并在装载前解除放行条件。',
     qualityHoldUnknown: '发运质量放行暂不可用。',
     departureRule: '只有已离场的运单才计入该客户；仅包装好 {product} 并不算数。',
-    packedRest: ' 本订单其余部分已包装完毕；产线待机，直到下一辆卡车前来取货。',
+    packedRest: ' 本订单其余部分已包装完毕；产线待机，直到下一辆卡车前来提货。',
     packedRestNext:
       ' 本订单其余部分已包装完毕，正在等待下一辆卡车；产线已转入 {customer} 的下一个承诺。',
     tripStatus: (p: { loads: number; loadsText: string; capacity: string; left: string }) =>

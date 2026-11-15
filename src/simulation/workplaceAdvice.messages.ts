@@ -90,7 +90,7 @@ export const workplaceAdviceMessages = defineMessages({
     missingOrder: '活动订单与配方不可用。',
     missingExecution: '订单执行事实已过期或不匹配。',
     missingSession: '任务与物料会话不匹配。',
-    missingControls: '需要有限的有界生产控制与一个正的恢复速度（9 至 3600x）。',
+    missingControls: '需要有界的生产控制与一个正的恢复速度（9 至 3600x）。',
     missingClock: '物料时钟无效。',
     missingRelease: '直接质量放行不可用。',
     missingLoad: '直接发运装载不可用。',
