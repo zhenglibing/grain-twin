@@ -1087,6 +1087,37 @@ CSS classes, keys and URLs.
 | 历史注记行文数字约定：试验目标等游戏口径数值用半角阿拉伯数字（20,000 千克、0.08），叙事计数可用中文数字（十四人、十五版） | — |
 | 人名/地名/著作：通行译名 + 首次出现括注原文（维特鲁威、吉萨、佩皮二世、征服者威廉、奥利弗·埃文斯、布达佩斯、罗奇代尔、蒙德拉贡等）；无通行译名的机构名保留原文（Ancient Egypt Research Associates） | — |
 
+批次⑤（磨坊纪事测验与描述/记录，Task 5 quiz.messages + record.messages + describe.messages）补充基线 — 后续批次必须沿用：
+
+| English | zh |
+|---|---|
+| 测验题干/选项：答案措辞沿用 history zh 原词（二粒小麦与大麦／乌鸦之墙／冷硬铸铁／沿水平面回旋／集尘器／每夸特 80 先令 等）；选项索引即正确性映射，只译文本 | — |
+| glazes faience（磨谷仆从像材质） | 上釉费昂斯 |
+| St Elmo’s fire / the sweating sickness / the king’s evil（麦角题干扰项） | 圣艾尔摩之火 / 汗热病 / 国王的恶疾（圣安东尼之火 沿用 Task 4） |
+| 面包师的一打题四个英语短语选项 | 汉语释义 + 半角括注原文（“面包师的一打”（a baker’s dozen）） |
+| 蒙德拉贡公司名选项（Eroski/Ulgor/Orona/Irizar） | 公司名保留原文（永不翻译清单） |
+| 记录条目标签：全部沿用事件/管家卡组原词（待命保障→接收区/磨辊层/发运场院、遭雹灾农场、半路弃单、一个作物年的解约预告、磨坊场院、老粮仓、意面坊、村里的面包房、纸袋供应商、大门口清点、同等的通融、场院底下的涵洞、开关设备、防洪墙、谷地大会、储备金、清洁记录、筛理层、复牌审计、优先购买权、合作社条款、提货、大型移动平筛） | — |
+| (a front) held / fell on the long night（引擎记录条目） | 接收区与谷仓／磨辊层在长夜中守住了／失守（守住、失守 沿用 Task 1） |
+| 磨坊性格绰号：the Growers’/Bakers’/Ledger Mill、the Mill of Record、the Valley’s/Steady Mill | 种植户的磨坊 / 面包师的磨坊 / 会算账的磨坊 / 记录在案的磨坊 / 谷地的磨坊 / 稳当的磨坊（接入 presentation completeBody“唤作{character}”无空格模板） |
+| standing（县食品标准局 1-9 评信；Task 6 ScoreTab/Overview 沿用） | 信誉（信誉不低于 {standing}／信誉 {value}） |
+| approval in force（condition7） | 认证有效（认证、被暂停、复牌 沿用 Task 3） |
+| condition3/4 档位拼接：{party}关系{tier}／{party}关系非{tier}；condition8-10 = 冷淡/中立/亲善（与 longNight m8“{party}关系亲善”终态一致） | — |
+| not: {mark}（condition1，未设标记的解锁条件） | 未记录：{mark} |
+| read “{title}”（condition2，已读史料注记） | 读过“{title}” |
+| 或（condition0，longNight m7 沿用；拼接代码两侧的半角空格为机制产物） | — |
+| describe 效果条目：production/energy/wear/quality/reinvestment/upkeep/fund/know-how | 生产 x{value} / 能耗 x{value} / 磨损 x{value} / 质量 {value} / 再投资 {value}% / 维护费 x{value} / 基金 {value} / 技术诀窍 {value}（维护费、基金、技术诀窍 沿用 Task 1） |
+| forecasts {value} points（m5，事件预测概率修正） | 预测 {value} 点（预测 沿用 Task 1“预测概率”） |
+| {effects} for {shifts} shift/shifts（m9-m11） | {effects}，持续 {shifts} 个班次（个班次 沿用 Task 1 presentation） |
+| all customers（m12） | 所有客户 |
+| prepares {front} for the long night（m14） | 让{front}为长夜备战（{front} 接 longNight 战线 zh 名，无空格） |
+| {forecast} -{value} points（m15，预报缓解） | {forecast} -{value} 点 |
+| approval restored（m17） | 认证已恢复 |
+| the AI partner rules the rest{rulings}（m18） | 其余由 AI 伙伴裁定{rulings}（由 AI 伙伴裁定 沿用 Task 1；{rulings} 内的半角冒号与逗号为拼接机制产物） |
+| treats this crop year（m19） | 处理本作物年（本作物年 沿用 Task 1） |
+| raises: {incident}（m20） | 触发：{incident}（触发 沿用 Task 1“磨坊纪事触发的事件”） |
+| closes the inspection（m21） | 结束检查 |
+| describe/record 分号拼接（describe.ts/record.ts join('; '、', ')） | 半角分号/逗号为拼接机制产物，与 pt-BR 同；不改动代码 |
+
 批次③终审接受项与已知计量假象（check-zh-progress 读数口径）：
 
 - 接受项：实验室 partial-carry（个别串作 实验室，全称 质检实验室，defensible）；报警阈值 soft-orphan（已入表，暂无渲染串沿用，钉后续批次）；千克 a11y（PlayableShift truckLoadValueText 无障碍朗读串拼 千克，与可见 kg 并存，defensible）。
