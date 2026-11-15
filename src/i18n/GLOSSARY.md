@@ -1019,6 +1019,35 @@ CSS classes, keys and URLs.
 | holds {front} / hold / fall（终夜战线按钮片段） | 守住{front} / 守住 / 失守（守住/失守 沿用 Task 1 钉词） |
 | Upkeep of {due} is due / decrepit plant | 应缴维护费 {due} / 年久失修的厂房 |
 
+批次⑤（磨坊纪事管家卡组，Task 3 stewardDeck）补充基线 — 后续批次必须沿用：
+
+| English | zh |
+|---|---|
+| standby cover / standby service firm / fitters | 待命保障 / 待命维修公司 / 维修工 |
+| switch room | 配电室 |
+| dispatch yard | 发运场院 |
+| contract committee / arbitrator / at arbitration | 合约委员会 / 仲裁人 / 在仲裁中 |
+| ticketed weight / short-weighted lots / dock (a payment) | 磅单重量 / 缺重的批次 / 扣减（货款） |
+| crop year’s notice (on a … notice) | 一个作物年的解约预告 |
+| granary（与 grain stores 谷仓 相区分） | 粮仓 |
+| community bakery / village bakery | 社区面包房 / 村里的面包房 |
+| deeds / east bin / seed merchant | 地契 / 东仓 / 种子商 |
+| short-counted bales / counted at the gate | 缺数的袋捆 / 在大门口清点 |
+| County Food Standards / approval / suspended / reinstatement | 县食品标准局 / 认证 / 被暂停 / 复牌（复牌审计） |
+| cleaning log / cleaning sheets / night cleaning log | 清洁记录 / 清洁记录表 / 夜班清洁记录 |
+| backdate (the sheets) | 倒填（记录表） |
+| stonemason / dressed stone / bore（涵洞孔径） | 石匠 / 琢石 / 孔径 |
+| switchgear / busbar (joints) / contactor / shutdown | 开关设备 / 母排（接头） / 接触器 / 停产 |
+| quarry / quarry road / flood wall / reservoir works | 采石场 / 采石场的路 / 防洪墙 / 水库工程 |
+| valley meeting / village hall | 谷地大会 / 村礼堂 |
+| Rochdale principles | 罗奇代尔原则 |
+| the reserve / rebate（谷地让利） | 储备金 / 让利 |
+| mobile sifter / plant-hire firm / certified unit / low-loader | 移动平筛 / 设备租赁公司 / 认证机组 / 低板拖车 |
+| city wholesaler / premium / first call | 城里的批发商 / 溢价 / 优先购买权 |
+| storm front / grid emergency | 风暴锋面 / 电网紧急状况（沿用 longNight nightBody） |
+| put its own hands on (a front) | 亲自照看（战线） |
+| collections（承运方提货业务） | 提货（沿用来粮→提货 钉词；承运方 沿用 Task 2） |
+
 批次③终审接受项与已知计量假象（check-zh-progress 读数口径）：
 
 - 接受项：实验室 partial-carry（个别串作 实验室，全称 质检实验室，defensible）；报警阈值 soft-orphan（已入表，暂无渲染串沿用，钉后续批次）；千克 a11y（PlayableShift truckLoadValueText 无障碍朗读串拼 千克，与可见 kg 并存，defensible）。
