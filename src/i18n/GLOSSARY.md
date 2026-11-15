@@ -568,7 +568,7 @@ CSS classes, keys and URLs.
 | challenge（动词，质疑提案）/ challengeable | 质疑 / 可质疑（挑战状态名词 挑战 沿用批次③） |
 | proposal（车间治理语境） | 提案（布局规划 proposal=方案 另词） |
 | remedy / repair | 补救 / 修复 |
-| understanding check / policy vote / policy yes / policy no | 理解检查 / 政策表决 / 政策赞成 / 政策反对 |
+| understanding check / policy vote / policy yes / policy no | 理解检查 / 政策表决 / 政策赞成 / 政策反对（裸状态标签三处保留 政策反对：WorkplaceLab.policyNoStatus/policyNo、workplaceFairness.beatRefusalEvidence；整句 nextPolicyNo 作 政策反对票，批次⑥ Task 1 改写） |
 | preference sharing / shared preference | 偏好共享 / 已共享偏好 |
 | work choice / individual work choice / team work choice | 工作选择 / 个人工作选择 / 团队工作选择 |
 | worker decisions / directed assignments | 工人决策 / 指派任务 |
@@ -692,7 +692,7 @@ CSS classes, keys and URLs.
 | autonomous cooperative season / take over | 自主合作社加工季 / 接管（autonomous 形容词=自主 沿用钉词） |
 | pressure chapter / a working agreement under pressure | 压力章节 / 压力之下的工作协议 |
 | offer（周四协商的条款报价）/ revised offers / revised terms / fresh offer | 报价 / 修订后的报价 / 修订条款 / 新报价 |
-| acknowledged / awaiting current answers（顾问边界） | 已确认 / 待答当前问题 |
+| acknowledged / awaiting current answers（顾问边界） | 已确认 / 等待当前答复（批次⑥自然化：原 coin 待答当前问题，PressureChapter.awaitingAnswers 已改写） |
 | open（objection 陈述行前缀） | 未决：{statement}（open=未决 沿用钉词） |
 | protected inspection（five-minute inspection） | 受保护检查（质量启动五分钟检查） |
 | restate the terms / restate protected terms | 重申条款 / 重申受保护条款（沿用 Task 2） |
@@ -1165,7 +1165,7 @@ CSS classes, keys and URLs.
 | 宪章厂房档：Recently overhauled / wear x0.85, fund 300；Working plant；Tired machinery | 近期大修 / 磨损 x0.85，基金 300；运转正常的厂房；劳损的机器（磨损、基金 沿 Task 1；x 倍数与数值半角） |
 | 宪章客户/时运档：Loyal locals / Mixed book / Demanding buyers；customers start warm/neutral/cool；Kind/Even/Hard fortune；Fortune | 忠实的本地客户 / 混杂的客户簿 / 苛求的买家；客户初始亲善/中立/冷淡（亲善、冷淡 沿 Task 5/6 关系档）；仁厚的时运 / 均衡的时运 / 艰难的时运；时运 |
 | 宪章模式档与栏目：Historical chronicle / trials, events and forecasts；No trials / events and forecasts only；Sandbox / no events or trials；Grain supply / Plant condition / Customers / Chronicle | 史实纪事 / 试验、事件与预测；无试验 / 仅事件与预测；沙盒 / 无事件与试验；来粮 / 厂房状况 / 客户 / 磨坊纪事（来粮 沿 Task 3 来粮→提货 钉词侧） |
-| 结局卷行文复用（ steward/record 既有词全量沿用）：垫付（advance）/ 免复检放行 / 地磅 / 山上农场 / 缺重的批次 / 扣减货款 / 提货 / 车场（depot）/ 租赁铭牌（lease plates）/ 地契（deeds 双关）/ 粗粒粉（semolina）/ 仓房（barn）/ 学生餐厨房 / 复牌审计 / 议事沿例（the custom stuck）/ 同等的通融→讨个宽限 / 优先购买权 / 合作社条款 / 斑点面粉 | — |
+| 结局卷行文复用（ steward/record 既有词全量沿用）：垫付（advance）/ 免复检放行 / 地磅 / 山上农场 / 缺重的批次 / 扣减货款 / 提货 / 车场（depot）/ 租赁铭牌（lease plates）/ 地契（deeds 双关）/ 粗粒粉（semolina）/ 仓房（barn）/ 学生餐厨房 / 复牌审计 / 议事沿例（the custom stuck）/ 同等的通融→讨个宽限 / 优先购买权 / 合作社条款 / 斑点面粉（provenance 更正：非 steward/record 沿用——批次④新 coin，接 eventDeck 斑点 specks 根词，epilogue m43 首用） | — |
 | Riverside Bakers’ Cooperative（结局卷 m40） | 保留原文（沿 Task 3 evt-premium-buyer zh 行文；County School Meals 同例） |
 | 结局卷模板：The valley came to call it {character}. / rated the mill {standing} of 9 / , under suspension / made every one of the {total} decisions / made {partner} of the {total} decisions | 山谷间把它唤作{character}。（与 ScoreTab m11 同式）/ {certifier} 给磨坊的信誉评了 {standing}/9{suffix}（信誉 X/9 沿 Task 6；{certifier}=County Food Standards 拉丁专名后留半角空格）/ ，认证已暂停 / AI 伙伴作出了纪事中全部 {total} 项决断。/ AI 伙伴作出了纪事中 {partner}/{total} 项决断。（决断 沿 Task 4；纪事 沿 Task 6） |
 | 试验名（trials.messages m0-m14 标题与简报，沿 Task 4 史料注记原词）：The Wet Harvest / The Inspection / The Bakers’ Rush / Grid Winter / The Great Programme | 湿收 / 检查 / 面包房抢货潮 / 电网之冬 / 大工程计划（标题裸用不加引号；史料行文引用时带 “”） |
@@ -1181,6 +1181,14 @@ CSS classes, keys and URLs.
 | 作物年名（cropYears，仅显示串；crop 数据为 canonical 不动）：Ordinary / Bountiful / Hot, dry / Wet / Sprouted harvest | 寻常年成 / 丰饶年成 / 炎热干燥的年成 / 湿收年成 / 穗发芽年成（湿收 沿试验名；穗发芽 沿 Task 2） |
 | 台账来源行（ledger）：Opening fund / Reinvested contribution / Loyalty premium / Events / Plant upkeep / Forecast mitigations / Plan installs / Contractor retainers / Refunds / Fire suppression | 期初基金 / 再投入的贡献（沿 Task 4 罗奇代尔注记原词）/ 忠诚溢价 / 事件 / 厂房维护费 / 预测缓解 / 方案安装 / 承包商留用费 / 退款 / 火灾扑救（扑救 沿 Task 1） |
 | 台账诀窍/经济行：Shift grades / Passed QC tests / History notes read / Quiz answers / Trial and challenge medals / Plans drawn up / Forced maintenance / Members library / Spent on events；Revenue / Energy / Automation / Waste / Maintenance work orders / Demurrage / Late and quality penalties | 班次等级分 / 通过的质检测试 / 已读的历史注记 / 测验答题 / 试验与恢复挑战奖牌 / 拟定的方案 / 强制维护 / 成员图书馆 / 事件支出；来自已发运承诺的收入 / 能耗 / 自动化 / 损耗 / 维护工单 / 滞留费 / 迟交与质量罚金（等级分 沿 Task 6；强制维护 沿 Task 2；迟交与质量罚金 沿 PlayableShift；滞留 沿PlayableShift 装卸区滞留） |
+
+批次⑥（终审钉词/仲裁收尾，Task 2 术语表收尾）补充基线 — 后续批次必须沿用：
+
+| English | zh |
+|---|---|
+| a season (flour) | 产季（epilogue m43 一个产季的斑点面粉；别于批次④ 加工季 adoption season） |
+| record (The Chronicle) | 纪事（dock 短标签同） |
+| open exceptions vs open incidents | 未决的异常（objections）vs 未结事件（incidents）——分立勿混（exceptions=异常，见 AgentCockpit.noExceptions；未结事件 沿批次④钉词） |
 
 批次③终审接受项与已知计量假象（check-zh-progress 读数口径）：
 
