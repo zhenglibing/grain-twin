@@ -1083,6 +1083,7 @@ CSS classes, keys and URLs.
 | Corn Laws / quarter（夸特谷物计量）/ shilling / Anti-Corn Law League / sliding scale | 《谷物法》/ 夸特（quarter）/ 先令 / 反谷物法同盟 / 滑动税率 |
 | Rochdale Society of Equitable Pioneers / Toad Lane / one member, one vote | 罗奇代尔公平先锋社 / 蟾蜍巷（Toad Lane）/ 一人一票 |
 | Mondragon / Caja Laboral Popular | 蒙德拉贡 / Caja Laboral Popular（合作银行名保留原文） |
+| Budapest rolls / roller mill | 布达佩斯磨辊 / 辊式磨 |
 | 历史注记行文数字约定：试验目标等游戏口径数值用半角阿拉伯数字（20,000 千克、0.08），叙事计数可用中文数字（十四人、十五版） | — |
 | 人名/地名/著作：通行译名 + 首次出现括注原文（维特鲁威、吉萨、佩皮二世、征服者威廉、奥利弗·埃文斯、布达佩斯、罗奇代尔、蒙德拉贡等）；无通行译名的机构名保留原文（Ancient Egypt Research Associates） | — |
 
