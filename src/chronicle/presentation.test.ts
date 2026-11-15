@@ -307,7 +307,7 @@ describe('saved Chronicle presentation', () => {
       'Bonus: reinvestment +5%, wear x0.9.'
     );
     const local = localizedNotice(old);
-    expect(local.title).toBe('新时代：Cooperative mill');
+    expect(local.title).toBe('新时代：合作社磨坊');
     expect(local.body).toBe('奖励：再投资 +5%、磨损 x0.9。');
   });
   it('translates a recognised initiative under zh and keeps edited ones verbatim', () => {

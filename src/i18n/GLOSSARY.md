@@ -1155,10 +1155,37 @@ CSS classes, keys and URLs.
 | '{forecast} -{relief}%' / '{crop} penalty down to {value}' / 'no {crop} penalty'（方案效果摘要） | {forecast} -{relief}% / {crop}罚值降至 {value} / 无{crop}罚值（罚值 沿批次④；{forecast}/{crop} 接 Task 7 标签） |
 | 拼接机制产物（不改代码）：JSX 侧空格与半角冒号——"人工清理， 20 分钟"、"45%， 3 个班次"、"距开始还有 3 个班次: 目标"、effectSummary 的 ", " 连接 | — |
 
+批次⑤（磨坊纪事数据小件，Task 7 charter + epilogue + trials + plans + stakeholders + contractors + forecasts + delegation + desks + cropYears + ledger）补充基线 — 后续批次必须沿用：
+
+| English | zh |
+|---|---|
+| 段位阶梯再钉（ScoreTab x25-x33 渲染键；与 Task 1 presentation 行逐字一致，结局卷/终局屏共用） | 运袋工 / 磨坊学徒 / 出师磨工 / 磨坊师傅 / 享有盛名的磨坊机匠 / 合作社的管家 / 联合会的创立者 / 磨坊水道的守护者 / 磨坊水道之灵 |
+| 磨坊水道家族（millstream 族）：millstream / the keeper of the millstream / the spirit of the millstream | 磨坊水道 / 磨坊水道的守护者 / 磨坊水道之灵（沿 Task 1 钉词；结局卷 m46 山谷间把它唤作{character} 的 {character} 接 Task 5 磨坊性格绰号） |
+| 宪章档位标签（charter.messages）：Cooperative growers / steady crop years；Open market / crop years vary；Marginal harvests / poor years are common | 合作社种植户 / 作物年平稳；自由市场 / 作物年有丰有歉；薄收的年成 / 歉收年份常见 |
+| 宪章厂房档：Recently overhauled / wear x0.85, fund 300；Working plant；Tired machinery | 近期大修 / 磨损 x0.85，基金 300；运转正常的厂房；劳损的机器（磨损、基金 沿 Task 1；x 倍数与数值半角） |
+| 宪章客户/时运档：Loyal locals / Mixed book / Demanding buyers；customers start warm/neutral/cool；Kind/Even/Hard fortune；Fortune | 忠实的本地客户 / 混杂的客户簿 / 苛求的买家；客户初始亲善/中立/冷淡（亲善、冷淡 沿 Task 5/6 关系档）；仁厚的时运 / 均衡的时运 / 艰难的时运；时运 |
+| 宪章模式档与栏目：Historical chronicle / trials, events and forecasts；No trials / events and forecasts only；Sandbox / no events or trials；Grain supply / Plant condition / Customers / Chronicle | 史实纪事 / 试验、事件与预测；无试验 / 仅事件与预测；沙盒 / 无事件与试验；来粮 / 厂房状况 / 客户 / 磨坊纪事（来粮 沿 Task 3 来粮→提货 钉词侧） |
+| 结局卷行文复用（ steward/record 既有词全量沿用）：垫付（advance）/ 免复检放行 / 地磅 / 山上农场 / 缺重的批次 / 扣减货款 / 提货 / 车场（depot）/ 租赁铭牌（lease plates）/ 地契（deeds 双关）/ 粗粒粉（semolina）/ 仓房（barn）/ 学生餐厨房 / 复牌审计 / 议事沿例（the custom stuck）/ 同等的通融→讨个宽限 / 优先购买权 / 合作社条款 / 斑点面粉 | — |
+| Riverside Bakers’ Cooperative（结局卷 m40） | 保留原文（沿 Task 3 evt-premium-buyer zh 行文；County School Meals 同例） |
+| 结局卷模板：The valley came to call it {character}. / rated the mill {standing} of 9 / , under suspension / made every one of the {total} decisions / made {partner} of the {total} decisions | 山谷间把它唤作{character}。（与 ScoreTab m11 同式）/ {certifier} 给磨坊的信誉评了 {standing}/9{suffix}（信誉 X/9 沿 Task 6；{certifier}=County Food Standards 拉丁专名后留半角空格）/ ，认证已暂停 / AI 伙伴作出了纪事中全部 {total} 项决断。/ AI 伙伴作出了纪事中 {partner}/{total} 项决断。（决断 沿 Task 4；纪事 沿 Task 6） |
+| 试验名（trials.messages m0-m14 标题与简报，沿 Task 4 史料注记原词）：The Wet Harvest / The Inspection / The Bakers’ Rush / Grid Winter / The Great Programme | 湿收 / 检查 / 面包房抢货潮 / 电网之冬 / 大工程计划（标题裸用不加引号；史料行文引用时带 “”） |
+| 试验行文与公式串单位分治：简报/压力拍（叙事行）用千克（6,000 千克、每千克能耗成本不超过 0.08，沿 Task 4 史料行文）；败因/目标公式串（m15-m24）用 kg（{kg} kg、{done}/{total} kg，沿 Task 1 presentation 公式族 qualityFail/cleanFail） | — |
+| 试验口径词：shift close / clean shift close / quality failure / grade points / QC test / high-severity incident / window / pressure beat / network operator / peak demand | 结班 / 合格结班 / 质量失败 / 等级分 / 质检检验 / 高严重度事件 / 时间窗 / 压力拍 / 电网运营商 / 高峰负荷（合格结班、时间窗、电网运营商 沿 Task 1/2） |
+| 时代名（plans.messages，沿 Task 4 钉词）+ Village mill | 村庄磨坊 / 合作社磨坊 / 区级磨坊 / 区域磨坊 / 联合合作社 |
+| 改良方案名：Grain moisture meters / Spare-parts store / Yard drainage works / Members library / Grain dryer / Vibration monitoring / Aspiration upgrade / Standby generator / Blending bins / Plansifter retrofit / Haulage agreement / Wind turbine / Roll regrinding shop / Heat recovery / Federated purchasing / Solar canopy | 谷物水分仪 / 备件库 / 场院排水工程 / 成员图书馆 / 谷物烘干机 / 振动监测 / 除尘升级 / 备用发电机 / 掺混仓 / 平筛改造 / 运输协议 / 风力发电机 / 磨辊重磨车间 / 热回收 / 联合采购 / 太阳能棚顶（水分仪、烘干机 沿 Task 2；除尘 沿 Task 1；掺混 沿 Task 6） |
+| 干系人行（stakeholders）：Growers’ cooperative / Valley Haulage / Village committee / Regional federation；crop treatment ±25% / road works ±{points} points / storm front -{points} points / reinvestment +{points}% | 种植户合作社 / Valley Haulage（专名不译）/ 村庄委员会 / 区域联合会；作物处理 ±25% / 道路施工 ±{points} 点 / 风暴锋面 -{points} 点 / 再投资 +{points}%（点 沿 Task 6；风暴锋面、再投资 沿 Task 3/1） |
+| 承包商特质（contractors）：Thrifty / Diligent / Careful / Expeditious / Wasteful / Neglectful / Reckless / Passive；{name}: install cost/plan effect/snag chance/install time {sign}{magnitude}% | 节俭 / 勤勉 / 细心 / 高效 / 浪费 / 疏忽 / 鲁莽 / 拖沓；{name}：安装成本/方案效果/遇阻概率/安装工期 {sign}{magnitude}%（遇阻 沿 Task 1 snag 安装遇阻；{name} 为公司拉丁专名，全角冒号紧随） |
+| 预报（forecasts）：Storm front / Grid strain / Dust load building / Road works；met office / reserve margins / voltage dips / filter differential pressure / haul road；Clear the drains / Book demand response / Pulse-clean the filters / Arrange a relief haulier | 风暴锋面 / 电网吃紧 / 粉尘负荷渐增 / 道路施工；气象台 / 备用裕度 / 电压暂降 / 过滤器压差 / 运输干道；清理排水沟 / 预订需求响应 / 脉冲清灰 / 安排替班承运方（需求响应、替班、承运方 沿 Task 2；溪流≠磨坊水道，指天然水道） |
+| 委托等级（delegation）：Advise/recommendations only；Routine/answers routine events；Forecasts/also mitigates…within 15% of the fund a shift；Plans/also starts planned installs, keeping 3 shifts of upkeep | 建议/仅提供建议；例行/处置例行事件；预测/还缓解预测、扑救火灾并恢复已缓解的事件，每班次支出不超过基金的 15%；方案/还启动计划中的安装，并保留 3 个班次的维护费（缓解、扑救、维护费、基金 沿 Task 1） |
+| 席位标签（desks，供 shared m2 “{desk}席位” 拼接）：Works / Trade / Council | 工程 / 商贸 / 议事（标签不含“席”字，拼接终态为 工程席位/商贸席位/议事席位） |
+| 作物年名（cropYears，仅显示串；crop 数据为 canonical 不动）：Ordinary / Bountiful / Hot, dry / Wet / Sprouted harvest | 寻常年成 / 丰饶年成 / 炎热干燥的年成 / 湿收年成 / 穗发芽年成（湿收 沿试验名；穗发芽 沿 Task 2） |
+| 台账来源行（ledger）：Opening fund / Reinvested contribution / Loyalty premium / Events / Plant upkeep / Forecast mitigations / Plan installs / Contractor retainers / Refunds / Fire suppression | 期初基金 / 再投入的贡献（沿 Task 4 罗奇代尔注记原词）/ 忠诚溢价 / 事件 / 厂房维护费 / 预测缓解 / 方案安装 / 承包商留用费 / 退款 / 火灾扑救（扑救 沿 Task 1） |
+| 台账诀窍/经济行：Shift grades / Passed QC tests / History notes read / Quiz answers / Trial and challenge medals / Plans drawn up / Forced maintenance / Members library / Spent on events；Revenue / Energy / Automation / Waste / Maintenance work orders / Demurrage / Late and quality penalties | 班次等级分 / 通过的质检测试 / 已读的历史注记 / 测验答题 / 试验与恢复挑战奖牌 / 拟定的方案 / 强制维护 / 成员图书馆 / 事件支出；来自已发运承诺的收入 / 能耗 / 自动化 / 损耗 / 维护工单 / 滞留费 / 迟交与质量罚金（等级分 沿 Task 6；强制维护 沿 Task 2；迟交与质量罚金 沿 PlayableShift；滞留 沿PlayableShift 装卸区滞留） |
+
 批次③终审接受项与已知计量假象（check-zh-progress 读数口径）：
 
 - 接受项：实验室 partial-carry（个别串作 实验室，全称 质检实验室，defensible）；报警阈值 soft-orphan（已入表，暂无渲染串沿用，钉后续批次）；千克 a11y（PlayableShift truckLoadValueText 无障碍朗读串拼 千克，与可见 kg 并存，defensible）。
-- 计量假象：`i18n.test.ts` 两个 `@ts-expect-error` 残缺 fixture 目录是编译期测试本体，其键永久计入“未翻译”；`websocketUrl`（SCADA）等 zh===en 为合法同文键。ZoneLabels 补完后，全局“未翻译”仅剩 fixture 残缺键与 zh===en 合法同文键。同文键新增（批次④ Task 4，与 websocketUrl 同类，pt-BR 亦同文）：`WorkplaceImprovementPanel.kgValue`（'{kg} kg'）与 `WorkplacePackingEvidence.kg`（'{value} kg'）——纯数值格式串，单位按钉词保持半角 kg，读数 96/97、94/95 视为达标。同文键新增（批次⑤ Task 6，与 kgValue 同类，pt-BR 亦同文）：`PlansTab.p17`（'{forecast} -{relief}%'）——纯符号格式串（占位符 + 半角减号与百分号），无可译文字，读数 29/30 视为达标。
+- 计量假象：`i18n.test.ts` 两个 `@ts-expect-error` 残缺 fixture 目录是编译期测试本体，其键永久计入“未翻译”；`websocketUrl`（SCADA）等 zh===en 为合法同文键。ZoneLabels 补完后，全局“未翻译”仅剩 fixture 残缺键与 zh===en 合法同文键。同文键新增（批次④ Task 4，与 websocketUrl 同类，pt-BR 亦同文）：`WorkplaceImprovementPanel.kgValue`（'{kg} kg'）与 `WorkplacePackingEvidence.kg`（'{value} kg'）——纯数值格式串，单位按钉词保持半角 kg，读数 96/97、94/95 视为达标。同文键新增（批次⑤ Task 6，与 kgValue 同类，pt-BR 亦同文）：`PlansTab.p17`（'{forecast} -{relief}%'）——纯符号格式串（占位符 + 半角减号与百分号），无可译文字，读数 29/30 视为达标。同文键新增（批次⑤ Task 7，专有公司名，永不翻译清单，pt-BR 亦同文）：`epilogue.m14` 与 `stakeholders.m2`（'Valley Haulage'，与 Task 5 record.messages 行文同例）——读数 49/50、12/13 视为达标。
 
 zh 风格规则（与计划 Global Constraints 一致）：
 1. `{name}` 占位符原样保留；2. 函数消息签名不变；3. 全角标点、

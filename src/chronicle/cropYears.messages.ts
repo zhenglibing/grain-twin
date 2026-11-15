@@ -9,11 +9,11 @@ const catalog = defineMessages({
     m4: 'Sprouted harvest',
   },
   zh: {
-    m0: 'Ordinary harvest',
-    m1: 'Bountiful harvest',
-    m2: 'Hot, dry harvest',
-    m3: 'Wet harvest',
-    m4: 'Sprouted harvest',
+    m0: '寻常年成',
+    m1: '丰饶年成',
+    m2: '炎热干燥的年成',
+    m3: '湿收年成',
+    m4: '穗发芽年成',
   },
   'pt-BR': {
     m0: 'Colheita normal',

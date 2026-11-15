@@ -7,9 +7,9 @@ const catalog = defineMessages({
     m2: 'Council',
   },
   zh: {
-    m0: 'Works',
-    m1: 'Trade',
-    m2: 'Council',
+    m0: '工程',
+    m1: '商贸',
+    m2: '议事',
   },
   'pt-BR': {
     m0: 'Obras',
