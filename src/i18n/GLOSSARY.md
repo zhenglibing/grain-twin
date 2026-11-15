@@ -1048,6 +1048,44 @@ CSS classes, keys and URLs.
 | put its own hands on (a front) | 亲自照看（战线） |
 | collections（承运方提货业务） | 提货（沿用来粮→提货 钉词；承运方 沿用 Task 2） |
 
+批次⑤（磨坊纪事历史注记，Task 4 history.messages）补充基线 — 后续批次必须沿用：
+
+| English | zh |
+|---|---|
+| charter（磨坊纪事宪章，CharterScreen 语境） | 宪章（别于批次④车间试点章程） |
+| 试验名：The Great Programme / The Wet Harvest / The Inspection / The Bakers' Rush / Grid Winter | “大工程计划” / “湿收” / “检查” / “面包房抢货潮” / “电网之冬”（Task 7 trials.messages 沿用） |
+| 时代名：cooperative mill / district mill / regional mill / federated cooperative | 合作社磨坊 / 区级磨坊 / 区域磨坊 / 联合合作社（Task 7 plans.messages 沿用） |
+| saddle quern / handstone | 马鞍形石磨盘（saddle quern）/ 手磨石 |
+| emmer / hulled wheat / chaff | 二粒小麦（emmer）/ 带壳小麦 / 皮壳 |
+| nilometer / cubit | 尼罗尺（nilometer）/ 腕尺 |
+| nome / nomarch / governor（埃及行省语境） | 诺姆（nome）/ 诺姆长（nomarch）/ 总督（governor） |
+| Domesday Book | 《末日审判书》（Domesday Book） |
+| millstone / race（水磨水道，别于 millstream 磨坊水道） | 磨石 / 水道 |
+| post mill / tailpole / roundhouse | 支柱磨（post mill）/ 尾杆 / 底层圆棚 |
+| millwright（沿用 Task 2 磨坊机匠） | 磨坊机匠 |
+| bucket elevator / screw conveyor / hopper boy / marine leg | 斗式提升机 / 螺旋输送机 / hopper boy（料斗耙）/ 船用提升臂（marine leg） |
+| grain elevator（布法罗语境的建筑） | 谷物提升塔（grain elevator） |
+| high milling / gradual reduction | 高度研磨法（high milling）/ 逐级研磨 |
+| chilled cast iron | 冷硬铸铁 |
+| conditioning / tempering | 调理（conditioning）/ 润麦（tempering）（conditioned=已调理 沿用 Task 1） |
+| extraction rate / grist（配麦语境） | 出粉率 / 配麦（在磨物料=grist 另指，沿用批次④） |
+| falling number（沿用 Task 2） | 降落数值 |
+| gravity table / colour sorter | 重力分选台 / 色选机 |
+| ergot / Claviceps purpurea / ergotism / St Anthony's Fire / Order of St Anthony | 麦角 / 麦角菌（Claviceps purpurea）/ 麦角中毒 / 圣安东尼之火 / 圣安东尼修会 |
+| line shaft / (electric) drive | 天轴（line shaft）/ 电力传动 |
+| tide mill / mill pond / sluice | 潮汐磨坊 / 磨池 / 闸门 |
+| SCADA（supervisory control and data acquisition） | 监控与数据采集（SCADA 缩写本身保留） |
+| mimic panel / remote terminal unit / programmable logic controller | 模拟屏（mimic panel）/ 远程终端单元 / 可编程逻辑控制器 |
+| Assize of Bread and Ale / farthing / court-leet / baker's dozen | 《面包与麦酒法令》（Assize of Bread and Ale）/ 法新（farthing）/ 庄园法庭（court-leet）/ a baker's dozen（面包师的一打，即十三个） |
+| alum / public analyst | 明矾 / 公共分析师 |
+| Chorleywood (bread) process | 乔利伍德（面包）工艺 |
+| National Flour / extraction rate 85% | “国家面粉”（National Flour）/ 85% 出粉率 |
+| Corn Laws / quarter（夸特谷物计量）/ shilling / Anti-Corn Law League / sliding scale | 《谷物法》/ 夸特（quarter）/ 先令 / 反谷物法同盟 / 滑动税率 |
+| Rochdale Society of Equitable Pioneers / Toad Lane / one member, one vote | 罗奇代尔公平先锋社 / 蟾蜍巷（Toad Lane）/ 一人一票 |
+| Mondragon / Caja Laboral Popular | 蒙德拉贡 / Caja Laboral Popular（合作银行名保留原文） |
+| 历史注记行文数字约定：试验目标等游戏口径数值用半角阿拉伯数字（20,000 千克、0.08），叙事计数可用中文数字（十四人、十五版） | — |
+| 人名/地名/著作：通行译名 + 首次出现括注原文（维特鲁威、吉萨、佩皮二世、征服者威廉、奥利弗·埃文斯、布达佩斯、罗奇代尔、蒙德拉贡等）；无通行译名的机构名保留原文（Ancient Egypt Research Associates） | — |
+
 批次③终审接受项与已知计量假象（check-zh-progress 读数口径）：
 
 - 接受项：实验室 partial-carry（个别串作 实验室，全称 质检实验室，defensible）；报警阈值 soft-orphan（已入表，暂无渲染串沿用，钉后续批次）；千克 a11y（PlayableShift truckLoadValueText 无障碍朗读串拼 千克，与可见 kg 并存，defensible）。
