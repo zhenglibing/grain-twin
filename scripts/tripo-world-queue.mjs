@@ -30,7 +30,8 @@ export const sha = (bytes) => createHash('sha256').update(bytes).digest('hex');
 function save(file, value) {
   const temp = `${file}.tmp`;
   writeFileSync(temp, JSON.stringify(value, null, 2) + '\n', { mode: 0o600 });
-  const fd = openSync(temp, 'r');
+  // 'r+', not 'r': fsync on a read-only handle is EPERM on Windows.
+  const fd = openSync(temp, 'r+');
   try {
     fsyncSync(fd);
   } finally {

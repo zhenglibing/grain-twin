@@ -10,6 +10,21 @@ vi.setConfig({ testTimeout: 60_000 });
 import { readFile, writeFile, mkdtemp, rm, symlink, realpath } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
+
+// Creating symlinks on Windows needs Developer Mode or administrator rights;
+// probe once so unprivileged machines still run every output guard that does
+// not require one, and skip only the symlink-alias parts.
+const canSymlink = await (async () => {
+  const link = path.join(tmpdir(), `symlink-probe-${process.pid}-${Date.now()}`);
+  try {
+    await symlink(path.resolve('package.json'), link);
+    return true;
+  } catch {
+    return false;
+  } finally {
+    await rm(link, { force: true });
+  }
+})();
 import { NodeIO, VERSION } from '@gltf-transform/core';
 import {
   INPUT,
@@ -360,12 +375,14 @@ test('output guard rejects runtime/source,existing files,file symlinks and direc
   const ordinary = path.join(temp, 'exists.glb');
   await writeFile(ordinary, 'immutable');
   await expect(safeOutput(ordinary)).rejects.toThrow('immutable');
-  const alias = path.join(temp, 'link.glb');
-  await symlink(ordinary, alias);
-  await expect(safeOutput(alias)).rejects.toThrow('symlink');
-  const dir = path.join(temp, 'public-alias');
-  await symlink(path.resolve('public'), dir);
-  await expect(safeOutput(path.join(dir, 'new.glb'))).rejects.toThrow('outside');
+  if (canSymlink) {
+    const alias = path.join(temp, 'link.glb');
+    await symlink(ordinary, alias);
+    await expect(safeOutput(alias)).rejects.toThrow('symlink');
+    const dir = path.join(temp, 'public-alias');
+    await symlink(path.resolve('public'), dir);
+    await expect(safeOutput(path.join(dir, 'new.glb'))).rejects.toThrow('outside');
+  }
   expect(await safeOutput(path.join(temp, 'new', 'candidate.glb'))).toBe(
     path.join(temp, 'new', 'candidate.glb')
   );

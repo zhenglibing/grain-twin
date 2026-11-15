@@ -4,6 +4,21 @@ import { readFile, writeFile, mkdir, mkdtemp, rm, symlink } from 'node:fs/promis
 import { execFileSync } from 'node:child_process';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
+
+// Creating symlinks on Windows needs Developer Mode or administrator rights;
+// probe once so unprivileged machines still run every guard that does not
+// require one, and skip only the symlink-dependent parts.
+const canSymlink = await (async () => {
+  const link = path.join(tmpdir(), `symlink-probe-${process.pid}-${Date.now()}`);
+  try {
+    await symlink(path.resolve('package.json'), link);
+    return true;
+  } catch {
+    return false;
+  } finally {
+    await rm(link, { force: true });
+  }
+})();
 import { NodeIO } from '@gltf-transform/core';
 import * as THREE from 'three';
 import {
@@ -266,48 +281,52 @@ test('maps, material properties, node names, transforms, topology mode and insta
   );
 });
 
-test('candidate CLI is deterministic, within budgets, and leaves both input files byte-identical', async () => {
-  // These are byte-custody checks, not JavaScript object comparisons. Native
-  // Buffer equality checks every byte and length without enumerating millions
-  // of numeric properties under coverage instrumentation.
-  const expectIdenticalBytes = (actual, expected, label) => {
-    expect(actual.length, `${label}: byte length`).toBe(expected.length);
-    expect(actual.equals(expected), `${label}: exact bytes`).toBe(true);
-  };
-  const output = path.join(temporary, 'coop.glb');
-  // Run the original CLI against a disposable copy of its exact historical input.
-  // The installed runtime candidate remains independent and must never be overwritten.
-  const runtimeBefore = await readFile(INPUT);
-  const cliRoot = path.join(temporary, 'historical-cli');
-  await mkdir(path.join(cliRoot, 'public/models/farm'), { recursive: true });
-  await writeFile(path.join(cliRoot, INPUT), originalBytes);
-  await symlink(path.resolve('assets'), path.join(cliRoot, 'assets'));
-  execFileSync(
-    process.execPath,
-    [path.resolve('scripts/refine-coop-gable-candidate.mjs'), output],
-    {
-      stdio: 'pipe',
-      cwd: cliRoot,
-    }
-  );
-  expectIdenticalBytes(await readFile(path.join(cliRoot, INPUT)), originalBytes, 'CLI input');
-  expectIdenticalBytes(await readFile(INPUT), runtimeBefore, 'installed runtime');
-  expectIdenticalBytes(await readFile(output), Buffer.from(candidateBytes), 'CLI output');
-  expect(candidateBytes.length).toBe(335992);
-  expect(candidateBytes.length).toBeLessThanOrEqual(437000);
-  expect(primitive(candidate).getIndices().getCount()).toBe(6049 * 3);
-  expect(primitive(candidate).getIndices().getCount()).toBeLessThanOrEqual(25200);
-  expectIdenticalBytes(
-    await readFile('src/test/fixtures/farm-model-reconciliation/coop.baseline.glb'),
-    originalBytes,
-    'baseline fixture'
-  );
-  expectIdenticalBytes(await readFile(SOURCE), sourceBytes, 'provider source');
-});
+test.skipIf(!canSymlink)(
+  'candidate CLI is deterministic, within budgets, and leaves both input files byte-identical',
+  async () => {
+    // These are byte-custody checks, not JavaScript object comparisons. Native
+    // Buffer equality checks every byte and length without enumerating millions
+    // of numeric properties under coverage instrumentation.
+    const expectIdenticalBytes = (actual, expected, label) => {
+      expect(actual.length, `${label}: byte length`).toBe(expected.length);
+      expect(actual.equals(expected), `${label}: exact bytes`).toBe(true);
+    };
+    const output = path.join(temporary, 'coop.glb');
+    // Run the original CLI against a disposable copy of its exact historical input.
+    // The installed runtime candidate remains independent and must never be overwritten.
+    const runtimeBefore = await readFile(INPUT);
+    const cliRoot = path.join(temporary, 'historical-cli');
+    await mkdir(path.join(cliRoot, 'public/models/farm'), { recursive: true });
+    await writeFile(path.join(cliRoot, INPUT), originalBytes);
+    await symlink(path.resolve('assets'), path.join(cliRoot, 'assets'));
+    execFileSync(
+      process.execPath,
+      [path.resolve('scripts/refine-coop-gable-candidate.mjs'), output],
+      {
+        stdio: 'pipe',
+        cwd: cliRoot,
+      }
+    );
+    expectIdenticalBytes(await readFile(path.join(cliRoot, INPUT)), originalBytes, 'CLI input');
+    expectIdenticalBytes(await readFile(INPUT), runtimeBefore, 'installed runtime');
+    expectIdenticalBytes(await readFile(output), Buffer.from(candidateBytes), 'CLI output');
+    expect(candidateBytes.length).toBe(335992);
+    expect(candidateBytes.length).toBeLessThanOrEqual(437000);
+    expect(primitive(candidate).getIndices().getCount()).toBe(6049 * 3);
+    expect(primitive(candidate).getIndices().getCount()).toBeLessThanOrEqual(25200);
+    expectIdenticalBytes(
+      await readFile('src/test/fixtures/farm-model-reconciliation/coop.baseline.glb'),
+      originalBytes,
+      'baseline fixture'
+    );
+    expectIdenticalBytes(await readFile(SOURCE), sourceBytes, 'provider source');
+  }
+);
 
 test('rejects both direct and symlink writes into runtime/source asset trees', async () => {
   await expect(safeOutput(INPUT)).rejects.toThrow('outside public/assets');
   await expect(safeOutput(SOURCE)).rejects.toThrow('outside public/assets');
+  if (!canSymlink) return; // guards beyond this line cannot run without symlink rights
   await symlink(path.resolve('public/models/farm'), path.join(temporary, 'runtime-link'));
   await expect(safeOutput(path.join(temporary, 'runtime-link', 'coop.glb'))).rejects.toThrow(
     'Symlink output'

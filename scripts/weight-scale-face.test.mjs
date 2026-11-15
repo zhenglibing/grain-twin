@@ -312,7 +312,9 @@ async function computeScaleFaceProof() {
     const sceneText = read('src/components/shared/SceneText.tsx');
     assert(
       sceneText.includes('fonts/Inter-Regular.ttf') &&
-        sceneText.includes('font={font ?? DEFAULT_3D_FONT}')
+        sceneText.includes(
+          "font={font ?? (getLocale() === 'zh' ? DEFAULT_3D_FONT_ZH : DEFAULT_3D_FONT)}"
+        )
     );
     const parser = libraryFunction(
       'node_modules/troika-three-text/src/FontParser.js',
