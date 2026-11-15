@@ -325,7 +325,7 @@ export const workplaceCampaignMessages = defineMessages({
     nextCorrect: '在提出新的提议之前纠正顾问并保护拒绝。',
     nextUnderstand: '包装：先回答检查，再明确确认理解。这不授予任何表决或顶岗同意。',
     nextVote: '包装：选择你的政策表决。批准不能让你成为顶岗志愿者。',
-    nextPolicyNo: '你的政策反对使团队协议搁置。返回“班次”修订提议；随后每个角色重新决定。',
+    nextPolicyNo: '你的政策反对票使团队协议搁置。返回“班次”修订提议；随后每个角色重新决定。',
     nextCoverPending: '包装：单独接受或拒绝可选顶岗。沉默不构成同意。',
     nextCoverDeclined:
       '你的顶岗拒绝保持有效。在“班次”中比较受保护节奏、附带资金的交接或另一位当前合格的志愿者。',

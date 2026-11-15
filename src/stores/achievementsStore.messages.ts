@@ -65,7 +65,7 @@ export const achievementsStoreMessages = defineMessages({
     teamPlayerName: '单元协作',
     teamPlayerDescription: '十次无人要求的机器间助攻。',
     happyWorkforceName: '稳定自治',
-    happyWorkforceDescription: '持续保持 90% 的置信度。系统信任着自己。',
+    happyWorkforceDescription: '持续保持 90% 的置信度。系统信任自己。',
     breakTimeName: '维护窗口',
     breakTimeDescription: '50 个维护窗口，每一个都有计划。规律是一种美德。',
     emergentCooperationName: '涌现协作',

@@ -201,7 +201,7 @@ export const workplacePressureChapterMessages = defineMessages({
     offerLine:
       '当前报价：{plan}，修订版 {revision}。顾问边界：{ack}。角色理解 {understood}/{members}；已记录表决 {ballots}/{members}。单独的顶岗同意：{cover}。',
     acknowledged: '已确认',
-    awaitingAnswers: '待答当前问题',
+    awaitingAnswers: '等待当前答复',
     none: '无',
     openItem: '未决：{statement}',
     memberLine:

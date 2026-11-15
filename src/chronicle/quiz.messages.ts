@@ -692,7 +692,7 @@ const chinese: Record<string, QuizCopy> = {
     option0: '芝加哥',
     option1: '布法罗',
     option2: '蒙特利尔',
-    option3: '纽约',
+    option3: '纽约市',
   },
   'q-grain-elevator-2': {
     prompt: '提升塔的“船用提升臂”（marine leg）是什么？',
@@ -829,7 +829,7 @@ const chinese: Record<string, QuizCopy> = {
   },
   'q-tide-mills-1': {
     prompt: '潮汐磨坊什么时候磨粉？',
-    option0: '涨潮进来的时候',
+    option0: '涨潮时',
     option1: '只在满潮时',
     option2: '当外面的潮位落得够低、能放蓄水过轮的时候',
     option3: '只在风暴期间',

@@ -237,7 +237,7 @@ export const layoutPlannerMessages = defineMessages({
     queueFlow: '流入 {input} kg / 流出 {output} kg',
     queueUse: '缓冲占用 {pct}%',
     transportNote: (p: TransportParams) =>
-      `运输时序沿服务路线弧长计算。假定速度：进料 ${p.intake}、气力输送 ${p.pneumatic}、成品 ${p.finished} m/s。${p.modeled} 条连接使用建模路径；已在途的到货保持原时间戳。`,
+      `运输时序沿服务路线弧长计算。假定速度：进料 ${p.intake}、气力输送 ${p.pneumatic}、成品 ${p.finished} m/s。${p.modeled} 条连接使用已建模路径；已在途的到货保持原时间戳。`,
     exportLabel: '导出物流方案',
     saveJson: '保存方案 JSON',
     exportFormat: '导出 {format}',

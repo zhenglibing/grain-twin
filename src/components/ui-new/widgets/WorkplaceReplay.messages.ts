@@ -225,7 +225,7 @@ export const workplaceReplayMessages = defineMessages({
     guideLabel: '引导式回放',
     guideHeading: '引导式回放：{section}',
     guideShift:
-      '从受保护休息、共享的运营信息与补救开始。保持客户承诺，或协商一份分期：延期使全额合同保持未结。请在下方选择一份真实方案。',
+      '从受保护休息、共享的运营信息与补救开始。保持客户承诺，或协商一份分期安排：延期使全额合同保持未结。请在下方选择一份真实方案。',
     guidePractices:
       '“协调主导”从休息、信息与补救开始。“团队协议”加入共享决策；“成员治理”加入成员治理。可选的预算实践启用共享的交接改善。请使用下方真实的实践控制。',
     guideAgreement:
@@ -236,7 +236,7 @@ export const workplaceReplayMessages = defineMessages({
     planCover:
       ' 最多 {cover} 分钟自愿顶岗，报酬 {rate} 点数/分钟，外加 {recovery} 分钟补休，随后恢复受保护节奏。',
     activeNote: '协议处于活跃状态。请使用工厂时钟控制恢复实际游玩；本指南绝不推进时间或提交决策。',
-    nextSection: '下一指南分区',
+    nextSection: '下一节',
     endGuide: '结束指南',
     optionalNavigation: '仅提供可选导航。指南不提供任何表决、检查、同意或批准。',
 

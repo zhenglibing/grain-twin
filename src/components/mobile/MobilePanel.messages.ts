@@ -127,7 +127,7 @@ export const mobilePanelMessages = defineMessages({
     statusIdle: '空闲',
     dailyTarget: '日目标',
     safety: '安全',
-    nearMisses: '未遂：',
+    nearMisses: '未遂事件：',
     daysSinceIncident: '安全天数：',
     operationsCampaign: '运行加工季',
     ordersProgress: '{done}/{total} 个订单',

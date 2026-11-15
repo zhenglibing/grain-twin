@@ -162,7 +162,7 @@ export const knowledgeStoreMessages = defineMessages({
     scadaAlarmLifecycleTooltip: '报警呈现状态、确认、处置与恢复。',
     scadaAlarmLifecycleBrief:
       '报警不只是声响。它是一项条件、一次处置、一份证据，也是谁对此做了什么的记录。',
-    scadaAlarmLifecycleArticle: `## 报警状态即证据\n\n每条报警都记录点位、限值、测量值、优先级、时间与条件原文。确认一条报警并不会让过程条件消失。数值恢复正常也不能免除确认。\n\n搁置只是暂时隐藏报警。抑制是一项深思熟虑、有边界的控制决策。停用（OOS）表示该信号此刻不可信。以上每一项都要求署名与理由，从而让时间线保持诚实。\n\n风暴监控在滚动窗口内统计发生次数。事件历史与活动报警列表分开保存——已清除的症状不应从运行记忆中消失。`,
+    scadaAlarmLifecycleArticle: `## 报警状态即证据\n\n每条报警都记录点位、限值、测量值、优先级、时间与条件原文。确认一条报警并不会让过程条件消失。数值恢复正常也不能免除确认。\n\n搁置只是暂时隐藏报警。抑制是一项深思熟虑、有边界的控制决策。停用（OOS）表示该信号此刻不可信。以上每一项都要求署名与理由，从而让时间线保持诚实。\n\n报警风暴监控在滚动窗口内统计发生次数。事件历史与活动报警列表分开保存——已清除的症状不应从运行记忆中消失。`,
     scadaAlarmLifecycleSeeInAction: 'SCADA 报警\n事件历史',
     // predictive-maintenance
     predictiveMaintenanceTitle: '预测性维护循环',
