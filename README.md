@@ -41,6 +41,16 @@ A browser-based 3D industrial simulation with deterministic forklifts and trucks
 
 ---
 
+## Interface Languages
+
+MillOS speaks three languages: **English**, **Português (Brasil)**, and **简体中文**. Pick one
+with the in-app language buttons (shown during onboarding and in the 设置 Settings panel) or load
+the app with `?lang=pt-BR` / `?lang=zh`; the choice is remembered per browser. Every user-facing
+string is translated — machine designations, SCADA tag ids, and painted signage keep their
+original language on purpose.
+
+---
+
 ## A Note from Nell Watson
 
 This project represents something I find genuinely exciting about where we are in late 2025: **the emergence of agentic AI as a creative and engineering partner**.
